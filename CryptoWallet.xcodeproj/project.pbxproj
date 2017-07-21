@@ -14,6 +14,8 @@
 		359B304C1F223F9D00B4E476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B304A1F223F9D00B4E476 /* LaunchScreen.storyboard */; };
 		359B30571F223F9D00B4E476 /* CryptoWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30561F223F9D00B4E476 /* CryptoWalletTests.swift */; };
 		359B30621F223F9D00B4E476 /* CryptoWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30611F223F9D00B4E476 /* CryptoWalletUITests.swift */; };
+		359B30711F22438000B4E476 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359B30701F22438000B4E476 /* LocalAuthentication.framework */; };
+		359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30741F2246B000B4E476 /* SuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		359B305D1F223F9D00B4E476 /* CryptoWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30611F223F9D00B4E476 /* CryptoWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletUITests.swift; sourceTree = "<group>"; };
 		359B30631F223F9D00B4E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359B30701F22438000B4E476 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		359B30741F2246B000B4E476 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359B30711F22438000B4E476 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				359B30551F223F9D00B4E476 /* CryptoWalletTests */,
 				359B30601F223F9D00B4E476 /* CryptoWalletUITests */,
 				359B303F1F223F9D00B4E476 /* Products */,
+				359B306F1F22438000B4E476 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +109,7 @@
 				359B30481F223F9D00B4E476 /* Assets.xcassets */,
 				359B304A1F223F9D00B4E476 /* LaunchScreen.storyboard */,
 				359B304D1F223F9D00B4E476 /* Info.plist */,
+				359B30741F2246B000B4E476 /* SuccessViewController.swift */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -123,6 +130,14 @@
 				359B30631F223F9D00B4E476 /* Info.plist */,
 			);
 			path = CryptoWalletUITests;
+			sourceTree = "<group>";
+		};
+		359B306F1F22438000B4E476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				359B30701F22438000B4E476 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +208,7 @@
 				TargetAttributes = {
 					359B303D1F223F9D00B4E476 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = H89873LUM4;
 						ProvisioningStyle = Automatic;
 					};
 					359B30511F223F9D00B4E476 = {
@@ -260,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359B30441F223F9D00B4E476 /* ViewController.swift in Sources */,
+				359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */,
 				359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H89873LUM4;
 				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.khashin.CryptoWallet;
@@ -426,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H89873LUM4;
 				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.khashin.CryptoWallet;
