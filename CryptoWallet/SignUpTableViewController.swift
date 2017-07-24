@@ -66,8 +66,7 @@ class SignUpTableViewController: UITableViewController, UITextFieldDelegate {
         self.email = self.emailField!.text!
 //        let password = self.passwordField!.text
 //        self.startLoading()
-        self.showTouchAlert()
-        print("Touch")
+//        self.showTouchAlert()
     }
     
     
@@ -96,7 +95,7 @@ class SignUpTableViewController: UITableViewController, UITextFieldDelegate {
     func showTouchAlert() {
         let alert = UIAlertController(title: "Enable Touch ID", message: "For secure and quick login please enable Touch ID", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { (action) in
-            self.enableTouchID()
+            //self.enableTouchID()
         })
         alert.addAction(UIAlertAction(title: "Continue without Touch ID", style: .destructive) { (action) in
             self.unlockCryptoWallet()

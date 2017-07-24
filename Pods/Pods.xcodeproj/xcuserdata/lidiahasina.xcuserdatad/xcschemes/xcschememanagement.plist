@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-CryptoWallet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CryptoWalletTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CryptoWalletUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SmileLock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>22A9AD7EFB6F8A10C51155DEF6BF41E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>362AFD26749412319BDCE19AE4733D5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>639E067E52FE675651EDD349C26CE22E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF499AAC3D9F8F3D5DC4E3CAD97A67AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
