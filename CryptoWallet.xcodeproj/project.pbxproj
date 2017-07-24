@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3510175C1F262994002B23F8 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510175B1F262994002B23F8 /* SignUpTableViewController.swift */; };
+		3510175E1F263AB7002B23F8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3510175D1F263AB7002B23F8 /* Wallet.storyboard */; };
 		359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30411F223F9D00B4E476 /* AppDelegate.swift */; };
 		359B30441F223F9D00B4E476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30431F223F9D00B4E476 /* ViewController.swift */; };
-		359B30471F223F9D00B4E476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B30451F223F9D00B4E476 /* Main.storyboard */; };
+		359B30471F223F9D00B4E476 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B30451F223F9D00B4E476 /* Login.storyboard */; };
 		359B30491F223F9D00B4E476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B30481F223F9D00B4E476 /* Assets.xcassets */; };
 		359B304C1F223F9D00B4E476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B304A1F223F9D00B4E476 /* LaunchScreen.storyboard */; };
 		359B30571F223F9D00B4E476 /* CryptoWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30561F223F9D00B4E476 /* CryptoWalletTests.swift */; };
@@ -36,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3510175B1F262994002B23F8 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		3510175D1F263AB7002B23F8 /* Wallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		359B303E1F223F9D00B4E476 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30411F223F9D00B4E476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359B30431F223F9D00B4E476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		359B30481F223F9D00B4E476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		359B304B1F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		359B304D1F223F9D00B4E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,11 +109,13 @@
 			children = (
 				359B30411F223F9D00B4E476 /* AppDelegate.swift */,
 				359B30431F223F9D00B4E476 /* ViewController.swift */,
-				359B30451F223F9D00B4E476 /* Main.storyboard */,
+				359B30451F223F9D00B4E476 /* Login.storyboard */,
 				359B30481F223F9D00B4E476 /* Assets.xcassets */,
 				359B304A1F223F9D00B4E476 /* LaunchScreen.storyboard */,
 				359B304D1F223F9D00B4E476 /* Info.plist */,
 				359B30741F2246B000B4E476 /* SuccessViewController.swift */,
+				3510175B1F262994002B23F8 /* SignUpTableViewController.swift */,
+				3510175D1F263AB7002B23F8 /* Wallet.storyboard */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -249,8 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				359B304C1F223F9D00B4E476 /* LaunchScreen.storyboard in Resources */,
+				3510175E1F263AB7002B23F8 /* Wallet.storyboard in Resources */,
 				359B30491F223F9D00B4E476 /* Assets.xcassets in Resources */,
-				359B30471F223F9D00B4E476 /* Main.storyboard in Resources */,
+				359B30471F223F9D00B4E476 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 				359B30441F223F9D00B4E476 /* ViewController.swift in Sources */,
 				359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */,
 				359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */,
+				3510175C1F262994002B23F8 /* SignUpTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,12 +321,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		359B30451F223F9D00B4E476 /* Main.storyboard */ = {
+		359B30451F223F9D00B4E476 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				359B30461F223F9D00B4E476 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		359B304A1F223F9D00B4E476 /* LaunchScreen.storyboard */ = {
@@ -526,6 +534,7 @@
 				359B30681F223F9D00B4E476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		359B30691F223F9D00B4E476 /* Build configuration list for PBXNativeTarget "CryptoWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +543,7 @@
 				359B306B1F223F9D00B4E476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		359B306C1F223F9D00B4E476 /* Build configuration list for PBXNativeTarget "CryptoWalletUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +552,7 @@
 				359B306E1F223F9D00B4E476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

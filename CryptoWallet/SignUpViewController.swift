@@ -1,20 +1,19 @@
 //
-//  SuccessViewController.swift
+//  SignUpViewController.swift
 //  CryptoWallet
 //
-//  Created by Лидия Хашина on 21.07.17.
+//  Created by Лидия Хашина on 24.07.17.
 //  Copyright © 2017 Лидия Хашина. All rights reserved.
 //
 
 import UIKit
 
-class SuccessViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
