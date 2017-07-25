@@ -21,12 +21,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let userToken = userInfo.object(forKey: "token") as? String
+        let touch = userInfo.object(forKey: "touch") as? Bool
         //print(userToken)
         
         if userToken == nil {
             self.navToLoginStory()
         } else {
-            self.useTouchID()
+            if touch! {
+                self.useTouchID()
+            } else {
+                self.navToWalletStory()
+            }
+            
         }
 
         return true

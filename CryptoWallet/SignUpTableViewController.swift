@@ -21,12 +21,17 @@ class SignUpTableViewController: UITableViewController, UITextFieldDelegate {
     
     var email:String = ""
     
+    var doesUserWantToUseTouchID: Bool?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.emailField.delegate = self
         self.passwordField.delegate = self
         
+        self.signupButton.layer.cornerRadius = 4.0
+        self.signupButton.layer.borderColor = #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1).cgColor
+        self.signupButton.layer.borderWidth = 1.5
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignUpTableViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -65,8 +70,8 @@ class SignUpTableViewController: UITableViewController, UITextFieldDelegate {
     @IBAction func signUp(_ sender: Any) {
         self.email = self.emailField!.text!
 //        let password = self.passwordField!.text
-//        self.startLoading()
-//        self.showTouchAlert()
+        self.startLoading()
+        self.showTouchAlert()
     }
     
     
@@ -95,9 +100,13 @@ class SignUpTableViewController: UITableViewController, UITextFieldDelegate {
     func showTouchAlert() {
         let alert = UIAlertController(title: "Enable Touch ID", message: "For secure and quick login please enable Touch ID", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { (action) in
-            //self.enableTouchID()
+            self.doesUserWantToUseTouchID = true
+            self.stopLoading()
+            self.enableTouchID()
         })
         alert.addAction(UIAlertAction(title: "Continue without Touch ID", style: .destructive) { (action) in
+            self.doesUserWantToUseTouchID = false
+            self.stopLoading()
             self.unlockCryptoWallet()
         })
         self.present(alert, animated: true, completion: nil)
@@ -141,6 +150,7 @@ class SignUpTableViewController: UITableViewController, UITextFieldDelegate {
     
     func unlockCryptoWallet() {
         self.userInfo.set(self.email, forKey: "token")
+        self.userInfo.set(self.doesUserWantToUseTouchID, forKey: "touch")
         self.performSegue(withIdentifier: "goToWallet", sender: self)
     }
 }
