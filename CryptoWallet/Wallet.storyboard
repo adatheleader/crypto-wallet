@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,20 +22,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You're in!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-fv-9af">
-                                <rect key="frame" x="152" y="323" width="70" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0xe57f8723ecce747177ebf8037c3658c2beab57a5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-fv-9af">
+                                <rect key="frame" x="16" y="128" width="343" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've created a wallet for you" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-k2-4gH">
+                                <rect key="frame" x="73" y="57" width="229" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eYi-nG-CoQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhQ-aC-wF1">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0as-BA-lg8"/>
+                                    <constraint firstAttribute="height" constant="200" id="l0I-GZ-meR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ub-k2-4gH" firstAttribute="centerX" secondItem="Q3H-fv-9af" secondAttribute="centerX" id="Bv6-DH-ADG"/>
+                            <constraint firstItem="xhQ-aC-wF1" firstAttribute="centerY" secondItem="9ST-hJ-Box" secondAttribute="centerY" id="Hwn-GR-nD2"/>
+                            <constraint firstItem="Q3H-fv-9af" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="TL2-Ur-MCc"/>
+                            <constraint firstItem="8ub-k2-4gH" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="WmW-mR-oQb"/>
+                            <constraint firstItem="8ub-k2-4gH" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="Z4m-Dg-ygn"/>
+                            <constraint firstItem="8ub-k2-4gH" firstAttribute="top" secondItem="S09-bz-jNW" secondAttribute="bottom" constant="37" id="aoY-2t-Lri"/>
+                            <constraint firstItem="xhQ-aC-wF1" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="km7-De-J0l"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Q3H-fv-9af" secondAttribute="leading" id="nQq-Ny-O9l"/>
+                            <constraint firstItem="Q3H-fv-9af" firstAttribute="top" secondItem="8ub-k2-4gH" secondAttribute="bottom" constant="50" id="odH-Kz-cS5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q3H-fv-9af" secondAttribute="trailing" id="v1h-Dy-Qec"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgQRCode" destination="xhQ-aC-wF1" id="D07-bE-j8B"/>
+                        <outlet property="walletLabel" destination="Q3H-fv-9af" id="R6D-Wm-P2o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJg-Uc-lvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1164" y="2066"/>
+            <point key="canvasLocation" x="-1164" y="2065.8170914542729"/>
         </scene>
     </scenes>
 </document>
