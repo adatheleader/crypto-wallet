@@ -7,6 +7,7 @@ target 'CryptoWallet' do
 
   # Pods for CryptoWallet
   pod 'SmileLock'
+  pod 'KeychainAccess'
 
   target 'CryptoWalletTests' do
     inherit! :search_paths

@@ -7,21 +7,32 @@
 //
 
 import UIKit
+import KeychainAccess
 
 class SuccessViewController: UIViewController {
     
-    
     @IBOutlet weak var walletLabel: UILabel!
     @IBOutlet weak var imgQRCode: UIImageView!
+    
+    let wallet: String = "0xe57f8723ecce747177ebf8037c3658c2beab57a5"
+    var providedKey: String!
     
     var qrcodeImage: CIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.walletLabel.text = "0xe57f8723ecce747177ebf8037c3658c2beab57a5"
+        self.walletLabel.text = self.wallet
         self.displayQRCodeImage()
-
+        
+        self.saveToKeychain(service: "com.example.sandcoin-wallet", value: self.wallet, key: "wallet")
+        
+//        let when = DispatchTime.now() + 5 // change 2 to desired number of seconds
+//        DispatchQueue.main.asyncAfter(deadline: when) {
+//            self.providedKey = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
+//            print(self.providedKey)
+//        }
+        
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
@@ -45,21 +56,34 @@ class SuccessViewController: UIViewController {
         self.imgQRCode.image = self.generateQRCode(from: self.walletLabel.text!)
     }
     
+    func saveToKeychain(service: String, value: String, key: String){
+        let keychain = Keychain(service: service).synchronizable(true)
+        keychain[string: key] = value
+    }
+    
+    
+    func getItemFromKeychain(service: String, key: String) -> String {
+        let keychain = Keychain(service: service).synchronizable(true)
+        
+        let providedKey:String = keychain[string: key]!
+        
+        return providedKey
+    }
+    
+    func removeItemFromKeychain(service: String, key: String){
+        let keychain = Keychain(service: service).synchronizable(true)
+        
+        do {
+            try keychain.remove(key)
+        } catch _ {
+            // Error handling if needed...
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

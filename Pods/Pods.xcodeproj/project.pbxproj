@@ -7,104 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E77DBA370E72887F34DA4E779A0B8D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		0D0A9BBA8B9D6B95488A54535B40D40C /* PasswordContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1EED72E2063380375DC1670E82941C /* PasswordContainerView.swift */; };
 		0F73EE69CA65AD87F653ECB38D2DD662 /* Pods-CryptoWalletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A359AC56C6AEE7F90F39BFA7812189C /* Pods-CryptoWalletUITests-dummy.m */; };
-		1A760AAF2E763023B3434EA45A0D05C8 /* Pods-CryptoWallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */; };
 		1EE3D3F3223F50ACF326C910C229CF0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		5987965D2D46D9C49C72115B08532918 /* Pods-CryptoWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E397835A1C80E324C32219F18ED42C9 /* PasswordContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26411E81AE9B887693AEE1120B268082 /* PasswordContainerView.xib */; };
+		284F100DB818CB258D0B15A83E811340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		46FC58118C628E3FD354944BA4212DDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		4757F864CE1CF942F22FC41BFF87616B /* Pods-CryptoWallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */; };
+		5AA6D699D724C3D21992B35931AACC84 /* SmileLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CB093D5E539BAAAC09D641F943E4A /* SmileLock-dummy.m */; };
 		6273578DFDAE68EA7C6BCE68993EC8A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		722AEEEC2B2A9F7A680DCE59DED15875 /* PasswordUIValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1F2188D2B060CE4B741AAA83BCE41 /* PasswordUIValidation.swift */; };
-		8182074DB236D3A2B73EE5BBAEF1FB06 /* SmileLock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99C0B939D5651050C195076275121651 /* SmileLock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		865EF9A3640F90B5045561D03070D8FD /* PasswordContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6E563C977A318DAC9DDDCC0ABF5C3E /* PasswordContainerView.swift */; };
+		72DB6A4773D420EA80C9BFEE4361B880 /* PasswordContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE6D825C97608CBC4DB37D687C19CE5 /* PasswordContainerView.xib */; };
+		759175225B850773630A143848D0C877 /* SmileLock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C70E570046515A498C1DA1AF21AEB0 /* SmileLock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C211A47F6F5A2AA055E20E7A30BF2E6 /* Pods-CryptoWalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A692D8D9527711EFEC750AB3B2CB0F59 /* Pods-CryptoWalletTests-dummy.m */; };
-		ABF09583C0CE748C7886886FE634151B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76207B4B6E2F7CADB38D508F5A536A /* Keychain.swift */; };
 		AC165DFD8CBBF275F286CA52C533CFA3 /* Pods-CryptoWalletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 398B4613349DBD957B64337F3E863A00 /* Pods-CryptoWalletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD84808591F9F060C031CA9115BB11F8 /* Pods-CryptoWalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE0EF87D1D1FB99DD53AEC60DF1A3C2 /* Pods-CryptoWalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF4ACD2C6D79A535561C807080CAB5FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		D8BDE0230640BD60B8DB9B67D1B9DF82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48D163C3FD64DD4E4265DFC7BCD9AA8 /* Assets.xcassets */; };
-		E8388035D5F3A428EEE27D72C899F23A /* SmileLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C320D5C1F80F6B3566046D49AA13237E /* SmileLock-dummy.m */; };
-		F57B2021418866A577D92DA730F4C038 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C65B3FC93A865862BE48D4A89A852 /* PasswordInputView.swift */; };
-		FEFAACB6A20237DC755D96438600829B /* PasswordDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109A6029FE385EFFF1C874C0A2EC4F52 /* PasswordDotView.swift */; };
+		B84A73C0AA5DE5912A8CB04988261CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF185FB47FA8D2E7E7E01A8F6FF0BF1 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0CB202F1403F6C89AAEE9E8DBA92BAF /* PasswordDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43493713E513E09568882A8F060DEBDC /* PasswordDotView.swift */; };
+		C456AEBA7FACA838B8EF6CE4F7029C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D58DFFA5A49B62EC9A74ABFA055E9B52 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B808BC62C5B136B43F51A5E8A7FFC /* PasswordInputView.swift */; };
+		D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6966EB274F3E73C75F4A1AF05E25515F /* KeychainAccess-dummy.m */; };
+		E69BF57C8429E4BE8F3C4CF403339B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C6D2540E9A1A2F05904F096C30E19 /* Assets.xcassets */; };
+		ED6806BA4CD488BA812188F6DB64BB82 /* PasswordUIValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4452DC86106CB6AF9CCC75D6D171F /* PasswordUIValidation.swift */; };
+		EE674CD29EAF7B0CEEF90D63BD00E141 /* Pods-CryptoWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AEDFBE3E6F78EEA4BBFE63598D0D8A6B /* PBXContainerItemProxy */ = {
+		98BB6B661F6EBA1461DA864FAB7975E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FF499AAC3D9F8F3D5DC4E3CAD97A67AE;
+			remoteGlobalIDString = 3B12820239252DE4D251F766EF9C9330;
 			remoteInfo = SmileLock;
+		};
+		BFA259284EF0BFA4514E21C65F610E61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8905DB6521F8FDC34752B69DEE3FDEB7;
+			remoteInfo = KeychainAccess;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		109A6029FE385EFFF1C874C0A2EC4F52 /* PasswordDotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordDotView.swift; path = SmileLock/Classes/PasswordDotView.swift; sourceTree = "<group>"; };
+		0B1EED72E2063380375DC1670E82941C /* PasswordContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordContainerView.swift; path = SmileLock/Classes/PasswordContainerView.swift; sourceTree = "<group>"; };
 		10FDC7E789B0F629809BE7331ACE09BD /* Pods-CryptoWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		1D6E85AEEEC575C1EBE448C71C709F3C /* Pods-CryptoWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWallet.modulemap"; sourceTree = "<group>"; };
-		26411E81AE9B887693AEE1120B268082 /* PasswordContainerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PasswordContainerView.xib; path = SmileLock/Assets/PasswordContainerView.xib; sourceTree = "<group>"; };
-		2736D12B5C6217C3C581CAFE61065ACC /* Pods_CryptoWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletTests.framework; path = "Pods-CryptoWalletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF849788662BD4824D9F14AC23F671C /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWallet-umbrella.h"; sourceTree = "<group>"; };
 		348B623A1DE26898A6BE17FB383FD9E6 /* Pods-CryptoWallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWallet-frameworks.sh"; sourceTree = "<group>"; };
-		35026ED57EBB2D3AAC22026E2E689E1F /* SmileLock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SmileLock.modulemap; sourceTree = "<group>"; };
 		398B4613349DBD957B64337F3E863A00 /* Pods-CryptoWalletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWalletUITests-umbrella.h"; sourceTree = "<group>"; };
 		3AAA296C651DB9A1703FE9D22FD45FBE /* Pods-CryptoWalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletTests-frameworks.sh"; sourceTree = "<group>"; };
+		43493713E513E09568882A8F060DEBDC /* PasswordDotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordDotView.swift; path = SmileLock/Classes/PasswordDotView.swift; sourceTree = "<group>"; };
 		44C475E552DCA1BFB5570BBB866B1D5E /* Pods-CryptoWalletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletUITests-resources.sh"; sourceTree = "<group>"; };
-		49793A8625E8CC1C1A888C5C767423F8 /* SmileLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmileLock-prefix.pch"; sourceTree = "<group>"; };
+		49310F642D9C7716276D3245851F51D1 /* SmileLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmileLock.xcconfig; sourceTree = "<group>"; };
 		4A818A46E6AC25B7AF2F06DB444C1E0B /* Pods-CryptoWallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWallet-resources.sh"; sourceTree = "<group>"; };
+		4C8C6D2540E9A1A2F05904F096C30E19 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SmileLock/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		4DF185FB47FA8D2E7E7E01A8F6FF0BF1 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
 		512DF5CC05DDDFBF11B826093E1B3148 /* Pods-CryptoWalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWalletUITests.modulemap"; sourceTree = "<group>"; };
+		5C0A98BBA81150432D0046EB3D2CF930 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
 		5C47C9B750FADC7980AC70CE32453921 /* Pods-CryptoWalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWalletTests.modulemap"; sourceTree = "<group>"; };
-		5C524D9269DB34FD9DD4F6547870F04A /* Pods_CryptoWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletUITests.framework; path = "Pods-CryptoWalletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6508CA16ACC040149F4E6D0EC1207D3C /* SmileLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmileLock-prefix.pch"; sourceTree = "<group>"; };
+		6966EB274F3E73C75F4A1AF05E25515F /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
 		69A5851EDBD92AE45DF4A4933250B784 /* Pods-CryptoWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6F02D012E0CC3CE4AAA5EEB47D753E9A /* Pods-CryptoWalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7264936325C61B76B9161D3306895353 /* Pods-CryptoWallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWallet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		74D1F2188D2B060CE4B741AAA83BCE41 /* PasswordUIValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordUIValidation.swift; path = SmileLock/Classes/PasswordUIValidation.swift; sourceTree = "<group>"; };
+		7989563CEC676847775FD2681FA9C73D /* SmileLock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SmileLock.modulemap; sourceTree = "<group>"; };
 		7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWallet-dummy.m"; sourceTree = "<group>"; };
+		7FE6D825C97608CBC4DB37D687C19CE5 /* PasswordContainerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PasswordContainerView.xib; path = SmileLock/Assets/PasswordContainerView.xib; sourceTree = "<group>"; };
+		8329BC8010078E488FAF1C7A2447ABA7 /* SmileLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmileLock.framework; path = SmileLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CCDDA5EEFF16D8759DFB0B6784F79D /* Pods-CryptoWalletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWalletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8977ADB82A794A9DAC832F03FE8DA632 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWallet.framework; path = "Pods-CryptoWallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A359AC56C6AEE7F90F39BFA7812189C /* Pods-CryptoWalletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWalletUITests-dummy.m"; sourceTree = "<group>"; };
 		8BB499651D4CBDA4FA9286E2F64A428F /* Pods-CryptoWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9153DBFAC54B8FFC18BE4F84E9AAE41F /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99C0B939D5651050C195076275121651 /* SmileLock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmileLock-umbrella.h"; sourceTree = "<group>"; };
+		998B808BC62C5B136B43F51A5E8A7FFC /* PasswordInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordInputView.swift; path = SmileLock/Classes/PasswordInputView.swift; sourceTree = "<group>"; };
 		9C375D3D8A0A4D7AE4F06656E4950A77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02351F33820719CB731C2BD30A59077 /* Pods_CryptoWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletTests.framework; path = "Pods-CryptoWalletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C131ECD89A4BB47CDF3731D3478473 /* Pods_CryptoWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletUITests.framework; path = "Pods-CryptoWalletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F016DC1300F9272CEC2D330A05BB7B /* Pods-CryptoWalletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWalletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A2FB39C512B37E6CBA3B69E62869AADA /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWallet.framework; path = "Pods-CryptoWallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A692D8D9527711EFEC750AB3B2CB0F59 /* Pods-CryptoWalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWalletTests-dummy.m"; sourceTree = "<group>"; };
-		B3C5646947064079DCABCEA070AB6E3D /* SmileLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmileLock.framework; path = SmileLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F87C107C4155F4F668BCD7A90BFFE7 /* Pods-CryptoWalletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletUITests-frameworks.sh"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA76207B4B6E2F7CADB38D508F5A536A /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
 		BAE0EF87D1D1FB99DD53AEC60DF1A3C2 /* Pods-CryptoWalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWalletTests-umbrella.h"; sourceTree = "<group>"; };
-		BB6E563C977A318DAC9DDDCC0ABF5C3E /* PasswordContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordContainerView.swift; path = SmileLock/Classes/PasswordContainerView.swift; sourceTree = "<group>"; };
+		BD8CB093D5E539BAAAC09D641F943E4A /* SmileLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmileLock-dummy.m"; sourceTree = "<group>"; };
 		C04A51D0A368DE21BC7076518BF0939B /* Pods-CryptoWalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C213BD09ECC28B026A7A8A2FB315F537 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C320D5C1F80F6B3566046D49AA13237E /* SmileLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmileLock-dummy.m"; sourceTree = "<group>"; };
-		C48D163C3FD64DD4E4265DFC7BCD9AA8 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SmileLock/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		C5C70E570046515A498C1DA1AF21AEB0 /* SmileLock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmileLock-umbrella.h"; sourceTree = "<group>"; };
 		D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		D1C39099DF723C4BBB39340D88F48AE7 /* Pods-CryptoWalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletTests-resources.sh"; sourceTree = "<group>"; };
+		D63536486F1C082D4A4EDB7741021F92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68BD78039A6A2D7BA7CD529D30A89D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DD91C7C6754E9131B9CE78B17990F4D4 /* Pods-CryptoWallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWallet-acknowledgements.plist"; sourceTree = "<group>"; };
 		E26FF99A506A475019E4FFB36AA9BF11 /* Pods-CryptoWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletTests.release.xcconfig"; sourceTree = "<group>"; };
 		E697AE5C6BC48B0D44738F86C610DA42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE1C65B3FC93A865862BE48D4A89A852 /* PasswordInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordInputView.swift; path = SmileLock/Classes/PasswordInputView.swift; sourceTree = "<group>"; };
-		F63D0F03EC5DACB131BAD875BF297A5A /* SmileLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmileLock.xcconfig; sourceTree = "<group>"; };
-		FACFB17EC730C471F684592432FBE6B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B74ECD01A88BF2D99847036A666115 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		FEE4452DC86106CB6AF9CCC75D6D171F /* PasswordUIValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordUIValidation.swift; path = SmileLock/Classes/PasswordUIValidation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2573C984458175A4D3DD0D4C0BBA3DB1 /* Frameworks */ = {
+		2DDC844C06D46A3907C42C9964BC7434 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF09583C0CE748C7886886FE634151B /* Foundation.framework in Frameworks */,
+				C456AEBA7FACA838B8EF6CE4F7029C3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72E00F33565FF5442020B0F5AD91BD41 /* Frameworks */ = {
+		31B7A3E2A2271FDB914871270C828410 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4ACD2C6D79A535561C807080CAB5FB /* Foundation.framework in Frameworks */,
-				0E77DBA370E72887F34DA4E779A0B8D0 /* UIKit.framework in Frameworks */,
+				46FC58118C628E3FD354944BA4212DDF /* Foundation.framework in Frameworks */,
+				B84A73C0AA5DE5912A8CB04988261CB6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +132,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE3D3F3223F50ACF326C910C229CF0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC196D067369EDBCB740A45F99921603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284F100DB818CB258D0B15A83E811340 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,12 +154,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EB9DC35E317C5D58CD6DA9147B299C7 /* Pods */ = {
+		0BDC5D9CFCD04CBE49EAF58153025635 /* KeychainAccess */ = {
 			isa = PBXGroup;
 			children = (
-				53563852C104E99720FE87DB25230899 /* SmileLock */,
+				BA76207B4B6E2F7CADB38D508F5A536A /* Keychain.swift */,
+				676DC4442496782627E0AD46655A371D /* Support Files */,
+			);
+			name = KeychainAccess;
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
+		2EB4FB39BD46A2A2277AAAED24295376 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BDC5D9CFCD04CBE49EAF58153025635 /* KeychainAccess */,
+				DBFB62619FFE940838F4A44B145939B9 /* SmileLock */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		36E1516D4D5D20BC56600744E28FB579 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C8C6D2540E9A1A2F05904F096C30E19 /* Assets.xcassets */,
+				7FE6D825C97608CBC4DB37D687C19CE5 /* PasswordContainerView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3F0C94D3277265D1B49D9C6FE0BBE67C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AF849788662BD4824D9F14AC23F671C /* KeychainAccess.framework */,
+				A2FB39C512B37E6CBA3B69E62869AADA /* Pods_CryptoWallet.framework */,
+				A02351F33820719CB731C2BD30A59077 /* Pods_CryptoWalletTests.framework */,
+				A0C131ECD89A4BB47CDF3731D3478473 /* Pods_CryptoWalletUITests.framework */,
+				8329BC8010078E488FAF1C7A2447ABA7 /* SmileLock.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -150,20 +209,6 @@
 				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		53563852C104E99720FE87DB25230899 /* SmileLock */ = {
-			isa = PBXGroup;
-			children = (
-				BB6E563C977A318DAC9DDDCC0ABF5C3E /* PasswordContainerView.swift */,
-				109A6029FE385EFFF1C874C0A2EC4F52 /* PasswordDotView.swift */,
-				EE1C65B3FC93A865862BE48D4A89A852 /* PasswordInputView.swift */,
-				74D1F2188D2B060CE4B741AAA83BCE41 /* PasswordUIValidation.swift */,
-				A52C35D0A57B0A32330DC032E723AAC6 /* Resources */,
-				7A851AFD50AABC1C59E1FFDE04C17DFF /* Support Files */,
-			);
-			name = SmileLock;
-			path = SmileLock;
 			sourceTree = "<group>";
 		};
 		5381C6A4E3851BBDF1D73A36DF9F6856 /* Pods-CryptoWallet */ = {
@@ -184,29 +229,18 @@
 			path = "Target Support Files/Pods-CryptoWallet";
 			sourceTree = "<group>";
 		};
-		702509D7D101E142468A7A826129C60F /* Products */ = {
+		676DC4442496782627E0AD46655A371D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8977ADB82A794A9DAC832F03FE8DA632 /* Pods_CryptoWallet.framework */,
-				2736D12B5C6217C3C581CAFE61065ACC /* Pods_CryptoWalletTests.framework */,
-				5C524D9269DB34FD9DD4F6547870F04A /* Pods_CryptoWalletUITests.framework */,
-				B3C5646947064079DCABCEA070AB6E3D /* SmileLock.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7A851AFD50AABC1C59E1FFDE04C17DFF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FACFB17EC730C471F684592432FBE6B8 /* Info.plist */,
-				35026ED57EBB2D3AAC22026E2E689E1F /* SmileLock.modulemap */,
-				F63D0F03EC5DACB131BAD875BF297A5A /* SmileLock.xcconfig */,
-				C320D5C1F80F6B3566046D49AA13237E /* SmileLock-dummy.m */,
-				49793A8625E8CC1C1A888C5C767423F8 /* SmileLock-prefix.pch */,
-				99C0B939D5651050C195076275121651 /* SmileLock-umbrella.h */,
+				D68BD78039A6A2D7BA7CD529D30A89D4 /* Info.plist */,
+				9153DBFAC54B8FFC18BE4F84E9AAE41F /* KeychainAccess.modulemap */,
+				F6B74ECD01A88BF2D99847036A666115 /* KeychainAccess.xcconfig */,
+				6966EB274F3E73C75F4A1AF05E25515F /* KeychainAccess-dummy.m */,
+				5C0A98BBA81150432D0046EB3D2CF930 /* KeychainAccess-prefix.pch */,
+				4DF185FB47FA8D2E7E7E01A8F6FF0BF1 /* KeychainAccess-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SmileLock";
+			path = "../Target Support Files/KeychainAccess";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -214,19 +248,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				1EB9DC35E317C5D58CD6DA9147B299C7 /* Pods */,
-				702509D7D101E142468A7A826129C60F /* Products */,
+				2EB4FB39BD46A2A2277AAAED24295376 /* Pods */,
+				3F0C94D3277265D1B49D9C6FE0BBE67C /* Products */,
 				B1CA0D1BC349F0540AA373B0F0890A0D /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		A52C35D0A57B0A32330DC032E723AAC6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C48D163C3FD64DD4E4265DFC7BCD9AA8 /* Assets.xcassets */,
-				26411E81AE9B887693AEE1120B268082 /* PasswordContainerView.xib */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		B1CA0D1BC349F0540AA373B0F0890A0D /* Targets Support Files */ = {
@@ -275,9 +300,45 @@
 			path = "Target Support Files/Pods-CryptoWalletTests";
 			sourceTree = "<group>";
 		};
+		DBFB62619FFE940838F4A44B145939B9 /* SmileLock */ = {
+			isa = PBXGroup;
+			children = (
+				0B1EED72E2063380375DC1670E82941C /* PasswordContainerView.swift */,
+				43493713E513E09568882A8F060DEBDC /* PasswordDotView.swift */,
+				998B808BC62C5B136B43F51A5E8A7FFC /* PasswordInputView.swift */,
+				FEE4452DC86106CB6AF9CCC75D6D171F /* PasswordUIValidation.swift */,
+				36E1516D4D5D20BC56600744E28FB579 /* Resources */,
+				FBB42B771CEA5B7370E2647A7A243B2E /* Support Files */,
+			);
+			name = SmileLock;
+			path = SmileLock;
+			sourceTree = "<group>";
+		};
+		FBB42B771CEA5B7370E2647A7A243B2E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D63536486F1C082D4A4EDB7741021F92 /* Info.plist */,
+				7989563CEC676847775FD2681FA9C73D /* SmileLock.modulemap */,
+				49310F642D9C7716276D3245851F51D1 /* SmileLock.xcconfig */,
+				BD8CB093D5E539BAAAC09D641F943E4A /* SmileLock-dummy.m */,
+				6508CA16ACC040149F4E6D0EC1207D3C /* SmileLock-prefix.pch */,
+				C5C70E570046515A498C1DA1AF21AEB0 /* SmileLock-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SmileLock";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		364C5C6D17F390F9B0B1F4000E653F9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE674CD29EAF7B0CEEF90D63BD00E141 /* Pods-CryptoWallet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5748720CE139FADC80998DC99C1B8A9E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,19 +347,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		689E2880D07FC5697261D79583AEA23B /* Headers */ = {
+		6D66852AE8AF8E43F8EB1FCAA3775CD0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8182074DB236D3A2B73EE5BBAEF1FB06 /* SmileLock-umbrella.h in Headers */,
+				759175225B850773630A143848D0C877 /* SmileLock-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BBD3258FD182BB6E5A7690A447EDFB9 /* Headers */ = {
+		93DE0E803396B824DE9F75CA3683CEC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5987965D2D46D9C49C72115B08532918 /* Pods-CryptoWallet-umbrella.h in Headers */,
+				BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +388,7 @@
 			);
 			name = "Pods-CryptoWalletTests";
 			productName = "Pods-CryptoWalletTests";
-			productReference = 2736D12B5C6217C3C581CAFE61065ACC /* Pods_CryptoWalletTests.framework */;
+			productReference = A02351F33820719CB731C2BD30A59077 /* Pods_CryptoWalletTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		362AFD26749412319BDCE19AE4733D5C /* Pods-CryptoWalletUITests */ = {
@@ -344,35 +405,36 @@
 			);
 			name = "Pods-CryptoWalletUITests";
 			productName = "Pods-CryptoWalletUITests";
-			productReference = 5C524D9269DB34FD9DD4F6547870F04A /* Pods_CryptoWalletUITests.framework */;
+			productReference = A0C131ECD89A4BB47CDF3731D3478473 /* Pods_CryptoWalletUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		639E067E52FE675651EDD349C26CE22E /* Pods-CryptoWallet */ = {
+		37761AFCD635CD6B02285598507D3D7C /* Pods-CryptoWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87116B9AB7CE515FB6BC2750EA53B60A /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */;
+			buildConfigurationList = 48A38930090C3BCDB4A9B402FD10D8CA /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */;
 			buildPhases = (
-				BDCD2736580622C97193B7920FC49FFF /* Sources */,
-				2573C984458175A4D3DD0D4C0BBA3DB1 /* Frameworks */,
-				7BBD3258FD182BB6E5A7690A447EDFB9 /* Headers */,
+				0295E7C481A96F2B94A9F09E2DA6A881 /* Sources */,
+				AC196D067369EDBCB740A45F99921603 /* Frameworks */,
+				364C5C6D17F390F9B0B1F4000E653F9E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				80E5005D4007F6023CF68846FF60B278 /* PBXTargetDependency */,
+				D357717E0F6F7A9FD9935C9A410679E4 /* PBXTargetDependency */,
+				E922D31038BE70F0733A704C58062D4F /* PBXTargetDependency */,
 			);
 			name = "Pods-CryptoWallet";
 			productName = "Pods-CryptoWallet";
-			productReference = 8977ADB82A794A9DAC832F03FE8DA632 /* Pods_CryptoWallet.framework */;
+			productReference = A2FB39C512B37E6CBA3B69E62869AADA /* Pods_CryptoWallet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FF499AAC3D9F8F3D5DC4E3CAD97A67AE /* SmileLock */ = {
+		3B12820239252DE4D251F766EF9C9330 /* SmileLock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C886290C34DCD6E764A85F5EAB70E6D0 /* Build configuration list for PBXNativeTarget "SmileLock" */;
+			buildConfigurationList = 4A4346AC2695857D90D1FBCB18BEBF90 /* Build configuration list for PBXNativeTarget "SmileLock" */;
 			buildPhases = (
-				BCBF6C7259B8F018592596E68E85C140 /* Sources */,
-				72E00F33565FF5442020B0F5AD91BD41 /* Frameworks */,
-				80EF8CC0FE42E9E7747A43C1A8105157 /* Resources */,
-				689E2880D07FC5697261D79583AEA23B /* Headers */,
+				78F93FB2E3A5203646E2A07F5652AF86 /* Sources */,
+				31B7A3E2A2271FDB914871270C828410 /* Frameworks */,
+				DFEB4135558068E19F3F5A17021368BD /* Resources */,
+				6D66852AE8AF8E43F8EB1FCAA3775CD0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -380,7 +442,24 @@
 			);
 			name = SmileLock;
 			productName = SmileLock;
-			productReference = B3C5646947064079DCABCEA070AB6E3D /* SmileLock.framework */;
+			productReference = 8329BC8010078E488FAF1C7A2447ABA7 /* SmileLock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA048BBEA093CDB3F69C5B36929A5AF /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
+			buildPhases = (
+				D26A24617ECAE11F29337DC26BE0E14F /* Sources */,
+				2DDC844C06D46A3907C42C9964BC7434 /* Frameworks */,
+				93DE0E803396B824DE9F75CA3683CEC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainAccess;
+			productName = KeychainAccess;
+			productReference = 2AF849788662BD4824D9F14AC23F671C /* KeychainAccess.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -400,36 +479,57 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 702509D7D101E142468A7A826129C60F /* Products */;
+			productRefGroup = 3F0C94D3277265D1B49D9C6FE0BBE67C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				639E067E52FE675651EDD349C26CE22E /* Pods-CryptoWallet */,
+				8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */,
+				37761AFCD635CD6B02285598507D3D7C /* Pods-CryptoWallet */,
 				22A9AD7EFB6F8A10C51155DEF6BF41E7 /* Pods-CryptoWalletTests */,
 				362AFD26749412319BDCE19AE4733D5C /* Pods-CryptoWalletUITests */,
-				FF499AAC3D9F8F3D5DC4E3CAD97A67AE /* SmileLock */,
+				3B12820239252DE4D251F766EF9C9330 /* SmileLock */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		80EF8CC0FE42E9E7747A43C1A8105157 /* Resources */ = {
+		DFEB4135558068E19F3F5A17021368BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8BDE0230640BD60B8DB9B67D1B9DF82 /* Assets.xcassets in Resources */,
-				5E397835A1C80E324C32219F18ED42C9 /* PasswordContainerView.xib in Resources */,
+				E69BF57C8429E4BE8F3C4CF403339B40 /* Assets.xcassets in Resources */,
+				72DB6A4773D420EA80C9BFEE4361B880 /* PasswordContainerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0295E7C481A96F2B94A9F09E2DA6A881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4757F864CE1CF942F22FC41BFF87616B /* Pods-CryptoWallet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		412EE2A0CDD9A51C6FE627ED8450D1D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0F73EE69CA65AD87F653ECB38D2DD662 /* Pods-CryptoWalletUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F93FB2E3A5203646E2A07F5652AF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0A9BBA8B9D6B95488A54535B40D40C /* PasswordContainerView.swift in Sources */,
+				C0CB202F1403F6C89AAEE9E8DBA92BAF /* PasswordDotView.swift in Sources */,
+				D58DFFA5A49B62EC9A74ABFA055E9B52 /* PasswordInputView.swift in Sources */,
+				ED6806BA4CD488BA812188F6DB64BB82 /* PasswordUIValidation.swift in Sources */,
+				5AA6D699D724C3D21992B35931AACC84 /* SmileLock-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,34 +541,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCBF6C7259B8F018592596E68E85C140 /* Sources */ = {
+		D26A24617ECAE11F29337DC26BE0E14F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865EF9A3640F90B5045561D03070D8FD /* PasswordContainerView.swift in Sources */,
-				FEFAACB6A20237DC755D96438600829B /* PasswordDotView.swift in Sources */,
-				F57B2021418866A577D92DA730F4C038 /* PasswordInputView.swift in Sources */,
-				722AEEEC2B2A9F7A680DCE59DED15875 /* PasswordUIValidation.swift in Sources */,
-				E8388035D5F3A428EEE27D72C899F23A /* SmileLock-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BDCD2736580622C97193B7920FC49FFF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A760AAF2E763023B3434EA45A0D05C8 /* Pods-CryptoWallet-dummy.m in Sources */,
+				A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */,
+				D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		80E5005D4007F6023CF68846FF60B278 /* PBXTargetDependency */ = {
+		D357717E0F6F7A9FD9935C9A410679E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */;
+			targetProxy = BFA259284EF0BFA4514E21C65F610E61 /* PBXContainerItemProxy */;
+		};
+		E922D31038BE70F0733A704C58062D4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SmileLock;
-			target = FF499AAC3D9F8F3D5DC4E3CAD97A67AE /* SmileLock */;
-			targetProxy = AEDFBE3E6F78EEA4BBFE63598D0D8A6B /* PBXContainerItemProxy */;
+			target = 3B12820239252DE4D251F766EF9C9330 /* SmileLock */;
+			targetProxy = 98BB6B661F6EBA1461DA864FAB7975E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,16 +616,16 @@
 			};
 			name = Debug;
 		};
-		203183CB3D0FB310634442D98B22F104 /* Release */ = {
+		3E427D5C8B85982000963E413ED5FC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F63D0F03EC5DACB131BAD875BF297A5A /* SmileLock.xcconfig */;
+			baseConfigurationReference = 49310F642D9C7716276D3245851F51D1 /* SmileLock.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -543,17 +638,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SmileLock/SmileLock.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SmileLock;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		4396A1DA505AB1F75691135CE589FB12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -627,9 +723,9 @@
 			};
 			name = Debug;
 		};
-		5C898DB7E92EE19671CB0235B514CF3C /* Release */ = {
+		5D1EF0EEA9E7592464C2DA715B51F0D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */;
+			baseConfigurationReference = F6B74ECD01A88BF2D99847036A666115 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -643,18 +739,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CryptoWallet;
+				PRODUCT_NAME = KeychainAccess;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -701,9 +793,9 @@
 			};
 			name = Release;
 		};
-		6FB6A72FAED3CE4705E710C2C62B5E00 /* Debug */ = {
+		6F0E3AFF89829A02394174F41FF2385A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F63D0F03EC5DACB131BAD875BF297A5A /* SmileLock.xcconfig */;
+			baseConfigurationReference = 1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -717,14 +809,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SmileLock/SmileLock-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SmileLock/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SmileLock/SmileLock.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SmileLock;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CryptoWallet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -780,9 +876,43 @@
 			};
 			name = Release;
 		};
-		A38C4CC2718C7F7225FE279CB99C4E01 /* Debug */ = {
+		8AC0E0488D47E9FE46CB4C53A78C362F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */;
+			baseConfigurationReference = 49310F642D9C7716276D3245851F51D1 /* SmileLock.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SmileLock/SmileLock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmileLock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SmileLock/SmileLock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SmileLock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8EF332157F2A8DD5CD47E36379D47393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B74ECD01A88BF2D99847036A666115 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -796,18 +926,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CryptoWallet;
+				PRODUCT_NAME = KeychainAccess;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -855,6 +981,44 @@
 			};
 			name = Release;
 		};
+		BDA2EA2492F744A1080EEC36D87FA93B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CryptoWallet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -863,6 +1027,24 @@
 			buildConfigurations = (
 				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
 				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A38930090C3BCDB4A9B402FD10D8CA /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0E3AFF89829A02394174F41FF2385A /* Debug */,
+				BDA2EA2492F744A1080EEC36D87FA93B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A4346AC2695857D90D1FBCB18BEBF90 /* Build configuration list for PBXNativeTarget "SmileLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E427D5C8B85982000963E413ED5FC28 /* Debug */,
+				8AC0E0488D47E9FE46CB4C53A78C362F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -876,11 +1058,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87116B9AB7CE515FB6BC2750EA53B60A /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */ = {
+		9FA048BBEA093CDB3F69C5B36929A5AF /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A38C4CC2718C7F7225FE279CB99C4E01 /* Debug */,
-				5C898DB7E92EE19671CB0235B514CF3C /* Release */,
+				8EF332157F2A8DD5CD47E36379D47393 /* Debug */,
+				5D1EF0EEA9E7592464C2DA715B51F0D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -890,15 +1072,6 @@
 			buildConfigurations = (
 				4396A1DA505AB1F75691135CE589FB12 /* Debug */,
 				65E5167D8B9513D9561C92606E37DAD0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C886290C34DCD6E764A85F5EAB70E6D0 /* Build configuration list for PBXNativeTarget "SmileLock" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FB6A72FAED3CE4705E710C2C62B5E00 /* Debug */,
-				203183CB3D0FB310634442D98B22F104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
