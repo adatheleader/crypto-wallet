@@ -1,15 +1,12 @@
 PODS:
   - KeychainAccess (3.0.2)
-  - SmileLock (2.0.2)
 
 DEPENDENCIES:
   - KeychainAccess
-  - SmileLock
 
 SPEC CHECKSUMS:
   KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
-  SmileLock: 7ae1e174b4697c0a33882dab838fc0bea94432f4
 
-PODFILE CHECKSUM: 6701bc964cb3e0336617683a61d62d5c01c5d3e0
+PODFILE CHECKSUM: 2eab99c412f0fea03763eacef6d79c3b7291b2e2
 
 COCOAPODS: 1.2.1

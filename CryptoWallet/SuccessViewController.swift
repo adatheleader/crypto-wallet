@@ -14,23 +14,25 @@ class SuccessViewController: UIViewController {
     @IBOutlet weak var walletLabel: UILabel!
     @IBOutlet weak var imgQRCode: UIImageView!
     
-    let wallet: String = "0xe57f8723ecce747177ebf8037\nc3658c2beab57a5"
-    var providedKey: String!
+    var wallet: String!
+//    var providedKey: String!
     
     var qrcodeImage: CIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.walletLabel.text = self.wallet
-        self.displayQRCodeImage()
+        self.wallet = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
         
-        self.saveToKeychain(service: "com.example.sandcoin-wallet", value: self.wallet, key: "wallet")
-        
-        let when = DispatchTime.now() + 5 // change 2 to desired number of seconds
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            self.providedKey = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
-            print(self.providedKey)
+        if self.wallet == nil {
+            self.wallet = Bitcoin.newPrivateKey()
+            self.saveToKeychain(service: "com.example.sandcoin-wallet", value: self.wallet, key: "wallet")
+            self.displayQRCodeImage()
+            self.walletLabel.text = self.wallet
+        } else {
+            print(self.wallet)
+            self.displayQRCodeImage()
+            self.walletLabel.text = self.wallet
         }
         
         // Do any additional setup after loading the view.
@@ -53,7 +55,7 @@ class SuccessViewController: UIViewController {
     }
     
     func displayQRCodeImage() {
-        self.imgQRCode.image = self.generateQRCode(from: self.walletLabel.text!)
+        self.imgQRCode.image = self.generateQRCode(from: self.wallet)
     }
     
     func saveToKeychain(service: String, value: String, key: String){

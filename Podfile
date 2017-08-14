@@ -6,7 +6,6 @@ target 'CryptoWallet' do
   use_frameworks!
 
   # Pods for CryptoWallet
-  pod 'SmileLock'
   pod 'KeychainAccess'
 
   target 'CryptoWalletTests' do
