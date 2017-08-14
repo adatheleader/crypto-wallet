@@ -14,7 +14,7 @@ class SuccessViewController: UIViewController {
     @IBOutlet weak var walletLabel: UILabel!
     @IBOutlet weak var imgQRCode: UIImageView!
     
-    let wallet: String = "0xe57f8723ecce747177ebf8037c3658c2beab57a5"
+    let wallet: String = "0xe57f8723ecce747177ebf8037\nc3658c2beab57a5"
     var providedKey: String!
     
     var qrcodeImage: CIImage!
@@ -27,11 +27,11 @@ class SuccessViewController: UIViewController {
         
         self.saveToKeychain(service: "com.example.sandcoin-wallet", value: self.wallet, key: "wallet")
         
-//        let when = DispatchTime.now() + 5 // change 2 to desired number of seconds
-//        DispatchQueue.main.asyncAfter(deadline: when) {
-//            self.providedKey = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
-//            print(self.providedKey)
-//        }
+        let when = DispatchTime.now() + 5 // change 2 to desired number of seconds
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.providedKey = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
+            print(self.providedKey)
+        }
         
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)

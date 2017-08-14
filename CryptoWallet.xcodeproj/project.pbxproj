@@ -18,6 +18,7 @@
 		359B30621F223F9D00B4E476 /* CryptoWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30611F223F9D00B4E476 /* CryptoWalletUITests.swift */; };
 		359B30711F22438000B4E476 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359B30701F22438000B4E476 /* LocalAuthentication.framework */; };
 		359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30741F2246B000B4E476 /* SuccessViewController.swift */; };
+		35CF95921F41B56300AE3560 /* Bitcoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF95911F41B56300AE3560 /* Bitcoin.swift */; };
 		3E013BA52D994643696C1BDF /* Pods_CryptoWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B622F097C6ED317E6ECB0B47 /* Pods_CryptoWalletTests.framework */; };
 		46963603F7ACC87167045F01 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246E199380B476D0EDBA3B7B /* Pods_CryptoWallet.framework */; };
 		907C13E79FF60152D3F68143 /* Pods_CryptoWalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099394C3EC7342DEB6B3CA34 /* Pods_CryptoWalletUITests.framework */; };
@@ -62,6 +63,7 @@
 		359B30631F223F9D00B4E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		359B30701F22438000B4E476 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		359B30741F2246B000B4E476 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		35CF95911F41B56300AE3560 /* Bitcoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitcoin.swift; sourceTree = "<group>"; };
 		4BCC23B714C4BA37F1E41EE1 /* Pods-CryptoWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoWalletUITests/Pods-CryptoWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A3A5831B1CFB34FE167BE09D /* Pods-CryptoWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoWalletUITests/Pods-CryptoWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B07302467026F346D3754309 /* Pods-CryptoWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoWalletTests/Pods-CryptoWalletTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				359B30741F2246B000B4E476 /* SuccessViewController.swift */,
 				3510175B1F262994002B23F8 /* SignUpTableViewController.swift */,
 				3510175D1F263AB7002B23F8 /* Wallet.storyboard */,
+				35CF95911F41B56300AE3560 /* Bitcoin.swift */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359B30441F223F9D00B4E476 /* ViewController.swift in Sources */,
+				35CF95921F41B56300AE3560 /* Bitcoin.swift in Sources */,
 				359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */,
 				359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */,
 				3510175C1F262994002B23F8 /* SignUpTableViewController.swift in Sources */,
