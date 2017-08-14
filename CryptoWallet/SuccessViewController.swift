@@ -11,7 +11,7 @@ import KeychainAccess
 
 class SuccessViewController: UIViewController {
     
-    @IBOutlet weak var walletLabel: UILabel!
+    @IBOutlet weak var walletLabel: CopyableLabel!
     @IBOutlet weak var imgQRCode: UIImageView!
     
     var wallet: String!
