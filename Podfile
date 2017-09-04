@@ -7,7 +7,6 @@ target 'CryptoWallet' do
 
   # Pods for CryptoWallet
   pod 'KeychainAccess'
-  pod 'CoreBitcoin', :podspec => 'https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec'
 
   target 'CryptoWalletTests' do
     inherit! :search_paths
