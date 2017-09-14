@@ -7,6 +7,7 @@ target 'CryptoWallet' do
 
   # Pods for CryptoWallet
   pod 'KeychainAccess'
+  pod 'SwiftyRSA'
 
   target 'CryptoWalletTests' do
     inherit! :search_paths

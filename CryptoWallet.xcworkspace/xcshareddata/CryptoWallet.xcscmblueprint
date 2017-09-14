@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1B75F27800624EEBD2089416D89338AAC416352D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C0989D8CDFAE5BEB0C1E5EC1FEA67B5EDE468028" : 9223372036854775807,
+    "0E0A98171E336D1655B102FE87F6C416C1D752A9" : 9223372036854775807,
+    "18B8219E59FE6F19D6ED3E061B1867E4229689E1" : 9223372036854775807,
+    "1B75F27800624EEBD2089416D89338AAC416352D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F40CE89F-A125-42B8-A142-A78587948E50",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C0989D8CDFAE5BEB0C1E5EC1FEA67B5EDE468028" : "BitcoinKit\/",
+    "0E0A98171E336D1655B102FE87F6C416C1D752A9" : "CoreBitcoin\/",
+    "18B8219E59FE6F19D6ED3E061B1867E4229689E1" : "BitcoinKit\/avian\/",
+    "1B75F27800624EEBD2089416D89338AAC416352D" : "CryptoWallet\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CryptoWallet",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CryptoWallet.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oleganza\/CoreBitcoin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0E0A98171E336D1655B102FE87F6C416C1D752A9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ReadyTalk\/avian.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "18B8219E59FE6F19D6ED3E061B1867E4229689E1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:adatheleader\/crypto-wallet.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1B75F27800624EEBD2089416D89338AAC416352D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hivewallet\/BitcoinKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C0989D8CDFAE5BEB0C1E5EC1FEA67B5EDE468028"
+    }
+  ]
+}
