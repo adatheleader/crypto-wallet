@@ -39,7 +39,7 @@ class SignUpTableViewController: UITableViewController, UITextFieldDelegate {
     }
     
     //MARK: - Keyboard disappears on touching anywhere
-    func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     

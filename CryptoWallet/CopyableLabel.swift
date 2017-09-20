@@ -24,7 +24,7 @@ class CopyableLabel: UILabel {
         isUserInteractionEnabled = true
         addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(showMenu)))
     }
-    func showMenu(sender: AnyObject?) {
+    @objc func showMenu(sender: AnyObject?) {
         becomeFirstResponder()
         let menu = UIMenuController.shared
         if !menu.isMenuVisible {
