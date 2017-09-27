@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IDZSwiftCommonCrypto.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KeychainAccess.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -31,32 +36,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>22A9AD7EFB6F8A10C51155DEF6BF41E7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>362AFD26749412319BDCE19AE4733D5C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>66CE099800D1E73BE0BD9E43E36CC2AE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>85D4842A8B93754DB325D64527065F55</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8905DB6521F8FDC34752B69DEE3FDEB7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

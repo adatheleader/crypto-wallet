@@ -9,6 +9,7 @@
 import UIKit
 import KeychainAccess
 
+
 class SuccessViewController: UIViewController {
     
     @IBOutlet weak var walletLabel: CopyableLabel!

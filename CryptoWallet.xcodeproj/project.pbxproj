@@ -10,6 +10,8 @@
 		3510175C1F262994002B23F8 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510175B1F262994002B23F8 /* SignUpTableViewController.swift */; };
 		3510175E1F263AB7002B23F8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3510175D1F263AB7002B23F8 /* Wallet.storyboard */; };
 		35688A7C1F41C337004EB4F4 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35688A7B1F41C337004EB4F4 /* CopyableLabel.swift */; };
+		358B1CEE1F793F0F007D3D94 /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1CED1F793F0F007D3D94 /* Base58.swift */; };
+		358B1CF01F7954E5007D3D94 /* TestRawTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1CEF1F7954E5007D3D94 /* TestRawTransaction.swift */; };
 		359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30411F223F9D00B4E476 /* AppDelegate.swift */; };
 		359B30471F223F9D00B4E476 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B30451F223F9D00B4E476 /* Login.storyboard */; };
 		359B30491F223F9D00B4E476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B30481F223F9D00B4E476 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		3510175B1F262994002B23F8 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		3510175D1F263AB7002B23F8 /* Wallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		35688A7B1F41C337004EB4F4 /* CopyableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
+		358B1CED1F793F0F007D3D94 /* Base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
+		358B1CEF1F7954E5007D3D94 /* TestRawTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRawTransaction.swift; sourceTree = "<group>"; };
 		359B303E1F223F9D00B4E476 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30411F223F9D00B4E476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				3510175D1F263AB7002B23F8 /* Wallet.storyboard */,
 				35CF95911F41B56300AE3560 /* Bitcoin.swift */,
 				35688A7B1F41C337004EB4F4 /* CopyableLabel.swift */,
+				358B1CED1F793F0F007D3D94 /* Base58.swift */,
+				358B1CEF1F7954E5007D3D94 /* TestRawTransaction.swift */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -365,11 +371,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IDZSwiftCommonCrypto/IDZSwiftCommonCrypto.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDZSwiftCommonCrypto.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
 			);
@@ -481,7 +489,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358B1CF01F7954E5007D3D94 /* TestRawTransaction.swift in Sources */,
 				35688A7C1F41C337004EB4F4 /* CopyableLabel.swift in Sources */,
+				358B1CEE1F793F0F007D3D94 /* Base58.swift in Sources */,
 				35CF95921F41B56300AE3560 /* Bitcoin.swift in Sources */,
 				359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */,
 				359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */,
