@@ -8,6 +8,7 @@
 
 import UIKit
 import KeychainAccess
+import SwiftyRSA
 
 
 class SuccessViewController: UIViewController {
@@ -23,7 +24,8 @@ class SuccessViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.wallet = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
+        try? self.createKeyPair()
+        /*self.wallet = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
         
         if self.wallet == nil {
             self.wallet = Bitcoin.newPrivateKey()
@@ -34,7 +36,7 @@ class SuccessViewController: UIViewController {
             print(self.wallet)
             self.displayQRCodeImage()
             self.walletLabel.text = self.wallet
-        }
+        }*/
         
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -81,6 +83,35 @@ class SuccessViewController: UIViewController {
         } catch _ {
             // Error handling if needed...
         }
+    }
+    
+    func createKeyPair() throws {
+        print("createKeyPair started")
+        let tag = "com.example.keys.mykey".data(using: .utf8)!
+        let attributes: [String: Any] =
+            [kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
+             kSecAttrKeySizeInBits as String: 256,
+             kSecPrivateKeyAttrs as String:
+                [kSecAttrIsPermanent as String: true,
+                 kSecAttrApplicationTag as String: tag]
+        ]
+        var error: Unmanaged<CFError>?
+        guard let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error) else {
+            print("createKeyPair throws an error")
+            throw error!.takeRetainedValue() as Error
+        }
+        let publicKey = SecKeyCopyPublicKey(privateKey)
+    
+        var error2: Unmanaged<CFError>?
+        guard let data = SecKeyCopyExternalRepresentation(publicKey!, &error2) as Data? else {
+            throw error!.takeRetainedValue() as Error
+        }
+        
+        let nsdataStr = NSData.init(data: data)
+//        let pbKeyStr = nsdataStr.description.trimmingCharacters(in: characterSet).replacingOccurrences(of: " ", width: "")
+        let pbKeyStr = nsdataStr.base64EncodedString(options: .lineLength64Characters)
+        let base58Str = pbKeyStr.base58String
+        print(base58Str as Any)
     }
     
 
