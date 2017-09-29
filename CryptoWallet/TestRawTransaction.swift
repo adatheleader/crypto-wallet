@@ -10,7 +10,7 @@ import Foundation
 import IDZSwiftCommonCrypto
 
 
-/*let publicKey = SecTrustCopyPublicKey(trust)
+/*
 
 let Bob_addr = "1NWzVg38ggPoVGAG2VWt6ktdWMaV6S1pJK"
 

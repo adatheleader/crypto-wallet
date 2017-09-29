@@ -9,6 +9,7 @@
 import Foundation
 import SwiftyRSA
 
+
 class Bitcoin {
     
     class func randomHexDigit() -> Character {

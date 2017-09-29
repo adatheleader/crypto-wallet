@@ -8,7 +8,6 @@
 
 import UIKit
 import KeychainAccess
-import SwiftyRSA
 
 
 class SuccessViewController: UIViewController {
@@ -24,7 +23,7 @@ class SuccessViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        try? self.createKeyPair()
+        //try? self.createKeyPair()
         /*self.wallet = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
         
         if self.wallet == nil {

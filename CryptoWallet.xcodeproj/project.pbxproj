@@ -54,6 +54,7 @@
 		357623231F7BD6D4000146C0 /* CoreBitcoinOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreBitcoinOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		358B1CED1F793F0F007D3D94 /* Base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
 		358B1CEF1F7954E5007D3D94 /* TestRawTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRawTransaction.swift; sourceTree = "<group>"; };
+		3593B93C1F7E5B880064F4DB /* CoreBitcoin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreBitcoin; path = ../CoreBitcoin; sourceTree = "<group>"; };
 		359B303E1F223F9D00B4E476 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30411F223F9D00B4E476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 		359B306F1F22438000B4E476 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3593B93C1F7E5B880064F4DB /* CoreBitcoin */,
 				357623231F7BD6D4000146C0 /* CoreBitcoinOSX.framework */,
 				359B30701F22438000B4E476 /* LocalAuthentication.framework */,
 				246E199380B476D0EDBA3B7B /* Pods_CryptoWallet.framework */,
