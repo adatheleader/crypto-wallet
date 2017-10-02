@@ -3,7 +3,9 @@
 //
 #import "BTCKey.h"
 #import "BTCAddress.h"
-
+#import "BTCCurvePoint.h"
+#import "BTCData.h"
+#import "BTCBigNumber.h"
 #include <CommonCrypto/CommonCrypto.h>
 #include <openssl/ec.h>
 #include <openssl/ecdsa.h>

@@ -63,6 +63,14 @@ class SuccessViewController: UIViewController {
         let address = newKey?.address.string
         let privateKey = newKey?.privateKey
         let publicKey = newKey?.publicKey
+        let base58PrivateKey = newKey?.wif
+        let privateKeyData:NSData = BTCHash256(base58PrivateKey?.data(using: String.Encoding.utf8))
+        let hexPrivateKey = BTCHexFromData(privateKeyData as Data!)
+        
+        let newNumber:BTCBigNumber = BTCBigNumber.init(unsignedBigEndian: privateKeyData as Data!)
+        let keyToSign:BTCKey = BTCKey.init(privateKey: privateKeyData as Data!)
+        let newSharedSecret:BTCCurvePoint = keyToSign.curvePoint
+        
         defaults.set(address, forKey: "btcAddress")
         defaults.set(privateKey, forKey: "privateKey")
         defaults.set(publicKey, forKey: "publicKey")
