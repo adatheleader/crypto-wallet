@@ -6,9 +6,7 @@ target 'CryptoWallet' do
   use_frameworks!
 
   # Pods for CryptoWallet
-  pod 'KeychainAccess'
-  pod 'SwiftyRSA'
-  pod 'IDZSwiftCommonCrypto', '~> 0.9.1'
+  pod 'OpenSSL-Universal'
 
   target 'CryptoWalletTests' do
     inherit! :search_paths

@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import KeychainAccess
-
 
 class SuccessViewController: UIViewController {
     
@@ -20,22 +18,21 @@ class SuccessViewController: UIViewController {
     
     var qrcodeImage: CIImage!
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //try? self.createKeyPair()
-        /*self.wallet = self.getItemFromKeychain(service: "com.example.sandcoin-wallet", key: "wallet")
-        
-        if self.wallet == nil {
-            self.wallet = Bitcoin.newPrivateKey()
-            self.saveToKeychain(service: "com.example.sandcoin-wallet", value: self.wallet, key: "wallet")
-            self.displayQRCodeImage()
+        let defaults = UserDefaults.standard
+        if let btcAddress = defaults.string(forKey: "btcAddress") {
+            self.wallet = btcAddress
             self.walletLabel.text = self.wallet
+            self.displayQRCodeImage()
         } else {
-            print(self.wallet)
-            self.displayQRCodeImage()
+            self.createKeyPairAndAddress()
+            self.wallet = defaults.string(forKey: "btcAddress")
             self.walletLabel.text = self.wallet
-        }*/
+            self.displayQRCodeImage()
+        }
         
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -57,60 +54,18 @@ class SuccessViewController: UIViewController {
     }
     
     func displayQRCodeImage() {
-        self.imgQRCode.image = self.generateQRCode(from: self.wallet)
+        self.imgQRCode.image = self.generateQRCode(from: self.wallet!)
     }
     
-    func saveToKeychain(service: String, value: String, key: String){
-        let keychain = Keychain(service: service).synchronizable(true)
-        keychain[string: key] = value
-    }
-    
-    
-    func getItemFromKeychain(service: String, key: String) -> String {
-        let keychain = Keychain(service: service).synchronizable(true)
-        
-        let providedKey:String = keychain[string: key]!
-        
-        return providedKey
-    }
-    
-    func removeItemFromKeychain(service: String, key: String){
-        let keychain = Keychain(service: service).synchronizable(true)
-        
-        do {
-            try keychain.remove(key)
-        } catch _ {
-            // Error handling if needed...
-        }
-    }
-    
-    func createKeyPair() throws {
-        print("createKeyPair started")
-        let tag = "com.example.keys.mykey".data(using: .utf8)!
-        let attributes: [String: Any] =
-            [kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
-             kSecAttrKeySizeInBits as String: 256,
-             kSecPrivateKeyAttrs as String:
-                [kSecAttrIsPermanent as String: true,
-                 kSecAttrApplicationTag as String: tag]
-        ]
-        var error: Unmanaged<CFError>?
-        guard let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error) else {
-            print("createKeyPair throws an error")
-            throw error!.takeRetainedValue() as Error
-        }
-        let publicKey = SecKeyCopyPublicKey(privateKey)
-    
-        var error2: Unmanaged<CFError>?
-        guard let data = SecKeyCopyExternalRepresentation(publicKey!, &error2) as Data? else {
-            throw error!.takeRetainedValue() as Error
-        }
-        
-        let nsdataStr = NSData.init(data: data)
-//        let pbKeyStr = nsdataStr.description.trimmingCharacters(in: characterSet).replacingOccurrences(of: " ", width: "")
-        let pbKeyStr = nsdataStr.base64EncodedString(options: .lineLength64Characters)
-        let base58Str = pbKeyStr.base58String
-        print(base58Str as Any)
+    func createKeyPairAndAddress() {
+        let defaults = UserDefaults.standard
+        let newKey = BTCKey()
+        let address = newKey?.address.string
+        let privateKey = newKey?.privateKey
+        let publicKey = newKey?.publicKey
+        defaults.set(address, forKey: "btcAddress")
+        defaults.set(privateKey, forKey: "privateKey")
+        defaults.set(publicKey, forKey: "publicKey")
     }
     
 

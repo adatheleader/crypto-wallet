@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>IDZSwiftCommonCrypto.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>KeychainAccess.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-CryptoWallet.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,11 +15,6 @@
 			<false/>
 		</dict>
 		<key>Pods-CryptoWalletUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftyRSA.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

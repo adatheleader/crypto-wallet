@@ -1,20 +1,12 @@
 PODS:
-  - IDZSwiftCommonCrypto (0.9.2)
-  - KeychainAccess (3.0.2)
-  - SwiftyRSA (1.2.0):
-    - SwiftyRSA/ObjC (= 1.2.0)
-  - SwiftyRSA/ObjC (1.2.0)
+  - OpenSSL-Universal (1.0.2.10)
 
 DEPENDENCIES:
-  - IDZSwiftCommonCrypto (~> 0.9.1)
-  - KeychainAccess
-  - SwiftyRSA
+  - OpenSSL-Universal
 
 SPEC CHECKSUMS:
-  IDZSwiftCommonCrypto: 671867eabeeee3a2c2395c2152fe3d4349ffc062
-  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
-  SwiftyRSA: 29221dba76837bf09e965ba7584e5919ea153c6f
+  OpenSSL-Universal: 6dc366764e8bf6ca93c60bd767d9103146a3b3b6
 
-PODFILE CHECKSUM: 5ed44fae80ed046d57fe0856ab55cfc4ff99a6c2
+PODFILE CHECKSUM: 127702f85d039c66a587beb32e11396daded9b1e
 
 COCOAPODS: 1.3.1
