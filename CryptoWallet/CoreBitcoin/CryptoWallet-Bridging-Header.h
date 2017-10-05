@@ -6,6 +6,7 @@
 #import "BTCCurvePoint.h"
 #import "BTCData.h"
 #import "BTCBigNumber.h"
+#import "SRWebSocket.h"
 #include <CommonCrypto/CommonCrypto.h>
 #include <openssl/ec.h>
 #include <openssl/ecdsa.h>
