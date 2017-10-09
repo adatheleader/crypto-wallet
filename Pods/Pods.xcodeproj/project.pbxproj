@@ -8,137 +8,161 @@
 
 /* Begin PBXBuildFile section */
 		0F73EE69CA65AD87F653ECB38D2DD662 /* Pods-CryptoWalletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A359AC56C6AEE7F90F39BFA7812189C /* Pods-CryptoWalletUITests-dummy.m */; };
+		1326619BA2332087B136E3B38E3DAEFA /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9ACC10640724C31B654C88215E24789 /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EE3D3F3223F50ACF326C910C229CF0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3A658AF7C26B16E208923A08EC49C72A /* Pods-CryptoWallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */; };
+		2533AD22C9BD5190286A8E337640E7FB /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1FF1FBCEA51F2BCB6004B373A8D644 /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6273578DFDAE68EA7C6BCE68993EC8A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		65B935949C62AC953DED6F0B43179AD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8F0261A85BD69C0B82C4F11939DDC82F /* Pods-CryptoWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90659688AA687236345BDDD761B016A3 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15CADA8E3FB38315221ED947ACB582 /* RNCryptor.swift */; };
 		9C211A47F6F5A2AA055E20E7A30BF2E6 /* Pods-CryptoWalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A692D8D9527711EFEC750AB3B2CB0F59 /* Pods-CryptoWalletTests-dummy.m */; };
 		AC165DFD8CBBF275F286CA52C533CFA3 /* Pods-CryptoWalletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 398B4613349DBD957B64337F3E863A00 /* Pods-CryptoWalletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD84808591F9F060C031CA9115BB11F8 /* Pods-CryptoWalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE0EF87D1D1FB99DD53AEC60DF1A3C2 /* Pods-CryptoWalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3716140EC447B8BE38495C98C3DB71D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C291F894645EBD98E63CE8452DE8AF39 /* Pods-CryptoWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C10D49DF7B71FE61EA787AA83C5081A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		ECDB7ADF4C89E39775483A243DCD067D /* Pods-CryptoWallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */; };
+		F5D180D002DD6C0A8ED439D8A8027C3C /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01BBFC342E1348D99D6A43A1C4215C /* RNCryptor-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		133C9D91C94172120A0356A7581B032E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F6115F8FCE873DF939FE5553AEF240E;
+			remoteInfo = RNCryptor;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		05EBA37A156BBAC8D967F2443FFADD38 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
-		0CC276B068BE0B40C11F6E08A3D9C460 /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
-		0EC61D8DF7E9D420715C4D815AC00AFB /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
+		0196C6678DF3D332EF569E65E0D1F6E1 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		025517F077216904F351BF12EC60BFBD /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		02C4ACF99F6516FBA5DE05296A84C3E3 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
+		03A4187118BFC2DA45D5D950CCD1B9BD /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
+		06EE98B23906E51D8612CD6046EF3382 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
+		0CFBDA1C357F97A9D23E85606915F428 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
+		0D7514301482790A9B64F5250A4F04D9 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
+		0E1FF1FBCEA51F2BCB6004B373A8D644 /* RNCryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		0F01BBFC342E1348D99D6A43A1C4215C /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
 		10FDC7E789B0F629809BE7331ACE09BD /* Pods-CryptoWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1138B2A6ED34D61B38D9CAD40188415B /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
-		125DC9CF9D194153BB3681F0527E7911 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
-		1446C98ADD9E5B3A83B618748B597F8A /* Pods_CryptoWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A99FF012603BD86D14B0314298B4891 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
-		1AAED8B0503256FE33A986F11DC17E69 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
-		1AAF2EF94E4E151D60524AEF479AD0F9 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
+		1353BDFBC9481C85D0CECC0FA59BC4E6 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
+		13A4E755D05492306DDF8648A98D4F65 /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
+		1695A12D29C453A555980B3BDD68CEDA /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
+		1AC17D0C94B39A253D3828354B5DF070 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
 		1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
-		1D6E85AEEEC575C1EBE448C71C709F3C /* Pods-CryptoWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CryptoWallet.modulemap"; sourceTree = "<group>"; };
-		1E3ED5FEA135AF9F40B9235B7082240C /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
-		211244E7A467965B40CAD7766BE34D64 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
-		26F6FA0E3B396CADD51BE90D86AD2236 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
-		30D7B40B1AA893963A6D26C17A36AEEE /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
-		31D2F954D6701EA14466B74C73CE8CC8 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
+		1C1416EE385678D1096F5EA609F31FEC /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
+		1D6E85AEEEC575C1EBE448C71C709F3C /* Pods-CryptoWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWallet.modulemap"; sourceTree = "<group>"; };
+		1ED66B382749054B98DBCE6782C24162 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
+		227A8EC9BDF261071E0DFCEEA1B0AFEF /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
+		233C201423A25675F079AB94DAF26E95 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
+		249CA25729C1185C2A8D6F671B654B50 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
+		27619CCA311840877343CA4D45EAA1ED /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
+		27B838FA852689C673FA3CA2FC1B5A37 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWallet.framework; path = "Pods-CryptoWallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A4636D3426093D4FEE7C45123A9D44 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
+		2FB15591D3F44819CF3C14A4CB53B12F /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
+		3019E911AC79C87FD32BF86B45CCC62E /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RNCryptor.modulemap; sourceTree = "<group>"; };
 		329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWallet-umbrella.h"; sourceTree = "<group>"; };
-		32BBF2EE81E36FB9261DD38E35B3870E /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
-		33E59B0F713C2869DA6EE2EA0DA0D2C5 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
 		348B623A1DE26898A6BE17FB383FD9E6 /* Pods-CryptoWallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWallet-frameworks.sh"; sourceTree = "<group>"; };
-		34BD9D4DB4BB4BFB7CB7EC0AD5D9D714 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
-		36A4BA55538B26DF87120ABC9F044825 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
-		37A2DA3005C7C2250225C1D5BD15646E /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
+		3529E5FA84DB906E0F42B8A7E6754ACB /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
+		36CF85419E245C0DEC5A5D01278DEE22 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
+		36D03ABFF7F73F28901814B5DDDE4CBF /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
 		398B4613349DBD957B64337F3E863A00 /* Pods-CryptoWalletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWalletUITests-umbrella.h"; sourceTree = "<group>"; };
-		39C9A94AD37FDFD3E3B6D96FC8232135 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
 		3AAA296C651DB9A1703FE9D22FD45FBE /* Pods-CryptoWalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletTests-frameworks.sh"; sourceTree = "<group>"; };
-		3EC116E90A26E1412965A73DD7209D56 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
-		4097C2A9C68DF8912E31E12D12CB675B /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
+		3B841444F2452A6B21F7DE456EC14B97 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
+		3D70F078F5691388DB6C7FC614F0ABA3 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
 		44C475E552DCA1BFB5570BBB866B1D5E /* Pods-CryptoWalletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletUITests-resources.sh"; sourceTree = "<group>"; };
-		46D062CFF4A0D99CBFB32675821EA168 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
-		47DDC9BE6BE96287C88BFCA3CABBE247 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
-		499418162E3F14F486D54B1FD4E72529 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
+		46F0680062C2C8303DEDD513BB29A28C /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
+		49FA2E4ECF7DFB45D5BEC7062D00A163 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
+		4A4D6D3C0A278685D6B3BBBC22346D29 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
 		4A818A46E6AC25B7AF2F06DB444C1E0B /* Pods-CryptoWallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWallet-resources.sh"; sourceTree = "<group>"; };
-		4C1B863B1184DF768A43D35A4ABAC338 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
-		4DBA5217F932491CBF23C3397ABA9E75 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
-		4E2B4931801CEF43783E97CC2634FC11 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
-		512DF5CC05DDDFBF11B826093E1B3148 /* Pods-CryptoWalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CryptoWalletUITests.modulemap"; sourceTree = "<group>"; };
-		56A550711ED3B3668FC0E01B853FF3A5 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
-		57C658C7CE7272B6B8BE2EE6D1086FFB /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
-		59414A026EB97A3E59971D19498EDF18 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
-		5A6CD00B6A086BEC14D47C867EF18535 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
-		5C47C9B750FADC7980AC70CE32453921 /* Pods-CryptoWalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CryptoWalletTests.modulemap"; sourceTree = "<group>"; };
-		5D6ADE8339346DA17A719828683482B2 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
-		5E581C79DB7F887EDDC8FFEB6CDED8D9 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
-		61D4F43D6CE3A4AF66B1CDCCF1BE81D8 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
+		4B9A80846E227D8CED30FF0E96515443 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
+		4CAC992AD8A6B4152D82EEA0272F7EF2 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
+		4F50C285951ACFD8A2E49C9256462855 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
+		512DF5CC05DDDFBF11B826093E1B3148 /* Pods-CryptoWalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWalletUITests.modulemap"; sourceTree = "<group>"; };
+		53BDDDD2DC6264BC4BDA662C7D415714 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
+		5481E0DDDDEE24B3CEEF867B7B60B4DC /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
+		586B35B047E705575F8619188CFFD1A6 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
+		5B9AB86EEDB56B256899595EB7609AC5 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
+		5C47C9B750FADC7980AC70CE32453921 /* Pods-CryptoWalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWalletTests.modulemap"; sourceTree = "<group>"; };
+		5EEE4DB148CA73053AE425FD3A9B4CFB /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
+		65FCE82A57E5A0C2E5CE09A3FC9CEFF8 /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RNCryptor.framework; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		667220315B997F1F4C979792EE68CB40 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
 		69A5851EDBD92AE45DF4A4933250B784 /* Pods-CryptoWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6ED7BD658AA6AF1B0ACEF6B8BB7B8E0A /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
+		6D60FA5DB4C69C1E16B432872B7EA998 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
+		6EFBAFA3760372804319ED992573E18B /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
 		6F02D012E0CC3CE4AAA5EEB47D753E9A /* Pods-CryptoWalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7264936325C61B76B9161D3306895353 /* Pods-CryptoWallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWallet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		74B4DFBB6A8A98F1CC7225F9DB08925C /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
-		7A29C81E41E0AECE46AE5360DD5DE93C /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
+		79AE29C088EA4BC9EBDA717A0F0DF2D4 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
 		7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWallet-dummy.m"; sourceTree = "<group>"; };
-		7CC4B5298D3D9D038939302591659F7A /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
-		7CC77772DF47DA2216FA6598411A35CE /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
-		7CE3CDF30BBC185F1BADC55DFC032AAB /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
-		7D6E41C87452E7678946153E268D1B63 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
-		81B04C0175E682C42683D518343E589A /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
-		84B7180F076AB268DA6578984B68EB69 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		7CBE649AC13E5B0816D0E08921177837 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
+		7F0FCF350709C040CEC98F007F46A750 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		7F8CD872E7E2BE655550CDECF8FCF42E /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
+		80444DFD8C66BF18A8AEA0FAD2268E3B /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
+		82953B3D217E477EA01703DD0309A2E4 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
 		86CCDDA5EEFF16D8759DFB0B6784F79D /* Pods-CryptoWalletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWalletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		894EF4FD1A47BEEDC9EE9A615F90F502 /* Pods_CryptoWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletUITests.framework; path = "Pods-CryptoWalletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A359AC56C6AEE7F90F39BFA7812189C /* Pods-CryptoWalletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWalletUITests-dummy.m"; sourceTree = "<group>"; };
 		8BB499651D4CBDA4FA9286E2F64A428F /* Pods-CryptoWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8E9A9592ED14D764741E475263290794 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
-		935D7B385F3D743566BD089C6ED00F21 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95C91372DFC311F6070CB48710996A5D /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
-		96F28BCBE865D1D4D669712E924ECE75 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
-		96FA2B0C4D7C31B2E57D04D4B4B437B3 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
+		8C0BB6DF50B9D17078EC58DE9D92EEAE /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
+		90CFAA5A38B53E872EEEDE43FCC88162 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911DBAA65813AAC44FDA6F428F1F0826 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
+		9299039664CF17547EF1240F9B104EE8 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
+		92EC098E839BE7980C8BAE5617BC0626 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950B2BCCA74F22153A2AD3064763E6D7 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
+		96AEE7F8F617A2599638E1BABB7EFED7 /* Pods_CryptoWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletTests.framework; path = "Pods-CryptoWalletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FC70CEC0128302349E388CFBE17A48 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
 		9C375D3D8A0A4D7AE4F06656E4950A77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D21E4431EB7A4FE66FA9D3E2E26182D /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
 		A2F016DC1300F9272CEC2D330A05BB7B /* Pods-CryptoWalletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWalletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A55310753670FFD6CF1820CF41208F63 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
+		A67DAB663C6E0E98A53277AA0E38EF65 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
 		A692D8D9527711EFEC750AB3B2CB0F59 /* Pods-CryptoWalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWalletTests-dummy.m"; sourceTree = "<group>"; };
-		A77492269D75F84579485FAF67425123 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
-		A79BE6FB791078B90D79E08668A4C105 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
-		B02F33F2B4E780581D9D4BB0C311E5D8 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
+		A927FDAFC485B41B16F8C7A469100C4C /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
+		AA33A463F22B6ABA1422885A03088220 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
+		AA73E6ED8D60DC3DD178C76B7A4EE2BD /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
+		AD8873938C6AC0C63085527159C774AD /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
+		ADB8B4577859EF6AFC0E2501F3B58AA8 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
+		B0DF1A58538013965A5B901BE91EACD0 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
 		B3F87C107C4155F4F668BCD7A90BFFE7 /* Pods-CryptoWalletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletUITests-frameworks.sh"; sourceTree = "<group>"; };
-		B7A45C6A40EFC5179EEB01A507F8FFB2 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
-		B8AF04F62768A3EBAAAA24F3FE851093 /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
+		B9ACC10640724C31B654C88215E24789 /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
+		B9C71F8C557A8AD59F3177605AB3648B /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
 		BAE0EF87D1D1FB99DD53AEC60DF1A3C2 /* Pods-CryptoWalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWalletTests-umbrella.h"; sourceTree = "<group>"; };
-		BB464C3F404E57771C5B508211192D68 /* Pods_CryptoWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDF2158F50D8595973091C874814EAE3 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
+		BB8A133011FA0271314B53E7957544C6 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
+		BC1744498FA783F84455D64F2C97447B /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
 		C04A51D0A368DE21BC7076518BF0939B /* Pods-CryptoWalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C1C03B7FCF129A1F1F6728CCB2E8497B /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
 		C213BD09ECC28B026A7A8A2FB315F537 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2832C830E5F273589605AE236620904 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
-		C4586CF1E69A610918669613C102B1AE /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
-		C52AD1C5597ED1023D34AFA8692307D3 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
-		C85FE7A73CA3A3E4A0FA200C4F434B15 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
-		C8E306AF9D8D06902F3F4436910F92E1 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
-		C9B801FFB606931827DFC30A7C804AF9 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
-		CA6CC5D2E32E8AC137A5E71BE51E1BD8 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
-		CBE158F508509FAD46E0E8D54C840E94 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
-		CCECFF9A3441F60AD95586425046136F /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
-		D0B9FD682880C3CB1C2E5D1212F17B2C /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
+		C600936F6062A7842828E70F4D9F292D /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
+		CCBD3C39AE126D05453EA2A3B05B5ADC /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
+		D0D3E85D833DF87C132BD8EF119A0BF8 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
 		D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		D1C39099DF723C4BBB39340D88F48AE7 /* Pods-CryptoWalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletTests-resources.sh"; sourceTree = "<group>"; };
-		D1D33B269FF4D7B790235CFCE3803E25 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2A53540D6F90EE2038913C50980FCB8 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
-		D9DAE85F0407BD750919D4022D43786E /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
-		DA81C31E1D89E4521CC2EBE098F3DB7B /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
-		DBEB8FFD718BC7DA96EB8F6A54867CC4 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
+		D50BA4C3FB53A920E3C8C1FFE9A89C1D /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
+		D53DC4443F726F1FA0294159D9444595 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
+		D6A79B39C44C8AE2CFD0ED63DDF03528 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
+		D7CF082C196AD1C6C2983D86682A8853 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
+		DA4FD30D132226EA2B1B26F27099BF83 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
+		DBC381FF72A4DD94F8989CAB4372C4BB /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
 		DD91C7C6754E9131B9CE78B17990F4D4 /* Pods-CryptoWallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWallet-acknowledgements.plist"; sourceTree = "<group>"; };
-		DE775968AA691B175F4497C99AE61A27 /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
-		DF69173F26AF19EAE18EF1D89F5D2F56 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
-		E17E8806D58F0781E960DA21661D13FB /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
+		DF50599430BF154AC03FE6D8B37866FD /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
+		E0126D75E3D255901F4FBD7F14EC006E /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
+		E174367978EF930D90BA6FB44F45BC11 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
 		E26FF99A506A475019E4FFB36AA9BF11 /* Pods-CryptoWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletTests.release.xcconfig"; sourceTree = "<group>"; };
-		E539BDE4EEF44BFBCB885B2B6C79EE49 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
 		E697AE5C6BC48B0D44738F86C610DA42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF3F8606874D58A317231D0295262DC8 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
-		F2816B3C5726B05E344A1D22C51A3D31 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
-		F60513C5739106257EB75468A59F167E /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
-		F925BE66CED526E8827603C06F2721DC /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
+		E75C4CFA9ADA4651B0127F3D58EDB815 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
+		EFFEB0978573D48D11497B8A0C73C378 /* RNCryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.xcconfig; sourceTree = "<group>"; };
+		F5A2F1A6796C4734E537064318739D99 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
+		FA15CADA8E3FB38315221ED947ACB582 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
+		FC585F046C75CD4BB4011D556B3765E6 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
+		FD7F0932833A832AE64121CC3CA8C906 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		668491066983A78E42AD124395C56ABD /* Frameworks */ = {
+		6BCBC2BD668AF3709C87BDBB95F74EAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3716140EC447B8BE38495C98C3DB71D /* Foundation.framework in Frameworks */,
+				C10D49DF7B71FE61EA787AA83C5081A2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE3D3F3223F50ACF326C910C229CF0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9559E163021BA327048A1A5FBBECDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B935949C62AC953DED6F0B43179AD6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,97 +193,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B12808F7B04CA26DD33C4B835AA2E6B /* OpenSSL-Universal */ = {
+		288CF795BF275AC405C17CD238C5EC2C /* OpenSSL-Universal */ = {
 			isa = PBXGroup;
 			children = (
-				26F6FA0E3B396CADD51BE90D86AD2236 /* aes.h */,
-				30D7B40B1AA893963A6D26C17A36AEEE /* asn1.h */,
-				7CC77772DF47DA2216FA6598411A35CE /* asn1_mac.h */,
-				32BBF2EE81E36FB9261DD38E35B3870E /* asn1t.h */,
-				BDF2158F50D8595973091C874814EAE3 /* bio.h */,
-				05EBA37A156BBAC8D967F2443FFADD38 /* blowfish.h */,
-				5A6CD00B6A086BEC14D47C867EF18535 /* bn.h */,
-				31D2F954D6701EA14466B74C73CE8CC8 /* buffer.h */,
-				7CE3CDF30BBC185F1BADC55DFC032AAB /* camellia.h */,
-				7CC4B5298D3D9D038939302591659F7A /* cast.h */,
-				33E59B0F713C2869DA6EE2EA0DA0D2C5 /* cmac.h */,
-				84B7180F076AB268DA6578984B68EB69 /* cms.h */,
-				37A2DA3005C7C2250225C1D5BD15646E /* comp.h */,
-				B7A45C6A40EFC5179EEB01A507F8FFB2 /* conf.h */,
-				74B4DFBB6A8A98F1CC7225F9DB08925C /* conf_api.h */,
-				1AAF2EF94E4E151D60524AEF479AD0F9 /* crypto.h */,
-				7D6E41C87452E7678946153E268D1B63 /* des.h */,
-				DBEB8FFD718BC7DA96EB8F6A54867CC4 /* des_old.h */,
-				B02F33F2B4E780581D9D4BB0C311E5D8 /* dh.h */,
-				CBE158F508509FAD46E0E8D54C840E94 /* dsa.h */,
-				C52AD1C5597ED1023D34AFA8692307D3 /* dso.h */,
-				4C1B863B1184DF768A43D35A4ABAC338 /* dtls1.h */,
-				4E2B4931801CEF43783E97CC2634FC11 /* e_os2.h */,
-				81B04C0175E682C42683D518343E589A /* ebcdic.h */,
-				F925BE66CED526E8827603C06F2721DC /* ec.h */,
-				A77492269D75F84579485FAF67425123 /* ecdh.h */,
-				1E3ED5FEA135AF9F40B9235B7082240C /* ecdsa.h */,
-				95C91372DFC311F6070CB48710996A5D /* engine.h */,
-				8E9A9592ED14D764741E475263290794 /* err.h */,
-				0EC61D8DF7E9D420715C4D815AC00AFB /* evp.h */,
-				36A4BA55538B26DF87120ABC9F044825 /* hmac.h */,
-				7A29C81E41E0AECE46AE5360DD5DE93C /* idea.h */,
-				34BD9D4DB4BB4BFB7CB7EC0AD5D9D714 /* krb5_asn.h */,
-				1AAED8B0503256FE33A986F11DC17E69 /* kssl.h */,
-				DF69173F26AF19EAE18EF1D89F5D2F56 /* lhash.h */,
-				F2816B3C5726B05E344A1D22C51A3D31 /* md4.h */,
-				61D4F43D6CE3A4AF66B1CDCCF1BE81D8 /* md5.h */,
-				96FA2B0C4D7C31B2E57D04D4B4B437B3 /* mdc2.h */,
-				59414A026EB97A3E59971D19498EDF18 /* modes.h */,
-				D0B9FD682880C3CB1C2E5D1212F17B2C /* obj_mac.h */,
-				A79BE6FB791078B90D79E08668A4C105 /* objects.h */,
-				6ED7BD658AA6AF1B0ACEF6B8BB7B8E0A /* ocsp.h */,
-				499418162E3F14F486D54B1FD4E72529 /* opensslconf.h */,
-				E539BDE4EEF44BFBCB885B2B6C79EE49 /* opensslv.h */,
-				EF3F8606874D58A317231D0295262DC8 /* ossl_typ.h */,
-				1138B2A6ED34D61B38D9CAD40188415B /* pem.h */,
-				C1C03B7FCF129A1F1F6728CCB2E8497B /* pem2.h */,
-				D9DAE85F0407BD750919D4022D43786E /* pkcs12.h */,
-				CCECFF9A3441F60AD95586425046136F /* pkcs7.h */,
-				211244E7A467965B40CAD7766BE34D64 /* pqueue.h */,
-				5D6ADE8339346DA17A719828683482B2 /* rand.h */,
-				C2832C830E5F273589605AE236620904 /* rc2.h */,
-				0CC276B068BE0B40C11F6E08A3D9C460 /* rc4.h */,
-				4DBA5217F932491CBF23C3397ABA9E75 /* ripemd.h */,
-				96F28BCBE865D1D4D669712E924ECE75 /* rsa.h */,
-				F60513C5739106257EB75468A59F167E /* safestack.h */,
-				B8AF04F62768A3EBAAAA24F3FE851093 /* seed.h */,
-				DA81C31E1D89E4521CC2EBE098F3DB7B /* sha.h */,
-				935D7B385F3D743566BD089C6ED00F21 /* srp.h */,
-				47DDC9BE6BE96287C88BFCA3CABBE247 /* srtp.h */,
-				57C658C7CE7272B6B8BE2EE6D1086FFB /* ssl.h */,
-				C9B801FFB606931827DFC30A7C804AF9 /* ssl2.h */,
-				125DC9CF9D194153BB3681F0527E7911 /* ssl23.h */,
-				1A99FF012603BD86D14B0314298B4891 /* ssl3.h */,
-				D2A53540D6F90EE2038913C50980FCB8 /* stack.h */,
-				4097C2A9C68DF8912E31E12D12CB675B /* symhacks.h */,
-				5E581C79DB7F887EDDC8FFEB6CDED8D9 /* tls1.h */,
-				C4586CF1E69A610918669613C102B1AE /* ts.h */,
-				C8E306AF9D8D06902F3F4436910F92E1 /* txt_db.h */,
-				3EC116E90A26E1412965A73DD7209D56 /* ui.h */,
-				46D062CFF4A0D99CBFB32675821EA168 /* ui_compat.h */,
-				E17E8806D58F0781E960DA21661D13FB /* whrlpool.h */,
-				DE775968AA691B175F4497C99AE61A27 /* x509.h */,
-				CA6CC5D2E32E8AC137A5E71BE51E1BD8 /* x509_vfy.h */,
-				C85FE7A73CA3A3E4A0FA200C4F434B15 /* x509v3.h */,
-				CC50DF666EE6A2A1550770FAE4296CC3 /* Frameworks */,
+				B9C71F8C557A8AD59F3177605AB3648B /* aes.h */,
+				F5A2F1A6796C4734E537064318739D99 /* asn1.h */,
+				7F8CD872E7E2BE655550CDECF8FCF42E /* asn1_mac.h */,
+				6EFBAFA3760372804319ED992573E18B /* asn1t.h */,
+				06EE98B23906E51D8612CD6046EF3382 /* bio.h */,
+				CCBD3C39AE126D05453EA2A3B05B5ADC /* blowfish.h */,
+				92EC098E839BE7980C8BAE5617BC0626 /* bn.h */,
+				B0DF1A58538013965A5B901BE91EACD0 /* buffer.h */,
+				1C1416EE385678D1096F5EA609F31FEC /* camellia.h */,
+				950B2BCCA74F22153A2AD3064763E6D7 /* cast.h */,
+				DF50599430BF154AC03FE6D8B37866FD /* cmac.h */,
+				0196C6678DF3D332EF569E65E0D1F6E1 /* cms.h */,
+				233C201423A25675F079AB94DAF26E95 /* comp.h */,
+				82953B3D217E477EA01703DD0309A2E4 /* conf.h */,
+				3D70F078F5691388DB6C7FC614F0ABA3 /* conf_api.h */,
+				3B841444F2452A6B21F7DE456EC14B97 /* crypto.h */,
+				0CFBDA1C357F97A9D23E85606915F428 /* des.h */,
+				1ED66B382749054B98DBCE6782C24162 /* des_old.h */,
+				80444DFD8C66BF18A8AEA0FAD2268E3B /* dh.h */,
+				7F0FCF350709C040CEC98F007F46A750 /* dsa.h */,
+				4A4D6D3C0A278685D6B3BBBC22346D29 /* dso.h */,
+				AA33A463F22B6ABA1422885A03088220 /* dtls1.h */,
+				D53DC4443F726F1FA0294159D9444595 /* e_os2.h */,
+				A67DAB663C6E0E98A53277AA0E38EF65 /* ebcdic.h */,
+				4B9A80846E227D8CED30FF0E96515443 /* ec.h */,
+				5481E0DDDDEE24B3CEEF867B7B60B4DC /* ecdh.h */,
+				02C4ACF99F6516FBA5DE05296A84C3E3 /* ecdsa.h */,
+				98FC70CEC0128302349E388CFBE17A48 /* engine.h */,
+				4CAC992AD8A6B4152D82EEA0272F7EF2 /* err.h */,
+				586B35B047E705575F8619188CFFD1A6 /* evp.h */,
+				9D21E4431EB7A4FE66FA9D3E2E26182D /* hmac.h */,
+				DA4FD30D132226EA2B1B26F27099BF83 /* idea.h */,
+				5EEE4DB148CA73053AE425FD3A9B4CFB /* krb5_asn.h */,
+				53BDDDD2DC6264BC4BDA662C7D415714 /* kssl.h */,
+				79AE29C088EA4BC9EBDA717A0F0DF2D4 /* lhash.h */,
+				29A4636D3426093D4FEE7C45123A9D44 /* md4.h */,
+				E75C4CFA9ADA4651B0127F3D58EDB815 /* md5.h */,
+				A55310753670FFD6CF1820CF41208F63 /* mdc2.h */,
+				4F50C285951ACFD8A2E49C9256462855 /* modes.h */,
+				1AC17D0C94B39A253D3828354B5DF070 /* obj_mac.h */,
+				249CA25729C1185C2A8D6F671B654B50 /* objects.h */,
+				03A4187118BFC2DA45D5D950CCD1B9BD /* ocsp.h */,
+				1695A12D29C453A555980B3BDD68CEDA /* opensslconf.h */,
+				ADB8B4577859EF6AFC0E2501F3B58AA8 /* opensslv.h */,
+				6D60FA5DB4C69C1E16B432872B7EA998 /* ossl_typ.h */,
+				1353BDFBC9481C85D0CECC0FA59BC4E6 /* pem.h */,
+				5B9AB86EEDB56B256899595EB7609AC5 /* pem2.h */,
+				AA73E6ED8D60DC3DD178C76B7A4EE2BD /* pkcs12.h */,
+				025517F077216904F351BF12EC60BFBD /* pkcs7.h */,
+				E0126D75E3D255901F4FBD7F14EC006E /* pqueue.h */,
+				C600936F6062A7842828E70F4D9F292D /* rand.h */,
+				A927FDAFC485B41B16F8C7A469100C4C /* rc2.h */,
+				3529E5FA84DB906E0F42B8A7E6754ACB /* rc4.h */,
+				0D7514301482790A9B64F5250A4F04D9 /* ripemd.h */,
+				46F0680062C2C8303DEDD513BB29A28C /* rsa.h */,
+				FC585F046C75CD4BB4011D556B3765E6 /* safestack.h */,
+				D50BA4C3FB53A920E3C8C1FFE9A89C1D /* seed.h */,
+				2FB15591D3F44819CF3C14A4CB53B12F /* sha.h */,
+				9299039664CF17547EF1240F9B104EE8 /* srp.h */,
+				D7CF082C196AD1C6C2983D86682A8853 /* srtp.h */,
+				911DBAA65813AAC44FDA6F428F1F0826 /* ssl.h */,
+				BC1744498FA783F84455D64F2C97447B /* ssl2.h */,
+				667220315B997F1F4C979792EE68CB40 /* ssl23.h */,
+				36CF85419E245C0DEC5A5D01278DEE22 /* ssl3.h */,
+				7CBE649AC13E5B0816D0E08921177837 /* stack.h */,
+				D0D3E85D833DF87C132BD8EF119A0BF8 /* symhacks.h */,
+				FD7F0932833A832AE64121CC3CA8C906 /* tls1.h */,
+				AD8873938C6AC0C63085527159C774AD /* ts.h */,
+				8C0BB6DF50B9D17078EC58DE9D92EEAE /* txt_db.h */,
+				D6A79B39C44C8AE2CFD0ED63DDF03528 /* ui.h */,
+				36D03ABFF7F73F28901814B5DDDE4CBF /* ui_compat.h */,
+				E174367978EF930D90BA6FB44F45BC11 /* whrlpool.h */,
+				13A4E755D05492306DDF8648A98D4F65 /* x509.h */,
+				27619CCA311840877343CA4D45EAA1ED /* x509_vfy.h */,
+				DBC381FF72A4DD94F8989CAB4372C4BB /* x509v3.h */,
+				F9E526174A447B7BEFB0968A46F256C5 /* Frameworks */,
 			);
+			name = "OpenSSL-Universal";
 			path = "OpenSSL-Universal";
 			sourceTree = "<group>";
 		};
-		4AA1A9F29A064BE4345A0965B402C9F6 /* Products */ = {
+		50C3DA5B178C47E97E8D10DD34E8F2C1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D1D33B269FF4D7B790235CFCE3803E25 /* Pods_CryptoWallet.framework */,
-				BB464C3F404E57771C5B508211192D68 /* Pods_CryptoWalletTests.framework */,
-				1446C98ADD9E5B3A83B618748B597F8A /* Pods_CryptoWalletUITests.framework */,
+				288CF795BF275AC405C17CD238C5EC2C /* OpenSSL-Universal */,
+				C981E519144821E43DCA5205FEE32D72 /* RNCryptor */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5381C6A4E3851BBDF1D73A36DF9F6856 /* Pods-CryptoWallet */ = {
@@ -272,13 +304,27 @@
 			path = "Target Support Files/Pods-CryptoWallet";
 			sourceTree = "<group>";
 		};
+		6A5BD01B5023C73C7D32962C66A305AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90CFAA5A38B53E872EEEDE43FCC88162 /* Info.plist */,
+				3019E911AC79C87FD32BF86B45CCC62E /* RNCryptor.modulemap */,
+				EFFEB0978573D48D11497B8A0C73C378 /* RNCryptor.xcconfig */,
+				0F01BBFC342E1348D99D6A43A1C4215C /* RNCryptor-dummy.m */,
+				BB8A133011FA0271314B53E7957544C6 /* RNCryptor-prefix.pch */,
+				B9ACC10640724C31B654C88215E24789 /* RNCryptor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RNCryptor";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D1A731FA6325B7E16366E8E3AF1F8257 /* Pods */,
-				4AA1A9F29A064BE4345A0965B402C9F6 /* Products */,
+				50C3DA5B178C47E97E8D10DD34E8F2C1 /* Pods */,
+				C53845412FADC9C1AA7579DA7B50C217 /* Products */,
 				B1CA0D1BC349F0540AA373B0F0890A0D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -319,21 +365,26 @@
 			path = "Target Support Files/Pods-CryptoWalletUITests";
 			sourceTree = "<group>";
 		};
-		CC50DF666EE6A2A1550770FAE4296CC3 /* Frameworks */ = {
+		C53845412FADC9C1AA7579DA7B50C217 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39C9A94AD37FDFD3E3B6D96FC8232135 /* libcrypto.a */,
-				56A550711ED3B3668FC0E01B853FF3A5 /* libssl.a */,
+				27B838FA852689C673FA3CA2FC1B5A37 /* Pods_CryptoWallet.framework */,
+				96AEE7F8F617A2599638E1BABB7EFED7 /* Pods_CryptoWalletTests.framework */,
+				894EF4FD1A47BEEDC9EE9A615F90F502 /* Pods_CryptoWalletUITests.framework */,
+				65FCE82A57E5A0C2E5CE09A3FC9CEFF8 /* RNCryptor.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		D1A731FA6325B7E16366E8E3AF1F8257 /* Pods */ = {
+		C981E519144821E43DCA5205FEE32D72 /* RNCryptor */ = {
 			isa = PBXGroup;
 			children = (
-				2B12808F7B04CA26DD33C4B835AA2E6B /* OpenSSL-Universal */,
+				0E1FF1FBCEA51F2BCB6004B373A8D644 /* RNCryptor.h */,
+				FA15CADA8E3FB38315221ED947ACB582 /* RNCryptor.swift */,
+				6A5BD01B5023C73C7D32962C66A305AD /* Support Files */,
 			);
-			name = Pods;
+			name = RNCryptor;
+			path = RNCryptor;
 			sourceTree = "<group>";
 		};
 		D247D0D34981177E8985BC91090130FB /* Pods-CryptoWalletTests */ = {
@@ -362,9 +413,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		F9E526174A447B7BEFB0968A46F256C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49FA2E4ECF7DFB45D5BEC7062D00A163 /* libcrypto.a */,
+				227A8EC9BDF261071E0DFCEEA1B0AFEF /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		13871C7FAAB1D35FE884C921BBD14D68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0261A85BD69C0B82C4F11939DDC82F /* Pods-CryptoWallet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5748720CE139FADC80998DC99C1B8A9E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,11 +441,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EF8BF0356EC971AB53CB4E0861C3144 /* Headers */ = {
+		5F02D8B17EAE2746004F9417C3D84C28 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C291F894645EBD98E63CE8452DE8AF39 /* Pods-CryptoWallet-umbrella.h in Headers */,
+				1326619BA2332087B136E3B38E3DAEFA /* RNCryptor-umbrella.h in Headers */,
+				2533AD22C9BD5190286A8E337640E7FB /* RNCryptor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,21 +461,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1A25B95F274124C0B2B2BD6BE225AF04 /* Pods-CryptoWallet */ = {
+		162C64B5F6BBCC6B07F5C7AA8590FB20 /* Pods-CryptoWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2F963B0F7AB212E74AD4DE4C7D655EA /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */;
+			buildConfigurationList = 2E732EF0C0C6B56948F65B8F3604D9AA /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */;
 			buildPhases = (
-				6BB864622E21971FA1474117275D20EF /* Sources */,
-				668491066983A78E42AD124395C56ABD /* Frameworks */,
-				8EF8BF0356EC971AB53CB4E0861C3144 /* Headers */,
+				3A92CE2AF1191FBD07DB3F8A0DB3CB1C /* Sources */,
+				CE9559E163021BA327048A1A5FBBECDF /* Frameworks */,
+				13871C7FAAB1D35FE884C921BBD14D68 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8184FA258FB3F57A7D3458A84A4246F8 /* PBXTargetDependency */,
 			);
 			name = "Pods-CryptoWallet";
 			productName = "Pods-CryptoWallet";
-			productReference = D1D33B269FF4D7B790235CFCE3803E25 /* Pods_CryptoWallet.framework */;
+			productReference = 27B838FA852689C673FA3CA2FC1B5A37 /* Pods_CryptoWallet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		22A9AD7EFB6F8A10C51155DEF6BF41E7 /* Pods-CryptoWalletTests */ = {
@@ -423,7 +493,24 @@
 			);
 			name = "Pods-CryptoWalletTests";
 			productName = "Pods-CryptoWalletTests";
-			productReference = BB464C3F404E57771C5B508211192D68 /* Pods_CryptoWalletTests.framework */;
+			productReference = 96AEE7F8F617A2599638E1BABB7EFED7 /* Pods_CryptoWalletTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F6115F8FCE873DF939FE5553AEF240E /* RNCryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51C5802CD2537FFDC1F138D2877C98AB /* Build configuration list for PBXNativeTarget "RNCryptor" */;
+			buildPhases = (
+				14528B400D014E76E2192F38CF49C438 /* Sources */,
+				6BCBC2BD668AF3709C87BDBB95F74EAA /* Frameworks */,
+				5F02D8B17EAE2746004F9417C3D84C28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNCryptor;
+			productName = RNCryptor;
+			productReference = 65FCE82A57E5A0C2E5CE09A3FC9CEFF8 /* RNCryptor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		362AFD26749412319BDCE19AE4733D5C /* Pods-CryptoWalletUITests */ = {
@@ -440,7 +527,7 @@
 			);
 			name = "Pods-CryptoWalletUITests";
 			productName = "Pods-CryptoWalletUITests";
-			productReference = 1446C98ADD9E5B3A83B618748B597F8A /* Pods_CryptoWalletUITests.framework */;
+			productReference = 894EF4FD1A47BEEDC9EE9A615F90F502 /* Pods_CryptoWalletUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -450,7 +537,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -460,31 +547,41 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4AA1A9F29A064BE4345A0965B402C9F6 /* Products */;
+			productRefGroup = C53845412FADC9C1AA7579DA7B50C217 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A25B95F274124C0B2B2BD6BE225AF04 /* Pods-CryptoWallet */,
+				162C64B5F6BBCC6B07F5C7AA8590FB20 /* Pods-CryptoWallet */,
 				22A9AD7EFB6F8A10C51155DEF6BF41E7 /* Pods-CryptoWalletTests */,
 				362AFD26749412319BDCE19AE4733D5C /* Pods-CryptoWalletUITests */,
+				2F6115F8FCE873DF939FE5553AEF240E /* RNCryptor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		14528B400D014E76E2192F38CF49C438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D180D002DD6C0A8ED439D8A8027C3C /* RNCryptor-dummy.m in Sources */,
+				90659688AA687236345BDDD761B016A3 /* RNCryptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A92CE2AF1191FBD07DB3F8A0DB3CB1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDB7ADF4C89E39775483A243DCD067D /* Pods-CryptoWallet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		412EE2A0CDD9A51C6FE627ED8450D1D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0F73EE69CA65AD87F653ECB38D2DD662 /* Pods-CryptoWalletUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6BB864622E21971FA1474117275D20EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A658AF7C26B16E208923A08EC49C72A /* Pods-CryptoWallet-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +595,54 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8184FA258FB3F57A7D3458A84A4246F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RNCryptor;
+			target = 2F6115F8FCE873DF939FE5553AEF240E /* RNCryptor */;
+			targetProxy = 133C9D91C94172120A0356A7581B032E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0924E9DFA82F12DD70F710E28F57218B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CryptoWallet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4396A1DA505AB1F75691135CE589FB12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 10FDC7E789B0F629809BE7331ACE09BD /* Pods-CryptoWalletTests.debug.xcconfig */;
@@ -617,9 +761,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -627,20 +769,14 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -656,78 +792,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		728545C13A6137E5A5BDBB33B742CED5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CryptoWallet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8C9471D8BF29FBEE56BE3A4DE02FF85F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CryptoWallet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -767,6 +831,41 @@
 			};
 			name = Release;
 		};
+		CC6E2457567D87013B0CC23BA701D983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFFEB0978573D48D11497B8A0C73C378 /* RNCryptor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RNCryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -777,9 +876,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -787,21 +884,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -824,6 +915,80 @@
 			};
 			name = Debug;
 		};
+		F0AF1B657252185B55D38B1A14ABECC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CryptoWallet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F44FEEF4A65C2EF6268242A91F849450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFFEB0978573D48D11497B8A0C73C378 /* RNCryptor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RNCryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -832,6 +997,24 @@
 			buildConfigurations = (
 				EF26A3C5B6EDA309192C6025F703DE0A /* Debug */,
 				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E732EF0C0C6B56948F65B8F3604D9AA /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AF1B657252185B55D38B1A14ABECC4 /* Debug */,
+				0924E9DFA82F12DD70F710E28F57218B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51C5802CD2537FFDC1F138D2877C98AB /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44FEEF4A65C2EF6268242A91F849450 /* Debug */,
+				CC6E2457567D87013B0CC23BA701D983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -850,15 +1033,6 @@
 			buildConfigurations = (
 				4396A1DA505AB1F75691135CE589FB12 /* Debug */,
 				65E5167D8B9513D9561C92606E37DAD0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2F963B0F7AB212E74AD4DE4C7D655EA /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				728545C13A6137E5A5BDBB33B742CED5 /* Debug */,
-				8C9471D8BF29FBEE56BE3A4DE02FF85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

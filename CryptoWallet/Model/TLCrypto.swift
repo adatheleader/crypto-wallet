@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import RNCryptor
 
-let kRNCryptorAES256Settings:RNCryptorSettings  = RNCryptorSettings(algorithm: CCAlgorithm(kCCAlgorithmAES128), blockSize: kCCBlockSizeAES128, IVSize: kCCBlockSizeAES128,
+/*let kRNCryptorAES256Settings:RNCryptorSettings  = RNCryptorSettings(algorithm: CCAlgorithm(kCCAlgorithmAES128), blockSize: kCCBlockSizeAES128, IVSize: kCCBlockSizeAES128,
     options: CCOptions(kCCOptionPKCS7Padding), HMACAlgorithm: CCHmacAlgorithm(kCCHmacAlgSHA256), HMACLength: Int(CC_SHA256_DIGEST_LENGTH),
     keySettings: RNCryptorKeyDerivationSettings(keySize: kCCKeySizeAES256, saltSize: 8, PBKDFAlgorithm: CCPBKDFAlgorithm(kCCPBKDF2), PRF: CCPseudoRandomAlgorithm(kCCPRFHmacAlgSHA1), rounds: 10000, hasV2Password: false),
     HMACKeySettings: RNCryptorKeyDerivationSettings(keySize: kCCKeySizeAES256, saltSize: 8, PBKDFAlgorithm: CCPBKDFAlgorithm(kCCPBKDF2), PRF: CCPseudoRandomAlgorithm(kCCPRFHmacAlgSHA1), rounds: 10000, hasV2Password: false))
-
+*/
 
 class TLCrypto {
 
@@ -29,15 +30,16 @@ class TLCrypto {
     }
     
     class func encrypt(_ plainText: String, password: String, PBKDF2Iterations: UInt32) -> String {
-        var settings = kRNCryptorAES256Settings
-        settings.keySettings.rounds = PBKDF2Iterations
+//        var settings = kRNCryptorAES256Settings
+//        settings.keySettings.rounds = PBKDF2Iterations
         //DLog("saveWalletJson encrypt: %@", plainText)
         
         let data = plainText.data(using: String.Encoding.utf8)
         var error: NSError? = nil
         var encryptedData: Data!
         do {
-            encryptedData = try RNEncryptor.encryptData(data, with: settings, password: password)
+//            encryptedData = try RNEncryptor.encryptData(data, with: settings, password: password)
+            encryptedData = RNCryptor.encrypt(data: data!, withPassword: password)
         } catch let error1 as NSError {
             error = error1
             encryptedData = nil
@@ -54,16 +56,17 @@ class TLCrypto {
     }
     
     class func decrypt(_ cipherText: String, password: String, PBKDF2Iterations: UInt32) -> String? {
-        var settings = kRNCryptorAES256Settings
+//        var settings = kRNCryptorAES256Settings
         settings.keySettings.rounds = PBKDF2Iterations
         
         let encryptedData = Data(base64Encoded: cipherText, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)
         var error: NSError? = nil
         let decryptedData: Data!
         do {
-            decryptedData = try RNDecryptor.decryptData(encryptedData,
-                        with: settings,
-                        password: password)
+//            decryptedData = try RNDecryptor.decryptData(encryptedData,
+//                        with: settings,
+//                        password: password)
+            decryptedData = RNCryptor.decrypt(data: encryptedData!, withPassword: password)
         } catch let error1 as NSError {
             error = error1
             decryptedData = nil
