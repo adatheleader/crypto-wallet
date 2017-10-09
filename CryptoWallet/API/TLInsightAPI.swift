@@ -207,7 +207,7 @@ class TLInsightAPI {
         if unspentOutputDict.object(forKey: "scriptPubKey") == nil {
             // got following so far
             // insight bug for txid 1cf031f8ac2896994e57c299e23b4ed35e2d218a7c6877302da0e3292337f530 when tried to do f5b0e820f23a6724f669463a6bf2e03806169b3d7fee7b6d27a642840109823d
-            DLog("no scriptPubKey, insight bug? txid \(unspentOutputDict.object(forKey: "txid") as! String)")
+            print("no scriptPubKey, insight bug? txid \(unspentOutputDict.object(forKey: "txid") as! String)")
             return nil
         }
         
