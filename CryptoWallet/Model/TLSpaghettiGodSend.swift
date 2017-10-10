@@ -494,12 +494,12 @@
                     DLog("createSignedSerializedTransactionHex dustCoinAmount \(dustCoinAmount.toString())")
                     DLog("createSignedSerializedTransactionHex valueNeeded \(valueNeeded.toString())")
                     let amountCanSendString = TLCurrencyFormat.coinToProperBitcoinAmountString(valueNeeded.subtract(dustCoinAmount))
-                    error(String(format: "Insufficient Funds. Account contains bitcoin dust. You can only send up to %@ %@ for now.".localized, amountCanSendString, TLCurrencyFormat.getBitcoinDisplay()))
+                    error(String(format: "Insufficient Funds. Account contains bitcoin dust. You can only send up to %@ %@ for now.", amountCanSendString, TLCurrencyFormat.getBitcoinDisplay()))
                     return (nil, realToAddresses, nil)
                 }
                 let valueSelectedString = TLCurrencyFormat.coinToProperBitcoinAmountString(valueSelected)
                 let valueNeededString = TLCurrencyFormat.coinToProperBitcoinAmountString(valueNeeded)
-                error(String(format: "Insufficient Funds. Account balance is %@ %@ when %@ %@ is required.".localized, valueSelectedString, TLCurrencyFormat.getBitcoinDisplay(), valueNeededString, TLCurrencyFormat.getBitcoinDisplay()))
+                error(String(format: "Insufficient Funds. Account balance is %@ %@ when %@ %@ is required.", valueSelectedString, TLCurrencyFormat.getBitcoinDisplay(), valueNeededString, TLCurrencyFormat.getBitcoinDisplay()))
                 return (nil, realToAddresses, nil)
             }
             
@@ -559,7 +559,7 @@
                 let outputAmount = ((outputData as! NSDictionary).object(forKey: "amount") as! NSNumber).uint64Value
                 if outputAmount <= DUST_AMOUNT {
                     let dustAmountBitcoins = TLCoin(uint64: DUST_AMOUNT).bigIntegerToBitcoinAmountString(TLBitcoinDenomination.bitcoin)
-                    error(String(format: "Cannot create transactions with outputs less then %@ bitcoins.".localized, dustAmountBitcoins))
+                    error(String(format: "Cannot create transactions with outputs less then %@ bitcoins.", dustAmountBitcoins))
                     return (nil, realToAddresses, nil)
                 }
             }
@@ -674,7 +674,7 @@
                 }
             }
             
-            error("Encountered error creating transaction. Please try again.".localized)
+            error("Encountered error creating transaction. Please try again.")
             return (nil, realToAddresses, nil)
     }
 }

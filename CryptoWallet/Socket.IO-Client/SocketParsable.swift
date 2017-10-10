@@ -115,7 +115,7 @@ extension SocketParsable {
             dataArray = "[" + dataArray + "]"
         }
         
-        switch parseData(dataArray) {
+        switch parseData(String(dataArray)) {
         case let .left(err):
             return .left(err)
         case let .right(data):

@@ -486,7 +486,7 @@ public class WebSocket : NSObject, StreamDelegate {
             guard canDispatch else {return}
             callbackQueue.async { [weak self] in
                 guard let s = self else { return }
-                s.onConnect?()
+                _ = s.onConnect
                 s.delegate?.websocketDidConnect(socket: s)
                 s.notificationCenter.post(name: NSNotification.Name(WebsocketDidConnectNotification), object: self)
             }
@@ -684,7 +684,7 @@ public class WebSocket : NSObject, StreamDelegate {
             }
             let data: Data
             if len < 0 {
-                len = 0
+                len == 0
                 data = Data()
             } else {
                 data = Data(bytes: baseAddress+offset, count: Int(len))
