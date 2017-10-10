@@ -159,6 +159,7 @@
 		3580322D1F8CDDDA001ACBE8 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358032151F8CDDDA001ACBE8 /* SocketExtensions.swift */; };
 		3580322E1F8CDDDA001ACBE8 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358032161F8CDDDA001ACBE8 /* SocketIOClientSpec.swift */; };
 		3580322F1F8CDDDA001ACBE8 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358032171F8CDDDA001ACBE8 /* SocketEngine.swift */; };
+		358032351F8D1727001ACBE8 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 358032331F8D1727001ACBE8 /* NSDate-Utilities.m */; };
 		359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30411F223F9D00B4E476 /* AppDelegate.swift */; };
 		359B30471F223F9D00B4E476 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B30451F223F9D00B4E476 /* Login.storyboard */; };
 		359B30491F223F9D00B4E476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B30481F223F9D00B4E476 /* Assets.xcassets */; };
@@ -435,6 +436,8 @@
 		358032151F8CDDDA001ACBE8 /* SocketExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketExtensions.swift; sourceTree = "<group>"; };
 		358032161F8CDDDA001ACBE8 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientSpec.swift; sourceTree = "<group>"; };
 		358032171F8CDDDA001ACBE8 /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		358032331F8D1727001ACBE8 /* NSDate-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Utilities.m"; sourceTree = "<group>"; };
+		358032341F8D1727001ACBE8 /* NSDate-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-Utilities.h"; sourceTree = "<group>"; };
 		359B303E1F223F9D00B4E476 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30411F223F9D00B4E476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -779,6 +782,15 @@
 			path = "Socket.IO-Client";
 			sourceTree = "<group>";
 		};
+		358032321F8D16C8001ACBE8 /* NSDate-Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				358032341F8D1727001ACBE8 /* NSDate-Utilities.h */,
+				358032331F8D1727001ACBE8 /* NSDate-Utilities.m */,
+			);
+			path = "NSDate-Extensions";
+			sourceTree = "<group>";
+		};
 		359B30351F223F9D00B4E476 = {
 			isa = PBXGroup;
 			children = (
@@ -804,6 +816,7 @@
 		359B30401F223F9D00B4E476 /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				358032321F8D16C8001ACBE8 /* NSDate-Extensions */,
 				358031FF1F8CDDAF001ACBE8 /* Socket.IO-Client */,
 				358031E51F8BBECF001ACBE8 /* BreadWallet */,
 				358031E11F8BB6C7001ACBE8 /* JNKeychain */,
@@ -1298,6 +1311,7 @@
 				3575BDAF1F866ADB00D0B4F8 /* TLWalletConfig.swift in Sources */,
 				359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */,
 				358032181F8CDDDA001ACBE8 /* SocketPacket.swift in Sources */,
+				358032351F8D1727001ACBE8 /* NSDate-Utilities.m in Sources */,
 				35549FE71F8286A500205340 /* BTCCurrencyConverter.m in Sources */,
 				3575BDA01F866ADB00D0B4F8 /* TLAchievements.swift in Sources */,
 				3554A0141F8286A500205340 /* BTCHashID.m in Sources */,
