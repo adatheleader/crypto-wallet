@@ -102,7 +102,6 @@
 		3575BD9A1F866ADB00D0B4F8 /* TLStealthWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575BD7C1F866AD900D0B4F8 /* TLStealthWallet.swift */; };
 		3575BD9B1F866ADB00D0B4F8 /* TLSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575BD7D1F866AD900D0B4F8 /* TLSuggestions.swift */; };
 		3575BD9C1F866ADB00D0B4F8 /* TLCoreBitcoinWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575BD7E1F866AD900D0B4F8 /* TLCoreBitcoinWrapper.swift */; };
-		3575BD9D1F866ADB00D0B4F8 /* TLHelpDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575BD7F1F866ADA00D0B4F8 /* TLHelpDoc.swift */; };
 		3575BD9E1F866ADB00D0B4F8 /* TLPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575BD801F866ADA00D0B4F8 /* TLPreferences.swift */; };
 		3575BD9F1F866ADB00D0B4F8 /* TLStealthAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575BD811F866ADA00D0B4F8 /* TLStealthAddress.swift */; };
 		3575BDA01F866ADB00D0B4F8 /* TLAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575BD821F866ADA00D0B4F8 /* TLAchievements.swift */; };
@@ -126,18 +125,16 @@
 		3575BDBA1F86709300D0B4F8 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3575BDB51F86709300D0B4F8 /* NSData+SRB64Additions.m */; };
 		358031D31F8BA089001ACBE8 /* TLMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031C51F8BA088001ACBE8 /* TLMacros.swift */; };
 		358031D41F8BA089001ACBE8 /* TLNotificationEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031C61F8BA088001ACBE8 /* TLNotificationEvents.swift */; };
-		358031D51F8BA089001ACBE8 /* UIView+FormScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031C71F8BA088001ACBE8 /* UIView+FormScroll.swift */; };
-		358031D61F8BA089001ACBE8 /* TLQRImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031C81F8BA088001ACBE8 /* TLQRImageModal.swift */; };
-		358031D71F8BA089001ACBE8 /* TLStringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031C91F8BA089001ACBE8 /* TLStringLocalized.swift */; };
-		358031D81F8BA089001ACBE8 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031CA1F8BA089001ACBE8 /* TransitionDelegate.swift */; };
-		358031D91F8BA089001ACBE8 /* UIViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031CB1F8BA089001ACBE8 /* UIViewController+Style.swift */; };
-		358031DA1F8BA089001ACBE8 /* UINavigationController+StatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031CC1F8BA089001ACBE8 /* UINavigationController+StatusBarStyle.swift */; };
-		358031DB1F8BA089001ACBE8 /* TLUpdateAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031CD1F8BA089001ACBE8 /* TLUpdateAppData.swift */; };
-		358031DC1F8BA089001ACBE8 /* TLColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031CE1F8BA089001ACBE8 /* TLColors.swift */; };
-		358031DD1F8BA089001ACBE8 /* TLPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031CF1F8BA089001ACBE8 /* TLPrompts.swift */; };
 		358031DE1F8BA089001ACBE8 /* TLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031D01F8BA089001ACBE8 /* TLUtils.swift */; };
-		358031DF1F8BA089001ACBE8 /* UIViewController+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031D11F8BA089001ACBE8 /* UIViewController+Extras.swift */; };
-		358031E01F8BA089001ACBE8 /* TLHUDWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031D21F8BA089001ACBE8 /* TLHUDWrapper.swift */; };
+		358031E41F8BB6F8001ACBE8 /* JNKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031E31F8BB6F8001ACBE8 /* JNKeychain.m */; };
+		358031F51F8BBF02001ACBE8 /* BRTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031E61F8BBF00001ACBE8 /* BRTransaction.m */; };
+		358031F61F8BBF02001ACBE8 /* NSMutableData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031EA1F8BBF01001ACBE8 /* NSMutableData+Bitcoin.m */; };
+		358031F71F8BBF02001ACBE8 /* NSString+Base58.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031EC1F8BBF01001ACBE8 /* NSString+Base58.m */; };
+		358031F81F8BBF02001ACBE8 /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031EE1F8BBF01001ACBE8 /* NSData+Hash.m */; };
+		358031F91F8BBF02001ACBE8 /* BRKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031EF1F8BBF01001ACBE8 /* BRKey+BIP38.m */; };
+		358031FA1F8BBF02001ACBE8 /* BRKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031F11F8BBF01001ACBE8 /* BRKey.m */; };
+		358031FB1F8BBF02001ACBE8 /* NSData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 358031F41F8BBF02001ACBE8 /* NSData+Bitcoin.m */; };
+		358031FD1F8BC03E001ACBE8 /* TLUpdateAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358031FC1F8BC03E001ACBE8 /* TLUpdateAppData.swift */; };
 		359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30411F223F9D00B4E476 /* AppDelegate.swift */; };
 		359B30471F223F9D00B4E476 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B30451F223F9D00B4E476 /* Login.storyboard */; };
 		359B30491F223F9D00B4E476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B30481F223F9D00B4E476 /* Assets.xcassets */; };
@@ -344,7 +341,6 @@
 		3575BD7C1F866AD900D0B4F8 /* TLStealthWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLStealthWallet.swift; sourceTree = "<group>"; };
 		3575BD7D1F866AD900D0B4F8 /* TLSuggestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLSuggestions.swift; sourceTree = "<group>"; };
 		3575BD7E1F866AD900D0B4F8 /* TLCoreBitcoinWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLCoreBitcoinWrapper.swift; sourceTree = "<group>"; };
-		3575BD7F1F866ADA00D0B4F8 /* TLHelpDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLHelpDoc.swift; sourceTree = "<group>"; };
 		3575BD801F866ADA00D0B4F8 /* TLPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLPreferences.swift; sourceTree = "<group>"; };
 		3575BD811F866ADA00D0B4F8 /* TLStealthAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLStealthAddress.swift; sourceTree = "<group>"; };
 		3575BD821F866ADA00D0B4F8 /* TLAchievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLAchievements.swift; sourceTree = "<group>"; };
@@ -372,18 +368,25 @@
 		3575BDB71F86709300D0B4F8 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		358031C51F8BA088001ACBE8 /* TLMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLMacros.swift; sourceTree = "<group>"; };
 		358031C61F8BA088001ACBE8 /* TLNotificationEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLNotificationEvents.swift; sourceTree = "<group>"; };
-		358031C71F8BA088001ACBE8 /* UIView+FormScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FormScroll.swift"; sourceTree = "<group>"; };
-		358031C81F8BA088001ACBE8 /* TLQRImageModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLQRImageModal.swift; sourceTree = "<group>"; };
-		358031C91F8BA089001ACBE8 /* TLStringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLStringLocalized.swift; sourceTree = "<group>"; };
-		358031CA1F8BA089001ACBE8 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
-		358031CB1F8BA089001ACBE8 /* UIViewController+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Style.swift"; sourceTree = "<group>"; };
-		358031CC1F8BA089001ACBE8 /* UINavigationController+StatusBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBarStyle.swift"; sourceTree = "<group>"; };
-		358031CD1F8BA089001ACBE8 /* TLUpdateAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLUpdateAppData.swift; sourceTree = "<group>"; };
-		358031CE1F8BA089001ACBE8 /* TLColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLColors.swift; sourceTree = "<group>"; };
-		358031CF1F8BA089001ACBE8 /* TLPrompts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLPrompts.swift; sourceTree = "<group>"; };
 		358031D01F8BA089001ACBE8 /* TLUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLUtils.swift; sourceTree = "<group>"; };
-		358031D11F8BA089001ACBE8 /* UIViewController+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extras.swift"; sourceTree = "<group>"; };
-		358031D21F8BA089001ACBE8 /* TLHUDWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLHUDWrapper.swift; sourceTree = "<group>"; };
+		358031E21F8BB6F8001ACBE8 /* JNKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKeychain.h; sourceTree = "<group>"; };
+		358031E31F8BB6F8001ACBE8 /* JNKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKeychain.m; sourceTree = "<group>"; };
+		358031E61F8BBF00001ACBE8 /* BRTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTransaction.m; sourceTree = "<group>"; };
+		358031E71F8BBF01001ACBE8 /* ccMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccMemory.h; sourceTree = "<group>"; };
+		358031E81F8BBF01001ACBE8 /* NSData+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hash.h"; sourceTree = "<group>"; };
+		358031E91F8BBF01001ACBE8 /* BRTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTransaction.h; sourceTree = "<group>"; };
+		358031EA1F8BBF01001ACBE8 /* NSMutableData+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Bitcoin.m"; sourceTree = "<group>"; };
+		358031EB1F8BBF01001ACBE8 /* BRKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRKey.h; sourceTree = "<group>"; };
+		358031EC1F8BBF01001ACBE8 /* NSString+Base58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base58.m"; sourceTree = "<group>"; };
+		358031ED1F8BBF01001ACBE8 /* NSData+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Bitcoin.h"; sourceTree = "<group>"; };
+		358031EE1F8BBF01001ACBE8 /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hash.m"; sourceTree = "<group>"; };
+		358031EF1F8BBF01001ACBE8 /* BRKey+BIP38.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BRKey+BIP38.m"; sourceTree = "<group>"; };
+		358031F01F8BBF01001ACBE8 /* NSString+Base58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base58.h"; sourceTree = "<group>"; };
+		358031F11F8BBF01001ACBE8 /* BRKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRKey.m; sourceTree = "<group>"; };
+		358031F21F8BBF01001ACBE8 /* NSMutableData+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Bitcoin.h"; sourceTree = "<group>"; };
+		358031F31F8BBF01001ACBE8 /* BRKey+BIP38.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BRKey+BIP38.h"; sourceTree = "<group>"; };
+		358031F41F8BBF02001ACBE8 /* NSData+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Bitcoin.m"; sourceTree = "<group>"; };
+		358031FC1F8BC03E001ACBE8 /* TLUpdateAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLUpdateAppData.swift; sourceTree = "<group>"; };
 		359B303E1F223F9D00B4E476 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30411F223F9D00B4E476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -619,7 +622,6 @@
 				3575BD791F866AD900D0B4F8 /* TLCrypto.swift */,
 				3575BD781F866AD900D0B4F8 /* TLCurrencyFormat.swift */,
 				3575BD771F866AD900D0B4F8 /* TLHDWalletWrapper.swift */,
-				3575BD7F1F866ADA00D0B4F8 /* TLHelpDoc.swift */,
 				3575BD751F866AD900D0B4F8 /* TLImportedAddress.swift */,
 				3575BD831F866ADA00D0B4F8 /* TLImportedAddresses.swift */,
 				3575BD841F866ADA00D0B4F8 /* TLOperationsManager.swift */,
@@ -659,22 +661,43 @@
 		358031C41F8BA049001ACBE8 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				358031CE1F8BA089001ACBE8 /* TLColors.swift */,
-				358031D21F8BA089001ACBE8 /* TLHUDWrapper.swift */,
+				358031FC1F8BC03E001ACBE8 /* TLUpdateAppData.swift */,
 				358031C51F8BA088001ACBE8 /* TLMacros.swift */,
 				358031C61F8BA088001ACBE8 /* TLNotificationEvents.swift */,
-				358031CF1F8BA089001ACBE8 /* TLPrompts.swift */,
-				358031C81F8BA088001ACBE8 /* TLQRImageModal.swift */,
-				358031C91F8BA089001ACBE8 /* TLStringLocalized.swift */,
-				358031CD1F8BA089001ACBE8 /* TLUpdateAppData.swift */,
 				358031D01F8BA089001ACBE8 /* TLUtils.swift */,
-				358031CA1F8BA089001ACBE8 /* TransitionDelegate.swift */,
-				358031CC1F8BA089001ACBE8 /* UINavigationController+StatusBarStyle.swift */,
-				358031C71F8BA088001ACBE8 /* UIView+FormScroll.swift */,
-				358031D11F8BA089001ACBE8 /* UIViewController+Extras.swift */,
-				358031CB1F8BA089001ACBE8 /* UIViewController+Style.swift */,
 			);
 			path = Extra;
+			sourceTree = "<group>";
+		};
+		358031E11F8BB6C7001ACBE8 /* JNKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				358031E21F8BB6F8001ACBE8 /* JNKeychain.h */,
+				358031E31F8BB6F8001ACBE8 /* JNKeychain.m */,
+			);
+			path = JNKeychain;
+			sourceTree = "<group>";
+		};
+		358031E51F8BBECF001ACBE8 /* BreadWallet */ = {
+			isa = PBXGroup;
+			children = (
+				358031EB1F8BBF01001ACBE8 /* BRKey.h */,
+				358031F11F8BBF01001ACBE8 /* BRKey.m */,
+				358031F31F8BBF01001ACBE8 /* BRKey+BIP38.h */,
+				358031EF1F8BBF01001ACBE8 /* BRKey+BIP38.m */,
+				358031E91F8BBF01001ACBE8 /* BRTransaction.h */,
+				358031E61F8BBF00001ACBE8 /* BRTransaction.m */,
+				358031E71F8BBF01001ACBE8 /* ccMemory.h */,
+				358031ED1F8BBF01001ACBE8 /* NSData+Bitcoin.h */,
+				358031F41F8BBF02001ACBE8 /* NSData+Bitcoin.m */,
+				358031E81F8BBF01001ACBE8 /* NSData+Hash.h */,
+				358031EE1F8BBF01001ACBE8 /* NSData+Hash.m */,
+				358031F21F8BBF01001ACBE8 /* NSMutableData+Bitcoin.h */,
+				358031EA1F8BBF01001ACBE8 /* NSMutableData+Bitcoin.m */,
+				358031F01F8BBF01001ACBE8 /* NSString+Base58.h */,
+				358031EC1F8BBF01001ACBE8 /* NSString+Base58.m */,
+			);
+			path = BreadWallet;
 			sourceTree = "<group>";
 		};
 		359B30351F223F9D00B4E476 = {
@@ -702,6 +725,8 @@
 		359B30401F223F9D00B4E476 /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				358031E51F8BBECF001ACBE8 /* BreadWallet */,
+				358031E11F8BB6C7001ACBE8 /* JNKeychain */,
 				358031C41F8BA049001ACBE8 /* Extra */,
 				3575BDB01F86704100D0B4F8 /* SocketRocket */,
 				3575BD731F866AB400D0B4F8 /* Model */,
@@ -946,10 +971,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1063,9 +1090,13 @@
 				3554A0031F8286A500205340 /* BTCTransactionBuilder.m in Sources */,
 				3575BDA21F866ADB00D0B4F8 /* TLOperationsManager.swift in Sources */,
 				3554A0271F8286A500205340 /* BTCBigNumber+Tests.m in Sources */,
+				358031F71F8BBF02001ACBE8 /* NSString+Base58.m in Sources */,
 				3554A0061F8286A500205340 /* BTCEncryptedMessage+Tests.m in Sources */,
 				3554A00C1F8286A500205340 /* BTCData+Tests.m in Sources */,
 				358031DE1F8BA089001ACBE8 /* TLUtils.swift in Sources */,
+				358031F61F8BBF02001ACBE8 /* NSMutableData+Bitcoin.m in Sources */,
+				358031F51F8BBF02001ACBE8 /* BRTransaction.m in Sources */,
+				358031F81F8BBF02001ACBE8 /* NSData+Hash.m in Sources */,
 				35549FFD1F8286A500205340 /* BTCEncryptedBackup.m in Sources */,
 				3575BD321F866A3B00D0B4F8 /* TLInsightAPI.swift in Sources */,
 				3554A0121F8286A500205340 /* BTCPaymentRequest.m in Sources */,
@@ -1082,7 +1113,6 @@
 				3575BD9E1F866ADB00D0B4F8 /* TLPreferences.swift in Sources */,
 				3554A01A1F8286A500205340 /* BTCCurvePoint.m in Sources */,
 				3554A0041F8286A500205340 /* BTCOpcode.m in Sources */,
-				358031DF1F8BA089001ACBE8 /* UIViewController+Extras.swift in Sources */,
 				35549FEE1F8286A500205340 /* BTCAssetID.m in Sources */,
 				3575BD971F866ADB00D0B4F8 /* TLCrypto.swift in Sources */,
 				3575BD2C1F866A3B00D0B4F8 /* TLStealthWebSocket.swift in Sources */,
@@ -1096,18 +1126,15 @@
 				3575BDAB1F866ADB00D0B4F8 /* TLSendFormData.swift in Sources */,
 				35549FF61F8286A500205340 /* BTCAddress.m in Sources */,
 				3575BDAE1F866ADB00D0B4F8 /* TLAnalytics.swift in Sources */,
-				3575BD9D1F866ADB00D0B4F8 /* TLHelpDoc.swift in Sources */,
 				3575BD2B1F866A3B00D0B4F8 /* TLExchangeRate.swift in Sources */,
 				3554A0191F8286A500205340 /* NSData+BTCData.m in Sources */,
 				3575BD311F866A3B00D0B4F8 /* TLBlockchainAPI.swift in Sources */,
 				3554A0181F8286A500205340 /* BTCAssetType.m in Sources */,
 				3554A01E1F8286A500205340 /* BTCBlindSignature+Tests.m in Sources */,
 				3554A0081F8286A500205340 /* BTCBigNumber.m in Sources */,
-				358031D51F8BA089001ACBE8 /* UIView+FormScroll.swift in Sources */,
 				3575BD341F866A3B00D0B4F8 /* TLBlockExplorerAPI.swift in Sources */,
 				3575BD991F866ADB00D0B4F8 /* TLWalletPassphrase.swift in Sources */,
 				3575BDA91F866ADB00D0B4F8 /* TLWallet.swift in Sources */,
-				358031D81F8BA089001ACBE8 /* TransitionDelegate.swift in Sources */,
 				3554A0001F8286A500205340 /* BTCProtocolSerialization+Tests.m in Sources */,
 				3575BD331F866A3B00D0B4F8 /* TLTxFeeAPI.swift in Sources */,
 				35549FF11F8286A500205340 /* BTC256.m in Sources */,
@@ -1117,9 +1144,9 @@
 				3575BDB91F86709300D0B4F8 /* base64.c in Sources */,
 				3575BD9C1F866ADB00D0B4F8 /* TLCoreBitcoinWrapper.swift in Sources */,
 				3554A0201F8286A500205340 /* BTCTransaction+Tests.m in Sources */,
+				358031FB1F8BBF02001ACBE8 /* NSData+Bitcoin.m in Sources */,
 				35549FE41F8286A500205340 /* BTCBlockHeader.m in Sources */,
 				35549FEF1F8286A500205340 /* BTCBitcoinURL+Tests.m in Sources */,
-				358031D61F8BA089001ACBE8 /* TLQRImageModal.swift in Sources */,
 				35549FE51F8286A500205340 /* BTC256+Tests.m in Sources */,
 				3554A0231F8286A500205340 /* BTCTransactionInput.m in Sources */,
 				3575BD2E1F866A3B00D0B4F8 /* TLStealthServerAPI.swift in Sources */,
@@ -1133,14 +1160,13 @@
 				3554A0101F8286A500205340 /* BTCNumberFormatter.m in Sources */,
 				35549FEC1F8286A500205340 /* BTCProtocolSerialization.m in Sources */,
 				3575BD931F866ADB00D0B4F8 /* TLImportedAddress.swift in Sources */,
-				358031D91F8BA089001ACBE8 /* UIViewController+Style.swift in Sources */,
 				3554A0251F8286A500205340 /* BTCScriptMachine.m in Sources */,
 				3554A01D1F8286A500205340 /* BTCMerkleTree+Tests.m in Sources */,
 				3554A0261F8286A500205340 /* BTCTransaction.m in Sources */,
-				358031DD1F8BA089001ACBE8 /* TLPrompts.swift in Sources */,
 				3575BDBA1F86709300D0B4F8 /* NSData+SRB64Additions.m in Sources */,
 				3554A0111F8286A500205340 /* BTCScript+Tests.m in Sources */,
 				3554A01C1F8286A500205340 /* BTCFancyEncryptedMessage.m in Sources */,
+				358031FA1F8BBF02001ACBE8 /* BRKey.m in Sources */,
 				358031D31F8BA089001ACBE8 /* TLMacros.swift in Sources */,
 				3575BD351F866A3B00D0B4F8 /* TLPushTxAPI.swift in Sources */,
 				3575BD2F1F866A3B00D0B4F8 /* TLBitcoinListener.swift in Sources */,
@@ -1155,10 +1181,10 @@
 				3575BDA71F866ADB00D0B4F8 /* TLAccounts.swift in Sources */,
 				35549FFF1F8286A500205340 /* BTCKeychain+Tests.m in Sources */,
 				3554A0211F8286A500205340 /* BTCKey.m in Sources */,
+				358031F91F8BBF02001ACBE8 /* BRKey+BIP38.m in Sources */,
 				3554A0281F8286A500205340 /* BTCMnemonic+Tests.m in Sources */,
 				3554A0221F8286A500205340 /* BTCData.m in Sources */,
 				3554A0071F8286A500205340 /* BTCTransactionOutput.m in Sources */,
-				358031D71F8BA089001ACBE8 /* TLStringLocalized.swift in Sources */,
 				35549FED1F8286A500205340 /* BTCAssetAddress.m in Sources */,
 				3575BDA31F866ADB00D0B4F8 /* TLBlockchainStatus.swift in Sources */,
 				35549FF71F8286A500205340 /* BTCQRCode.m in Sources */,
@@ -1167,15 +1193,14 @@
 				35549FF91F8286A500205340 /* BTCBase58.m in Sources */,
 				3575BD951F866ADB00D0B4F8 /* TLHDWalletWrapper.swift in Sources */,
 				35549FE61F8286A500205340 /* BTCBlockchainInfo+Tests.m in Sources */,
-				358031E01F8BA089001ACBE8 /* TLHUDWrapper.swift in Sources */,
 				3554A0151F8286A500205340 /* BTCAddress+Tests.m in Sources */,
 				35688A7C1F41C337004EB4F4 /* CopyableLabel.swift in Sources */,
 				3575BDAF1F866ADB00D0B4F8 /* TLWalletConfig.swift in Sources */,
-				358031DA1F8BA089001ACBE8 /* UINavigationController+StatusBarStyle.swift in Sources */,
 				359B30751F2246B000B4E476 /* SuccessViewController.swift in Sources */,
 				35549FE71F8286A500205340 /* BTCCurrencyConverter.m in Sources */,
 				3575BDA01F866ADB00D0B4F8 /* TLAchievements.swift in Sources */,
 				3554A0141F8286A500205340 /* BTCHashID.m in Sources */,
+				358031E41F8BB6F8001ACBE8 /* JNKeychain.m in Sources */,
 				3554A01F1F8286A500205340 /* BTCMnemonic.m in Sources */,
 				35549FF41F8286A500205340 /* BTCBlindSignature.m in Sources */,
 				359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */,
@@ -1186,12 +1211,11 @@
 				3554A0161F8286A500205340 /* BTCSecretSharing.m in Sources */,
 				3575BDA51F866ADB00D0B4F8 /* TLTxObject.swift in Sources */,
 				3575BD981F866ADB00D0B4F8 /* TLSpaghettiGodSend.swift in Sources */,
-				358031DB1F8BA089001ACBE8 /* TLUpdateAppData.swift in Sources */,
-				358031DC1F8BA089001ACBE8 /* TLColors.swift in Sources */,
 				3575BDB81F86709300D0B4F8 /* SRWebSocket.m in Sources */,
 				35549FF51F8286A500205340 /* BTCErrors.m in Sources */,
 				3510175C1F262994002B23F8 /* SignUpTableViewController.swift in Sources */,
 				3575BD961F866ADB00D0B4F8 /* TLCurrencyFormat.swift in Sources */,
+				358031FD1F8BC03E001ACBE8 /* TLUpdateAppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

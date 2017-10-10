@@ -21,6 +21,7 @@
 //   MA 02110-1301  USA
 
 import Foundation
+import AFNetworking
 
 enum TLDOMAINREACHABLE:Int {
     case wwan           = 0
@@ -40,22 +41,22 @@ class TLNetworking {
         static let HTTP_ERROR_MSG = "HTTPErrorMsg"
     }
     
-    let getManager:AFHTTPRequestOperationManager
-    let postManager:AFHTTPRequestOperationManager
-    let getSynchronousManager:AFHTTPRequestOperationManager
-    let postSynchronousManager:AFHTTPRequestOperationManager
-    let getManagerBackground:AFHTTPRequestOperationManager
+    let getManager:AFHTTPSessionManager
+    let postManager:AFHTTPSessionManager
+    let getSynchronousManager:AFHTTPSessionManager
+    let postSynchronousManager:AFHTTPSessionManager
+    let getManagerBackground:AFHTTPSessionManager
     
     init(certificateData: Data? = nil) {
         let ua = "Mozilla/5.0 (Macintosh Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36"
 
-        self.getManager = AFHTTPRequestOperationManager()
+        self.getManager = AFHTTPSessionManager()
         var requestSerializer = AFHTTPRequestSerializer()
         requestSerializer.setValue(ua, forHTTPHeaderField:"User-Agent")
         requestSerializer.setValue("utf-8", forHTTPHeaderField:"charset")
         self.getManager.requestSerializer = requestSerializer
         
-        self.getManagerBackground = AFHTTPRequestOperationManager()
+        self.getManagerBackground = AFHTTPSessionManager()
         requestSerializer = AFHTTPRequestSerializer()
         requestSerializer.setValue(ua, forHTTPHeaderField:"User-Agent")
         requestSerializer.setValue("utf-8", forHTTPHeaderField:"charset")
@@ -63,7 +64,7 @@ class TLNetworking {
         self.getManagerBackground.completionQueue  = DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default)
         
 
-        self.getSynchronousManager = AFHTTPRequestOperationManager()
+        self.getSynchronousManager = AFHTTPSessionManager()
         requestSerializer = AFHTTPRequestSerializer()
         requestSerializer.setValue(ua, forHTTPHeaderField:"User-Agent")
         requestSerializer.setValue("utf-8", forHTTPHeaderField:"charset")
@@ -71,14 +72,14 @@ class TLNetworking {
         self.getSynchronousManager.completionQueue  = DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default)
         
         
-        self.postManager = AFHTTPRequestOperationManager()
+        self.postManager = AFHTTPSessionManager()
         var postRequestSerializer = AFHTTPRequestSerializer()
         postRequestSerializer.setValue(ua, forHTTPHeaderField:"User-Agent")
         postRequestSerializer.setValue("utf-8", forHTTPHeaderField:"charset")
         self.postManager.requestSerializer = postRequestSerializer
 
         
-        self.postSynchronousManager = AFHTTPRequestOperationManager()
+        self.postSynchronousManager = AFHTTPSessionManager()
         postRequestSerializer = AFHTTPRequestSerializer()
         postRequestSerializer.setValue(ua, forHTTPHeaderField:"User-Agent")
         postRequestSerializer.setValue("utf-8", forHTTPHeaderField:"charset")
@@ -87,10 +88,10 @@ class TLNetworking {
         
         if certificateData != nil {
             let securityPolicy = AFSecurityPolicy(pinningMode: AFSSLPinningMode.certificate)
-            securityPolicy?.allowInvalidCertificates = true
-            securityPolicy?.validatesCertificateChain = false
-            securityPolicy?.validatesDomainName = false
-            securityPolicy?.pinnedCertificates = [certificateData!]
+            securityPolicy.allowInvalidCertificates = true
+//            securityPolicy.validatesCertificateChain = false
+            securityPolicy.validatesDomainName = false
+            securityPolicy.pinnedCertificates = [certificateData!]
 
             self.getManager.securityPolicy = securityPolicy
             self.getManagerBackground.securityPolicy = securityPolicy
@@ -101,19 +102,19 @@ class TLNetworking {
     }
     
     class func isReachable(_ url: URL, reachable: @escaping ReachableHandler) -> () {
-        let manager = AFHTTPRequestOperationManager(baseURL:url)
+        let manager = AFHTTPSessionManager(baseURL:url)
         
-        let operationQueue = manager?.operationQueue
-        manager?.reachabilityManager.setReachabilityStatusChange({(status: AFNetworkReachabilityStatus) in
+        let operationQueue = manager.operationQueue
+        manager.reachabilityManager.setReachabilityStatusChange({(status: AFNetworkReachabilityStatus) in
             switch (status) {
             case AFNetworkReachabilityStatus.reachableViaWWAN:
                 DLog("AFNetworkReachabilityStatusReachableViaWWAN")
-                operationQueue?.isSuspended = false
+                operationQueue.isSuspended = false
                 reachable(TLDOMAINREACHABLE.wwan)
                 break
             case AFNetworkReachabilityStatus.reachableViaWiFi:
                 DLog("AFNetworkReachabilityStatusReachableViaWiFi")
-                operationQueue?.isSuspended = false
+                operationQueue.isSuspended = false
                 
                 reachable(TLDOMAINREACHABLE.wifi)
                 break
@@ -121,12 +122,12 @@ class TLNetworking {
                 reachable(TLDOMAINREACHABLE.notreachable)
                 DLog("AFNetworkReachabilityStatusNotReachable")
             default:
-                operationQueue?.isSuspended = true
+                operationQueue.isSuspended = true
                 break
             }
         })
         
-        manager?.reachabilityManager.startMonitoring()
+        manager.reachabilityManager.startMonitoring()
     }
     
     func httpGETSynchronous(_ url: URL, parameters: NSDictionary?) -> AnyObject? {
@@ -143,7 +144,10 @@ class TLNetworking {
             failure:{(operation, error) in
                 DLog("httpGETSynchronous: requestFailed url \(url.absoluteString)")
                 if operation?.response != nil {
-                    response = [STATIC_MEMBERS.HTTP_ERROR_CODE: operation?.response.statusCode, STATIC_MEMBERS.HTTP_ERROR_MSG:operation?.responseString] as AnyObject
+                    var statusCode:Int = Int()
+                    if let urlResponse = operation?.response as? HTTPURLResponse {
+                        statusCode = urlResponse.statusCode}
+                    response = [STATIC_MEMBERS.HTTP_ERROR_CODE: statusCode, STATIC_MEMBERS.HTTP_ERROR_MSG:"\(statusCode)"] as AnyObject
                 } else {
                     response = [STATIC_MEMBERS.HTTP_ERROR_CODE: "499", STATIC_MEMBERS.HTTP_ERROR_MSG:"No Response"] as AnyObject
                 }
@@ -168,8 +172,12 @@ class TLNetworking {
                 } ,
                 failure:{(operation, error) in
                     DLog("httpGET: requestFailed url \(url.absoluteString)")
+                    var statusCode:Int = Int()
+                    if let urlResponse = operation?.response as? HTTPURLResponse {
+                        statusCode = urlResponse.statusCode
+                    }
                     if (failure != nil) {
-                        failure!(operation?.response == nil ? 0 : (operation?.response.statusCode)!, operation?.response == nil ? "" : operation?.responseString)
+                        failure!(operation?.response == nil ? 0 : statusCode, "\(statusCode)")
                     }
             })
     }
@@ -187,8 +195,12 @@ class TLNetworking {
                 } ,
                 failure:{(operation, error) in
                     DLog("httpGETBackground: requestFailed url \(url.absoluteString)")
+                    var statusCode:Int = Int()
+                    if let urlResponse = operation?.response as? HTTPURLResponse {
+                        statusCode = urlResponse.statusCode
+                    }
                     if (failure != nil) {
-                        failure!(operation?.response == nil ? 0 : (operation?.response.statusCode)!, operation?.response == nil ? "" : operation?.responseString)
+                        failure!(operation?.response == nil ? 0 : statusCode, "\(statusCode)")
                     }
             })
     }
@@ -206,8 +218,12 @@ class TLNetworking {
                 },
                 failure:{(operation, error) in
                     DLog("httpPOST: requestFailed url \(url.absoluteString)")
+                    var statusCode:Int = Int()
+                    if let urlResponse = operation?.response as? HTTPURLResponse {
+                        statusCode = urlResponse.statusCode
+                    }
                     if (failure != nil) {
-                        failure!(operation?.response == nil ? 0 : (operation?.response.statusCode)!, operation?.response == nil ? "" : operation?.responseString)
+                        failure!(operation?.response == nil ? 0 : statusCode, "\(statusCode)")
                     }
             })
     }
@@ -227,7 +243,10 @@ class TLNetworking {
             failure:{(operation, error) in
                 DLog("httpPOSTSynchronous: requestFailed url \(url.absoluteString)")
                 if operation?.response != nil {
-                    response = [STATIC_MEMBERS.HTTP_ERROR_CODE: operation?.response.statusCode, STATIC_MEMBERS.HTTP_ERROR_MSG:operation?.responseString] as AnyObject
+                    var statusCode:Int = Int()
+                    if let urlResponse = operation?.response as? HTTPURLResponse {
+                        statusCode = urlResponse.statusCode}
+                    response = [STATIC_MEMBERS.HTTP_ERROR_CODE: statusCode, STATIC_MEMBERS.HTTP_ERROR_MSG:"\(statusCode)"] as AnyObject
                 } else {
                     response = [STATIC_MEMBERS.HTTP_ERROR_CODE: "499", STATIC_MEMBERS.HTTP_ERROR_MSG:"No Response"] as AnyObject
                 }

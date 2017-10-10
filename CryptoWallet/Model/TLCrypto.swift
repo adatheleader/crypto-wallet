@@ -57,7 +57,7 @@ class TLCrypto {
     
     class func decrypt(_ cipherText: String, password: String, PBKDF2Iterations: UInt32) -> String? {
 //        var settings = kRNCryptorAES256Settings
-        settings.keySettings.rounds = PBKDF2Iterations
+//        settings.keySettings.rounds = PBKDF2Iterations
         
         let encryptedData = Data(base64Encoded: cipherText, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)
         var error: NSError? = nil
