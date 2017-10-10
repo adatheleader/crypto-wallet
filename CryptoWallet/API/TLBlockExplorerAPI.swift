@@ -21,6 +21,7 @@
 //   MA 02110-1301  USA
 
 import Foundation
+import UIKit
 
 enum TLBlockExplorer:Int {
     case blockchain  = 0
@@ -170,24 +171,28 @@ class TLBlockExplorerAPI {
     func openWebViewForAddress(_ address:String) -> () {
         if (STATIC_MEMBERS.blockExplorerAPI == .blockchain) {
             let endPoint = "address/"
-            let url = String(format: "%@%@%@", STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, address)
-            UIApplication.shared.openURL(URL(string: url)!)
+            let urlString = String(format: "%@%@%@", STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, address)
+            let url = URL(string: urlString)
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         } else {
             let endPoint = "address/"
-            let url = String(format: "%@%@%@",STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, address)
-            UIApplication.shared.openURL(URL(string:url)!)
+            let urlString = String(format: "%@%@%@",STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, address)
+            let url = URL(string: urlString)
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         }
     }
     
     func openWebViewForTransaction(_ txid:String) -> () {
         if (STATIC_MEMBERS.blockExplorerAPI == .blockchain) {
             let endPoint = "tx/"
-            let url = String(format: "%@%@%@",STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, txid)
-            UIApplication.shared.openURL(URL(string: url)!)
+            let urlString = String(format: "%@%@%@",STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, txid)
+            let url = URL(string: urlString)
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         } else {
             let endPoint = "tx/"
-            let url = String(format: "%@%@%@",STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, txid)
-            UIApplication.shared.openURL(URL(string: url)!)
+            let urlString = String(format: "%@%@%@",STATIC_MEMBERS.BLOCKEXPLORER_BASE_URL!, endPoint, txid)
+            let url = URL(string: urlString)
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         }
     }
 }

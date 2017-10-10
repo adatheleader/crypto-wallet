@@ -1,9 +1,8 @@
 //
-//  NSData+Hash.h
-//  BreadWallet
+//  SocketIOClientStatus.swift
+//  Socket.IO-Client-Swift
 //
-//  Created by Aaron Voisine on 5/13/13.
-//  Copyright (c) 2013 Aaron Voisine <voisine@gmail.com>
+//  Created by Erik Little on 8/14/15.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,16 +22,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonDigest.h>
+import Foundation
 
-@interface NSData (Hash)
-
-- (NSData *)SHA1;
-- (NSData *)SHA256;
-- (NSData *)SHA256_2;
-- (NSData *)RMD160;
-- (NSData *)hash160;
-- (NSData *)reverse;
-
-@end
+/// **NotConnected**: initial state
+///
+/// **Disconnected**: connected before
+@objc public enum SocketIOClientStatus : Int {
+    case notConnected, disconnected, connecting, connected
+}

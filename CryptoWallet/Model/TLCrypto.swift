@@ -66,7 +66,7 @@ class TLCrypto {
 //            decryptedData = try RNDecryptor.decryptData(encryptedData,
 //                        with: settings,
 //                        password: password)
-            decryptedData = RNCryptor.decrypt(data: encryptedData!, withPassword: password)
+            decryptedData = try RNCryptor.decrypt(data: encryptedData!, withPassword: password)
         } catch let error1 as NSError {
             error = error1
             decryptedData = nil

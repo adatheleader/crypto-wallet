@@ -18,6 +18,7 @@
 #import "NSString+Base58.h"
 #import "SRWebSocket.h"
 #import "JNKeychain.h"
+#import "NSData+BTCData.h"
 #include <CommonCrypto/CommonCrypto.h>
 #include <openssl/ec.h>
 #include <openssl/ecdsa.h>

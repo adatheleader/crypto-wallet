@@ -1,9 +1,8 @@
 //
-//  BRKey.h
-//  BreadWallet
+//  SocketTypes.swift
+//  Socket.IO-Client-Swift
 //
-//  Created by Aaron Voisine on 5/22/13.
-//  Copyright (c) 2013 Aaron Voisine <voisine@gmail.com>
+//  Created by Erik Little on 4/8/15.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,24 +22,31 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import Foundation
 
-@interface BRKey : NSObject
+public protocol SocketData {}
 
-@property (nonatomic, strong) NSString *privateKey;
-@property (nonatomic, strong) NSData *publicKey;
-@property (nonatomic, readonly) NSString *address;
-@property (nonatomic, readonly) NSData *hash160;
+extension Array : SocketData {}
+extension Bool : SocketData {}
+extension Dictionary : SocketData {}
+extension Double : SocketData {}
+extension Int : SocketData {}
+extension NSArray : SocketData {}
+extension Data : SocketData {}
+extension NSData : SocketData {}
+extension NSDictionary : SocketData {}
+extension NSString : SocketData {}
+extension NSNull : SocketData {}
+extension String : SocketData {}
 
-+ (instancetype)keyWithPrivateKey:(NSString *)privateKey isTestnet:(BOOL)isTestnet;
-+ (instancetype)keyWithSecret:(NSData *)secret compressed:(BOOL)compressed isTestnet:(BOOL)isTestnet;
-+ (instancetype)keyWithPublicKey:(NSData *)publicKey isTestnet:(BOOL)isTestnet;
+public typealias AckCallback = ([Any]) -> Void
+public typealias NormalCallback = ([Any], SocketAckEmitter) -> Void
+public typealias OnAckCallback = (_ timeoutAfter: UInt64, _ callback: @escaping AckCallback) -> Void
 
-- (instancetype)initWithPrivateKey:(NSString *)privateKey isTestnet:(BOOL)isTestnet;
-- (instancetype)initWithSecret:(NSData *)secret compressed:(BOOL)compressed isTestnet:(BOOL)isTestnet;
-- (instancetype)initWithPublicKey:(NSData *)publicKey isTestnet:(BOOL)isTestnet;
+typealias Probe = (msg: String, type: SocketEnginePacketType, data: [Data])
+typealias ProbeWaitQueue = [Probe]
 
-- (NSData *)sign:(NSData *)d;
-- (BOOL)verify:(NSData *)d signature:(NSData *)sig;
-
-@end
+enum Either<E, V> {
+    case left(E)
+    case right(V)
+}

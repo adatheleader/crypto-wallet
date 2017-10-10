@@ -181,11 +181,11 @@ class TLSuggestions {
     func promptToSuggestEnablePin(_ vc:UIViewController) -> () {
         
         UIAlertController.showAlert(in: vc,
-            withTitle: "Enable Pin Code".localized,
-            message: "Enable PIN code in settings to better secure your wallet.".localized,
-            cancelButtonTitle: "Remind me Later".localized,
+            withTitle: "Enable Pin Code",
+            message: "Enable PIN code in settings to better secure your wallet.",
+            cancelButtonTitle: "Remind me Later",
             destructiveButtonTitle: nil,
-            otherButtonTitles: ["Don't remind me again".localized],
+            otherButtonTitles: ["Don't remind me again"],
             
             tap: {(alertView, action, buttonIndex) in
                 if (buttonIndex == alertView?.firstOtherButtonIndex) {
@@ -218,11 +218,11 @@ class TLSuggestions {
     }
     
     func promptToSuggestBackUpWalletPassphrase(_ vc:UIViewController) -> () {
-        UIAlertController.showAlert(in: vc, withTitle: "Back up wallet".localized,
+        UIAlertController.showAlert(in: vc, withTitle: "Back up wallet",
             message: "Write down or memorize your 12 word wallet backup passphrase. You can view it by clicking \"Show backup passphrase\" in Settings. Your wallet backup passphrase is needed to recover your bitcoins.".localized,
-            cancelButtonTitle: "Remind me Later".localized,
+            cancelButtonTitle: "Remind me Later",
             destructiveButtonTitle: nil,
-            otherButtonTitles: ["Don't remind me again".localized],
+            otherButtonTitles: ["Don't remind me again"],
             tap: {(alertView, action, buttonIndex) in
                 if (buttonIndex == alertView?.firstOtherButtonIndex) {
                     self.setEnabledSuggestedBackUpWalletPassphrase(false)

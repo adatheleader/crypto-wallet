@@ -116,11 +116,11 @@ class TLStealthAddress {
         let paymentAddress: String
         if (!isTestnet) {
             let key = BTCKey(publicKey: BTCDataFromHex(paymentPublicKey!))
-            paymentAddress = (key?.address.base58String)!
+            paymentAddress = (key?.address.string)!
         } else {
             //TODO:
             let key = BTCKey(publicKey: BTCDataFromHex(paymentPublicKey!))
-            paymentAddress = (key?.address.base58String)!
+            paymentAddress = (key?.address.string)!
         }
         return (stealthDataScript as String, paymentAddress)
     }
@@ -221,5 +221,10 @@ class TLStealthAddress {
             hexString = "0" + hexString
         }
         return hexString
+    }
+}
+extension Data {
+    func hexEncodedString() -> String {
+        return map { String(format: "%02hhx", $0) }.joined()
     }
 }
