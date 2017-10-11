@@ -180,7 +180,7 @@ class TLSuggestions {
     
     func promptToSuggestEnablePin(_ vc:UIViewController) -> () {
         
-        UIAlertController.showAlert(in: vc,
+        /*UIAlertController.showAlert(in: vc,
             withTitle: "Enable Pin Code",
             message: "Enable PIN code in settings to better secure your wallet.",
             cancelButtonTitle: "Remind me Later",
@@ -193,6 +193,13 @@ class TLSuggestions {
                 } else if (buttonIndex == alertView?.cancelButtonIndex) {
                 }
         })
+        
+        let alert = UIAlertController(title: "Enable Pin Code", message: "Enable PIN code in settings to better secure your wallet.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Remind me Later", comment: "Default action"), style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Don't remind me again", comment: "Another action"), style: .destructive, handler: { _ in
+            self.setEnabledSuggestedEnablePin(false)
+        }))
+        self.present(alert, animated: true, completion: nil)*/
     }
     
     fileprivate func setEnabledSuggestedBackUpWalletPassphrase(_ enabled:Bool) -> (){
@@ -218,7 +225,7 @@ class TLSuggestions {
     }
     
     func promptToSuggestBackUpWalletPassphrase(_ vc:UIViewController) -> () {
-        UIAlertController.showAlert(in: vc, withTitle: "Back up wallet",
+        /*UIAlertController.showAlert(in: vc, withTitle: "Back up wallet",
             message: "Write down or memorize your 12 word wallet backup passphrase. You can view it by clicking \"Show backup passphrase\" in Settings. Your wallet backup passphrase is needed to recover your bitcoins.".localized,
             cancelButtonTitle: "Remind me Later",
             destructiveButtonTitle: nil,
@@ -228,7 +235,7 @@ class TLSuggestions {
                     self.setEnabledSuggestedBackUpWalletPassphrase(false)
                 } else if (buttonIndex == alertView?.cancelButtonIndex) {
                 }
-        })}
+        })*/}
     
     
     func setEnableSuggestDontManageIndividualAccountAddress(_ enabled:Bool) -> () {
