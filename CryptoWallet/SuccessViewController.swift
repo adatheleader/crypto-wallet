@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 class SuccessViewController: UIViewController {
     
@@ -63,22 +64,41 @@ class SuccessViewController: UIViewController {
         let address = newKey?.address.string
         let privateKey = newKey?.privateKey
         let publicKey = newKey?.publicKey
-        let hashtype:BTCSignatureHashType = BTCSignatureHashType(rawValue: 1)!
-        let hashForSign = newKey?.address.data
-        let signature = newKey?.signature(forHash: hashForSign, hashType: hashtype)
-        
-    
-        
+        //let hashtype:BTCSignatureHashType = BTCSignatureHashType(rawValue: 1)!
+        //let hashForSign = newKey?.address.data
+        //let signature = newKey?.signature(forHash: hashForSign, hashType: hashtype)
         
         defaults.set(address, forKey: "btcAddress")
         defaults.set(privateKey, forKey: "privateKey")
         defaults.set(publicKey, forKey: "publicKey")
+        self.savePrivateKeyToKeychain(privateKey: privateKey!)
     }
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func savePrivateKeyToKeychain(privateKey: NSMutableData){
+        let keychain = Keychain(service: "com.cryptowallet.myBTC").synchronizable(true)
+        keychain[data: "privateKey"] = privateKey as Data
+    }
+
+    func getPrivateKeyFromKeychain() -> NSMutableData {
+        let keychain = Keychain(service: "com.cryptowallet.myBTC").synchronizable(true)
+        let providedKey:NSMutableData = keychain[data: "privateKey"] as! NSMutableData
+
+        return providedKey
+    }
+
+    func removeItemFromKeychain(service: String, key: String){
+        let keychain = Keychain(service: service).synchronizable(true)
+
+        do {
+            try keychain.remove(key)
+        } catch _ {
+            // Error handling if needed...
+        }
     }
 
 }
