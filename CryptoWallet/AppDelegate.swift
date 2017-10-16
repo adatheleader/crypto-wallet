@@ -20,25 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let userToken = userInfo.object(forKey: "token") as? String
+        //let userToken = userInfo.object(forKey: "token") as? String
         let touch = userInfo.object(forKey: "touch") as? Bool
-        //print(userToken)
+        print(touch as Any)
         
-        if userToken == nil {
-            self.navToLoginStory()
-        } else {
-            if touch! {
-                self.useTouchID()
-            } else {
-                self.navToWalletStory()
-            }
-            
+        if touch == nil {
+            print("touch is nil")
+            self.showTouchAlert()
+        } else if touch == false{
+            self.navToWalletStory()
+        } else if touch == true {
+            self.useTouchID()
         }
 
         return true
     }
     
-    func navToLoginStory() {
+    /*func navToLoginStory() {
         DispatchQueue.main.async(execute: {
             let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
             let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "SignUp") as UIViewController
@@ -48,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             
         })
-    }
+    }*/
     
     func navToWalletStory() {
         DispatchQueue.main.async(execute: {
@@ -58,6 +56,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = initialViewControlleripad
             self.window?.makeKeyAndVisible()
         })
+    }
+    
+    func showTouchAlert() {
+        print ("show touch alert")
+        let alert = UIAlertController(title: "Enable Touch ID", message: "For secure and quick login please enable Touch ID", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { (action) in
+            self.userInfo.set(true, forKey: "touch")
+            self.useTouchID()
+        })
+        alert.addAction(UIAlertAction(title: "Continue without Touch ID", style: .destructive) { (action) in
+            self.userInfo.set(false, forKey: "touch")
+            self.navToWalletStory()
+        })
+        let topWindow = UIWindow(frame: UIScreen.main.bounds)
+        topWindow.rootViewController = UIViewController()
+        topWindow.windowLevel = UIWindowLevelAlert + 1
+        //self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+        topWindow.makeKeyAndVisible()
+        topWindow.rootViewController?.present(alert, animated: true, completion: nil)
     }
     
     func useTouchID() {
