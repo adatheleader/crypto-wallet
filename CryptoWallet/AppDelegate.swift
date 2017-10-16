@@ -15,12 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let userInfo = UserDefaults.standard
+    let DEFAULT_BLOCKEXPLORER_API = TLBlockExplorer.blockchain
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        TLPreferences.resetBlockExplorerAPIURL()
+        TLPreferences.setBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
+        TLPreferences.setInAppSettingsKitBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
         //let userToken = userInfo.object(forKey: "token") as? String
         let touch = userInfo.object(forKey: "touch") as? Bool
         print(touch as Any)

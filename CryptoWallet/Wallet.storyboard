@@ -49,11 +49,19 @@
                                     <constraint firstAttribute="height" constant="200" id="l0I-GZ-meR"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lR-yY-PcD">
+                                <rect key="frame" x="154" y="171" width="66.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8ub-k2-4gH" firstAttribute="centerX" secondItem="Q3H-fv-9af" secondAttribute="centerX" id="Bv6-DH-ADG"/>
                             <constraint firstItem="xhQ-aC-wF1" firstAttribute="centerY" secondItem="9ST-hJ-Box" secondAttribute="centerY" id="Hwn-GR-nD2"/>
+                            <constraint firstItem="0lR-yY-PcD" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="JeY-hT-igv"/>
+                            <constraint firstItem="0lR-yY-PcD" firstAttribute="top" secondItem="Q3H-fv-9af" secondAttribute="bottom" constant="43" id="QXR-ec-JC3"/>
                             <constraint firstItem="Q3H-fv-9af" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="TL2-Ur-MCc"/>
                             <constraint firstItem="8ub-k2-4gH" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="WmW-mR-oQb"/>
                             <constraint firstItem="8ub-k2-4gH" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="Z4m-Dg-ygn"/>
@@ -65,6 +73,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="balanceLabel" destination="0lR-yY-PcD" id="n2C-DL-1Df"/>
                         <outlet property="imgQRCode" destination="xhQ-aC-wF1" id="D07-bE-j8B"/>
                         <outlet property="walletLabel" destination="Q3H-fv-9af" id="R6D-Wm-P2o"/>
                     </connections>
