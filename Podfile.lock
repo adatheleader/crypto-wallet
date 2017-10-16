@@ -14,19 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - KeychainAccess (3.0.2)
   - OpenSSL-Universal (1.0.2.10)
   - RNCryptor (5.0.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - KeychainAccess
   - OpenSSL-Universal
   - RNCryptor
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
   OpenSSL-Universal: 6dc366764e8bf6ca93c60bd767d9103146a3b3b6
   RNCryptor: 2e352a488779d1a9184ab629be22a7c5bc84acb5
 
-PODFILE CHECKSUM: 5535d6b498f44d9029cdce5c5c33caefb3d5793f
+PODFILE CHECKSUM: 2a008bbbe6e59cfecd6daed17b16e187f06a1ea5
 
 COCOAPODS: 1.3.1

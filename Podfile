@@ -9,6 +9,7 @@ target 'CryptoWallet' do
   pod 'OpenSSL-Universal'
   pod 'RNCryptor'
   pod 'AFNetworking'
+  pod 'KeychainAccess'
 
   target 'CryptoWalletTests' do
     inherit! :search_paths
