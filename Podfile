@@ -10,6 +10,7 @@ target 'CryptoWallet' do
   pod 'RNCryptor'
   pod 'AFNetworking'
   pod 'KeychainAccess'
+  pod 'iCloudDocumentSync'
 
   target 'CryptoWalletTests' do
     inherit! :search_paths

@@ -18,6 +18,7 @@ class SuccessViewController: UIViewController {
     var receiveSelectedObject:TLSelectedObject?
     var address: String!
     var accountBalance = TLCoin.zero()
+    var addresses: NSMutableArray?
 //    var providedKey: String!
     
     var qrcodeImage: CIImage!
@@ -27,19 +28,24 @@ class SuccessViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaults = UserDefaults.standard
-        if let btcAddress = defaults.string(forKey: "btcAddress") {
-            self.address = btcAddress
-            self.updateAddressBalance(address: address)
-            self.walletLabel.text = self.address
-            self.displayQRCodeImage()
-        } else {
-            self.createKeyPairAndAddress()
-            self.address = defaults.string(forKey: "btcAddress")
-            self.updateAddressBalance(address: address)
-            self.walletLabel.text = self.address
-            self.displayQRCodeImage()
-        }
+//        let defaults = UserDefaults.standard
+//        if let btcAddress = defaults.string(forKey: "btcAddress") {
+//            self.address = btcAddress
+//            self.updateAddressBalance(address: address)
+//            self.walletLabel.text = self.address
+//            self.displayQRCodeImage()
+//        } else {
+//            self.createKeyPairAndAddress()
+//            self.address = defaults.string(forKey: "btcAddress")
+//            self.updateAddressBalance(address: address)
+//            self.walletLabel.text = self.address
+//            self.displayQRCodeImage()
+//        }
+        
+//            self.updateAddressBalance()
+        
+        self.updateReceiveAddressArray()
+//        self.walletLabel.text = self.address
         
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -141,6 +147,26 @@ class SuccessViewController: UIViewController {
         self.accountBalance = TLCoin(uint64: self.accountBalance.toUInt64() + UInt64(balance))
         let balanceString = TLCurrencyFormat.getProperAmount(self.accountBalance)
         self.balanceLabel.text = "Balance: \(balanceString)"
+    }
+    
+    
+    
+    func updateReceiveAddressArray() {
+        let receivingAddressesCount = AppDelegate.instance().receiveSelectedObject!.getReceivingAddressesCount()
+        self.addresses = NSMutableArray(capacity: Int(receivingAddressesCount))
+        for i in stride(from: 0, to: Int(receivingAddressesCount), by: 1) {
+            let address = AppDelegate.instance().receiveSelectedObject!.getReceivingAddressForSelectedObject(i)
+            self.addresses!.add(address!)
+        }
+        
+        if (AppDelegate.instance().receiveSelectedObject!.getSelectedObjectType() == .account) {
+            self.addresses!.add("End")
+        }
+        self.address = self.addresses![0] as! String
+        print(self.address)
+        DispatchQueue.main.async {
+            self.walletLabel.text = self.address
+        }
     }
 
 }

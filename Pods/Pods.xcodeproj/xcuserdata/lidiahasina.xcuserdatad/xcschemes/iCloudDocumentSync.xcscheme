@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AE3C05997E236CD2A81677FCCD3560EC'
-               BlueprintName = 'RNCryptor'
+               BlueprintIdentifier = 'A964E4CD66B21F65CF2DC76BDC9A4531'
+               BlueprintName = 'iCloudDocumentSync'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RNCryptor.framework'>
+               BuildableName = 'iCloudDocumentSync.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

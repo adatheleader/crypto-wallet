@@ -161,6 +161,8 @@
 		3580322F1F8CDDDA001ACBE8 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358032171F8CDDDA001ACBE8 /* SocketEngine.swift */; };
 		358032351F8D1727001ACBE8 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 358032331F8D1727001ACBE8 /* NSDate-Utilities.m */; };
 		358032371F8E3B1D001ACBE8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 358032361F8E3B1D001ACBE8 /* libicucore.tbd */; };
+		3580327F1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580327E1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m */; };
+		358032851F963B0C001ACBE8 /* TLStringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358032841F963B0C001ACBE8 /* TLStringLocalized.swift */; };
 		359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30411F223F9D00B4E476 /* AppDelegate.swift */; };
 		359B30471F223F9D00B4E476 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B30451F223F9D00B4E476 /* Login.storyboard */; };
 		359B30491F223F9D00B4E476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B30481F223F9D00B4E476 /* Assets.xcassets */; };
@@ -440,6 +442,9 @@
 		358032331F8D1727001ACBE8 /* NSDate-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Utilities.m"; sourceTree = "<group>"; };
 		358032341F8D1727001ACBE8 /* NSDate-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-Utilities.h"; sourceTree = "<group>"; };
 		358032361F8E3B1D001ACBE8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		3580327D1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCloudDocumentSyncWrapper.h; sourceTree = "<group>"; };
+		3580327E1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCloudDocumentSyncWrapper.m; sourceTree = "<group>"; };
+		358032841F963B0C001ACBE8 /* TLStringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLStringLocalized.swift; sourceTree = "<group>"; };
 		359B303E1F223F9D00B4E476 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30411F223F9D00B4E476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -715,6 +720,7 @@
 		358031C41F8BA049001ACBE8 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
+				358032841F963B0C001ACBE8 /* TLStringLocalized.swift */,
 				358031FC1F8BC03E001ACBE8 /* TLUpdateAppData.swift */,
 				358031C51F8BA088001ACBE8 /* TLMacros.swift */,
 				358031C61F8BA088001ACBE8 /* TLNotificationEvents.swift */,
@@ -794,6 +800,15 @@
 			path = "NSDate-Extensions";
 			sourceTree = "<group>";
 		};
+		3580327C1F962322001ACBE8 /* CloudDocumentSyncWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				3580327D1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.h */,
+				3580327E1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m */,
+			);
+			path = CloudDocumentSyncWrapper;
+			sourceTree = "<group>";
+		};
 		359B30351F223F9D00B4E476 = {
 			isa = PBXGroup;
 			children = (
@@ -819,6 +834,7 @@
 		359B30401F223F9D00B4E476 /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				3580327C1F962322001ACBE8 /* CloudDocumentSyncWrapper */,
 				358032321F8D16C8001ACBE8 /* NSDate-Extensions */,
 				358031FF1F8CDDAF001ACBE8 /* Socket.IO-Client */,
 				358031E51F8BBECF001ACBE8 /* BreadWallet */,
@@ -1071,12 +1087,14 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
+				"${BUILT_PRODUCTS_DIR}/iCloudDocumentSync/iCloudDocumentSync.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCloudDocumentSync.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1215,6 +1233,7 @@
 				3575BD2A1F866A3B00D0B4F8 /* TLNetworking.swift in Sources */,
 				3575BDAC1F866ADB00D0B4F8 /* TLWalletJSONKeys.swift in Sources */,
 				358031D41F8BA089001ACBE8 /* TLNotificationEvents.swift in Sources */,
+				3580327F1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m in Sources */,
 				3575BD9E1F866ADB00D0B4F8 /* TLPreferences.swift in Sources */,
 				3554A01A1F8286A500205340 /* BTCCurvePoint.m in Sources */,
 				3554A0041F8286A500205340 /* BTCOpcode.m in Sources */,
@@ -1290,6 +1309,7 @@
 				3575BD9B1F866ADB00D0B4F8 /* TLSuggestions.swift in Sources */,
 				3554A00B1F8286A500205340 /* BTCFancyEncryptedMessage+Tests.m in Sources */,
 				3575BD301F866A3B00D0B4F8 /* TLBlockrAPI.swift in Sources */,
+				358032851F963B0C001ACBE8 /* TLStringLocalized.swift in Sources */,
 				35549FEB1F8286A500205340 /* BTCBase58+Tests.m in Sources */,
 				358032251F8CDDDA001ACBE8 /* SocketLogger.swift in Sources */,
 				3554A0011F8286A500205340 /* BTCProcessor.m in Sources */,

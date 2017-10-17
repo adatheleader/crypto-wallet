@@ -21,6 +21,7 @@
 #import "NSData+BTCData.h"
 #import "BTCMnemonic.h"
 #import "NSDate-Utilities.h"
+#import "TLCloudDocumentSyncWrapper.h"
 #include <CommonCrypto/CommonCrypto.h>
 #include <openssl/ec.h>
 #include <openssl/ecdsa.h>
