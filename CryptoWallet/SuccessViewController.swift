@@ -44,8 +44,7 @@ class SuccessViewController: UIViewController {
         
 //            self.updateAddressBalance()
         
-        self.updateReceiveAddressArray()
-//        self.walletLabel.text = self.address
+        self.walletLabel.text = AppDelegate.instance().address
         
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -68,23 +67,6 @@ class SuccessViewController: UIViewController {
     
     func displayQRCodeImage() {
         self.imgQRCode.image = self.generateQRCode(from: self.address!)
-    }
-    
-    func createKeyPairAndAddress() {
-        let defaults = UserDefaults.standard
-        let newKey = BTCKey()
-        let address = newKey?.address.string
-        let privateKey = newKey?.privateKey
-        let publicKey = newKey?.publicKey
-        //let hashtype:BTCSignatureHashType = BTCSignatureHashType(rawValue: 1)!
-        //let hashForSign = newKey?.address.data
-        //let signature = newKey?.signature(forHash: hashForSign, hashType: hashtype)
-        
-        defaults.set(address, forKey: "btcAddress")
-        defaults.set(privateKey, forKey: "privateKey")
-        defaults.set(publicKey, forKey: "publicKey")
-        self.savePrivateKeyToKeychain(privateKey: privateKey!)
-        
     }
     
 
@@ -148,25 +130,4 @@ class SuccessViewController: UIViewController {
         let balanceString = TLCurrencyFormat.getProperAmount(self.accountBalance)
         self.balanceLabel.text = "Balance: \(balanceString)"
     }
-    
-    
-    
-    func updateReceiveAddressArray() {
-        let receivingAddressesCount = AppDelegate.instance().receiveSelectedObject!.getReceivingAddressesCount()
-        self.addresses = NSMutableArray(capacity: Int(receivingAddressesCount))
-        for i in stride(from: 0, to: Int(receivingAddressesCount), by: 1) {
-            let address = AppDelegate.instance().receiveSelectedObject!.getReceivingAddressForSelectedObject(i)
-            self.addresses!.add(address!)
-        }
-        
-        if (AppDelegate.instance().receiveSelectedObject!.getSelectedObjectType() == .account) {
-            self.addresses!.add("End")
-        }
-        self.address = self.addresses![0] as! String
-        print(self.address)
-        DispatchQueue.main.async {
-            self.walletLabel.text = self.address
-        }
-    }
-
 }
