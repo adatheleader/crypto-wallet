@@ -32,7 +32,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.checkIfWalletIsStored()
+        if let passphraseFromDefaults = self.userInfo.value(forKey: "passphrase") {
+            self.address = self.userInfo.value(forKey: "address") as? String
+            self.passphrase = passphraseFromDefaults as? String
+            self.privateKey = self.userInfo.value(forKey: "privatekey") as? String
+            self.navToWalletStory()
+            print("PASSPHRASE STARTS:\n\n\n\n\(String(describing: self.passphrase))\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(String(describing: self.privateKey))\n\n\n\nBTC Address STARTS:\n\n\n\n\(String(describing: self.address))")
+        } else {
+          self.checkIfWalletIsStored()
+        }
 
         return true
     }
@@ -79,6 +87,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         TLPreferences.resetBlockExplorerAPIURL()
         TLPreferences.setBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
         TLPreferences.setInAppSettingsKitBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
+        self.userInfo.set(self.passphrase, forKey: "passphrase")
+        self.userInfo.set(self.address, forKey: "address")
+        self.userInfo.set(self.privateKey, forKey: "privatekey")
         self.navToWalletStory()
     }
     
