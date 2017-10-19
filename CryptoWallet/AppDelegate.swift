@@ -36,7 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.address = self.userInfo.value(forKey: "address") as? String
             self.passphrase = passphraseFromDefaults as? String
             self.privateKey = self.userInfo.value(forKey: "privatekey") as? String
-            self.navToWalletStory()
+            let touch = self.userInfo.value(forKey: "touch") as? Bool
+            if touch == false{
+                self.navToWalletStory()
+            } else if touch == true {
+                self.useTouchID()
+            }
             print("PASSPHRASE STARTS:\n\n\n\n\(String(describing: self.passphrase))\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(String(describing: self.privateKey))\n\n\n\nBTC Address STARTS:\n\n\n\n\(String(describing: self.address))")
         } else {
           self.checkIfWalletIsStored()
@@ -90,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.userInfo.set(self.passphrase, forKey: "passphrase")
         self.userInfo.set(self.address, forKey: "address")
         self.userInfo.set(self.privateKey, forKey: "privatekey")
-        self.navToWalletStory()
+        self.showTouchAlert()
     }
     
     func getPassphraseFromKeychain() -> String? {
