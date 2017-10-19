@@ -22,29 +22,14 @@ class SuccessViewController: UIViewController {
 //    var providedKey: String!
     
     var qrcodeImage: CIImage!
-    
-    let DEFAULT_BLOCKEXPLORER_API = TLBlockExplorer.blockchain
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let defaults = UserDefaults.standard
-//        if let btcAddress = defaults.string(forKey: "btcAddress") {
-//            self.address = btcAddress
-//            self.updateAddressBalance(address: address)
-//            self.walletLabel.text = self.address
-//            self.displayQRCodeImage()
-//        } else {
-//            self.createKeyPairAndAddress()
-//            self.address = defaults.string(forKey: "btcAddress")
-//            self.updateAddressBalance(address: address)
-//            self.walletLabel.text = self.address
-//            self.displayQRCodeImage()
-//        }
-        
-//            self.updateAddressBalance()
-        
-        self.walletLabel.text = AppDelegate.instance().address
+        self.address = AppDelegate.instance().address
+        self.walletLabel.text = self.address
+        self.displayQRCodeImage()
+        self.updateAddressBalance(address: self.address)
         
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -98,10 +83,6 @@ class SuccessViewController: UIViewController {
     
     func updateAddressBalance(address: String) {
         var addresses = [String]()
-        var address2NumberOfTransactions = [String:Int]()
-        var address2BalanceDict = [String:TLCoin]()
-        let addressToIdxDict = NSMutableDictionary()
-        var accountAddressIdx = -1
         addresses.append(address)
         let jsonData = TLBlockExplorerAPI.instance().getAddressesInfoSynchronous(addresses)
         if (jsonData.object(forKey: TLNetworking.STATIC_MEMBERS.HTTP_ERROR_CODE) != nil) {
@@ -112,19 +93,8 @@ class SuccessViewController: UIViewController {
         var balance:UInt64 = 0
         for _addressDict in addressesArray {
             let addressDict = _addressDict as! NSDictionary
-            let n_tx = addressDict.object(forKey: "n_tx") as! Int
-            let address = addressDict.object(forKey: "address") as! String
-            address2NumberOfTransactions[address] = n_tx
             let addressBalance = (addressDict.object(forKey: "final_balance") as! NSNumber).uint64Value
             balance += addressBalance
-            //address2BalanceDict[address] = TLCoin(uint64: addressBalance)
-            
-            
-            //let HDIdx = addressToIdxDict.object(forKey: address) as! Int
-           // DLog(String(format: "recoverAccountMainAddresses HDIdx: %d address: %@ n_tx: %d", HDIdx, address, n_tx))
-            /*if (n_tx > 0 && HDIdx > accountAddressIdx) {
-                accountAddressIdx = HDIdx
-            }*/
         }
         self.accountBalance = TLCoin(uint64: self.accountBalance.toUInt64() + UInt64(balance))
         let balanceString = TLCurrencyFormat.getProperAmount(self.accountBalance)

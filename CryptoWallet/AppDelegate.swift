@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var passphrase: String?
     var address: String?
+    var privateKey: String?
     
     
     
@@ -72,13 +73,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initWallet(passphrase: String) {
         let masterHex = TLCoreBitcoinWrapper.getMasterHex(passphrase)
         let extendedPrivateKey = TLCoreBitcoinWrapper.getExtendPrivKey(masterHex)
-        
-//        let accountKeychain = TLCoreBitcoinWrapper.getBIP44KeyChain(masterHex as NSString)
-        let privateKey = TLCoreBitcoinWrapper.getPrivateKey(extendedPrivateKey as NSString, sequence: [0,1], isTestnet: false)
-        let address = TLCoreBitcoinWrapper.getAddress(privateKey, isTestnet: false)
-        print("PASSPHRASE STARTS:\n\n\n\n\(passphrase)\n\n\n\nEXTENDED PRIVATE KET STARTS:\n\n\n\n\(extendedPrivateKey)\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(privateKey)\n\n\n\nBTC Address STARTS:\n\n\n\n\(address)")
-//        let address = accountKeychain.key.address.string
-//        let privateKet = accountKeychain.key.wif
+        self.privateKey = TLCoreBitcoinWrapper.getPrivateKey(extendedPrivateKey as NSString, sequence: [0,1], isTestnet: false)
+        self.address = TLCoreBitcoinWrapper.getAddress(privateKey!, isTestnet: false)
+        print("PASSPHRASE STARTS:\n\n\n\n\(passphrase)\n\n\n\nEXTENDED PRIVATE KET STARTS:\n\n\n\n\(extendedPrivateKey)\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(String(describing: self.privateKey))\n\n\n\nBTC Address STARTS:\n\n\n\n\(String(describing: self.address))")
+        TLPreferences.resetBlockExplorerAPIURL()
+        TLPreferences.setBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
+        TLPreferences.setInAppSettingsKitBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
+        self.navToWalletStory()
     }
     
     func getPassphraseFromKeychain() -> String? {
