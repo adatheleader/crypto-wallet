@@ -8,6 +8,7 @@
 
 import UIKit
 import KeychainAccess
+import LocalAuthentication
 
 class SuccessViewController: UIViewController {
     
@@ -25,6 +26,13 @@ class SuccessViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Enter"
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.isTranslucent = false
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        
         
         self.address = AppDelegate.instance().address
         self.walletLabel.text = self.address
@@ -100,4 +108,37 @@ class SuccessViewController: UIViewController {
         let balanceString = TLCurrencyFormat.getProperAmount(self.accountBalance)
         self.balanceLabel.text = "Balance: \(balanceString)"
     }
+    
+    @IBAction func showBackupPhrase(_ sender: Any) {
+        self.useTouchID()
+    }
+    
+    func useTouchID() {
+        // Declare a NSError variable.
+        var error: NSError?
+        let context = LAContext()
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Only awesome people are welcome!"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [unowned self] (success, authenticationError) in
+                
+                DispatchQueue.main.async {
+                    if success {
+                        self.performSegue(withIdentifier: "showPhrase", sender: nil)
+                    } else {
+                        let ac = UIAlertController(title: "Authentication failed", message: "Your fingerprint could not be verified; please try again.", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        self.present(ac, animated: true, completion: nil)
+                    }
+                }
+            }
+        } else {
+            let ac = UIAlertController(title: "Touch ID not available", message: "Your device is not configured for Touch ID.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(ac, animated: true, completion: nil)
+        }
+    }
+    
 }

@@ -51,11 +51,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func navToWalletStory() {
-        let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Wallet", bundle: nil)
-        let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "Welcome") as UIViewController
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = initialViewControlleripad
-        self.window?.makeKeyAndVisible()
+        
+        DispatchQueue.main.async(execute: {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Wallet", bundle: Bundle.main)
+            let navBarController: UINavigationController = storyboard.instantiateViewController(withIdentifier: "navBarController") as! UINavigationController
+            self.window?.makeKeyAndVisible()
+            self.window?.rootViewController = navBarController
+        })
     }
     
     func checkIfWalletIsStored() {

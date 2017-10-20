@@ -163,6 +163,8 @@
 		358032371F8E3B1D001ACBE8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 358032361F8E3B1D001ACBE8 /* libicucore.tbd */; };
 		3580327F1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3580327E1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m */; };
 		358032851F963B0C001ACBE8 /* TLStringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358032841F963B0C001ACBE8 /* TLStringLocalized.swift */; };
+		35912EF61F9A3D500017F79E /* BackupPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35912EF51F9A3D500017F79E /* BackupPhraseViewController.swift */; };
+		35912EF81F9A56840017F79E /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35912EF71F9A56840017F79E /* NavBarViewController.swift */; };
 		359B30421F223F9D00B4E476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B30411F223F9D00B4E476 /* AppDelegate.swift */; };
 		359B30471F223F9D00B4E476 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B30451F223F9D00B4E476 /* Login.storyboard */; };
 		359B30491F223F9D00B4E476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B30481F223F9D00B4E476 /* Assets.xcassets */; };
@@ -445,6 +447,8 @@
 		3580327D1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCloudDocumentSyncWrapper.h; sourceTree = "<group>"; };
 		3580327E1F962347001ACBE8 /* TLCloudDocumentSyncWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCloudDocumentSyncWrapper.m; sourceTree = "<group>"; };
 		358032841F963B0C001ACBE8 /* TLStringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLStringLocalized.swift; sourceTree = "<group>"; };
+		35912EF51F9A3D500017F79E /* BackupPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupPhraseViewController.swift; sourceTree = "<group>"; };
+		35912EF71F9A56840017F79E /* NavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
 		359B303E1F223F9D00B4E476 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359B30411F223F9D00B4E476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359B30461F223F9D00B4E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -853,6 +857,8 @@
 				3510175B1F262994002B23F8 /* SignUpTableViewController.swift */,
 				3510175D1F263AB7002B23F8 /* Wallet.storyboard */,
 				35688A7B1F41C337004EB4F4 /* CopyableLabel.swift */,
+				35912EF51F9A3D500017F79E /* BackupPhraseViewController.swift */,
+				35912EF71F9A56840017F79E /* NavBarViewController.swift */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -1254,6 +1260,7 @@
 				3575BDAE1F866ADB00D0B4F8 /* TLAnalytics.swift in Sources */,
 				3575BD2B1F866A3B00D0B4F8 /* TLExchangeRate.swift in Sources */,
 				3554A0191F8286A500205340 /* NSData+BTCData.m in Sources */,
+				35912EF61F9A3D500017F79E /* BackupPhraseViewController.swift in Sources */,
 				3575BD311F866A3B00D0B4F8 /* TLBlockchainAPI.swift in Sources */,
 				3554A0181F8286A500205340 /* BTCAssetType.m in Sources */,
 				3554A01E1F8286A500205340 /* BTCBlindSignature+Tests.m in Sources */,
@@ -1319,6 +1326,7 @@
 				3554A0211F8286A500205340 /* BTCKey.m in Sources */,
 				358031F91F8BBF02001ACBE8 /* BRKey+BIP38.m in Sources */,
 				3554A0281F8286A500205340 /* BTCMnemonic+Tests.m in Sources */,
+				35912EF81F9A56840017F79E /* NavBarViewController.swift in Sources */,
 				3554A0221F8286A500205340 /* BTCData.m in Sources */,
 				3554A0071F8286A500205340 /* BTCTransactionOutput.m in Sources */,
 				3580321F1F8CDDDA001ACBE8 /* SocketEnginePacketType.swift in Sources */,
