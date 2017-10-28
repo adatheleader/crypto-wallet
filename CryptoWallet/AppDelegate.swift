@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var address: String?
     var privateKey: String?
     
-    
+    lazy var txFeeAPI = TLTxFeeAPI()
+    var godSend:TLSpaghettiGodSend?
     
     class func instance() -> AppDelegate {
         return UIApplication.shared.delegate as! (AppDelegate)
