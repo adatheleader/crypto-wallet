@@ -12,10 +12,11 @@
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
         </array>
     </customFonts>
     <scenes>
-        <!--Success View Controller-->
+        <!-- BTC Wallet-->
         <scene sceneID="sFR-Gk-F1b">
             <objects>
                 <viewController storyboardIdentifier="Welcome" id="mcf-9R-zFW" customClass="SuccessViewController" customModule="CryptoWallet" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,14 +34,8 @@
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BTC address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-k2-4gH">
-                                <rect key="frame" x="118.5" y="72" width="138" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhQ-aC-wF1">
-                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="fxH-Gs-QVG"/>
                                     <constraint firstAttribute="height" constant="200" id="oHJ-nB-FT1"/>
@@ -53,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGo-QT-nrC">
-                                <rect key="frame" x="87" y="547" width="200" height="42"/>
+                                <rect key="frame" x="87" y="547.5" width="200" height="42"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="O47-mA-dCc"/>
@@ -68,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHR-sD-rPb">
-                                <rect key="frame" x="87" y="485" width="200" height="42"/>
+                                <rect key="frame" x="87" y="485.5" width="200" height="42"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="cfz-TS-GZm"/>
@@ -86,20 +81,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0lR-yY-PcD" firstAttribute="top" secondItem="Q3H-fv-9af" secondAttribute="bottom" constant="20" id="4Z0-es-uB4"/>
-                            <constraint firstItem="8ub-k2-4gH" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="ASI-3O-pbO"/>
                             <constraint firstItem="xhQ-aC-wF1" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="Ovj-Ge-Ga3"/>
-                            <constraint firstItem="8ub-k2-4gH" firstAttribute="top" secondItem="S09-bz-jNW" secondAttribute="bottom" constant="8" id="PbA-iW-9y1"/>
-                            <constraint firstItem="Q3H-fv-9af" firstAttribute="top" secondItem="8ub-k2-4gH" secondAttribute="bottom" constant="20" id="R6l-BA-23h"/>
                             <constraint firstItem="xhQ-aC-wF1" firstAttribute="centerY" secondItem="9ST-hJ-Box" secondAttribute="centerY" id="U8K-03-4yb"/>
                             <constraint firstItem="0lR-yY-PcD" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="czC-9L-zUf"/>
                             <constraint firstItem="FHR-sD-rPb" firstAttribute="top" secondItem="xhQ-aC-wF1" secondAttribute="bottom" constant="52" id="eTX-xo-lua"/>
                             <constraint firstItem="qGo-QT-nrC" firstAttribute="top" secondItem="FHR-sD-rPb" secondAttribute="bottom" constant="20" id="g5F-st-N0j"/>
                             <constraint firstItem="FHR-sD-rPb" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="gyo-TM-DG5"/>
+                            <constraint firstItem="Q3H-fv-9af" firstAttribute="top" secondItem="S09-bz-jNW" secondAttribute="bottom" constant="48" id="hbG-l4-zvg"/>
                             <constraint firstItem="qGo-QT-nrC" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="lq0-Uc-N0k"/>
                             <constraint firstItem="Q3H-fv-9af" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="vSG-Di-VQb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jEp-U0-lMC"/>
+                    <navigationItem key="navigationItem" title=" BTC Wallet" id="jEp-U0-lMC"/>
                     <connections>
                         <outlet property="balanceLabel" destination="0lR-yY-PcD" id="n2C-DL-1Df"/>
                         <outlet property="imgQRCode" destination="xhQ-aC-wF1" id="D07-bE-j8B"/>
@@ -138,15 +131,15 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write down the 12 word passphrase below and keep it safe. You can restore your wallet with this single passphrase." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G2T-0y-AtS">
-                                <rect key="frame" x="16" y="224" width="343" height="85"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write down the 12 word passphrase below and keep it safe. You can restore your wallet with this single passphrase." textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G2T-0y-AtS">
+                                <rect key="frame" x="16" y="224" width="343" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="0V0-3l-eNA"/>
+                                    <constraint firstAttribute="height" constant="141" id="0V0-3l-eNA"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
