@@ -18,6 +18,10 @@ class SendViewController: UIViewController, UITextFieldDelegate {
     
     fileprivate var tapGesture: UITapGestureRecognizer?
     
+    class func instance() -> SendViewController {
+        return UIApplication.shared.delegate as! (SendViewController)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

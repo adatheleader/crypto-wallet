@@ -423,7 +423,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
     
     func scanSignedTx(success: @escaping (TLWalletUtils.Success), error: @escaping (TLWalletUtils.Error)) {
-        AppDelegate.instance().showColdWalletSpendReaderControllerFromViewController(self, success: {
+        SendViewController.instance().showAddressReaderControllerFromViewController(self, success: {
             (data: String!) in
             let ret = TLColdWallet.parseScannedPart(data)
             let dataPart = ret.0

@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let MAX_CONSECUTIVE_FAILED_STEALTH_CHALLENGE_COUNT = 8
     let SAVE_WALLET_PAYLOAD_DELAY = 2.0
     let RESPOND_TO_STEALTH_PAYMENT_GET_TX_TRIES_MAX_TRIES = 3
+    lazy var webSocketNotifiedTxHashSet:NSMutableSet = NSMutableSet()
+    var pendingSelfStealthPaymentTxid: String? = nil
     
     var passphrase: String?
     var address: String?
@@ -186,4 +188,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 }

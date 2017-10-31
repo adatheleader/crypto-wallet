@@ -12,9 +12,9 @@
 		3541A3111FA8A13E004AC130 /* TLQRImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3101FA8A13E004AC130 /* TLQRImageModal.swift */; };
 		3541A3191FA8A344004AC130 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3181FA8A344004AC130 /* CustomIOS7AlertView.m */; };
 		3541A3251FA8A6EA004AC130 /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3541A31D1FA8A6EA004AC130 /* QR_Encode.cpp */; };
-		3541A3261FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A31F1FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm */; };
-		3541A3271FA8A6EA004AC130 /* DataMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3211FA8A6EA004AC130 /* DataMatrix.mm */; };
-		3541A3281FA8A6EA004AC130 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3231FA8A6EA004AC130 /* QREncoder.mm */; };
+		3541A3261FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A31F1FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3541A3271FA8A6EA004AC130 /* DataMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3211FA8A6EA004AC130 /* DataMatrix.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3541A3281FA8A6EA004AC130 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3231FA8A6EA004AC130 /* QREncoder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3547D28B1FA49611000E1924 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28A1FA49611000E1924 /* SendViewController.swift */; };
 		3547D28D1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28C1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift */; };
 		3547D28F1FA4AD9B000E1924 /* ReviewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28E1FA4AD9B000E1924 /* ReviewPaymentViewController.swift */; };
@@ -1603,6 +1603,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
 				DEVELOPMENT_TEAM = H89873LUM4;
 				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1622,6 +1625,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
 				DEVELOPMENT_TEAM = H89873LUM4;
 				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
