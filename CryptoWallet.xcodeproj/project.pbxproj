@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3510175C1F262994002B23F8 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510175B1F262994002B23F8 /* SignUpTableViewController.swift */; };
 		3510175E1F263AB7002B23F8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3510175D1F263AB7002B23F8 /* Wallet.storyboard */; };
+		3541A3111FA8A13E004AC130 /* TLQRImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3101FA8A13E004AC130 /* TLQRImageModal.swift */; };
+		3541A3191FA8A344004AC130 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3181FA8A344004AC130 /* CustomIOS7AlertView.m */; };
+		3541A3251FA8A6EA004AC130 /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3541A31D1FA8A6EA004AC130 /* QR_Encode.cpp */; };
+		3541A3261FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A31F1FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm */; };
+		3541A3271FA8A6EA004AC130 /* DataMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3211FA8A6EA004AC130 /* DataMatrix.mm */; };
+		3541A3281FA8A6EA004AC130 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3231FA8A6EA004AC130 /* QREncoder.mm */; };
 		3547D28B1FA49611000E1924 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28A1FA49611000E1924 /* SendViewController.swift */; };
 		3547D28D1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28C1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift */; };
 		3547D28F1FA4AD9B000E1924 /* ReviewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28E1FA4AD9B000E1924 /* ReviewPaymentViewController.swift */; };
@@ -206,6 +212,19 @@
 		3510175B1F262994002B23F8 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		3510175D1F263AB7002B23F8 /* Wallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		35343AFA1F82735200ECA9F7 /* CryptoWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoWallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		3541A3101FA8A13E004AC130 /* TLQRImageModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLQRImageModal.swift; sourceTree = "<group>"; };
+		3541A3171FA8A344004AC130 /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		3541A3181FA8A344004AC130 /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		3541A31B1FA8A6EA004AC130 /* QRCodeEncoderObjectiveCAtGithub-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QRCodeEncoderObjectiveCAtGithub-Prefix.pch"; sourceTree = "<group>"; };
+		3541A31C1FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeEncoderDemoViewController.h; sourceTree = "<group>"; };
+		3541A31D1FA8A6EA004AC130 /* QR_Encode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QR_Encode.cpp; sourceTree = "<group>"; };
+		3541A31E1FA8A6EA004AC130 /* QR_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QR_Encode.h; sourceTree = "<group>"; };
+		3541A31F1FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QRCodeEncoderDemoViewController.mm; sourceTree = "<group>"; };
+		3541A3201FA8A6EA004AC130 /* DataMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMatrix.h; sourceTree = "<group>"; };
+		3541A3211FA8A6EA004AC130 /* DataMatrix.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataMatrix.mm; sourceTree = "<group>"; };
+		3541A3221FA8A6EA004AC130 /* QREncoder-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QREncoder-Prefix.pch"; sourceTree = "<group>"; };
+		3541A3231FA8A6EA004AC130 /* QREncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QREncoder.mm; sourceTree = "<group>"; };
+		3541A3241FA8A6EA004AC130 /* QREncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QREncoder.h; sourceTree = "<group>"; };
 		3547D28A1FA49611000E1924 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		3547D28C1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewControllerV.swift; sourceTree = "<group>"; };
 		3547D28E1FA4AD9B000E1924 /* ReviewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPaymentViewController.swift; sourceTree = "<group>"; };
@@ -658,6 +677,32 @@
 			path = CoreBitcoin;
 			sourceTree = "<group>";
 		};
+		3541A3161FA8A2FC004AC130 /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				3541A3171FA8A344004AC130 /* CustomIOS7AlertView.h */,
+				3541A3181FA8A344004AC130 /* CustomIOS7AlertView.m */,
+			);
+			path = CustomAlertView;
+			sourceTree = "<group>";
+		};
+		3541A31A1FA8A6B1004AC130 /* QRCodeEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				3541A3201FA8A6EA004AC130 /* DataMatrix.h */,
+				3541A3211FA8A6EA004AC130 /* DataMatrix.mm */,
+				3541A31D1FA8A6EA004AC130 /* QR_Encode.cpp */,
+				3541A31E1FA8A6EA004AC130 /* QR_Encode.h */,
+				3541A31C1FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.h */,
+				3541A31F1FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm */,
+				3541A31B1FA8A6EA004AC130 /* QRCodeEncoderObjectiveCAtGithub-Prefix.pch */,
+				3541A3221FA8A6EA004AC130 /* QREncoder-Prefix.pch */,
+				3541A3241FA8A6EA004AC130 /* QREncoder.h */,
+				3541A3231FA8A6EA004AC130 /* QREncoder.mm */,
+			);
+			path = QRCodeEncoder;
+			sourceTree = "<group>";
+		};
 		3575BD1D1F866A0500D0B4F8 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +775,7 @@
 		358031C41F8BA049001ACBE8 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
+				3541A3101FA8A13E004AC130 /* TLQRImageModal.swift */,
 				358032841F963B0C001ACBE8 /* TLStringLocalized.swift */,
 				358031FC1F8BC03E001ACBE8 /* TLUpdateAppData.swift */,
 				358031C51F8BA088001ACBE8 /* TLMacros.swift */,
@@ -844,6 +890,8 @@
 		359B30401F223F9D00B4E476 /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				3541A31A1FA8A6B1004AC130 /* QRCodeEncoder */,
+				3541A3161FA8A2FC004AC130 /* CustomAlertView */,
 				3580327C1F962322001ACBE8 /* CloudDocumentSyncWrapper */,
 				358032321F8D16C8001ACBE8 /* NSDate-Extensions */,
 				358031FF1F8CDDAF001ACBE8 /* Socket.IO-Client */,
@@ -1224,6 +1272,7 @@
 				3547D28F1FA4AD9B000E1924 /* ReviewPaymentViewController.swift in Sources */,
 				3554A0271F8286A500205340 /* BTCBigNumber+Tests.m in Sources */,
 				358031F71F8BBF02001ACBE8 /* NSString+Base58.m in Sources */,
+				3541A3281FA8A6EA004AC130 /* QREncoder.mm in Sources */,
 				3554A0061F8286A500205340 /* BTCEncryptedMessage+Tests.m in Sources */,
 				3554A00C1F8286A500205340 /* BTCData+Tests.m in Sources */,
 				358031DE1F8BA089001ACBE8 /* TLUtils.swift in Sources */,
@@ -1235,6 +1284,8 @@
 				358032261F8CDDDA001ACBE8 /* SocketEventHandler.swift in Sources */,
 				3575BD321F866A3B00D0B4F8 /* TLInsightAPI.swift in Sources */,
 				3580321C1F8CDDDA001ACBE8 /* SocketAckManager.swift in Sources */,
+				3541A3251FA8A6EA004AC130 /* QR_Encode.cpp in Sources */,
+				3541A3261FA8A6EA004AC130 /* QRCodeEncoderDemoViewController.mm in Sources */,
 				3554A0121F8286A500205340 /* BTCPaymentRequest.m in Sources */,
 				3554A01B1F8286A500205340 /* BTCPaymentMethodRequest.m in Sources */,
 				3580322A1F8CDDDA001ACBE8 /* SocketEngineClient.swift in Sources */,
@@ -1293,8 +1344,10 @@
 				3575BDB91F86709300D0B4F8 /* base64.c in Sources */,
 				3575BD9C1F866ADB00D0B4F8 /* TLCoreBitcoinWrapper.swift in Sources */,
 				3554A0201F8286A500205340 /* BTCTransaction+Tests.m in Sources */,
+				3541A3271FA8A6EA004AC130 /* DataMatrix.mm in Sources */,
 				358031FB1F8BBF02001ACBE8 /* NSData+Bitcoin.m in Sources */,
 				3580321E1F8CDDDA001ACBE8 /* SocketEngineWebsocket.swift in Sources */,
+				3541A3111FA8A13E004AC130 /* TLQRImageModal.swift in Sources */,
 				35549FE41F8286A500205340 /* BTCBlockHeader.m in Sources */,
 				358032281F8CDDDA001ACBE8 /* SocketStringReader.swift in Sources */,
 				35549FEF1F8286A500205340 /* BTCBitcoinURL+Tests.m in Sources */,
@@ -1325,6 +1378,7 @@
 				3575BD2F1F866A3B00D0B4F8 /* TLBitcoinListener.swift in Sources */,
 				3575BDAA1F866ADB00D0B4F8 /* TLCoin.swift in Sources */,
 				3575BDAD1F866ADB00D0B4F8 /* TLWalletUtils.swift in Sources */,
+				3541A3191FA8A344004AC130 /* CustomIOS7AlertView.m in Sources */,
 				3575BD9B1F866ADB00D0B4F8 /* TLSuggestions.swift in Sources */,
 				3554A00B1F8286A500205340 /* BTCFancyEncryptedMessage+Tests.m in Sources */,
 				3575BD301F866A3B00D0B4F8 /* TLBlockrAPI.swift in Sources */,

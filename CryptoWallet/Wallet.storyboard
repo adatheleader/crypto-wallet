@@ -324,7 +324,7 @@
         <!--Review Payment View Controller-->
         <scene sceneID="vfm-9u-4DD">
             <objects>
-                <viewController storyboardIdentifier="ReviewPayment" id="iPn-Kg-Ph8" customClass="TLReviewPaymentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReviewPayment" id="iPn-Kg-Ph8" customClass="ReviewPaymentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ygM-5u-eVY"/>
                         <viewControllerLayoutGuide type="bottom" id="DAf-rO-avz"/>
@@ -338,11 +338,7 @@
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Confirm Payment" id="L6R-Yo-Vn7">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pdQ-v6-zTq">
-                                            <connections>
-                                                <action selector="cancel:" destination="iPn-Kg-Ph8" id="yTQ-FH-gRg"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pdQ-v6-zTq"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -441,7 +437,7 @@
                                                     <constraint firstAttribute="height" constant="22" id="9wS-Fd-Fj0"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="feeInfoButtonClicked:" destination="iPn-Kg-Ph8" eventType="touchUpInside" id="PKe-SU-Myk"/>
+                                                    <action selector="feeInfoButtonClicked:" destination="iPn-Kg-Ph8" eventType="touchUpInside" id="hSb-ya-jMh"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUc-Wu-57R">
@@ -479,7 +475,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Customize Fee"/>
                                                 <connections>
-                                                    <action selector="customizeFeeButtonClicked:" destination="iPn-Kg-Ph8" eventType="touchUpInside" id="Nin-Gy-3pm"/>
+                                                    <action selector="customizeFeeButtonClicked:" destination="iPn-Kg-Ph8" eventType="touchUpInside" id="HcT-aR-IZb"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spt-cC-oci">
@@ -609,7 +605,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="sendButtonClicked:" destination="iPn-Kg-Ph8" eventType="touchUpInside" id="q8E-13-4SW"/>
+                                            <action selector="sendButtonClicked:" destination="iPn-Kg-Ph8" eventType="touchUpInside" id="Tmd-D8-GGo"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -649,18 +645,18 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="feeAmountFiatLabel" destination="aa7-Fx-b87" id="hON-OX-l7D"/>
-                        <outlet property="feeAmountLabel" destination="1Hs-Wg-oYx" id="Klb-9J-Igk"/>
-                        <outlet property="fiatUnitLabel" destination="4Ai-Q6-ggH" id="mv1-cT-2cF"/>
-                        <outlet property="fromLabel" destination="lja-wK-ihg" id="HRg-JH-sA8"/>
-                        <outlet property="navigationBar" destination="hBW-bC-Hno" id="ipt-mP-wDX"/>
-                        <outlet property="sendButton" destination="gLW-e1-CSe" id="FG3-0C-XFN"/>
-                        <outlet property="toAmountFiatLabel" destination="Cab-dg-VXU" id="etd-Us-hzg"/>
-                        <outlet property="toAmountLabel" destination="CBq-YR-8B9" id="nFH-xi-gnl"/>
-                        <outlet property="toLabel" destination="qDZ-Xj-9d9" id="DGz-3m-KXT"/>
-                        <outlet property="totalAmountLabel" destination="PdA-Jt-6rf" id="MwQ-kc-c8K"/>
-                        <outlet property="totalFiatAmountLabel" destination="LmL-Sk-onI" id="QG9-qS-Q9a"/>
-                        <outlet property="unitLabel" destination="VUO-bp-NNa" id="hFO-iK-JKt"/>
+                        <outlet property="feeAmountFiatLabel" destination="aa7-Fx-b87" id="2Zh-8b-8sT"/>
+                        <outlet property="feeAmountLabel" destination="1Hs-Wg-oYx" id="DMY-Ie-KNm"/>
+                        <outlet property="fiatUnitLabel" destination="4Ai-Q6-ggH" id="lCZ-dM-chl"/>
+                        <outlet property="fromLabel" destination="lja-wK-ihg" id="NDj-4q-jBE"/>
+                        <outlet property="navigationBar" destination="hBW-bC-Hno" id="JIQ-78-8h6"/>
+                        <outlet property="sendButton" destination="gLW-e1-CSe" id="NjK-Ga-LaI"/>
+                        <outlet property="toAmountFiatLabel" destination="Cab-dg-VXU" id="eQb-ve-BBB"/>
+                        <outlet property="toAmountLabel" destination="CBq-YR-8B9" id="yJg-lH-xHm"/>
+                        <outlet property="toLabel" destination="qDZ-Xj-9d9" id="NFw-jy-9iF"/>
+                        <outlet property="totalAmountLabel" destination="PdA-Jt-6rf" id="zqp-iI-g4A"/>
+                        <outlet property="totalFiatAmountLabel" destination="LmL-Sk-onI" id="P00-up-bua"/>
+                        <outlet property="unitLabel" destination="VUO-bp-NNa" id="X9Z-0Z-g9T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjz-Pm-o6L" userLabel="First Responder" sceneMemberID="firstResponder"/>

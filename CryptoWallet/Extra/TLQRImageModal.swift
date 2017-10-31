@@ -70,8 +70,8 @@ import UIKit
         titleLabel.textAlignment = .center
         
         titleLabel.isUserInteractionEnabled = false
-        titleLabel.backgroundColor = TLColors.mainAppColor()
-        titleLabel.textColor = TLColors.mainAppOppositeColor()
+//        titleLabel.backgroundColor = TLColors.mainAppColor()
+//        titleLabel.textColor = TLColors.mainAppOppositeColor()
         titleLabel.layer.cornerRadius = 5.0
         
         containerView.addSubview(titleLabel)
@@ -80,18 +80,8 @@ import UIKit
         alertView.buttonTitles = [buttonCopyText, STATIC_MEMBERS.DISMISS_TEXT]
         
         //TODO: refactor, find cleaner way to do this
-        if (vc is TLManageAccountsViewController) {
-            alertView.delegate = vc as! TLManageAccountsViewController
-        } else if (vc is TLAddressListViewController) {
-            alertView.delegate = vc as! TLAddressListViewController
-        } else if (vc is TLCreateColdWalletViewController) {
-            alertView.delegate = vc as! TLCreateColdWalletViewController
-        } else if (vc is TLAuthorizeColdWalletPaymentViewController) {
-            alertView.delegate = vc as! TLAuthorizeColdWalletPaymentViewController
-        } else if (vc is TLBrainWalletViewController) {
-            alertView.delegate = vc as! TLBrainWalletViewController
-        } else if (vc is TLReviewPaymentViewController) {
-            alertView.delegate = vc as! TLReviewPaymentViewController
+         if (vc is ReviewPaymentViewController) {
+            alertView.delegate = vc as! ReviewPaymentViewController as! CustomIOS7AlertViewDelegate
         }
     }
     
@@ -100,7 +90,7 @@ import UIKit
         NotificationCenter.default.addObserver(self, selector:#selector(TLQRImageModal.dismissDialog(_:)), name:NSNotification.Name.UIApplicationDidEnterBackground, object:nil)
     }
     
-    func dismissDialog(_ notification: Notification) -> () {
+    @objc func dismissDialog(_ notification: Notification) -> () {
         for subview in alertView.dialogView.subviews {
             if (subview is UIButton) {
                 let button = subview as! UIButton

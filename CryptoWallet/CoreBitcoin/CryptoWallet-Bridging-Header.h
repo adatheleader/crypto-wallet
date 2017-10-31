@@ -22,6 +22,8 @@
 #import "BTCMnemonic.h"
 #import "NSDate-Utilities.h"
 #import "TLCloudDocumentSyncWrapper.h"
+#import "CustomIOS7AlertView.h"
+#import "QREncoder.h"
 #include <CommonCrypto/CommonCrypto.h>
 #include <openssl/ec.h>
 #include <openssl/ecdsa.h>

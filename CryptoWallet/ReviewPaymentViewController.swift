@@ -49,7 +49,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     @IBOutlet weak var sendButton: UIButton!
     weak var reviewPaymentViewController: ReviewPaymentViewController?
     fileprivate lazy var showedPromptedForSentPaymentTxHashSet:NSMutableSet = NSMutableSet()
-//    fileprivate var QRImageModal: TLQRImageModal?
+    fileprivate var QRImageModal: TLQRImageModal?
     fileprivate var airGapDataBase64PartsArray: Array<String>?
     var sendTimer:Timer?
     var sendTxHash:String?
@@ -186,12 +186,12 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
         TLHUDWrapper.hideHUDForView(self.view, animated: true)
     }
     
-    func retryFinishSend() {
-        DLog("retryFinishSend \(self.sendTxHash)")
+    @objc func retryFinishSend() {
+        DLog("retryFinishSend \(String(describing: self.sendTxHash))")
         if !AppDelegate.instance().webSocketNotifiedTxHashSet.contains(self.sendTxHash!) {
             let nonUpdatedBalance = AppDelegate.instance().godSend!.getCurrentFromBalance()
             let accountNewBalance = nonUpdatedBalance.subtract(self.amountMovedFromAccount!)
-            DLog("retryFinishSend 2 \(self.sendTxHash)")
+            DLog("retryFinishSend 2 \(String(describing: self.sendTxHash))")
             AppDelegate.instance().godSend!.setCurrentFromBalance(accountNewBalance)
         }
         
@@ -201,11 +201,11 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
         }
     }
     
-    func finishSend(_ note: Notification) {
+    @objc func finishSend(_ note: Notification) {
         let webSocketNotifiedTxHash = note.object as? String
-        DLog("finishSend \(webSocketNotifiedTxHash)")
+        DLog("finishSend \(String(describing: webSocketNotifiedTxHash))")
         if webSocketNotifiedTxHash! == self.sendTxHash! && !self.showedPromptedForSentPaymentTxHashSet.contains(webSocketNotifiedTxHash!) {
-            DLog("finishSend 2 \(webSocketNotifiedTxHash)")
+            DLog("finishSend 2 \(String(describing: webSocketNotifiedTxHash))")
             self.showedPromptedForSentPaymentTxHashSet.add(webSocketNotifiedTxHash!)
             sendTimer?.invalidate()
             self.showPromptPaymentSent(webSocketNotifiedTxHash!, address: self.toAddress!, amount: self.toAmount!)
@@ -309,14 +309,14 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
                 }
             }
             
-            if let label = AppDelegate.instance().appWallet.getLabelForAddress(toAddress) {
-                AppDelegate.instance().appWallet.setTransactionTag(txHash, tag: label)
-            }
+//            if let label = AppDelegate.instance().appWallet.getLabelForAddress(toAddress) {
+//                AppDelegate.instance().appWallet.setTransactionTag(txHash, tag: label)
+//            }
             handlePushTxSuccess()
             
         }, failure: {
             (code, status) in
-            DLog("showPromptReviewTx pushTx: failure \(code) \(status)")
+            DLog("showPromptReviewTx pushTx: failure \(code) \(String(describing: status))")
             if (code == 200) {
                 handlePushTxSuccess()
             } else {
@@ -340,7 +340,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
         let extendedPublicKey = AppDelegate.instance().godSend!.getExtendedPubKey()
         if let airGapDataBase64 = TLColdWallet.createSerializedUnsignedTxAipGapData(unSignedTx, extendedPublicKey: extendedPublicKey!, inputScripts: inputScripts, txInputsAccountHDIdxes: txInputsAccountHDIdxes) {
             self.airGapDataBase64PartsArray = TLColdWallet.splitStringToArray(airGapDataBase64)
-            DLog("airGapDataBase64PartsArray \(airGapDataBase64PartsArray)")
+            DLog("airGapDataBase64PartsArray \(String(describing: airGapDataBase64PartsArray))")
             TLPrompts.promtForOKCancel(self, title: "Spending from a cold wallet account".localized, message: "Transaction needs to be authorize by an offline and airgap device. Send transaction to an offline device for authorization?", success: {
                 () in
                 self.showNextUnsignedTxPartQRCode()
@@ -408,7 +408,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
                     self.scannedSignedTxAirGapData = self.scannedSignedTxAirGapData! + dataPart!
                 }
                 self.scannedSignedTxAirGapDataPartsDict = [Int:String]()
-                DLog("didClickScanSignedTxButton self.scannedSignedTxAirGapData \(self.scannedSignedTxAirGapData)");
+                DLog("didClickScanSignedTxButton self.scannedSignedTxAirGapData \(String(describing: self.scannedSignedTxAirGapData))");
                 
                 if let signedTxData = TLColdWallet.getSignedTxData(self.scannedSignedTxAirGapData!) {
                     DLog("didClickScanSignedTxButton signedTxData \(signedTxData)");

@@ -251,9 +251,9 @@ class TLWalletUtils {
         return dict
     }
     
-    /*class func getQRCodeImage(_ data: String, imageDimension: Int) -> UIImage {
+    class func getQRCodeImage(_ data: String, imageDimension: Int) -> UIImage {
         let dataMatrix = QREncoder.encode(withECLevel: 1, version: 1, string: data)
         let image = QREncoder.renderDataMatrix(dataMatrix, imageDimension: Int32(imageDimension))
         return image!
-    }*/
+    }
 }
