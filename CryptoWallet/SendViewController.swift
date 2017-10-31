@@ -328,7 +328,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
             DLog("showPromptReviewTx inputtedAmount: \(inputtedAmount.toUInt64())")
             DLog("showPromptReviewTx fee: \(fee.toUInt64())")
             TLSendFormData.instance().fromLabel = AppDelegate.instance().godSend!.getCurrentFromLabel()!
-            let vc = self.storyboard!.instantiateViewController(withIdentifier: "ReviewPayment") as! TLReviewPaymentViewController
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "ReviewPayment") as! ReviewPaymentViewController
             self.present(vc, animated: true, completion: nil)
         }
         

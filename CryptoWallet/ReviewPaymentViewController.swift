@@ -58,7 +58,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     var amountMovedFromAccount: TLCoin? = nil
     var realToAddresses: Array<String>? = nil
     
-    
+    typealias Failure = (Bool) -> ()
     
     private var scannedSignedTxAirGapDataPartsDict = [Int:String]()
     private var totalExpectedParts:Int = 0
@@ -89,7 +89,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
             self.promptToScanSignedTxAirGapData()
         } else if self.shouldPromptToBroadcastSignedTx {
             self.shouldPromptToBroadcastSignedTx = false
-            self.promptToBroadcastColdWalletAccountSignedTx(self.signedAirGapTxHex!, txHash: self.signedAirGapTxHash!)
+            self.promptToBroadcastColdWalletAccountSignedTx(txHex: self.signedAirGapTxHex!, txHash: self.signedAirGapTxHash!)
         }
     }
     
@@ -110,80 +110,80 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     fileprivate func showPromptForSetTransactionFee() {
         let msg = String(format: "Input your custom fee in %@", TLCurrencyFormat.getBitcoinDisplay())
         
-        func addTextField(_ textField: UITextField!){
+        let alert = UIAlertController(title: "Transaction Fee".localized, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addTextField { (textField : UITextField) -> Void in
             textField.placeholder = "fee amount".localized
             textField.keyboardType = .decimalPad
         }
-        
-        UIAlertController.showAlert(in: self,
-                                    withTitle: "Transaction Fee".localized,
-                                    
-                                    message: msg,
-                                    preferredStyle: .alert,
-                                    cancelButtonTitle: "Cancel".localized,
-                                    destructiveButtonTitle: nil,
-                                    otherButtonTitles: ["OK".localized],
-                                    
-                                    preShow: {(controller) in
-                                        controller!.addTextField(configurationHandler: addTextField)
-        }
-            ,
-                                    tap: {(alertView, action, buttonIndex) in
-                                        if (buttonIndex == alertView!.firstOtherButtonIndex) {
-                                            let feeAmountString = (alertView!.textFields![0]).text
-                                            
-                                            let feeAmount = TLCurrencyFormat.properBitcoinAmountStringToCoin(feeAmountString!)
-                                            
-                                            let amountNeeded = TLSendFormData.instance().toAmount!.add(feeAmount)
-                                            let sendFromBalance = AppDelegate.instance().godSend!.getCurrentFromBalance()
-                                            if (amountNeeded.greater(sendFromBalance)) {
-                                                TLPrompts.promptErrorMessage("Insufficient Balance".localized, message: "Your new transaction fee is too high")
-                                                return
-                                            }
-                                            
-                                            if (TLWalletUtils.isTransactionFeeTooLow(feeAmount)) {
-                                                let msg = String(format: "Too low a transaction fee can cause transactions to take a long time to confirm. Continue anyways?".localized)
-                                                
-                                                TLPrompts.promtForOKCancel(self, title: "Non-recommended Amount Transaction Fee".localized, message: msg, success: {
-                                                    () in
-                                                    TLSendFormData.instance().feeAmount = feeAmount
-                                                    self.updateView()
-                                                }, failure: {
-                                                    (isCancelled: Bool) in
-                                                    self.showPromptForSetTransactionFee()
-                                                })
-                                            } else if (TLWalletUtils.isTransactionFeeTooHigh(feeAmount)) {
-                                                let msg = String(format: "Your transaction fee is very high. Continue anyways?".localized)
-                                                
-                                                TLPrompts.promtForOKCancel(self, title: "Non-recommended Amount Transaction Fee".localized, message: msg, success: {
-                                                    () in
-                                                    TLSendFormData.instance().feeAmount = feeAmount
-                                                    self.updateView()
-                                                }, failure: {
-                                                    (isCancelled: Bool) in
-                                                    self.showPromptForSetTransactionFee()
-                                                })
-                                            } else {
-                                                TLSendFormData.instance().feeAmount = feeAmount
-                                                self.updateView()
-                                            }
-                                        } else if (buttonIndex == alertView!.cancelButtonIndex) {
-                                        }
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { (action) in
+            let feeAmountString = (alert.textFields![0]).text
+            
+            let feeAmount = TLCurrencyFormat.properBitcoinAmountStringToCoin(feeAmountString!)
+            
+            let amountNeeded = TLSendFormData.instance().toAmount!.add(feeAmount)
+            let sendFromBalance = AppDelegate.instance().godSend!.getCurrentFromBalance()
+            if (amountNeeded.greater(sendFromBalance)) {
+                self.prompt(title: "Insufficient Balance".localized, message: "Your new transaction fee is too high")
+                return
+            }
+            
+            if (TLWalletUtils.isTransactionFeeTooLow(feeAmount)) {
+                let msg = String(format: "Too low a transaction fee can cause transactions to take a long time to confirm. Continue anyways?".localized)
+                
+                self.promtForOKCancel(self, title: "Non-recommended Amount Transaction Fee".localized, message: msg, success: {
+                    () in
+                    TLSendFormData.instance().feeAmount = feeAmount
+                    self.updateView()
+                }, failure: {
+                    (isCancelled: Bool) in
+                    self.showPromptForSetTransactionFee()
+                })
+            } else if (TLWalletUtils.isTransactionFeeTooHigh(feeAmount)) {
+                let msg = String(format: "Your transaction fee is very high. Continue anyways?".localized)
+                
+                self.promtForOKCancel(self, title: "Non-recommended Amount Transaction Fee".localized, message: msg, success: {
+                    () in
+                    TLSendFormData.instance().feeAmount = feeAmount
+                    self.updateView()
+                }, failure: {
+                    (isCancelled: Bool) in
+                    self.showPromptForSetTransactionFee()
+                })
+            } else {
+                TLSendFormData.instance().feeAmount = feeAmount
+                self.updateView()
+            }
         })
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .destructive) { (action) in
+        })
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func promtForOKCancel(_ vc: UIViewController, title: String, message: String,
+                          success: @escaping TLWalletUtils.Success
+        , failure: @escaping Failure) -> () {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK".localized, style: .default) { (action) in
+            success()
+        })
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .destructive) { (action) in
+            failure(true)
+        })
+        self.present(alert, animated: true, completion: nil)
     }
     
     func showPromptPaymentSent(_ txHash: String, address: String, amount: TLCoin) {
         DLog("showPromptPaymentSent \(txHash)")
         let msg = String(format:"Sent %@ to %@".localized, TLCurrencyFormat.getProperAmount(amount), address)
-        TLHUDWrapper.hideHUDForView(self.view, animated: true)
-        TLPrompts.promtForOK(self, title: "", message: msg, success: {
+//        TLHUDWrapper.hideHUDForView(self.view, animated: true)
+        self.promptForOK(self, title: "", message: msg, success: {
             self.dismiss(animated: true, completion: nil)
         })
     }
     
     func cancelSend() {
         sendTimer?.invalidate()
-        TLHUDWrapper.hideHUDForView(self.view, animated: true)
+//        TLHUDWrapper.hideHUDForView(self.view, animated: true)
     }
     
     @objc func retryFinishSend() {
@@ -218,7 +218,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
             // can only happen if unspentOutputsSum is for some reason less then the balance computed from the transactions, which it shouldn't
             cancelSend()
             let unspentOutputsSumString = TLCurrencyFormat.coinToProperBitcoinAmountString(unspentOutputsSum)
-            TLPrompts.promptErrorMessage("Error: Insufficient Funds".localized, message: String(format: "Some funds may be pending confirmation and cannot be spent yet. (Check your account history) Account only has a spendable balance of %@ %@".localized, unspentOutputsSumString, TLCurrencyFormat.getBitcoinDisplay()))
+            self.prompt(title: "Error: Insufficient Funds".localized, message: String(format: "Some funds may be pending confirmation and cannot be spent yet. (Check your account history) Account only has a spendable balance of %@ %@".localized, unspentOutputsSumString, TLCurrencyFormat.getBitcoinDisplay()))
             return
         }
         
@@ -234,7 +234,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
                                                                                        error: {
                                                                                         (data: String?) in
                                                                                         self.cancelSend()
-                                                                                        TLPrompts.promptErrorMessage("Error".localized, message: data ?? "")
+                                                                                        self.prompt(title: "Error".localized, message: data ?? "")
         })
         
         let txHexAndTxHash = ret.0
@@ -320,7 +320,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
             if (code == 200) {
                 handlePushTxSuccess()
             } else {
-                TLPrompts.promptErrorMessage("Error".localized, message: status!)
+                self.prompt(title: "Error".localized, message: status!)
                 self.cancelSend()
             }
         })
@@ -341,7 +341,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
         if let airGapDataBase64 = TLColdWallet.createSerializedUnsignedTxAipGapData(unSignedTx, extendedPublicKey: extendedPublicKey!, inputScripts: inputScripts, txInputsAccountHDIdxes: txInputsAccountHDIdxes) {
             self.airGapDataBase64PartsArray = TLColdWallet.splitStringToArray(airGapDataBase64)
             DLog("airGapDataBase64PartsArray \(String(describing: airGapDataBase64PartsArray))")
-            TLPrompts.promtForOKCancel(self, title: "Spending from a cold wallet account".localized, message: "Transaction needs to be authorize by an offline and airgap device. Send transaction to an offline device for authorization?", success: {
+            self.promtForOKCancel(self, title: "Spending from a cold wallet account".localized, message: "Transaction needs to be authorize by an offline and airgap device. Send transaction to an offline device for authorization?", success: {
                 () in
                 self.showNextUnsignedTxPartQRCode()
             }, failure: {
@@ -355,7 +355,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
     
     @IBAction func feeInfoButtonClicked(_ sender: AnyObject) {
-        TLPrompts.promptSuccessMessage("Transaction Fees", message: "Transaction fees impact how quickly the Bitcoin mining network will confirm your transactions, and depend on the current network conditions.")
+        self.prompt(title: "Transaction Fees", message: "Transaction fees impact how quickly the Bitcoin mining network will confirm your transactions, and depend on the current network conditions.")
     }
     
     @IBAction func sendButtonClicked(_ sender: AnyObject) {
@@ -365,7 +365,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
                 self.initiateSend()
             }, failure: {
                 self.cancelSend()
-                TLPrompts.promptErrorMessage("Error".localized, message: "Error fetching unspent outputs. Try again.".localized)
+                self.prompt(title: "Error".localized, message: "Error fetching unspent outputs. Try again.".localized)
             })
         } else {
             self.initiateSend()
@@ -377,22 +377,11 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
     
     func startSendTimer() {
-        TLHUDWrapper.showHUDAddedTo(self.view, labelText: "Sending".localized, animated: true)
+//        TLHUDWrapper.showHUDAddedTo(self.view, labelText: "Sending".localized, animated: true)
         // relying on websocket to know when a payment has been sent can be unreliable, so cancel after a certain time
         let TIME_TO_WAIT_TO_HIDE_HUD_AND_REFRESH_ACCOUNT = 13.0
         sendTimer = Timer.scheduledTimer(timeInterval: TIME_TO_WAIT_TO_HIDE_HUD_AND_REFRESH_ACCOUNT, target: self,
                                          selector: #selector(retryFinishSend), userInfo: nil, repeats: false)
-    }
-    
-    func promptToBroadcastColdWalletAccountSignedTx(_ txHex: String, txHash: String) {
-        TLPrompts.promptAlertController(self, title: "Send authorized payment?".localized,
-                                        message: "", okText: "Send".localized, cancelTx: "Cancel".localized, success: {
-                                            () in
-                                            self.startSendTimer()
-                                            self.prepAndBroadcastTx(txHex, txHash: txHash)
-        }, failure: {
-            (isCancelled: Bool) in
-        })
     }
     
     func didClickScanSignedTxButton() {
@@ -454,12 +443,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     
     func promptToScanSignedTxAirGapData() {
         let msg = "\(self.scannedSignedTxAirGapDataPartsDict.count)/\(self.totalExpectedParts)" + " parts scanned.".localized
-        TLPrompts.promptAlertController(self, title: "Scan next part".localized, message: msg,
-                                        okText: "Scan".localized, cancelTx: "Cancel".localized, success: { () in
-                                            self.didClickScanSignedTxButton()
-        }, failure: {
-            (isCancelled: Bool) in
-        })
+        self.promptAlertController(title: "Scan next part".localized, message: msg)
     }
     
     func customIOS7dialogButtonTouchUp(inside alertView: CustomIOS7AlertView, clickedButtonAt buttonIndex: Int) {
@@ -467,17 +451,46 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
             if self.airGapDataBase64PartsArray?.count > 0 {
                 self.showNextUnsignedTxPartQRCode()
             } else {
-                TLPrompts.promptAlertController(self, title: "Finished Passing Transaction Data".localized,
-                                                message: "Now authorize the transaction on your air gap device. When you have done so click continue on this device to scan the authorized transaction data and make your payment.".localized,
-                                                okText: "Continue".localized, cancelTx: "Cancel".localized, success: {
-                                                    () in
-                                                    self.didClickScanSignedTxButton()
-                }, failure: {
-                    (isCancelled: Bool) in
-                })
+                self.promptAlertController(title: "Finished Passing Transaction Data".localized,
+                                           message: "Now authorize the transaction on your air gap device. When you have done so click continue on this device to scan the authorized transaction data and make your payment.".localized)
             }
         }
         
         alertView.close()
+    }
+    
+    func promptToBroadcastColdWalletAccountSignedTx(txHex: String, txHash: String) {
+        let alert = UIAlertController(title: "Send authorized payment?".localized, message: "", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Send".localized, style: .default) { (action) in
+            self.startSendTimer()
+            self.prepAndBroadcastTx(txHex, txHash: txHash)
+        })
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .destructive) { (action) in
+        })
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func promptAlertController(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Continue".localized, style: .default) { (action) in
+            self.didClickScanSignedTxButton()
+        })
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .destructive) { (action) in
+        })
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func prompt(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func promptForOK(_ vc:UIViewController, title: String, message: String,
+                     success: @escaping TLWalletUtils.Success) -> () {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        self.present(alert, animated: true, completion: success)
     }
 }
