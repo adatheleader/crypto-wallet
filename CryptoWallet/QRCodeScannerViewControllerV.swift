@@ -59,7 +59,7 @@ import AVFoundation
         self.startReadingQRCode()
     }
     
-    func closeButtonClicked(_ sender: UIButton) -> () {
+    @objc func closeButtonClicked(_ sender: UIButton) -> () {
         self.stopReadingQRCode()
     }
     

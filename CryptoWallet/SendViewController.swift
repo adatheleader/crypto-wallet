@@ -27,6 +27,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.mainBTCAddress.text = AppDelegate.instance().address
     }
 
     override func didReceiveMemoryWarning() {
