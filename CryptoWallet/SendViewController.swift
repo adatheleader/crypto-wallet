@@ -35,6 +35,12 @@ class SendViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func scanQRCode(_ sender: Any) {
+        self.showAddressReaderControllerFromViewController(self, success: {
+            (data: String!) in
+            self.handleScannedAddress(data)
+        }, error: {
+            (data: String?) in
+        })
     }
     
     func showAddressReaderControllerFromViewController(_ viewController: (UIViewController), success: @escaping (TLWalletUtils.SuccessWithString), error: @escaping (TLWalletUtils.ErrorWithString)) {
@@ -180,7 +186,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: (NSRange), replacementString string: String) -> Bool {
-        let newString = (textField.text as! NSString).replacingCharacters(in: range, with: string)
+        let newString = (textField.text! as NSString).replacingCharacters(in: range, with: string)
         if (textField == self.toAddressTextField) {
             TLSendFormData.instance().setAddress(newString)
         } else if (textField == self.amountTextField) {
@@ -235,7 +241,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         self.amountTextField!.resignFirstResponder()
         self.fiatAmountTextField!.resignFirstResponder()
         self.toAddressTextField!.resignFirstResponder()
@@ -259,7 +265,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func dismissTextFieldsAndScrollDown(_ notification: Notification) {
+    @objc func dismissTextFieldsAndScrollDown(_ notification: Notification) {
         self.fiatAmountTextField!.resignFirstResponder()
         self.amountTextField!.resignFirstResponder()
         self.toAddressTextField!.resignFirstResponder()
