@@ -20,15 +20,13 @@ class SuccessViewController: UIViewController {
     var address: String!
     var accountBalance = TLCoin.zero()
     var addresses: NSMutableArray?
-//    var providedKey: String!
-    
     var qrcodeImage: CIImage!
+    var timer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.isNavigationBarHidden = false
-        
         
         self.address = AppDelegate.instance().address
         self.walletLabel.text = self.address
@@ -42,6 +40,16 @@ class SuccessViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.isNavigationBarHidden = false
+        self.timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(self.refreshBalance), userInfo: nil, repeats: true)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.timer!.invalidate()
+    }
+    
+    @objc func refreshBalance() {
+        self.updateAddressBalance(address: self.address)
     }
     
     func generateQRCode(from string: String) -> UIImage? {
@@ -108,6 +116,7 @@ class SuccessViewController: UIViewController {
         self.accountBalance = TLCoin(uint64: self.accountBalance.toUInt64() + UInt64(balance))
         let balanceString = TLCurrencyFormat.getProperAmount(self.accountBalance)
         self.balanceLabel.text = "Balance: \(balanceString)"
+        print("balance is updated")
     }
     
     @IBAction func showBackupPhrase(_ sender: Any) {
