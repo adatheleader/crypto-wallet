@@ -146,6 +146,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
         self.dismissKeyboard()
         
         let toAddress = self.toAddressTextField!.text
+        TLSendFormData.instance().setAddress(toAddress)
         if toAddress != nil && TLStealthAddress.isStealthAddress(toAddress!, isTestnet: false) {
             func checkToShowStealthPaymentDelayInfo() {
                 if TLSuggestions.instance().enabledShowStealthPaymentDelayInfo() && TLBlockExplorerAPI.STATIC_MEMBERS.blockExplorerAPI == .blockchain {
@@ -341,8 +342,9 @@ class SendViewController: UIViewController, UITextFieldDelegate {
             DLog("showPromptReviewTx inputtedAmount: \(inputtedAmount.toUInt64())")
             DLog("showPromptReviewTx fee: \(fee.toUInt64())")
             TLSendFormData.instance().fromLabel = AppDelegate.instance().address
-            let vc = self.storyboard!.instantiateViewController(withIdentifier: "ReviewPayment") as! ReviewPaymentViewController
-            self.present(vc, animated: true, completion: nil)
+//            let vc = self.storyboard!.instantiateViewController(withIdentifier: "ReviewPayment") as! ReviewPaymentViewController
+//            self.present(vc, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "reviewPayment", sender: nil)
         }
         
         func checkToFetchDynamicFees() {

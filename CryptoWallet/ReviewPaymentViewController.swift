@@ -94,6 +94,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
     
     func updateView() {
+        self.title = "Review Payment"
         self.fromLabel.text = TLSendFormData.instance().fromLabel
         self.toLabel.text = TLSendFormData.instance().getAddress()
         self.unitLabel.text = TLCurrencyFormat.getBitcoinDisplay()
