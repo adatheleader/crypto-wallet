@@ -111,6 +111,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func updateFiatAmountTextFieldExchangeRate(_ sender: Any) {
+        print("updateFiatAmountTextFieldExchangeRate")
         let currency = TLCurrencyFormat.getFiatCurrency()
         let amount = TLCurrencyFormat.properBitcoinAmountStringToCoin(self.amountTextField!.text!)
         
@@ -125,6 +126,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func updateAmountTextFieldExchangeRate(_ sender: Any) {
+        print("updateAmountTextFieldExchangeRate")
         let currency = TLCurrencyFormat.getFiatCurrency()
         let fiatFormatter = NumberFormatter()
         fiatFormatter.numberStyle = .decimal
@@ -328,17 +330,17 @@ class SendViewController: UIViewController, UITextFieldDelegate {
             }
             
             let amountNeeded = inputtedAmount.add(fee)
-            let accountBalance = AppDelegate.instance().godSend!.getCurrentFromBalance()
-            if (amountNeeded.greater(accountBalance)) {
-                let msg = String(format: "You have %@ %@, but %@ is needed. (This includes the transactions fee)".localized, TLCurrencyFormat.coinToProperBitcoinAmountString(accountBalance), TLCurrencyFormat.getBitcoinDisplay(), TLCurrencyFormat.coinToProperBitcoinAmountString(amountNeeded))
+            let accountBalance = AppDelegate.instance().updateAddressBalance(address: AppDelegate.instance().address!)
+            if (amountNeeded.greater(accountBalance!)) {
+                let msg = String(format: "You have %@ %@, but %@ is needed. (This includes the transactions fee)".localized, TLCurrencyFormat.coinToProperBitcoinAmountString(accountBalance!), TLCurrencyFormat.getBitcoinDisplay(), TLCurrencyFormat.coinToProperBitcoinAmountString(amountNeeded))
                 self.prompt(title: "Insufficient Balance", message: msg)
                 return
             }
             
-            DLog("showPromptReviewTx accountBalance: \(accountBalance.toUInt64())")
+            DLog("showPromptReviewTx accountBalance: \(String(describing: accountBalance?.toUInt64()))")
             DLog("showPromptReviewTx inputtedAmount: \(inputtedAmount.toUInt64())")
             DLog("showPromptReviewTx fee: \(fee.toUInt64())")
-            TLSendFormData.instance().fromLabel = AppDelegate.instance().godSend!.getCurrentFromLabel()!
+            TLSendFormData.instance().fromLabel = AppDelegate.instance().address
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "ReviewPayment") as! ReviewPaymentViewController
             self.present(vc, animated: true, completion: nil)
         }

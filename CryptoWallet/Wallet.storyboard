@@ -236,7 +236,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <connections>
-                                    <action selector="updateAmountTextFieldExchangeRate:" destination="y36-vy-UnG" eventType="editingChanged" id="pY1-Ns-mED"/>
+                                    <action selector="updateAmountTextFieldExchangeRate:" destination="y36-vy-UnG" eventType="editingChanged" id="Qbj-qW-TwZ"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNN-OU-vAy">

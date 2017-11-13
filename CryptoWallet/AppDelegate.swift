@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var passphrase: String?
     var address: String?
     var privateKey: String?
+    var addressBalanceCoin = TLCoin.zero()
+    var addressBalanceString: String?
     
     lazy var txFeeAPI = TLTxFeeAPI()
     var godSend:TLSpaghettiGodSend?
@@ -104,7 +106,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let extendedPrivateKey = TLCoreBitcoinWrapper.getExtendPrivKey(masterHex)
         self.privateKey = TLCoreBitcoinWrapper.getPrivateKey(extendedPrivateKey as NSString, sequence: [0,1], isTestnet: false)
         self.address = TLCoreBitcoinWrapper.getAddress(privateKey!, isTestnet: false)
-        print("PASSPHRASE STARTS:\n\n\n\n\(passphrase)\n\n\n\nEXTENDED PRIVATE KET STARTS:\n\n\n\n\(extendedPrivateKey)\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(String(describing: self.privateKey))\n\n\n\nBTC Address STARTS:\n\n\n\n\(String(describing: self.address))")
+        self.addressBalanceCoin = self.updateAddressBalance(address: self.address!)!
+        self.addressBalanceString = TLCurrencyFormat.getProperAmount(self.addressBalanceCoin) as String
+        print("PASSPHRASE STARTS:\n\n\n\n\(passphrase)\n\n\n\nEXTENDED PRIVATE KET STARTS:\n\n\n\n\(extendedPrivateKey)\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(String(describing: self.privateKey))\n\n\n\nBTC Address STARTS:\n\n\n\n\(String(describing: self.address))\n\n\n\nBTC Address Balance STARTS:\n\n\n\n\(String(describing: self.addressBalanceString))")
         TLPreferences.resetBlockExplorerAPIURL()
         TLPreferences.setBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
         TLPreferences.setInAppSettingsKitBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
@@ -112,6 +116,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.userInfo.set(self.address, forKey: "address")
         self.userInfo.set(self.privateKey, forKey: "privatekey")
         self.showTouchAlert()
+    }
+    
+    func updateAddressBalance(address: String) -> TLCoin? {
+        var addresses = [String]()
+        addresses.append(address)
+        let jsonData = TLBlockExplorerAPI.instance().getAddressesInfoSynchronous(addresses)
+        if (jsonData.object(forKey: TLNetworking.STATIC_MEMBERS.HTTP_ERROR_CODE) != nil) {
+            DLog("getAccountDataSynchronous error \(jsonData.description)")
+            NSException(name: NSExceptionName(rawValue: "Network Error"), reason: "HTTP Error", userInfo: nil).raise()
+        }
+        let addressesArray = jsonData.object(forKey: "addresses") as! NSArray
+        var balance:UInt64 = 0
+        //        for _addressDict in addressesArray {
+        //            let addressDict = _addressDict as! NSDictionary
+        //            let addressBalance = (addressDict.object(forKey: "final_balance") as! NSNumber).uint64Value
+        //            balance += addressBalance
+        //        }
+        if let addressDict = addressesArray[0] as? NSDictionary{
+            let addressBalance = (addressDict.object(forKey: "final_balance") as! NSNumber).uint64Value
+            balance = addressBalance
+        }
+        let balanceCoin = TLCoin(uint64: UInt64(balance))
+        let balanceString = TLCurrencyFormat.getProperAmount(balanceCoin) as String
+        print("balance is updated - \(String(describing: balanceString))")
+        
+        return balanceCoin
     }
     
     func getPassphraseFromKeychain() -> String? {

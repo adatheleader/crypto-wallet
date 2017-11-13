@@ -18,11 +18,11 @@ class SuccessViewController: UIViewController {
     
     var receiveSelectedObject:TLSelectedObject?
     var address: String!
-    var accountBalance = TLCoin.zero()
+    public var accountBalance = TLCoin.zero()
     var addresses: NSMutableArray?
     var qrcodeImage: CIImage!
     var timer: Timer?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -99,29 +99,10 @@ class SuccessViewController: UIViewController {
     }
     
     func updateAddressBalance(address: String) {
-        var addresses = [String]()
-        addresses.append(address)
-        let jsonData = TLBlockExplorerAPI.instance().getAddressesInfoSynchronous(addresses)
-        if (jsonData.object(forKey: TLNetworking.STATIC_MEMBERS.HTTP_ERROR_CODE) != nil) {
-            DLog("getAccountDataSynchronous error \(jsonData.description)")
-            NSException(name: NSExceptionName(rawValue: "Network Error"), reason: "HTTP Error", userInfo: nil).raise()
-        }
-        let addressesArray = jsonData.object(forKey: "addresses") as! NSArray
-        var balance:UInt64 = 0
-//        for _addressDict in addressesArray {
-//            let addressDict = _addressDict as! NSDictionary
-//            let addressBalance = (addressDict.object(forKey: "final_balance") as! NSNumber).uint64Value
-//            balance += addressBalance
-//        }
-        if let addressDict = addressesArray[0] as? NSDictionary{
-            let addressBalance = (addressDict.object(forKey: "final_balance") as! NSNumber).uint64Value
-            balance = addressBalance
-        }
-        self.accountBalance = TLCoin(uint64: UInt64(balance))
-        let balanceString = TLCurrencyFormat.getProperAmount(self.accountBalance)
-        print(balanceString)
-        self.balanceLabel.text = "Balance: \(balanceString)"
-        print("balance is updated")
+        let balanceCoin = AppDelegate.instance().updateAddressBalance(address: address)
+        let balanceString = TLCurrencyFormat.getProperAmount(balanceCoin!) as String
+        self.balanceLabel.text = "Balance: \(String(describing: balanceString))"
+        print("Balance is updated \(balanceString)")
     }
     
     @IBAction func showBackupPhrase(_ sender: Any) {

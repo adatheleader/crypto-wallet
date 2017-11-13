@@ -121,7 +121,8 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
             let feeAmount = TLCurrencyFormat.properBitcoinAmountStringToCoin(feeAmountString!)
             
             let amountNeeded = TLSendFormData.instance().toAmount!.add(feeAmount)
-            let sendFromBalance = AppDelegate.instance().godSend!.getCurrentFromBalance()
+            let sendFromBalance = AppDelegate.instance().addressBalanceCoin
+            AppDelegate.instance().godSend!.setCurrentFromBalance(sendFromBalance)
             if (amountNeeded.greater(sendFromBalance)) {
                 self.prompt(title: "Insufficient Balance".localized, message: "Your new transaction fee is too high")
                 return
