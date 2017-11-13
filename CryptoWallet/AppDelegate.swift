@@ -34,6 +34,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let DEFAULT_CURRENCY_IDX = "20"
+        TLPreferences.setCurrency(DEFAULT_CURRENCY_IDX)
+        TLPreferences.setInAppSettingsKitCurrency(DEFAULT_CURRENCY_IDX)
+        
+        TLPreferences.setSendFromType(.hdWallet)
+        TLPreferences.setSendFromIndex(0)
+        
+        TLPreferences.setInAppSettingsKitEnabledDynamicFee(false)
+        TLPreferences.setInAppSettingsKitDynamicFeeSettingIdx(TLDynamicFeeSetting.FastestFee);
+        TLPreferences.setInAppSettingsKitTransactionFee(TLWalletUtils.DEFAULT_FEE_AMOUNT_IN_BITCOINS())
+        
         // Override point for customization after application launch.
         if let passphraseFromDefaults = self.userInfo.value(forKey: "passphrase") {
             self.address = self.userInfo.value(forKey: "address") as? String

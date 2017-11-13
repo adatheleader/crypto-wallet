@@ -108,13 +108,18 @@ class SuccessViewController: UIViewController {
         }
         let addressesArray = jsonData.object(forKey: "addresses") as! NSArray
         var balance:UInt64 = 0
-        for _addressDict in addressesArray {
-            let addressDict = _addressDict as! NSDictionary
+//        for _addressDict in addressesArray {
+//            let addressDict = _addressDict as! NSDictionary
+//            let addressBalance = (addressDict.object(forKey: "final_balance") as! NSNumber).uint64Value
+//            balance += addressBalance
+//        }
+        if let addressDict = addressesArray[0] as? NSDictionary{
             let addressBalance = (addressDict.object(forKey: "final_balance") as! NSNumber).uint64Value
-            balance += addressBalance
+            balance = addressBalance
         }
-        self.accountBalance = TLCoin(uint64: self.accountBalance.toUInt64() + UInt64(balance))
+        self.accountBalance = TLCoin(uint64: UInt64(balance))
         let balanceString = TLCurrencyFormat.getProperAmount(self.accountBalance)
+        print(balanceString)
         self.balanceLabel.text = "Balance: \(balanceString)"
         print("balance is updated")
     }
