@@ -363,7 +363,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     @IBAction func sendButtonClicked(_ sender: AnyObject) {
         self.startSendTimer()
         if !AppDelegate.instance().godSend!.haveUpDatedUTXOs() {
-            AppDelegate.instance().godSend!.getAndSetUnspentOutputs({
+            AppDelegate.instance().godSend!.getAndSetUnspentOutputs(address: AppDelegate.instance().address!, {
                 self.initiateSend()
             }, failure: {
                 self.cancelSend()

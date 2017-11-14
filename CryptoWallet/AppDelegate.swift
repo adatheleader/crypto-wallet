@@ -53,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.passphrase = passphraseFromDefaults as? String
             self.privateKey = self.userInfo.value(forKey: "privatekey") as? String
             let touch = self.userInfo.value(forKey: "touch") as? Bool
+            self.godSend = TLSpaghettiGodSend(address: self.address!)
             if touch == false{
                 self.navToWalletStory()
             } else if touch == true {
@@ -108,6 +109,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.address = TLCoreBitcoinWrapper.getAddress(privateKey!, isTestnet: false)
         self.addressBalanceCoin = self.updateAddressBalance(address: self.address!)!
         self.addressBalanceString = TLCurrencyFormat.getProperAmount(self.addressBalanceCoin) as String
+        self.godSend = TLSpaghettiGodSend(address: self.address!)
         print("PASSPHRASE STARTS:\n\n\n\n\(passphrase)\n\n\n\nEXTENDED PRIVATE KET STARTS:\n\n\n\n\(extendedPrivateKey)\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(String(describing: self.privateKey))\n\n\n\nBTC Address STARTS:\n\n\n\n\(String(describing: self.address))\n\n\n\nBTC Address Balance STARTS:\n\n\n\n\(String(describing: self.addressBalanceString))")
         TLPreferences.resetBlockExplorerAPIURL()
         TLPreferences.setBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))

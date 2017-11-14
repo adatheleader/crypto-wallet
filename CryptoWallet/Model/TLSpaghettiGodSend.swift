@@ -25,16 +25,18 @@
     
     let DUST_AMOUNT:UInt64 = 546
 
-    fileprivate var appWallet: TLWallet
+//    fileprivate var appWallet: TLWallet
     fileprivate var sendFromAccounts:NSMutableArray?
     fileprivate var sendFromAddresses:NSMutableArray?
+    fileprivate var address:String
 
     struct STATIC_MEMBERS {
         static var instance:TLSpaghettiGodSend?
     }
     
-    init(appWallet: TLWallet) {
-        self.appWallet = appWallet
+    init(address: String) {
+//        self.appWallet = appWallet
+        self.address = address
         sendFromAccounts = NSMutableArray()
         sendFromAddresses = NSMutableArray()
         super.init()
@@ -240,73 +242,53 @@
         return TLCoin.zero()
     }
     
-    func getAndSetUnspentOutputs(_ success:@escaping TLWalletUtils.Success, failure:@escaping TLWalletUtils.Error) -> () {
-        if (sendFromAccounts != nil && sendFromAccounts!.count != 0) {
-            let accountObject  = sendFromAccounts!.object(at: 0) as! TLAccountObject
-            let amount = accountObject.getBalance()
-            if (amount.greater(TLCoin.zero())) {
-                accountObject.getUnspentOutputs({() in
-                    success()
-                    }, failure:{() in
-                        failure()
+    func getAndSetUnspentOutputs(address: String, _ success:@escaping TLWalletUtils.Success, failure:@escaping TLWalletUtils.Error) -> () {
+        var addresses: [String] = []
+        addresses.append(address)
+        
+        if (addresses.count > 0) {
+            TLBlockExplorerAPI.instance().getUnspentOutputs(addresses, success:{(jsonData:AnyObject!) in
+                let unspentOutputs = (jsonData as! NSDictionary).object(forKey: "unspent_outputs") as! NSArray
+                
+                let address2UnspentOutputs = NSMutableDictionary(capacity:addresses.count)
+                
+                for _unspentOutput in unspentOutputs {
+                    let unspentOutput = _unspentOutput as! NSDictionary
+                    let outputScript = unspentOutput.object(forKey: "script") as! String
+                    
+                    let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: false)
+                    if (address == nil) {
+                        DLog("address cannot be decoded. not normal pubkeyhash outputScript: \(outputScript)")
+                        continue
                     }
-                )
+                    
+                    var cachedUnspentOutputs = address2UnspentOutputs.object(forKey: address!) as! NSMutableArray?
+                    if (cachedUnspentOutputs == nil) {
+                        cachedUnspentOutputs = NSMutableArray()
+                        address2UnspentOutputs.setObject(cachedUnspentOutputs!, forKey:address! as NSCopying)
+                    }
+                    cachedUnspentOutputs!.add(unspentOutput)
+                }
+                
+                for _address in address2UnspentOutputs {
+                    let address = _address.key as! String
+                    let idx = addresses.index(of: address)
+                    let importedAddress = self.sendFromAddresses!.object(at: idx!) as! TLImportedAddress
+                    let unspentOutputsArray = address2UnspentOutputs.object(forKey: address) as! NSArray
+                    importedAddress.unspentOutputsCount = unspentOutputsArray.count
+                    importedAddress.setUnspentOutputs(unspentOutputsArray)
+                    importedAddress.haveUpDatedUTXOs = true
+                }
+                
+                success()
+            }, failure:{(code, status) in
+                failure()
             }
-            
-        } else {
-            var addresses: [String] = []
-            addresses.reserveCapacity(sendFromAddresses!.count)
-            let importedAddress = sendFromAddresses!.object(at: 0) as! TLImportedAddress
-            let amount = importedAddress.getBalance()
-            if (amount!.greater(TLCoin.zero())) {
-                addresses.append(importedAddress.getAddress())
-            }
-            
-            if (addresses.count > 0) {
-                importedAddress.haveUpDatedUTXOs = false
-                TLBlockExplorerAPI.instance().getUnspentOutputs(addresses, success:{(jsonData:AnyObject!) in
-                    let unspentOutputs = (jsonData as! NSDictionary).object(forKey: "unspent_outputs") as! NSArray
-                    
-                    let address2UnspentOutputs = NSMutableDictionary(capacity:addresses.count)
-                    
-                    for _unspentOutput in unspentOutputs {
-                        let unspentOutput = _unspentOutput as! NSDictionary
-                        let outputScript = unspentOutput.object(forKey: "script") as! String
-                        
-                        let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: self.appWallet.walletConfig.isTestnet)
-                        if (address == nil) {
-                            DLog("address cannot be decoded. not normal pubkeyhash outputScript: \(outputScript)")
-                            continue
-                        }
-                        
-                        var cachedUnspentOutputs = address2UnspentOutputs.object(forKey: address!) as! NSMutableArray?
-                        if (cachedUnspentOutputs == nil) {
-                            cachedUnspentOutputs = NSMutableArray()
-                            address2UnspentOutputs.setObject(cachedUnspentOutputs!, forKey:address! as NSCopying)
-                        }
-                        cachedUnspentOutputs!.add(unspentOutput)
-                    }
-                    
-                    for _address in address2UnspentOutputs {
-                        let address = _address.key as! String
-                        let idx = addresses.index(of: address)
-                        let importedAddress = self.sendFromAddresses!.object(at: idx!) as! TLImportedAddress
-                        let unspentOutputsArray = address2UnspentOutputs.object(forKey: address) as! NSArray
-                        importedAddress.unspentOutputsCount = unspentOutputsArray.count
-                        importedAddress.setUnspentOutputs(unspentOutputsArray)
-                        importedAddress.haveUpDatedUTXOs = true
-                    }
-                    
-                    success()
-                    }, failure:{(code, status) in
-                        failure()
-                    }
-                )
-            }
+            )
         }
     }
     
-    class func getEstimatedTxSize(_ inputCount: Int, outputCount: Int) -> UInt64 {
+    func getEstimatedTxSize(_ inputCount: Int, outputCount: Int) -> UInt64 {
         return UInt64(10 + 159*inputCount + 34*outputCount)
     }
         
@@ -347,12 +329,12 @@
                         
                         let outputScript = unspentOutput.object(forKey: "script") as! String
                         
-                        let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: self.appWallet.walletConfig.isTestnet)
+                        let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: false)
                         if (address == nil) {
                             DLog("address cannot be decoded. not normal pubkeyhash outputScript: \(outputScript)")
                             continue
                         }
-                        assert(address == changeAddress as? String, "! address == changeAddress")
+                        assert(address == changeAddress as String?, "! address == changeAddress")
                         
                         if signTx {
                             inputsData.add([
@@ -405,7 +387,7 @@
                             let outputScript = unspentOutput.object(forKey: "script") as! String
                             DLog("createSignedSerializedTransactionHex outputScript: \(outputScript)")
                             
-                            let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: self.appWallet.walletConfig.isTestnet)
+                            let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: false)
                             if (address == nil) {
                                 DLog("address cannot be decoded. not normal pubkeyhash outputScript: \(outputScript)")
                                 continue
@@ -452,7 +434,7 @@
                             let outputScript = unspentOutput.object(forKey: "script") as! String
                             DLog("createSignedSerializedTransactionHex outputScript: \(outputScript)")
                             
-                            let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: self.appWallet.walletConfig.isTestnet)
+                            let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: false)
                             if (address == nil) {
                                 DLog("address cannot be decoded. not normal pubkeyhash outputScript: \(outputScript)")
                                 continue
@@ -508,7 +490,7 @@
                 let toAddress = (toAddressesAndAmounts.object(at: i) as AnyObject).object(forKey: "address") as! String
                 let amount = (toAddressesAndAmounts.object(at: i) as AnyObject).object(forKey: "amount") as! TLCoin!
                 
-                if (!TLStealthAddress.isStealthAddress(toAddress, isTestnet:self.appWallet.walletConfig.isTestnet)) {
+                if (!TLStealthAddress.isStealthAddress(toAddress, isTestnet:false)) {
                     realToAddresses.append(toAddress)
                     
                     outputsData.add([
@@ -523,7 +505,7 @@
                     let ephemeralPrivateKey = ephemeralPrivateKeyHex != nil ? ephemeralPrivateKeyHex! : TLStealthAddress.generateEphemeralPrivkey()
                     let stealthDataScriptNonce = nonce != nil ? nonce! : TLStealthAddress.generateNonce()
                     let stealthDataScriptAndPaymentAddress = TLStealthAddress.createDataScriptAndPaymentAddress(toAddress,
-                        ephemeralPrivateKey: ephemeralPrivateKey, nonce: stealthDataScriptNonce, isTestnet: self.appWallet.walletConfig.isTestnet)
+                        ephemeralPrivateKey: ephemeralPrivateKey, nonce: stealthDataScriptNonce, isTestnet: false)
                     
                     DLog("createSignedSerializedTransactionHex stealthDataScript: \(stealthDataScriptAndPaymentAddress.0)")
                     DLog("createSignedSerializedTransactionHex paymentAddress: \(stealthDataScriptAndPaymentAddress.1)")
@@ -628,8 +610,8 @@
                     let firstAddress = (obj1 as! NSDictionary).object(forKey: "to_address") as! String
                     let secondAddress = (obj2 as! NSDictionary).object(forKey: "to_address") as! String
                     
-                    let firstScript = TLCoreBitcoinWrapper.getStandardPubKeyHashScriptFromAddress(firstAddress, isTestnet: self.appWallet.walletConfig.isTestnet)
-                    let secondScript = TLCoreBitcoinWrapper.getStandardPubKeyHashScriptFromAddress(secondAddress, isTestnet: self.appWallet.walletConfig.isTestnet)
+                    let firstScript = TLCoreBitcoinWrapper.getStandardPubKeyHashScriptFromAddress(firstAddress, isTestnet: false)
+                    let secondScript = TLCoreBitcoinWrapper.getStandardPubKeyHashScriptFromAddress(secondAddress, isTestnet: false)
                     
                     let firstScriptData = TLWalletUtils.hexStringToData(firstScript)!
                     let secondScriptData = TLWalletUtils.hexStringToData(secondScript)!
@@ -667,7 +649,7 @@
             for _ in 0...3 {
                 let txHexAndTxHash = TLCoreBitcoinWrapper.createSignedSerializedTransactionHex(hashes, inputIndexes:inputIndexes, inputScripts:inputScripts,
                     outputAddresses:outputAddresses, outputAmounts:outputAmounts, privateKeys:privateKeys,
-                    outputScripts:stealthOutputScripts, signTx: signTx, isTestnet: self.appWallet.walletConfig.isTestnet)
+                    outputScripts:stealthOutputScripts, signTx: signTx, isTestnet: false)
                 DLog("createSignedSerializedTransactionHex txHexAndTxHash: \(txHexAndTxHash.debugDescription)")
                 if txHexAndTxHash != nil {
                     return (txHexAndTxHash!, realToAddresses, isInputsAllFromHDAccountAddresses ? txInputsAccountHDIdxes : nil)
@@ -678,5 +660,3 @@
             return (nil, realToAddresses, nil)
     }
 }
-
-

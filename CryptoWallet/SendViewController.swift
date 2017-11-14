@@ -305,13 +305,13 @@ class SendViewController: UIViewController, UITextFieldDelegate {
                         let inputCount = accountObject.getInputsNeededToConsume(inputtedAmount)
                         //TODO account for change output, output count likely 2 (3 if have stealth payment) cause if user dont do click use all funds because will likely have change
                         // but for now dont need to be fully accurate with tx fee, for now we will underestimate tx fee, wont underestimate much because outputs contributes little to tx size
-                        txSizeBytes = TLSpaghettiGodSend.getEstimatedTxSize(inputCount, outputCount: 1)
+                        txSizeBytes = AppDelegate.instance().godSend!.getEstimatedTxSize(inputCount, outputCount: 1)
                         DLog("showPromptReviewTx TLAccountObject useDynamicFees inputCount txSizeBytes: \(inputCount) \(txSizeBytes)")
                     } else {
                         let importedAddress = AppDelegate.instance().godSend!.getSelectedSendObject() as! TLImportedAddress
                         // TODO same as above
                         let inputCount = importedAddress.getInputsNeededToConsume(inputtedAmount)
-                        txSizeBytes = TLSpaghettiGodSend.getEstimatedTxSize(inputCount, outputCount: 1)
+                        txSizeBytes = AppDelegate.instance().godSend!.getEstimatedTxSize(inputCount, outputCount: 1)
                         DLog("showPromptReviewTx importedAddress useDynamicFees inputCount txSizeBytes: \(importedAddress.unspentOutputsCount) \(txSizeBytes)")
                     }
                     
@@ -364,7 +364,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
         
         if TLPreferences.enabledInAppSettingsKitDynamicFee() {
             if !AppDelegate.instance().godSend!.haveUpDatedUTXOs() {
-                AppDelegate.instance().godSend!.getAndSetUnspentOutputs({
+                AppDelegate.instance().godSend!.getAndSetUnspentOutputs(address: AppDelegate.instance().address!, {
                     checkToFetchDynamicFees()
                 }, failure: {
                     self.prompt(title: "Error", message: "Error fetching unspent outputs. Try again later.")
