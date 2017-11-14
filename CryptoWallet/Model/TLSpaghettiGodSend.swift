@@ -29,6 +29,7 @@
     fileprivate var sendFromAccounts:NSMutableArray?
     fileprivate var sendFromAddresses:NSMutableArray?
     fileprivate var address:String
+    var unspentOutputsArray: NSArray
 
     struct STATIC_MEMBERS {
         static var instance:TLSpaghettiGodSend?
@@ -39,6 +40,7 @@
         self.address = address
         sendFromAccounts = NSMutableArray()
         sendFromAddresses = NSMutableArray()
+        unspentOutputsArray = NSArray()
         super.init()
     }
     
@@ -79,8 +81,8 @@
             }
             return false
         } else if (sendFromAddresses != nil && sendFromAddresses!.count != 0) {
-            let importedAddress = sendFromAddresses!.object(at: 0) as! TLImportedAddress
-            if address == importedAddress.getAddress() {
+//            let importedAddress = sendFromAddresses!.object(at: 0) as! TLImportedAddress
+            if address == AppDelegate.instance().address {
                 return true
             }
             return false
@@ -143,7 +145,7 @@
         sendFromAccounts = NSMutableArray(objects:accountObject)
     }
     
-    func setOnlyFromAddress(_ importedAddress:TLImportedAddress) -> () {
+    func setOnlyFromAddress(_ importedAddress:String) -> () {
         sendFromAccounts = nil
         sendFromAddresses = NSMutableArray(objects:importedAddress)
     }
@@ -225,8 +227,8 @@
             let accountObject = sendFromAccounts!.object(at: 0) as! TLAccountObject
             return accountObject.getBalance()
         } else if (sendFromAddresses != nil && sendFromAddresses!.count != 0) {
-            let importedAddress = sendFromAddresses!.object(at: 0) as! TLImportedAddress
-            return importedAddress.getBalance()!
+//            let importedAddress = sendFromAddresses!.object(at: 0) as! TLImportedAddress
+            return AppDelegate.instance().updateAddressBalance(address: AppDelegate.instance().address!)!
         }
         return TLCoin.zero()
     }
@@ -273,11 +275,11 @@
                 for _address in address2UnspentOutputs {
                     let address = _address.key as! String
                     let idx = addresses.index(of: address)
-                    let importedAddress = self.sendFromAddresses!.object(at: idx!) as! TLImportedAddress
-                    let unspentOutputsArray = address2UnspentOutputs.object(forKey: address) as! NSArray
-                    importedAddress.unspentOutputsCount = unspentOutputsArray.count
-                    importedAddress.setUnspentOutputs(unspentOutputsArray)
-                    importedAddress.haveUpDatedUTXOs = true
+//                    let importedAddress = self.sendFromAddresses!.object(at: idx!) as! TLImportedAddress
+                    self.unspentOutputsArray = address2UnspentOutputs.object(forKey: address) as! NSArray
+//                    importedAddress.unspentOutputsCount = unspentOutputsArray.count
+//                    importedAddress.setUnspentOutputs(unspentOutputsArray)
+//                    importedAddress.haveUpDatedUTXOs = true
                 }
                 
                 success()
@@ -310,50 +312,48 @@
             var dustAmount:UInt64 = 0
             
             if sendFromAddresses != nil {
-                for _importedAddress in sendFromAddresses! {
-                    let importedAddress = _importedAddress as! TLImportedAddress
-                    if (changeAddress == nil) {
-                        changeAddress = importedAddress.getAddress() as NSString?
+//                    let importedAddress = _importedAddress as! TLImportedAddress
+//                    if (changeAddress == nil) {
+//                        changeAddress = importedAddress.getAddress() as NSString?
+//                    }
+                
+                let unspentOutputs = self.unspentOutputsArray
+                for _unspentOutput in unspentOutputs {
+                    let unspentOutput = _unspentOutput as! NSDictionary
+                    let amount = (unspentOutput.object(forKey: "value") as! NSNumber).uint64Value
+                    if (amount < DUST_AMOUNT) {
+                        dustAmount += amount
+                        continue
                     }
                     
-                    let unspentOutputs = importedAddress.getUnspentArray()
-                    for _unspentOutput in unspentOutputs! {
-                        let unspentOutput = _unspentOutput as! NSDictionary
-                        let amount = (unspentOutput.object(forKey: "value") as! NSNumber).uint64Value
-                        if (amount < DUST_AMOUNT) {
-                            dustAmount += amount
-                            continue
-                        }
-                        
-                        valueSelected = valueSelected.add(TLCoin(uint64:amount))
-                        
-                        let outputScript = unspentOutput.object(forKey: "script") as! String
-                        
-                        let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: false)
-                        if (address == nil) {
-                            DLog("address cannot be decoded. not normal pubkeyhash outputScript: \(outputScript)")
-                            continue
-                        }
-                        assert(address == changeAddress as String?, "! address == changeAddress")
-                        
-                        if signTx {
-                            inputsData.add([
-                                "tx_hash": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash") as! String)!,
-                                "txid": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash_big_endian") as! String)!,
-                                "tx_output_n": unspentOutput.object(forKey: "tx_output_n")!,
-                                "script": TLWalletUtils.hexStringToData(outputScript)!,
-                                "private_key": importedAddress.getPrivateKey()!])
-                        } else {
-                            inputsData.add([
-                                "tx_hash": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash") as! String)!,
-                                "txid": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash_big_endian") as! String)!,
-                                "tx_output_n": unspentOutput.object(forKey: "tx_output_n")!,
-                                "script": TLWalletUtils.hexStringToData(outputScript)!])
-                        }
-                        
-                        if (valueSelected.greaterOrEqual(valueNeeded)) {
-                            break
-                        }
+                    valueSelected = valueSelected.add(TLCoin(uint64:amount))
+                    
+                    let outputScript = unspentOutput.object(forKey: "script") as! String
+                    
+                    let address = TLCoreBitcoinWrapper.getAddressFromOutputScript(outputScript, isTestnet: false)
+                    if (address == nil) {
+                        DLog("address cannot be decoded. not normal pubkeyhash outputScript: \(outputScript)")
+                        continue
+                    }
+//                    assert(address == changeAddress as String?, "! address == changeAddress")
+                    
+                    if signTx {
+                        inputsData.add([
+                            "tx_hash": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash") as! String)!,
+                            "txid": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash_big_endian") as! String)!,
+                            "tx_output_n": unspentOutput.object(forKey: "tx_output_n")!,
+                            "script": TLWalletUtils.hexStringToData(outputScript)!,
+                            "private_key": AppDelegate.instance().privateKey!])
+                    } else {
+                        inputsData.add([
+                            "tx_hash": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash") as! String)!,
+                            "txid": TLWalletUtils.hexStringToData(unspentOutput.object(forKey: "tx_hash_big_endian") as! String)!,
+                            "tx_output_n": unspentOutput.object(forKey: "tx_output_n")!,
+                            "script": TLWalletUtils.hexStringToData(outputScript)!])
+                    }
+                    
+                    if (valueSelected.greaterOrEqual(valueNeeded)) {
+                        break
                     }
                 }
             }

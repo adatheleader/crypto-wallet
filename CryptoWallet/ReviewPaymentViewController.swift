@@ -58,6 +58,10 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     var amountMovedFromAccount: TLCoin? = nil
     var realToAddresses: Array<String>? = nil
     
+    lazy var unspentOutputsCount: Int = 0
+    fileprivate var unspentOutputs:NSArray?
+    fileprivate var unspentOutputsSum:TLCoin?
+    
     typealias Failure = (Bool) -> ()
     
     private var scannedSignedTxAirGapDataPartsDict = [Int:String]()
@@ -215,11 +219,11 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
     
     func initiateSend() {
-        let unspentOutputsSum = AppDelegate.instance().godSend!.getCurrentFromUnspentOutputsSum()
-        if (unspentOutputsSum.less(TLSendFormData.instance().toAmount!)) {
+        let unspentOutputsSum = self.getUnspentSum()
+        if (unspentOutputsSum?.less(TLSendFormData.instance().toAmount!))! {
             // can only happen if unspentOutputsSum is for some reason less then the balance computed from the transactions, which it shouldn't
             cancelSend()
-            let unspentOutputsSumString = TLCurrencyFormat.coinToProperBitcoinAmountString(unspentOutputsSum)
+            let unspentOutputsSumString = TLCurrencyFormat.coinToProperBitcoinAmountString(unspentOutputsSum!)
             self.prompt(title: "Error: Insufficient Funds".localized, message: String(format: "Some funds may be pending confirmation and cannot be spent yet. (Check your account history) Account only has a spendable balance of %@ %@".localized, unspentOutputsSumString, TLCurrencyFormat.getBitcoinDisplay()))
             return
         }
@@ -265,6 +269,27 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
         }
         let txHash = txHexAndTxHash!.object(forKey: "txHash") as? String
         prepAndBroadcastTx(txHex!, txHash: txHash!)
+    }
+    
+    func getUnspentSum() -> (TLCoin?) {
+        self.unspentOutputs = AppDelegate.instance().godSend?.unspentOutputsArray
+        if (unspentOutputsSum != nil) {
+            return unspentOutputsSum
+        }
+        
+        if (unspentOutputs == nil) {
+            return TLCoin.zero()
+        }
+        
+        var unspentOutputsSumTemp:UInt64 = 0
+        for unspentOutput in unspentOutputs as! [NSDictionary] {
+            let amount = unspentOutput.object(forKey: "value") as! NSNumber
+            unspentOutputsSumTemp += UInt64(amount)
+        }
+        
+        
+        unspentOutputsSum = TLCoin(uint64: unspentOutputsSumTemp)
+        return unspentOutputsSum
     }
     
     func prepAndBroadcastTx(_ txHex: String, txHash: String) {
@@ -361,17 +386,13 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
     
     @IBAction func sendButtonClicked(_ sender: AnyObject) {
-        self.startSendTimer()
-        if !AppDelegate.instance().godSend!.haveUpDatedUTXOs() {
-            AppDelegate.instance().godSend!.getAndSetUnspentOutputs(address: AppDelegate.instance().address!, {
-                self.initiateSend()
-            }, failure: {
-                self.cancelSend()
-                self.prompt(title: "Error".localized, message: "Error fetching unspent outputs. Try again.".localized)
-            })
-        } else {
+//        self.startSendTimer()
+        AppDelegate.instance().godSend!.getAndSetUnspentOutputs(address: AppDelegate.instance().address!, {
             self.initiateSend()
-        }
+        }, failure: {
+            self.cancelSend()
+            self.prompt(title: "Error".localized, message: "Error fetching unspent outputs. Try again.".localized)
+        })
     }
     
     @IBAction fileprivate func cancel(_ sender:AnyObject) {
@@ -464,7 +485,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     func promptToBroadcastColdWalletAccountSignedTx(txHex: String, txHash: String) {
         let alert = UIAlertController(title: "Send authorized payment?".localized, message: "", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Send".localized, style: .default) { (action) in
-            self.startSendTimer()
+//            self.startSendTimer()
             self.prepAndBroadcastTx(txHex, txHash: txHash)
         })
         alert.addAction(UIAlertAction(title: "Cancel".localized, style: .destructive) { (action) in
