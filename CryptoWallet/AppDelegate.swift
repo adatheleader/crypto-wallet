@@ -69,12 +69,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func navToWalletStory() {
-        
         DispatchQueue.main.async(execute: {
             let storyboard: UIStoryboard = UIStoryboard(name: "Wallet", bundle: Bundle.main)
-            let navBarController: UINavigationController = storyboard.instantiateViewController(withIdentifier: "navBarController") as! UINavigationController
+            let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: "WalletTabBarController") as! UITabBarController
             self.window?.makeKeyAndVisible()
-            self.window?.rootViewController = navBarController
+            self.window?.rootViewController = tabBarController
         })
     }
     
