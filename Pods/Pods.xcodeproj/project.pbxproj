@@ -7,98 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DED99EDA65A62549721BCFE23D6195E6 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0CD5396662F1ED1424A469F96DC0E920 /* iCloudDocumentSync-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A30269D4E2E7BF1C96688D53BD71DD /* iCloudDocumentSync-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B539D45759389DD625B69613D8DF08C6 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6705D809987B292589130EAF4CEE898B /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CD5396662F1ED1424A469F96DC0E920 /* iCloudDocumentSync-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5BE504BA26AF030ACCDA90BDD18E1A /* iCloudDocumentSync-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 407B7EFF98DE3D04C6CF5F0B99D12344 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F5691FCE7CDC6A2B06C2292C4F8716B /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC86B767836AFD8394120CE9447172D /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F73EE69CA65AD87F653ECB38D2DD662 /* Pods-CryptoWalletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A359AC56C6AEE7F90F39BFA7812189C /* Pods-CryptoWalletUITests-dummy.m */; };
-		12E5B3DBD4CF11F60D8F07A7F548A01C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC8E078E03E9BF6E1C6051CB3B51E81 /* UIActivityIndicatorView+AFNetworking.m */; };
-		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E7A0C07B0A7F3C9D6907EBED93A3C7 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12CDC7FF0E288BEB909FF51716508B37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
+		140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 558A8EEBF8147DAA98971F314499AA98 /* UIActivityIndicatorView+AFNetworking.m */; };
+		19EB8BC7A125CF792C747E8F7D1836E0 /* JSONJoy-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9923A0A2C0304C146BAA965AA9989C6A /* JSONJoy-Swift-dummy.m */; };
+		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 329592A0BF67FACE35DBF23E0727C960 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EE3D3F3223F50ACF326C910C229CF0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		256350E488E968B9A0C55E72EE0187CF /* iCloudDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D69251C75D930F92202C74679FF733B /* iCloudDocument.m */; };
-		29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FF5BF864A7C68B18D083107FF7ECB3 /* AFURLRequestSerialization.m */; };
-		2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B90AF323589604B00DAF6E12D4E7D3 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24943996A3DB222E0BA13094626A87D2 /* Pods-CryptoWallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */; };
+		256350E488E968B9A0C55E72EE0187CF /* iCloudDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD7DC8841FA4BB05F9F3000C2E2CB3 /* iCloudDocument.m */; };
+		29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C5D1380CCEA7AA4A88AC669CDE3EB /* AFURLRequestSerialization.m */; };
+		2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6686C56DFDDD932754F77E717B2F4A /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30F0BAE1DBB79BBB6CBD957EA8B89E4B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */; };
-		32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E9406D696519545F2247891A80EC67 /* UIButton+AFNetworking.m */; };
-		34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166B868FC606E55904ED33C03730BC6 /* UIProgressView+AFNetworking.m */; };
-		35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D7CFE6AF7B8B097992BC10A57E3497D0 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DB96091C2DD67C835A9A49D00EEE3B00 /* UIButton+AFNetworking.m */; };
+		3395BC5D4408538563192B97CA2EB6D4 /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC8BC41A0964897C83867B606B6EAF /* JSONJoy.swift */; };
+		34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338F4B2DB0EC21AD501FA6B9CBACDF0 /* UIProgressView+AFNetworking.m */; };
+		35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2790F6DA44659124FD97EE16C8F3E5F9 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4270621DDBD020B30C3A02FE6AA55924 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
 		42AF1BB1ED090CC9E588A463441D09E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */; };
-		4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A76A6B7A38DCED3B2F725C287554BBC5 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F136CF4E7847A48AC331E0122AB5054F /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1CBDEB6FBA78D193D7AD8AE1717436 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 723BDA7F307A2637452C83D9005F2279 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 40EE4F6033AF02D1E06EE5B9E8E81A6C /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 656B5C4CD7CFB5EA77BEA80CE84D3270 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 717619F324D88069B93967E423FC99BB /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50D45A3C04F058FD59226F0C830BE1E9 /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD401AB5749793BE6D60B9CEAC252663 /* RNCryptor-dummy.m */; };
+		51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0FB917E148F6D373233ADB61AF240D /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556F8A7E15A9EF3CDC06DD78B86A30B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */; };
-		582F1DA7CA9FCCEACC2B89BD81235727 /* Pods-CryptoWallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */; };
-		59E1D0D0061B00B6CCDA7AD9E4AA1034 /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E049EE4BE8D9220E1BA66C0391D44AF1 /* RNCryptor-dummy.m */; };
-		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF90E6F5163A47A41B28C3AA60C385 /* AFURLResponseSerialization.m */; };
-		5C56F48A77B316D3D836F864181D4B50 /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C325A002BA511B314D1945AEF1E62D /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20578191A6638C038065C3F3EF1785F5 /* AFURLResponseSerialization.m */; };
 		6273578DFDAE68EA7C6BCE68993EC8A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43490F63171C42B48E01292C5A4FAD20 /* AFNetworkActivityIndicatorManager.m */; };
-		64C3D0A925C3EF4D944F3F20791CE02C /* iCloudDocumentSync-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B48969A2D0D1E400DD1ED4CBA490271 /* iCloudDocumentSync-dummy.m */; };
-		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1838736DD0375B69680A19F00D1B610D /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 069E50FD18DC2BFCA6EE66A695F21897 /* AFNetworkActivityIndicatorManager.m */; };
+		64C3D0A925C3EF4D944F3F20791CE02C /* iCloudDocumentSync-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BB6B699328E56929488A658D57BCDA /* iCloudDocumentSync-dummy.m */; };
+		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EA80A0C2CB9A8ECB3AE204636D92BA /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		789D749690B308852115FF20CD982A69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */; };
-		7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A1118C7F4A27F654967362EF445B277C /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A465B71EB80787BB37EFADEE7B7F1DD /* Pods-CryptoWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C565B127D94D6BE7B9207B9368C799F /* iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = EA77E006CC623B0969DA2B782A846213 /* iCloud.m */; };
-		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C16851B3D2AB5F7A9E767EEC82254A /* UIWebView+AFNetworking.m */; };
+		7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C944B8536CEEBED71C34ADBA44E96272 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C565B127D94D6BE7B9207B9368C799F /* iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A664C787E8705062096928A644E72B /* iCloud.m */; };
+		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB54EAE4F87A4624484ACAAA1BFB4 /* UIWebView+AFNetworking.m */; };
+		7DAC55AE7C1F4B1EA2A4F3DB6A7F89D8 /* Pods-CryptoWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82D554EC9FB9A62D935B6555325F5898 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EB5B938802F986D305D37865A72F7F /* Security.framework */; };
-		9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3635D8E7B05BA0D4F587A469573FEAC1 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A248034B503F58D48AF4D12ADF99EC /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 275733D011E481B653A625CD0B2FFF5D /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EF2B60D8045681F9D44F3092ECF40F /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D10E3EF5AEE644597125D46C4C2EC0E5 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 889A2BF2A5B564A7DA00D3669C2791C8 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96D1B30E86CC1E9F85BE20A1FB31F4F7 /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 116741F705E5CE824106258A9D8EBB5A /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C211A47F6F5A2AA055E20E7A30BF2E6 /* Pods-CryptoWalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A692D8D9527711EFEC750AB3B2CB0F59 /* Pods-CryptoWalletTests-dummy.m */; };
-		A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D582170B6D836056EFF66374CB99F800 /* AFAutoPurgingImageCache.m */; };
-		A398D63C8DED664D99A864D79881A13C /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AED1DA623DE25D4D1A478E87D4244D /* AFImageDownloader.m */; };
+		A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA7E7FD762251814F813A8EA996E83 /* AFAutoPurgingImageCache.m */; };
+		A398D63C8DED664D99A864D79881A13C /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B322A10722CF841FAF00264F71702361 /* AFImageDownloader.m */; };
 		A54BD0D880BE7E059C3D33C5AD5ECB9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
 		A8C297643282E0CF5E7DF9CB6E23A0D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999D853BF26347411B4E4B2861C0136 /* Keychain.swift */; };
+		A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF6CE342CEE08B40723F184D28EFEF /* Keychain.swift */; };
 		AC165DFD8CBBF275F286CA52C533CFA3 /* Pods-CryptoWalletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 398B4613349DBD957B64337F3E863A00 /* Pods-CryptoWalletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD84808591F9F060C031CA9115BB11F8 /* Pods-CryptoWalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE0EF87D1D1FB99DD53AEC60DF1A3C2 /* Pods-CryptoWalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C31FDF7B68CA72E75A08EC655B7C28 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A427045900836BE99366E12FDC23E6B4 /* UIRefreshControl+AFNetworking.m */; };
-		BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F189ED572FBC35772BEB10046C765ED /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4794EE640566DF0AA1E308E174B39F /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 975F4BD7C2EA06D83E21907F26B97C4F /* UIRefreshControl+AFNetworking.m */; };
+		BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE486844DDFA9981D85F8B004BB9D82E /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C456AEBA7FACA838B8EF6CE4F7029C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		C8691822052AFC4417D6F7F79F957703 /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 378EEA3B18E6508D5D46D993A772D293 /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA8E05868BB799C69A4A07A803E4F7B5 /* iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 09593748FC0B26B5767BAC7FDA2CFA02 /* iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C77F0BFA9382011A9F5705F342FDBF4 /* AFSecurityPolicy.m */; };
-		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E4503F76DB69E5E7190563C2298FD4 /* AFNetworking-dummy.m */; };
-		D09F7ADBC5122F8D0902356838A5AEE7 /* iCloudDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 116B658BB8170CBF7BE7EBBCB684CBFE /* iCloudDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AFA12BC80083EA54E9A336794989A1 /* AFURLSessionManager.m */; };
-		D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DCCDC20DF97E5C67E527A5AFDA988 /* KeychainAccess-dummy.m */; };
-		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72066B7925982D296AF2C484FDF3ED81 /* AFNetworkReachabilityManager.m */; };
-		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A9ECDE0146703BC6255B606A9795C5 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E78B14FFC7055CC033F46C18C4DB24F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAD69ECBE15CB0B17859829B626F949 /* AFHTTPSessionManager.m */; };
-		F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = ED611775E2F6CECD2F3D14DE270DC702 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7AB283A120C6DA1EBB361D41B971DA /* UIImageView+AFNetworking.m */; };
-		F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7253C2BC5DF2701CFAF10084B46EFF /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F980BA42DE71D9089647E8E3B4ED62CC /* iCloud-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = CFD6E0855954E211F0A28DED8552E2D0 /* iCloud-Prefix.pch */; };
-		FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 59FAFA0BBAC8922C5FA3C58804D65A99 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFDBD729332EA85217DDEBFC612E8790 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D643E68E0D4593C1173876EC3E68F8 /* RNCryptor.swift */; };
+		C89F261DBB0984F28D25930C3DC52523 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
+		CA8E05868BB799C69A4A07A803E4F7B5 /* iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = F01D7AC0E3E5DB1FD38C0C8BD783B1AE /* iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDEF91EB9A5E5ED3EBE8288587A485 /* AFSecurityPolicy.m */; };
+		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B54B2DBEA0F762AE216D6158A0BE6EF /* AFNetworking-dummy.m */; };
+		D09F7ADBC5122F8D0902356838A5AEE7 /* iCloudDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D0ABEB7E812B803C0CEFAEF22A630D7D /* iCloudDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D73A28EC08AF60655F56D73205BC983 /* AFURLSessionManager.m */; };
+		D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609CEFB129B5A9E9268B6C016D67E00 /* KeychainAccess-dummy.m */; };
+		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E378B237F68E4618D2556C170AB873B /* AFNetworkReachabilityManager.m */; };
+		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 01B9E8749D5528DF463E30CCA7782D1F /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E30EC1D4BFB15399C2B00DA642415A31 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAEA5C46C01A8E2EEC9108E8659512 /* RNCryptor.swift */; };
+		EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB5EF8C3D67BF312015BBA60D47D2 /* AFHTTPSessionManager.m */; };
+		F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FA49A5ACBAC617EC6C383457522DB3BE /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF07437C8736C0701F88CECFF7D9679 /* UIImageView+AFNetworking.m */; };
+		F6CEFF8E2775DB824C3120ED1CE61A17 /* JSONJoy-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5249A4DFFC2205B10E1263F76B9537E /* JSONJoy-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C868529D6069D637DFA2F83D550F5D3 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F980BA42DE71D9089647E8E3B4ED62CC /* iCloud-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 54897756769590EBC0976B56F38A246B /* iCloud-Prefix.pch */; };
+		FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE4566563FB723B85F4ECF314F2B4A3 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B44FD5019E3B59B4E55F97BF709A2C50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8905DB6521F8FDC34752B69DEE3FDEB7;
-			remoteInfo = KeychainAccess;
-		};
-		E7959A182B71F7305DA1CEE82261BABD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE3C05997E236CD2A81677FCCD3560EC;
-			remoteInfo = RNCryptor;
-		};
-		F13F2092D0FE643A817793F53E8E2926 /* PBXContainerItemProxy */ = {
+		0B533C57D79BC1999E4E1BF3F684CD6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A964E4CD66B21F65CF2DC76BDC9A4531;
 			remoteInfo = iCloudDocumentSync;
 		};
-		FB804378636329D7B63CA88F01319FE5 /* PBXContainerItemProxy */ = {
+		72C6E057FD212E2ABE72D4B4077AD043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8905DB6521F8FDC34752B69DEE3FDEB7;
+			remoteInfo = KeychainAccess;
+		};
+		7C991FDBD766FD463B4A67274F74B327 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E710F048A759A9EA647A7C0BDAA1F6;
+			remoteInfo = "JSONJoy-Swift";
+		};
+		97899FD8CB42335BA662D979D060D3D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8B8331D450F786AB53A6060154CA7B9;
+			remoteInfo = RNCryptor;
+		};
+		9BE3014AC0C1BD06AE9C9DE1B25AA3C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -108,195 +119,211 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B9E8749D5528DF463E30CCA7782D1F /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		04722187F693464A63FE9C9FE1EA96B9 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
-		0629BE523471A322EC037CE5E73A8409 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
-		06588E9A15A11178F96296B0E09D9B29 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
-		07FDC046B08058029374CF846187D757 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
-		080E8CF2E90485F7F1C8E37BA19B5FB7 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
-		09593748FC0B26B5767BAC7FDA2CFA02 /* iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCloud.h; path = iCloud/iCloud.h; sourceTree = "<group>"; };
-		0B1CBDEB6FBA78D193D7AD8AE1717436 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
-		0CFF90E6F5163A47A41B28C3AA60C385 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		0E74CA4C2901C34780C9F3E1A15D0354 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		053D0A2807DAC610BDA6EF47B6837EE1 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
+		05977D4F5CC70254B3CCA051320BD253 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
+		0609CEFB129B5A9E9268B6C016D67E00 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		069E50FD18DC2BFCA6EE66A695F21897 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		06FF6CE342CEE08B40723F184D28EFEF /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		0A83D8CA1FE386730B4FF0AAA8A69143 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
+		0CE436139B1FA7236054B32F32FAD87F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3F8E3A780E745EF3258952A52BE1B8 /* iCloudDocumentSync.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCloudDocumentSync.xcconfig; sourceTree = "<group>"; };
+		0FAACE58AFB262980DEF33143BC64650 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
 		10FDC7E789B0F629809BE7331ACE09BD /* Pods-CryptoWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
-		116B658BB8170CBF7BE7EBBCB684CBFE /* iCloudDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCloudDocument.h; path = iCloud/iCloudDocument.h; sourceTree = "<group>"; };
-		143BCAD4B3AF4B05F991CC36BAE5859A /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
-		151079A802EC3E3B3DA1FC089BA64483 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
-		17FF5BF864A7C68B18D083107FF7ECB3 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		1838736DD0375B69680A19F00D1B610D /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		1961B22037A0A17EB6B5FEFE0CEE6F03 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		19B09FD5C9F9EAA7D4A72BB671D14F22 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
+		116741F705E5CE824106258A9D8EBB5A /* RNCryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		18FAEA5C46C01A8E2EEC9108E8659512 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
+		1997CE7523A3257B284CA350014FE363 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
 		1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		1BABFB6A28B6D9DBCF74A8605A75197B /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		1D148B62F10DB7DE2958D31D6B134A48 /* Pods_CryptoWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletTests.framework; path = "Pods-CryptoWalletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6E85AEEEC575C1EBE448C71C709F3C /* Pods-CryptoWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWallet.modulemap"; sourceTree = "<group>"; };
-		1E3C06D1DB8CB453198180F81F5CA099 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
-		21B4319AE831E6B0B640FF2F59870CC2 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
-		25882109CE98E1F0381265309FE2359F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		275733D011E481B653A625CD0B2FFF5D /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		2AFA1484BDD3CF982E5FADAA310875E0 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
-		2B9E436D250056A10155F1BD2B4AD138 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
-		2C48A5626A70A9B840E4B49BB54A9F13 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
-		2F189ED572FBC35772BEB10046C765ED /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
-		31B30D47C96330F359DAA65B4A9484E0 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
+		1F4277C17960CA168B2C9FC4FAAFFE25 /* JSONJoy-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONJoy-Swift-prefix.pch"; sourceTree = "<group>"; };
+		1F4794EE640566DF0AA1E308E174B39F /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		1F712CE558AD1B1889BDA813BBACC203 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20578191A6638C038065C3F3EF1785F5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		211389E0D0C5D1467ADD6F4C53994822 /* iCloudDocumentSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iCloudDocumentSync.framework; path = iCloudDocumentSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2338F4B2DB0EC21AD501FA6B9CBACDF0 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		2433E15241CBD7EAA47781494F75517F /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		250803B9F7993EA6CF51D24948F916A9 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
+		26060B7391A29FA3C0C8BA27F4C40EFC /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
+		2790F6DA44659124FD97EE16C8F3E5F9 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		28ADE120DA540F425BA789163A5C35DF /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		2B5ACF9D59E6D9785FE3EEFF12E5CFFF /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5D4A354C164F5763146BCE49017C45 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
+		31E79AD09553AA66FD5532D18B97090C /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
+		329592A0BF67FACE35DBF23E0727C960 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
 		329C609B9C1A56EAD6B0FD4D2B7EEC4D /* Pods-CryptoWallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWallet-umbrella.h"; sourceTree = "<group>"; };
+		32A7DD1C616477041F38E5755ED95947 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
 		348B623A1DE26898A6BE17FB383FD9E6 /* Pods-CryptoWallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWallet-frameworks.sh"; sourceTree = "<group>"; };
-		3517569921FE976F8F09393AB1EFBE35 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
-		3635D8E7B05BA0D4F587A469573FEAC1 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		378EEA3B18E6508D5D46D993A772D293 /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
+		364E5727F17B7E1167FD7ED32CFF01B3 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
 		398B4613349DBD957B64337F3E863A00 /* Pods-CryptoWalletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWalletUITests-umbrella.h"; sourceTree = "<group>"; };
-		39E9406D696519545F2247891A80EC67 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		3A3427038FE12E0E787B9DC328F6B527 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
-		3A46C39A1BFDFFA31E31686CD657DF5F /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
 		3AAA296C651DB9A1703FE9D22FD45FBE /* Pods-CryptoWalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletTests-frameworks.sh"; sourceTree = "<group>"; };
-		3D8B8021507BFD2006BEC6BF2ED02A68 /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RNCryptor.framework; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40AFA12BC80083EA54E9A336794989A1 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		43490F63171C42B48E01292C5A4FAD20 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		441E85909883FDD18DC8564EB694D145 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
-		443C943DBE710E4D8737C92F699CCDCA /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
+		3B1DA1DCF42A4615D74A8BFD1F27CD53 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
+		3E03F4E970C4AD2227E198BAD4317235 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
+		3E378B237F68E4618D2556C170AB873B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		407B7EFF98DE3D04C6CF5F0B99D12344 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		40EE4F6033AF02D1E06EE5B9E8E81A6C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		420BFE1E1F5CF3277C70BA877211E194 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
 		44C475E552DCA1BFB5570BBB866B1D5E /* Pods-CryptoWalletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletUITests-resources.sh"; sourceTree = "<group>"; };
+		451E187F7FA99B0C7A26F351CFB2159F /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
+		48B64BCD8B9090EC09D6B95D8818FE1C /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
 		4A818A46E6AC25B7AF2F06DB444C1E0B /* Pods-CryptoWallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWallet-resources.sh"; sourceTree = "<group>"; };
-		4DCA923BE9BE94A2D185203679D91C81 /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
-		4EEDF4E3B3515946B6DA6F3CB1D540B2 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
-		50B87833F7C15032BB89A5417798829C /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		4AB7CE2EE738A246D6924ED1DBF1DC08 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
+		4B54B2DBEA0F762AE216D6158A0BE6EF /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		4B561E480E6F78222C37F35E2D23935E /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
+		4D444436D4A7E1A73F29FA2DE9F768F7 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		4D73A28EC08AF60655F56D73205BC983 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		4E7782E328D15ABE365067CA94A38233 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
+		4EF66257A858965E61F65788EF137847 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
 		512DF5CC05DDDFBF11B826093E1B3148 /* Pods-CryptoWalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWalletUITests.modulemap"; sourceTree = "<group>"; };
-		5166B868FC606E55904ED33C03730BC6 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		521BE3A2F263B1D51BDE542299974DD0 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
-		52C33B6DA2B76F864AF7F5355BCCE22B /* iCloudDocumentSync-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCloudDocumentSync-prefix.pch"; sourceTree = "<group>"; };
-		540B5F4F0B0E01587D74B1866A2972E7 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
-		56A30269D4E2E7BF1C96688D53BD71DD /* iCloudDocumentSync-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCloudDocumentSync-umbrella.h"; sourceTree = "<group>"; };
-		583FFB5FD45D8F426F5BBC322C06BC56 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58C325A002BA511B314D1945AEF1E62D /* RNCryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
-		5999D853BF26347411B4E4B2861C0136 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
-		59FAFA0BBAC8922C5FA3C58804D65A99 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		54897756769590EBC0976B56F38A246B /* iCloud-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "iCloud-Prefix.pch"; path = "iCloud/iCloud-Prefix.pch"; sourceTree = "<group>"; };
+		5539B8BE97156BBF9258CB9C7C3F755D /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
+		558A8EEBF8147DAA98971F314499AA98 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		55B19A75A2134A6716523DFE1B77547F /* JSONJoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JSONJoy.framework; path = "JSONJoy-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5934AA4537D700CF16AFF1AF0FAFE773 /* Pods_CryptoWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletUITests.framework; path = "Pods-CryptoWalletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5BE504BA26AF030ACCDA90BDD18E1A /* iCloudDocumentSync-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCloudDocumentSync-umbrella.h"; sourceTree = "<group>"; };
+		5C37788AAD1A1F85B3FB4CA25C3AEE1B /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
 		5C47C9B750FADC7980AC70CE32453921 /* Pods-CryptoWalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CryptoWalletTests.modulemap"; sourceTree = "<group>"; };
-		5C77F0BFA9382011A9F5705F342FDBF4 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		5CC25180714833833AB110457A78C291 /* Pods_CryptoWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletTests.framework; path = "Pods-CryptoWalletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63C31FDF7B68CA72E75A08EC655B7C28 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		66E4503F76DB69E5E7190563C2298FD4 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		5CFD7DC8841FA4BB05F9F3000C2E2CB3 /* iCloudDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCloudDocument.m; path = iCloud/iCloudDocument.m; sourceTree = "<group>"; };
+		5E29DE8A6CAFD3B4762CD4ABBB5DEF80 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
+		63045EBF8C4B3AF6B3F657E50C0607B7 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
+		63EEB5EF8C3D67BF312015BBA60D47D2 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		64BB6B699328E56929488A658D57BCDA /* iCloudDocumentSync-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCloudDocumentSync-dummy.m"; sourceTree = "<group>"; };
+		64E332BCF44828BAC5FECD1DB371CEAD /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RNCryptor.framework; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656B5C4CD7CFB5EA77BEA80CE84D3270 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		66EB5B938802F986D305D37865A72F7F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		67A9ECDE0146703BC6255B606A9795C5 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		67BF2E2435B9A49CF4D5BF1188F7361E /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
+		6705D809987B292589130EAF4CEE898B /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		68FE121757D03CC5CA56CE25A2C6D8AA /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
 		69A5851EDBD92AE45DF4A4933250B784 /* Pods-CryptoWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6A9724DB59147FC3FC78691E6180A813 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
-		6DAD69ECBE15CB0B17859829B626F949 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		6DB647EA34000068A1A0FD8ADAB88789 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
+		6C868529D6069D637DFA2F83D550F5D3 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		6F02D012E0CC3CE4AAA5EEB47D753E9A /* Pods-CryptoWalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6F2734161870843AEF14AB8E4C2FC4DE /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWallet.framework; path = "Pods-CryptoWallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		71B3BAF42C4F5C633C5E8F8DDDB667D9 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
-		72066B7925982D296AF2C484FDF3ED81 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		723BDA7F307A2637452C83D9005F2279 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		712EB1D9ABCE2EEB86C34790F52B6DB8 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		717619F324D88069B93967E423FC99BB /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		7264936325C61B76B9161D3306895353 /* Pods-CryptoWallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWallet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7599FFF2B0E2C9A32B5CD98415E5FE55 /* iCloudDocumentSync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = iCloudDocumentSync.modulemap; sourceTree = "<group>"; };
-		7876FE5032D3CE2638CB4BC79196B64D /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
-		79FF9BCE422BEB90EBB9B5ACB6BBBC15 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
-		7B05B180733B9F5474537F0A7E848B95 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		74058D1B2EBA6917C6530E4800FBF96A /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
+		7B0983B378EB5E8CD4496A2A96B42F1A /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
 		7B1D16D5FA12E67210BF6BA693834FC4 /* Pods-CryptoWallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWallet-dummy.m"; sourceTree = "<group>"; };
-		7B2C71FB3B4A6E56B1B898FD5314152C /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
-		7E2D87360609A62DF10F5F346FABCADA /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
-		8243D708A7893A906732E29AE7B6AE54 /* RNCryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.xcconfig; sourceTree = "<group>"; };
-		848B526C3AD5E825D5A65DE14B784CA7 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
-		86B90AF323589604B00DAF6E12D4E7D3 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		7B42ACEF33DCB4CE0E37842ED9A0521F /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
+		7BBC29E96D5C6D2ABD841A41B4B975E9 /* JSONJoy-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JSONJoy-Swift.xcconfig"; sourceTree = "<group>"; };
+		7CDDEF91EB9A5E5ED3EBE8288587A485 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		7CEDA361B03CB6CDE7E0BACFA189139B /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
+		7D32A2615D5EC7515523CA74D3F1A043 /* JSONJoy-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "JSONJoy-Swift.modulemap"; sourceTree = "<group>"; };
+		80952F2AB17504A1A648DA0FB0FE1790 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
+		80EA80A0C2CB9A8ECB3AE204636D92BA /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		82FC8BC41A0964897C83867B606B6EAF /* JSONJoy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONJoy.swift; path = Source/JSONJoy.swift; sourceTree = "<group>"; };
+		840321F252FC91DDD746491AD5063D16 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
+		84684A6845C171C09714F27205A4586A /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
+		84D27AA78B6439D5EF78A109D1121561 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
+		85ACC4CAE8F073C46128D6656F764A7E /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
 		86CCDDA5EEFF16D8759DFB0B6784F79D /* Pods-CryptoWalletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWalletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		882E274BC9CFED080B5D8948C455F334 /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
-		89764E61C99FED68662398F5141BEA8C /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
+		87E116E6E38B3C7162F562A77ECFB939 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
+		889A2BF2A5B564A7DA00D3669C2791C8 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		89ACE511361DFD600DC69D889D558979 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
 		8A359AC56C6AEE7F90F39BFA7812189C /* Pods-CryptoWalletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWalletUITests-dummy.m"; sourceTree = "<group>"; };
-		8A8A5CBB030FD829E2F1B22B2246B13F /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
-		8AFDE43C0D951DFAA03D25BA930A6A19 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
+		8AE4566563FB723B85F4ECF314F2B4A3 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		8BB499651D4CBDA4FA9286E2F64A428F /* Pods-CryptoWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8BF4EB107E4C12D07EC746073D40C415 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CC8E078E03E9BF6E1C6051CB3B51E81 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		8D69251C75D930F92202C74679FF733B /* iCloudDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCloudDocument.m; path = iCloud/iCloudDocument.m; sourceTree = "<group>"; };
-		8EE3FDA9D803DEC7DDADE1EA1E181E10 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
-		8F4DCCDC20DF97E5C67E527A5AFDA988 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
-		9065BCA74420E9D1D42BA681CC39C300 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
-		932B5906D53B0B28657C820C8CC18D8D /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
+		8BDA7E7FD762251814F813A8EA996E83 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		8C60049D49A0D52F9D63F25703DAFA21 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
+		91C0B5706977E4149AED45A341DDC9EB /* iCloudDocumentSync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = iCloudDocumentSync.modulemap; sourceTree = "<group>"; };
+		91F7A26B48366CA6EEEA46F085307370 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93F2CDE87A04232EFCA3C0D85303861B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94CB24A614B9D8C3C54ED5032E3C4EDD /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
-		9572C82B3D3CDF44CDD6987470A79E35 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
-		96003BA80CB2011DE70551884C51BD42 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
-		99AED1DA623DE25D4D1A478E87D4244D /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
-		9B48969A2D0D1E400DD1ED4CBA490271 /* iCloudDocumentSync-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCloudDocumentSync-dummy.m"; sourceTree = "<group>"; };
+		941143787A4E0A0CBBBA9D36A5B16EA5 /* iCloudDocumentSync-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCloudDocumentSync-prefix.pch"; sourceTree = "<group>"; };
+		950080F9701ECEBFA18F6836EBD97927 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
+		96B9E5854644DC7EB912D8ACE3ABBFFD /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
+		975F4BD7C2EA06D83E21907F26B97C4F /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		987AAAC4DC31ADBCD48EDAEF23173A34 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
+		9923A0A2C0304C146BAA965AA9989C6A /* JSONJoy-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONJoy-Swift-dummy.m"; sourceTree = "<group>"; };
 		9C375D3D8A0A4D7AE4F06656E4950A77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E5CD8C3A4BECE231FA82B6475D16DE9 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
-		9F60297B559F3C3C71A078930BA71A1D /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
-		9FEA41A7AA30CDD16A6DD973ECE33C23 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
-		A085E0049A68B377B6576DEC671C8C5E /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
-		A1118C7F4A27F654967362EF445B277C /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		A1A541F717CB98456E2682B219837957 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB03B027223DB3E42A7F62C0FE33355 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
+		9EC86B767836AFD8394120CE9447172D /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
+		9F1C5D1380CCEA7AA4A88AC669CDE3EB /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		9FD537FA1A28BAB5A431C2A49EBC0FDE /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
+		A01016646071F6AAC9EC0DA456071F56 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
+		A2D6F3F313B08160243F5F568CF41BFB /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
+		A2DC463F9EC3993ECD846D610E0367E5 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
 		A2F016DC1300F9272CEC2D330A05BB7B /* Pods-CryptoWalletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWalletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A31130C70296452FEABDFA9D6FA4810C /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
-		A427045900836BE99366E12FDC23E6B4 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		A35F3ECBC4C7AF9255CFADFCB999611D /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
 		A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		A64406F9BF64A9107AB6184B95B0C159 /* iCloudDocumentSync.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCloudDocumentSync.xcconfig; sourceTree = "<group>"; };
+		A6014864FE426F329CCEF806C9B55457 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
 		A692D8D9527711EFEC750AB3B2CB0F59 /* Pods-CryptoWalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoWalletTests-dummy.m"; sourceTree = "<group>"; };
-		A6EB841FEAFF7B4E6E00B21A602B0818 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
-		A76A6B7A38DCED3B2F725C287554BBC5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		A961D450A864D7EF74101A461734CAA6 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
-		AE84C28BB3B2D3B49D496CD7D91A4FC7 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
-		AEB9FD2326A0D6494084FF6125CC1FC0 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
-		AF49DB220AE334D66207CE815ECFD056 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
-		AF7253C2BC5DF2701CFAF10084B46EFF /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		A8EF2B60D8045681F9D44F3092ECF40F /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		A8F64621B7897240B60B6F97AD8A7879 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
+		ABECB54EAE4F87A4624484ACAAA1BFB4 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		ABF07437C8736C0701F88CECFF7D9679 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		AC0FB917E148F6D373233ADB61AF240D /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		ACE8349955548AD7EA1578DBCA418791 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		AD63246A707B9E1B8878B6BAC8A5277D /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		B322A10722CF841FAF00264F71702361 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		B3AAA429B29AEC58A569654D3E16DE2C /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
 		B3F87C107C4155F4F668BCD7A90BFFE7 /* Pods-CryptoWalletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletUITests-frameworks.sh"; sourceTree = "<group>"; };
-		B539D45759389DD625B69613D8DF08C6 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		B73DF024F63B1D57861BF69667EA1EE6 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
-		BA1E589ECFE23358E72A6E97F8FA53A0 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
-		BA9F5E2D437FD434B1A6D7B653134A51 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5ED53F991DFE82CE7195034FFC612A3 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
+		B688077B33B6D926976D37946C029C2B /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
+		BA9D9283182760805F39E4C33BBF2B1F /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
 		BAE0EF87D1D1FB99DD53AEC60DF1A3C2 /* Pods-CryptoWalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoWalletTests-umbrella.h"; sourceTree = "<group>"; };
-		BB87E65CDA50F4365A7736694469B67E /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
-		BE0EB2E4D224F25F4188E21F3BCEFD02 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
-		BE2114FDE5222B6BD66DA43EC74C58F2 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
-		BE7AB283A120C6DA1EBB361D41B971DA /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		BECC2D5B9595EB87A9BEBAAAD4371785 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
-		BF91175CF5A6EDC677F4544739BD7F10 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
+		BD401AB5749793BE6D60B9CEAC252663 /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
+		BD7CA7044401D490CB653EB61C3A6EF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1211ED2F82FF76B65CB4B2BBA82D48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0099BC4ABD2E8C8768F6A857C098F23 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
 		C04A51D0A368DE21BC7076518BF0939B /* Pods-CryptoWalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoWalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C0BD2DD770D8123C476A15AAB6158AFA /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
-		C16D6BEDA6A648FE57F38CA01F1DE202 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		C0C0E56893B47F64CEBC1912137A6C7E /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
 		C213BD09ECC28B026A7A8A2FB315F537 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2D643E68E0D4593C1173876EC3E68F8 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
-		C32D45383C2D2A919D3EB99B06D740DC /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
-		C7B9CAC2A23966566A700DF49E338640 /* iCloudDocumentSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iCloudDocumentSync.framework; path = iCloudDocumentSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA6206E0091DA35A142A451231BACF6A /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
-		CAA1034E5BEA7D3CBD2FACB962FC7D90 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
-		CFD6E0855954E211F0A28DED8552E2D0 /* iCloud-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "iCloud-Prefix.pch"; path = "iCloud/iCloud-Prefix.pch"; sourceTree = "<group>"; };
+		C27E5A33A54AA788D074E3B74A736A3F /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
+		C2A664C787E8705062096928A644E72B /* iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCloud.m; path = iCloud/iCloud.m; sourceTree = "<group>"; };
+		C2AE8D2A778BC2E552CE9249D6FA4E76 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
+		C2BB31DB7CBB2B959A8B888B7E408BA6 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		C5249A4DFFC2205B10E1263F76B9537E /* JSONJoy-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONJoy-Swift-umbrella.h"; sourceTree = "<group>"; };
+		C622D77DB4F1333AB01F1EF4BB7646F7 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
+		C6E98F7C3AE7F339AB5D9DC3DCF74402 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
+		C944B8536CEEBED71C34ADBA44E96272 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		CBFB2280B5E7070B4195E2A3F17CEF41 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		CC3482F409A5493A886BFD539AFE3322 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
+		CE6686C56DFDDD932754F77E717B2F4A /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		D06DAB072B5810D29BAE34CDE8DFA64E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0ABEB7E812B803C0CEFAEF22A630D7D /* iCloudDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCloudDocument.h; path = iCloud/iCloudDocument.h; sourceTree = "<group>"; };
+		D10E3EF5AEE644597125D46C4C2EC0E5 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		D1C39099DF723C4BBB39340D88F48AE7 /* Pods-CryptoWalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoWalletTests-resources.sh"; sourceTree = "<group>"; };
-		D3C16851B3D2AB5F7A9E767EEC82254A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		D4F595177933F06CD5F2D3668F03DE4F /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
-		D582170B6D836056EFF66374CB99F800 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		D68E0E53B619EC260454FE7565339239 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
-		D6906DB916A937ED329C631F09BDF56E /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		D6F2B03BFEEC55A3FCF71FFE693FFC5F /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
-		D7CFE6AF7B8B097992BC10A57E3497D0 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		DC21512406C03AE35A3A53F34CBB24E2 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		D2CA0CF502DD59C325E041CC0F2D6ABD /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
+		D394F00769AE78247AA790FFD0273A0C /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
+		D91098971DEAFC02B6738E823891ECE4 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		DA2A7C1A9A77F98072F751CE52578939 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
+		DA804FFE01B6CDC7375EDDA766670CF5 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
+		DB96091C2DD67C835A9A49D00EEE3B00 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		DCA9A0E64341908A8E5A2EFCFECBDB13 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
 		DD91C7C6754E9131B9CE78B17990F4D4 /* Pods-CryptoWallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoWallet-acknowledgements.plist"; sourceTree = "<group>"; };
-		DED99EDA65A62549721BCFE23D6195E6 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		DF403133F366014478D0F9E6CC238278 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
+		DE486844DDFA9981D85F8B004BB9D82E /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
+		DE4A9E6CCE23DE306DA4A7BC9D024FF3 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
 		DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		E049EE4BE8D9220E1BA66C0391D44AF1 /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
 		E26FF99A506A475019E4FFB36AA9BF11 /* Pods-CryptoWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoWalletTests.release.xcconfig"; sourceTree = "<group>"; };
-		E4E7A0C07B0A7F3C9D6907EBED93A3C7 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		E3A509CD44707AF4D7BA3750863BB408 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
+		E3CFC5AE6187D468CEA8D11751549FFD /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
+		E61DDC332F4891CC4D09FC161C70FE21 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
 		E697AE5C6BC48B0D44738F86C610DA42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8A248034B503F58D48AF4D12ADF99EC /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		E92F77D856E4D70E76DA237FC1C95FE7 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
-		EA77E006CC623B0969DA2B782A846213 /* iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCloud.m; path = iCloud/iCloud.m; sourceTree = "<group>"; };
-		EAFB4BB52761D254A826988B0155D9D9 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
-		EBA295C97F2C85D4BC73AD4634618186 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
-		EC4A547105CC4E61640A6BBC2069DDE2 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
-		ED611775E2F6CECD2F3D14DE270DC702 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		EDCE996181EEFE3117995FAC56F6EF17 /* Pods_CryptoWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWalletUITests.framework; path = "Pods-CryptoWalletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDF27DBF12F08CF2B7A338E7D045C85B /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
-		EE53405CE3B0F940C086B6167DDBACE5 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
-		F055761DBC400AC8AF92B9FA9316E5A7 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
-		F136CF4E7847A48AC331E0122AB5054F /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		F434BA4A05B7E72037FE797B8448B303 /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RNCryptor.modulemap; sourceTree = "<group>"; };
-		F50B7A2D1EF3457557F2E03301F633F5 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
-		F8B1B39F0FCBB4F1655FC6B1E8023940 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
-		FCC3BDAE5249748CFCC440A0E7542209 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
+		E77F80EC73EDBB52C21DC2FE4559297D /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
+		E8841BBE10E2589790C6A8C878C3E5E9 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CryptoWallet.framework; path = "Pods-CryptoWallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A42D347098686F05FA93E6F358FB00 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
+		EF5F67223A2E9F9E6140AD597E71430F /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
+		F01D7AC0E3E5DB1FD38C0C8BD783B1AE /* iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCloud.h; path = iCloud/iCloud.h; sourceTree = "<group>"; };
+		F118DE63389010009C56FF5E04C1EA81 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
+		F17FC17B6718FFC20CD4FB60C8CC0393 /* RNCryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.xcconfig; sourceTree = "<group>"; };
+		F20A589CE56D586F78130DF13C182E45 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
+		F6A9C619A7E18052C600E15B6003BB63 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
+		F9A9F95F56D32627CD86CA11F99CCD57 /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RNCryptor.modulemap; sourceTree = "<group>"; };
+		FA49A5ACBAC617EC6C383457522DB3BE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0198377132F44A52078A5EBE16F2B92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89F261DBB0984F28D25930C3DC52523 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2DDC844C06D46A3907C42C9964BC7434 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,14 +344,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F1B227A6DF1101F2FA9C4608E92269A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E78B14FFC7055CC033F46C18C4DB24F5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		99415AB53D0EF018EFE9DA68F9834A2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,11 +352,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E24E9D1F2AA5E5EC213B80DB11641E62 /* Frameworks */ = {
+		A7B9059E1573A92267214ED67B578146 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E5B3DBD4CF11F60D8F07A7F548A01C /* Foundation.framework in Frameworks */,
+				4270621DDBD020B30C3A02FE6AA55924 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38AFD19E883E80E64B7BD63755E6440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CDC7FF0E288BEB909FF51716508B37 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +388,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05F2341C0841E78F093B6793ED0A2649 /* OpenSSL-Universal */ = {
+			isa = PBXGroup;
+			children = (
+				91F7A26B48366CA6EEEA46F085307370 /* aes.h */,
+				E3A509CD44707AF4D7BA3750863BB408 /* asn1.h */,
+				A8F64621B7897240B60B6F97AD8A7879 /* asn1_mac.h */,
+				DA2A7C1A9A77F98072F751CE52578939 /* asn1t.h */,
+				E9A42D347098686F05FA93E6F358FB00 /* bio.h */,
+				A01016646071F6AAC9EC0DA456071F56 /* blowfish.h */,
+				89ACE511361DFD600DC69D889D558979 /* bn.h */,
+				B3AAA429B29AEC58A569654D3E16DE2C /* buffer.h */,
+				5539B8BE97156BBF9258CB9C7C3F755D /* camellia.h */,
+				7B42ACEF33DCB4CE0E37842ED9A0521F /* cast.h */,
+				80952F2AB17504A1A648DA0FB0FE1790 /* cmac.h */,
+				CBFB2280B5E7070B4195E2A3F17CEF41 /* cms.h */,
+				DCA9A0E64341908A8E5A2EFCFECBDB13 /* comp.h */,
+				9FD537FA1A28BAB5A431C2A49EBC0FDE /* conf.h */,
+				C0C0E56893B47F64CEBC1912137A6C7E /* conf_api.h */,
+				74058D1B2EBA6917C6530E4800FBF96A /* crypto.h */,
+				C6E98F7C3AE7F339AB5D9DC3DCF74402 /* des.h */,
+				87E116E6E38B3C7162F562A77ECFB939 /* des_old.h */,
+				3E03F4E970C4AD2227E198BAD4317235 /* dh.h */,
+				D91098971DEAFC02B6738E823891ECE4 /* dsa.h */,
+				C622D77DB4F1333AB01F1EF4BB7646F7 /* dso.h */,
+				85ACC4CAE8F073C46128D6656F764A7E /* dtls1.h */,
+				F6A9C619A7E18052C600E15B6003BB63 /* e_os2.h */,
+				31E79AD09553AA66FD5532D18B97090C /* ebcdic.h */,
+				4E7782E328D15ABE365067CA94A38233 /* ec.h */,
+				63045EBF8C4B3AF6B3F657E50C0607B7 /* ecdh.h */,
+				BA9D9283182760805F39E4C33BBF2B1F /* ecdsa.h */,
+				9CB03B027223DB3E42A7F62C0FE33355 /* engine.h */,
+				8C60049D49A0D52F9D63F25703DAFA21 /* err.h */,
+				C27E5A33A54AA788D074E3B74A736A3F /* evp.h */,
+				950080F9701ECEBFA18F6836EBD97927 /* hmac.h */,
+				A2DC463F9EC3993ECD846D610E0367E5 /* idea.h */,
+				EF5F67223A2E9F9E6140AD597E71430F /* krb5_asn.h */,
+				7B0983B378EB5E8CD4496A2A96B42F1A /* kssl.h */,
+				0A83D8CA1FE386730B4FF0AAA8A69143 /* lhash.h */,
+				4B561E480E6F78222C37F35E2D23935E /* md4.h */,
+				D2CA0CF502DD59C325E041CC0F2D6ABD /* md5.h */,
+				A35F3ECBC4C7AF9255CFADFCB999611D /* mdc2.h */,
+				A6014864FE426F329CCEF806C9B55457 /* modes.h */,
+				451E187F7FA99B0C7A26F351CFB2159F /* obj_mac.h */,
+				CC3482F409A5493A886BFD539AFE3322 /* objects.h */,
+				D394F00769AE78247AA790FFD0273A0C /* ocsp.h */,
+				48B64BCD8B9090EC09D6B95D8818FE1C /* opensslconf.h */,
+				E3CFC5AE6187D468CEA8D11751549FFD /* opensslv.h */,
+				2D5D4A354C164F5763146BCE49017C45 /* ossl_typ.h */,
+				96B9E5854644DC7EB912D8ACE3ABBFFD /* pem.h */,
+				F118DE63389010009C56FF5E04C1EA81 /* pem2.h */,
+				E61DDC332F4891CC4D09FC161C70FE21 /* pkcs12.h */,
+				28ADE120DA540F425BA789163A5C35DF /* pkcs7.h */,
+				84D27AA78B6439D5EF78A109D1121561 /* pqueue.h */,
+				5E29DE8A6CAFD3B4762CD4ABBB5DEF80 /* rand.h */,
+				84684A6845C171C09714F27205A4586A /* rc2.h */,
+				B688077B33B6D926976D37946C029C2B /* rc4.h */,
+				B5ED53F991DFE82CE7195034FFC612A3 /* ripemd.h */,
+				987AAAC4DC31ADBCD48EDAEF23173A34 /* rsa.h */,
+				C2AE8D2A778BC2E552CE9249D6FA4E76 /* safestack.h */,
+				E77F80EC73EDBB52C21DC2FE4559297D /* seed.h */,
+				250803B9F7993EA6CF51D24948F916A9 /* sha.h */,
+				F20A589CE56D586F78130DF13C182E45 /* srp.h */,
+				32A7DD1C616477041F38E5755ED95947 /* srtp.h */,
+				A2D6F3F313B08160243F5F568CF41BFB /* ssl.h */,
+				7CEDA361B03CB6CDE7E0BACFA189139B /* ssl2.h */,
+				4AB7CE2EE738A246D6924ED1DBF1DC08 /* ssl23.h */,
+				4EF66257A858965E61F65788EF137847 /* ssl3.h */,
+				420BFE1E1F5CF3277C70BA877211E194 /* stack.h */,
+				840321F252FC91DDD746491AD5063D16 /* symhacks.h */,
+				364E5727F17B7E1167FD7ED32CFF01B3 /* tls1.h */,
+				26060B7391A29FA3C0C8BA27F4C40EFC /* ts.h */,
+				1997CE7523A3257B284CA350014FE363 /* txt_db.h */,
+				0FAACE58AFB262980DEF33143BC64650 /* ui.h */,
+				C0099BC4ABD2E8C8768F6A857C098F23 /* ui_compat.h */,
+				DE4A9E6CCE23DE306DA4A7BC9D024FF3 /* whrlpool.h */,
+				68FE121757D03CC5CA56CE25A2C6D8AA /* x509.h */,
+				05977D4F5CC70254B3CCA051320BD253 /* x509_vfy.h */,
+				DA804FFE01B6CDC7375EDDA766670CF5 /* x509v3.h */,
+				9A7FA8B983DFC1087FF99B6D7D70368E /* Frameworks */,
+			);
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		06A22249489BFF18729C298D3E108BA5 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				40EE4F6033AF02D1E06EE5B9E8E81A6C /* AFHTTPSessionManager.h */,
+				63EEB5EF8C3D67BF312015BBA60D47D2 /* AFHTTPSessionManager.m */,
+				1F4794EE640566DF0AA1E308E174B39F /* AFURLSessionManager.h */,
+				4D73A28EC08AF60655F56D73205BC983 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		0B8E2FDDB074D6D56718C6B499E49C15 /* iCloudDocumentSync */ = {
+			isa = PBXGroup;
+			children = (
+				F01D7AC0E3E5DB1FD38C0C8BD783B1AE /* iCloud.h */,
+				C2A664C787E8705062096928A644E72B /* iCloud.m */,
+				54897756769590EBC0976B56F38A246B /* iCloud-Prefix.pch */,
+				D0ABEB7E812B803C0CEFAEF22A630D7D /* iCloudDocument.h */,
+				5CFD7DC8841FA4BB05F9F3000C2E2CB3 /* iCloudDocument.m */,
+				E33E8832AC2B70566A034C6DE53D2EED /* Support Files */,
+			);
+			name = iCloudDocumentSync;
+			path = iCloudDocumentSync;
+			sourceTree = "<group>";
+		};
 		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,80 +505,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		161DC78DBE1BE620E5BFE946943FA319 /* Support Files */ = {
+		1740788EAAEB94A607483574F190C44E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BF4EB107E4C12D07EC746073D40C415 /* Info.plist */,
-				DC21512406C03AE35A3A53F34CBB24E2 /* KeychainAccess.modulemap */,
-				0629BE523471A322EC037CE5E73A8409 /* KeychainAccess.xcconfig */,
-				8F4DCCDC20DF97E5C67E527A5AFDA988 /* KeychainAccess-dummy.m */,
-				7B05B180733B9F5474537F0A7E848B95 /* KeychainAccess-prefix.pch */,
-				2F189ED572FBC35772BEB10046C765ED /* KeychainAccess-umbrella.h */,
+				D06DAB072B5810D29BAE34CDE8DFA64E /* Info.plist */,
+				712EB1D9ABCE2EEB86C34790F52B6DB8 /* KeychainAccess.modulemap */,
+				4D444436D4A7E1A73F29FA2DE9F768F7 /* KeychainAccess.xcconfig */,
+				0609CEFB129B5A9E9268B6C016D67E00 /* KeychainAccess-dummy.m */,
+				C2BB31DB7CBB2B959A8B888B7E408BA6 /* KeychainAccess-prefix.pch */,
+				DE486844DDFA9981D85F8B004BB9D82E /* KeychainAccess-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KeychainAccess";
 			sourceTree = "<group>";
 		};
-		2605FA5B1EA99050FE508944AE401705 /* Support Files */ = {
+		3163D70B028C87959279080A3B09F215 /* JSONJoy-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				25882109CE98E1F0381265309FE2359F /* Info.plist */,
-				F434BA4A05B7E72037FE797B8448B303 /* RNCryptor.modulemap */,
-				8243D708A7893A906732E29AE7B6AE54 /* RNCryptor.xcconfig */,
-				E049EE4BE8D9220E1BA66C0391D44AF1 /* RNCryptor-dummy.m */,
-				06588E9A15A11178F96296B0E09D9B29 /* RNCryptor-prefix.pch */,
-				378EEA3B18E6508D5D46D993A772D293 /* RNCryptor-umbrella.h */,
+				82FC8BC41A0964897C83867B606B6EAF /* JSONJoy.swift */,
+				CB4834938B2467F17828C65ADAFA4738 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/RNCryptor";
+			name = "JSONJoy-Swift";
+			path = "JSONJoy-Swift";
 			sourceTree = "<group>";
 		};
-		393578B284782CA081822BE8AECF4389 /* Products */ = {
+		3E95FCAF47778F51F047D12D2573ADC0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				BA9F5E2D437FD434B1A6D7B653134A51 /* AFNetworking.framework */,
-				C7B9CAC2A23966566A700DF49E338640 /* iCloudDocumentSync.framework */,
-				583FFB5FD45D8F426F5BBC322C06BC56 /* KeychainAccess.framework */,
-				6F2734161870843AEF14AB8E4C2FC4DE /* Pods_CryptoWallet.framework */,
-				5CC25180714833833AB110457A78C291 /* Pods_CryptoWalletTests.framework */,
-				EDCE996181EEFE3117995FAC56F6EF17 /* Pods_CryptoWalletUITests.framework */,
-				3D8B8021507BFD2006BEC6BF2ED02A68 /* RNCryptor.framework */,
+				717619F324D88069B93967E423FC99BB /* AFAutoPurgingImageCache.h */,
+				8BDA7E7FD762251814F813A8EA996E83 /* AFAutoPurgingImageCache.m */,
+				8AE4566563FB723B85F4ECF314F2B4A3 /* AFImageDownloader.h */,
+				B322A10722CF841FAF00264F71702361 /* AFImageDownloader.m */,
+				C944B8536CEEBED71C34ADBA44E96272 /* AFNetworkActivityIndicatorManager.h */,
+				069E50FD18DC2BFCA6EE66A695F21897 /* AFNetworkActivityIndicatorManager.m */,
+				656B5C4CD7CFB5EA77BEA80CE84D3270 /* UIActivityIndicatorView+AFNetworking.h */,
+				558A8EEBF8147DAA98971F314499AA98 /* UIActivityIndicatorView+AFNetworking.m */,
+				CE6686C56DFDDD932754F77E717B2F4A /* UIButton+AFNetworking.h */,
+				DB96091C2DD67C835A9A49D00EEE3B00 /* UIButton+AFNetworking.m */,
+				A8EF2B60D8045681F9D44F3092ECF40F /* UIImage+AFNetworking.h */,
+				407B7EFF98DE3D04C6CF5F0B99D12344 /* UIImageView+AFNetworking.h */,
+				ABF07437C8736C0701F88CECFF7D9679 /* UIImageView+AFNetworking.m */,
+				01B9E8749D5528DF463E30CCA7782D1F /* UIKit+AFNetworking.h */,
+				6C868529D6069D637DFA2F83D550F5D3 /* UIProgressView+AFNetworking.h */,
+				2338F4B2DB0EC21AD501FA6B9CBACDF0 /* UIProgressView+AFNetworking.m */,
+				6705D809987B292589130EAF4CEE898B /* UIRefreshControl+AFNetworking.h */,
+				975F4BD7C2EA06D83E21907F26B97C4F /* UIRefreshControl+AFNetworking.m */,
+				AC0FB917E148F6D373233ADB61AF240D /* UIWebView+AFNetworking.h */,
+				ABECB54EAE4F87A4624484ACAAA1BFB4 /* UIWebView+AFNetworking.m */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3F9D9191E6E000AF9EF160C55D1916CE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7599FFF2B0E2C9A32B5CD98415E5FE55 /* iCloudDocumentSync.modulemap */,
-				A64406F9BF64A9107AB6184B95B0C159 /* iCloudDocumentSync.xcconfig */,
-				9B48969A2D0D1E400DD1ED4CBA490271 /* iCloudDocumentSync-dummy.m */,
-				52C33B6DA2B76F864AF7F5355BCCE22B /* iCloudDocumentSync-prefix.pch */,
-				56A30269D4E2E7BF1C96688D53BD71DD /* iCloudDocumentSync-umbrella.h */,
-				A1A541F717CB98456E2682B219837957 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/iCloudDocumentSync";
-			sourceTree = "<group>";
-		};
-		473F24D92E8A6AB18472A267AE284A95 /* RNCryptor */ = {
-			isa = PBXGroup;
-			children = (
-				58C325A002BA511B314D1945AEF1E62D /* RNCryptor.h */,
-				C2D643E68E0D4593C1173876EC3E68F8 /* RNCryptor.swift */,
-				2605FA5B1EA99050FE508944AE401705 /* Support Files */,
-			);
-			name = RNCryptor;
-			path = RNCryptor;
-			sourceTree = "<group>";
-		};
-		494913FA85E9F5984710EF319C083D70 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AF49DB220AE334D66207CE815ECFD056 /* libcrypto.a */,
-				BF91175CF5A6EDC677F4544739BD7F10 /* libssl.a */,
-			);
-			name = Frameworks;
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 		5381C6A4E3851BBDF1D73A36DF9F6856 /* Pods-CryptoWallet */ = {
@@ -463,40 +574,33 @@
 			path = "Target Support Files/Pods-CryptoWallet";
 			sourceTree = "<group>";
 		};
-		5C5A031854FC6E6173DA3ACFD827E7DF /* KeychainAccess */ = {
+		55F8BFFC8C10BCE19D1B3332A8CADEB6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5999D853BF26347411B4E4B2861C0136 /* Keychain.swift */,
-				161DC78DBE1BE620E5BFE946943FA319 /* Support Files */,
+				1BABFB6A28B6D9DBCF74A8605A75197B /* AFNetworking.modulemap */,
+				ACE8349955548AD7EA1578DBCA418791 /* AFNetworking.xcconfig */,
+				4B54B2DBEA0F762AE216D6158A0BE6EF /* AFNetworking-dummy.m */,
+				AD63246A707B9E1B8878B6BAC8A5277D /* AFNetworking-prefix.pch */,
+				329592A0BF67FACE35DBF23E0727C960 /* AFNetworking-umbrella.h */,
+				1F712CE558AD1B1889BDA813BBACC203 /* Info.plist */,
 			);
-			name = KeychainAccess;
-			path = KeychainAccess;
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
-		6068214F724A691D3E6C2A864CDD924B /* Serialization */ = {
+		66ACBAC05315AAC1E22932C26C345C18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED611775E2F6CECD2F3D14DE270DC702 /* AFURLRequestSerialization.h */,
-				17FF5BF864A7C68B18D083107FF7ECB3 /* AFURLRequestSerialization.m */,
-				275733D011E481B653A625CD0B2FFF5D /* AFURLResponseSerialization.h */,
-				0CFF90E6F5163A47A41B28C3AA60C385 /* AFURLResponseSerialization.m */,
+				2433E15241CBD7EAA47781494F75517F /* AFNetworking.framework */,
+				211389E0D0C5D1467ADD6F4C53994822 /* iCloudDocumentSync.framework */,
+				55B19A75A2134A6716523DFE1B77547F /* JSONJoy.framework */,
+				2B5ACF9D59E6D9785FE3EEFF12E5CFFF /* KeychainAccess.framework */,
+				E8841BBE10E2589790C6A8C878C3E5E9 /* Pods_CryptoWallet.framework */,
+				1D148B62F10DB7DE2958D31D6B134A48 /* Pods_CryptoWalletTests.framework */,
+				5934AA4537D700CF16AFF1AF0FAFE773 /* Pods_CryptoWalletUITests.framework */,
+				64E332BCF44828BAC5FECD1DB371CEAD /* RNCryptor.framework */,
 			);
-			name = Serialization;
-			sourceTree = "<group>";
-		};
-		72D385C01D4AD8622D9C7772F10D7D79 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				D7CFE6AF7B8B097992BC10A57E3497D0 /* AFNetworking.h */,
-				D1A4066C49894ADF034678D52ADC5645 /* NSURLSession */,
-				854D90BE0D57D9F94CFC2EB3217A2801 /* Reachability */,
-				B65F0F419F1DD1D8885F0428B829B1AF /* Security */,
-				6068214F724A691D3E6C2A864CDD924B /* Serialization */,
-				E2E25808CAC15B7D84A0DDECF36BB29C /* Support Files */,
-				92CBBA29BAC0F753D13DDD5FEEB402A2 /* UIKit */,
-			);
-			name = AFNetworking;
-			path = AFNetworking;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -504,72 +608,54 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
-				854D5EEC83DE7E3DA2B500301817F368 /* Pods */,
-				393578B284782CA081822BE8AECF4389 /* Products */,
+				F16565C17FBD198A952172814A9FDD24 /* Pods */,
+				66ACBAC05315AAC1E22932C26C345C18 /* Products */,
 				B1CA0D1BC349F0540AA373B0F0890A0D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		854D5EEC83DE7E3DA2B500301817F368 /* Pods */ = {
+		8A12D3987108CADC9DE89DAEE2C77F30 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				72D385C01D4AD8622D9C7772F10D7D79 /* AFNetworking */,
-				9B5A45A98DB85B47B0D5D0C6E6894F88 /* iCloudDocumentSync */,
-				5C5A031854FC6E6173DA3ACFD827E7DF /* KeychainAccess */,
-				B6FE5FD555D250FE96633C3513436493 /* OpenSSL-Universal */,
-				473F24D92E8A6AB18472A267AE284A95 /* RNCryptor */,
+				0CE436139B1FA7236054B32F32FAD87F /* Info.plist */,
+				F9A9F95F56D32627CD86CA11F99CCD57 /* RNCryptor.modulemap */,
+				F17FC17B6718FFC20CD4FB60C8CC0393 /* RNCryptor.xcconfig */,
+				BD401AB5749793BE6D60B9CEAC252663 /* RNCryptor-dummy.m */,
+				3B1DA1DCF42A4615D74A8BFD1F27CD53 /* RNCryptor-prefix.pch */,
+				9EC86B767836AFD8394120CE9447172D /* RNCryptor-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/RNCryptor";
 			sourceTree = "<group>";
 		};
-		854D90BE0D57D9F94CFC2EB3217A2801 /* Reachability */ = {
+		8C3E373AEF781D4EBC8EFB1B363DA342 /* KeychainAccess */ = {
 			isa = PBXGroup;
 			children = (
-				E8A248034B503F58D48AF4D12ADF99EC /* AFNetworkReachabilityManager.h */,
-				72066B7925982D296AF2C484FDF3ED81 /* AFNetworkReachabilityManager.m */,
+				06FF6CE342CEE08B40723F184D28EFEF /* Keychain.swift */,
+				1740788EAAEB94A607483574F190C44E /* Support Files */,
 			);
-			name = Reachability;
+			name = KeychainAccess;
+			path = KeychainAccess;
 			sourceTree = "<group>";
 		};
-		92CBBA29BAC0F753D13DDD5FEEB402A2 /* UIKit */ = {
+		974ABA5B2FB2FB6422005BDD95AA64EB /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				0B1CBDEB6FBA78D193D7AD8AE1717436 /* AFAutoPurgingImageCache.h */,
-				D582170B6D836056EFF66374CB99F800 /* AFAutoPurgingImageCache.m */,
-				59FAFA0BBAC8922C5FA3C58804D65A99 /* AFImageDownloader.h */,
-				99AED1DA623DE25D4D1A478E87D4244D /* AFImageDownloader.m */,
-				A1118C7F4A27F654967362EF445B277C /* AFNetworkActivityIndicatorManager.h */,
-				43490F63171C42B48E01292C5A4FAD20 /* AFNetworkActivityIndicatorManager.m */,
-				F136CF4E7847A48AC331E0122AB5054F /* UIActivityIndicatorView+AFNetworking.h */,
-				8CC8E078E03E9BF6E1C6051CB3B51E81 /* UIActivityIndicatorView+AFNetworking.m */,
-				86B90AF323589604B00DAF6E12D4E7D3 /* UIButton+AFNetworking.h */,
-				39E9406D696519545F2247891A80EC67 /* UIButton+AFNetworking.m */,
-				3635D8E7B05BA0D4F587A469573FEAC1 /* UIImage+AFNetworking.h */,
-				B539D45759389DD625B69613D8DF08C6 /* UIImageView+AFNetworking.h */,
-				BE7AB283A120C6DA1EBB361D41B971DA /* UIImageView+AFNetworking.m */,
-				67A9ECDE0146703BC6255B606A9795C5 /* UIKit+AFNetworking.h */,
-				AF7253C2BC5DF2701CFAF10084B46EFF /* UIProgressView+AFNetworking.h */,
-				5166B868FC606E55904ED33C03730BC6 /* UIProgressView+AFNetworking.m */,
-				DED99EDA65A62549721BCFE23D6195E6 /* UIRefreshControl+AFNetworking.h */,
-				A427045900836BE99366E12FDC23E6B4 /* UIRefreshControl+AFNetworking.m */,
-				723BDA7F307A2637452C83D9005F2279 /* UIWebView+AFNetworking.h */,
-				D3C16851B3D2AB5F7A9E767EEC82254A /* UIWebView+AFNetworking.m */,
+				FA49A5ACBAC617EC6C383457522DB3BE /* AFURLRequestSerialization.h */,
+				9F1C5D1380CCEA7AA4A88AC669CDE3EB /* AFURLRequestSerialization.m */,
+				889A2BF2A5B564A7DA00D3669C2791C8 /* AFURLResponseSerialization.h */,
+				20578191A6638C038065C3F3EF1785F5 /* AFURLResponseSerialization.m */,
 			);
-			name = UIKit;
+			name = Serialization;
 			sourceTree = "<group>";
 		};
-		9B5A45A98DB85B47B0D5D0C6E6894F88 /* iCloudDocumentSync */ = {
+		9A7FA8B983DFC1087FF99B6D7D70368E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09593748FC0B26B5767BAC7FDA2CFA02 /* iCloud.h */,
-				EA77E006CC623B0969DA2B782A846213 /* iCloud.m */,
-				CFD6E0855954E211F0A28DED8552E2D0 /* iCloud-Prefix.pch */,
-				116B658BB8170CBF7BE7EBBCB684CBFE /* iCloudDocument.h */,
-				8D69251C75D930F92202C74679FF733B /* iCloudDocument.m */,
-				3F9D9191E6E000AF9EF160C55D1916CE /* Support Files */,
+				053D0A2807DAC610BDA6EF47B6837EE1 /* libcrypto.a */,
+				5C37788AAD1A1F85B3FB4CA25C3AEE1B /* libssl.a */,
 			);
-			name = iCloudDocumentSync;
-			path = iCloudDocumentSync;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B1CA0D1BC349F0540AA373B0F0890A0D /* Targets Support Files */ = {
@@ -582,97 +668,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B65F0F419F1DD1D8885F0428B829B1AF /* Security */ = {
+		BA0A61D9E8BFD71C7BFE275F7A819D02 /* RNCryptor */ = {
 			isa = PBXGroup;
 			children = (
-				1838736DD0375B69680A19F00D1B610D /* AFSecurityPolicy.h */,
-				5C77F0BFA9382011A9F5705F342FDBF4 /* AFSecurityPolicy.m */,
+				116741F705E5CE824106258A9D8EBB5A /* RNCryptor.h */,
+				18FAEA5C46C01A8E2EEC9108E8659512 /* RNCryptor.swift */,
+				8A12D3987108CADC9DE89DAEE2C77F30 /* Support Files */,
 			);
-			name = Security;
-			sourceTree = "<group>";
-		};
-		B6FE5FD555D250FE96633C3513436493 /* OpenSSL-Universal */ = {
-			isa = PBXGroup;
-			children = (
-				EDF27DBF12F08CF2B7A338E7D045C85B /* aes.h */,
-				441E85909883FDD18DC8564EB694D145 /* asn1.h */,
-				96003BA80CB2011DE70551884C51BD42 /* asn1_mac.h */,
-				BECC2D5B9595EB87A9BEBAAAD4371785 /* asn1t.h */,
-				848B526C3AD5E825D5A65DE14B784CA7 /* bio.h */,
-				A961D450A864D7EF74101A461734CAA6 /* blowfish.h */,
-				932B5906D53B0B28657C820C8CC18D8D /* bn.h */,
-				9F60297B559F3C3C71A078930BA71A1D /* buffer.h */,
-				A31130C70296452FEABDFA9D6FA4810C /* camellia.h */,
-				3517569921FE976F8F09393AB1EFBE35 /* cast.h */,
-				540B5F4F0B0E01587D74B1866A2972E7 /* cmac.h */,
-				50B87833F7C15032BB89A5417798829C /* cms.h */,
-				4EEDF4E3B3515946B6DA6F3CB1D540B2 /* comp.h */,
-				A6EB841FEAFF7B4E6E00B21A602B0818 /* conf.h */,
-				6DB647EA34000068A1A0FD8ADAB88789 /* conf_api.h */,
-				9FEA41A7AA30CDD16A6DD973ECE33C23 /* crypto.h */,
-				31B30D47C96330F359DAA65B4A9484E0 /* des.h */,
-				2C48A5626A70A9B840E4B49BB54A9F13 /* des_old.h */,
-				07FDC046B08058029374CF846187D757 /* dh.h */,
-				0E74CA4C2901C34780C9F3E1A15D0354 /* dsa.h */,
-				443C943DBE710E4D8737C92F699CCDCA /* dso.h */,
-				EBA295C97F2C85D4BC73AD4634618186 /* dtls1.h */,
-				9065BCA74420E9D1D42BA681CC39C300 /* e_os2.h */,
-				EC4A547105CC4E61640A6BBC2069DDE2 /* ebcdic.h */,
-				BE0EB2E4D224F25F4188E21F3BCEFD02 /* ec.h */,
-				080E8CF2E90485F7F1C8E37BA19B5FB7 /* ecdh.h */,
-				21B4319AE831E6B0B640FF2F59870CC2 /* ecdsa.h */,
-				F8B1B39F0FCBB4F1655FC6B1E8023940 /* engine.h */,
-				2B9E436D250056A10155F1BD2B4AD138 /* err.h */,
-				7B2C71FB3B4A6E56B1B898FD5314152C /* evp.h */,
-				D6F2B03BFEEC55A3FCF71FFE693FFC5F /* hmac.h */,
-				EE53405CE3B0F940C086B6167DDBACE5 /* idea.h */,
-				89764E61C99FED68662398F5141BEA8C /* krb5_asn.h */,
-				8AFDE43C0D951DFAA03D25BA930A6A19 /* kssl.h */,
-				F055761DBC400AC8AF92B9FA9316E5A7 /* lhash.h */,
-				BE2114FDE5222B6BD66DA43EC74C58F2 /* md4.h */,
-				D68E0E53B619EC260454FE7565339239 /* md5.h */,
-				EAFB4BB52761D254A826988B0155D9D9 /* mdc2.h */,
-				1E3C06D1DB8CB453198180F81F5CA099 /* modes.h */,
-				9E5CD8C3A4BECE231FA82B6475D16DE9 /* obj_mac.h */,
-				71B3BAF42C4F5C633C5E8F8DDDB667D9 /* objects.h */,
-				4DCA923BE9BE94A2D185203679D91C81 /* ocsp.h */,
-				521BE3A2F263B1D51BDE542299974DD0 /* opensslconf.h */,
-				8A8A5CBB030FD829E2F1B22B2246B13F /* opensslv.h */,
-				B73DF024F63B1D57861BF69667EA1EE6 /* ossl_typ.h */,
-				67BF2E2435B9A49CF4D5BF1188F7361E /* pem.h */,
-				FCC3BDAE5249748CFCC440A0E7542209 /* pem2.h */,
-				BA1E589ECFE23358E72A6E97F8FA53A0 /* pkcs12.h */,
-				151079A802EC3E3B3DA1FC089BA64483 /* pkcs7.h */,
-				143BCAD4B3AF4B05F991CC36BAE5859A /* pqueue.h */,
-				F50B7A2D1EF3457557F2E03301F633F5 /* rand.h */,
-				04722187F693464A63FE9C9FE1EA96B9 /* rc2.h */,
-				BB87E65CDA50F4365A7736694469B67E /* rc4.h */,
-				CAA1034E5BEA7D3CBD2FACB962FC7D90 /* ripemd.h */,
-				8EE3FDA9D803DEC7DDADE1EA1E181E10 /* rsa.h */,
-				2AFA1484BDD3CF982E5FADAA310875E0 /* safestack.h */,
-				D4F595177933F06CD5F2D3668F03DE4F /* seed.h */,
-				AE84C28BB3B2D3B49D496CD7D91A4FC7 /* sha.h */,
-				6A9724DB59147FC3FC78691E6180A813 /* srp.h */,
-				A085E0049A68B377B6576DEC671C8C5E /* srtp.h */,
-				AEB9FD2326A0D6494084FF6125CC1FC0 /* ssl.h */,
-				C32D45383C2D2A919D3EB99B06D740DC /* ssl2.h */,
-				DF403133F366014478D0F9E6CC238278 /* ssl23.h */,
-				7876FE5032D3CE2638CB4BC79196B64D /* ssl3.h */,
-				19B09FD5C9F9EAA7D4A72BB671D14F22 /* stack.h */,
-				94CB24A614B9D8C3C54ED5032E3C4EDD /* symhacks.h */,
-				9572C82B3D3CDF44CDD6987470A79E35 /* tls1.h */,
-				C0BD2DD770D8123C476A15AAB6158AFA /* ts.h */,
-				E92F77D856E4D70E76DA237FC1C95FE7 /* txt_db.h */,
-				79FF9BCE422BEB90EBB9B5ACB6BBBC15 /* ui.h */,
-				7E2D87360609A62DF10F5F346FABCADA /* ui_compat.h */,
-				3A3427038FE12E0E787B9DC328F6B527 /* whrlpool.h */,
-				882E274BC9CFED080B5D8948C455F334 /* x509.h */,
-				CA6206E0091DA35A142A451231BACF6A /* x509_vfy.h */,
-				3A46C39A1BFDFFA31E31686CD657DF5F /* x509v3.h */,
-				494913FA85E9F5984710EF319C083D70 /* Frameworks */,
-			);
-			name = "OpenSSL-Universal";
-			path = "OpenSSL-Universal";
+			name = RNCryptor;
+			path = RNCryptor;
 			sourceTree = "<group>";
 		};
 		C4BC17AA17F002CFF3D1BA9D18FD9FA0 /* Pods-CryptoWalletUITests */ = {
@@ -693,15 +697,18 @@
 			path = "Target Support Files/Pods-CryptoWalletUITests";
 			sourceTree = "<group>";
 		};
-		D1A4066C49894ADF034678D52ADC5645 /* NSURLSession */ = {
+		CB4834938B2467F17828C65ADAFA4738 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A76A6B7A38DCED3B2F725C287554BBC5 /* AFHTTPSessionManager.h */,
-				6DAD69ECBE15CB0B17859829B626F949 /* AFHTTPSessionManager.m */,
-				63C31FDF7B68CA72E75A08EC655B7C28 /* AFURLSessionManager.h */,
-				40AFA12BC80083EA54E9A336794989A1 /* AFURLSessionManager.m */,
+				BD7CA7044401D490CB653EB61C3A6EF1 /* Info.plist */,
+				7D32A2615D5EC7515523CA74D3F1A043 /* JSONJoy-Swift.modulemap */,
+				7BBC29E96D5C6D2ABD841A41B4B975E9 /* JSONJoy-Swift.xcconfig */,
+				9923A0A2C0304C146BAA965AA9989C6A /* JSONJoy-Swift-dummy.m */,
+				1F4277C17960CA168B2C9FC4FAAFFE25 /* JSONJoy-Swift-prefix.pch */,
+				C5249A4DFFC2205B10E1263F76B9537E /* JSONJoy-Swift-umbrella.h */,
 			);
-			name = NSURLSession;
+			name = "Support Files";
+			path = "../Target Support Files/JSONJoy-Swift";
 			sourceTree = "<group>";
 		};
 		D247D0D34981177E8985BC91090130FB /* Pods-CryptoWalletTests */ = {
@@ -722,18 +729,49 @@
 			path = "Target Support Files/Pods-CryptoWalletTests";
 			sourceTree = "<group>";
 		};
-		E2E25808CAC15B7D84A0DDECF36BB29C /* Support Files */ = {
+		E33E8832AC2B70566A034C6DE53D2EED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C16D6BEDA6A648FE57F38CA01F1DE202 /* AFNetworking.modulemap */,
-				1961B22037A0A17EB6B5FEFE0CEE6F03 /* AFNetworking.xcconfig */,
-				66E4503F76DB69E5E7190563C2298FD4 /* AFNetworking-dummy.m */,
-				D6906DB916A937ED329C631F09BDF56E /* AFNetworking-prefix.pch */,
-				E4E7A0C07B0A7F3C9D6907EBED93A3C7 /* AFNetworking-umbrella.h */,
-				93F2CDE87A04232EFCA3C0D85303861B /* Info.plist */,
+				91C0B5706977E4149AED45A341DDC9EB /* iCloudDocumentSync.modulemap */,
+				0F3F8E3A780E745EF3258952A52BE1B8 /* iCloudDocumentSync.xcconfig */,
+				64BB6B699328E56929488A658D57BCDA /* iCloudDocumentSync-dummy.m */,
+				941143787A4E0A0CBBBA9D36A5B16EA5 /* iCloudDocumentSync-prefix.pch */,
+				5B5BE504BA26AF030ACCDA90BDD18E1A /* iCloudDocumentSync-umbrella.h */,
+				BF1211ED2F82FF76B65CB4B2BBA82D48 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AFNetworking";
+			path = "../Target Support Files/iCloudDocumentSync";
+			sourceTree = "<group>";
+		};
+		E46C5B2960C526DE406544DB71B6D173 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				80EA80A0C2CB9A8ECB3AE204636D92BA /* AFSecurityPolicy.h */,
+				7CDDEF91EB9A5E5ED3EBE8288587A485 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		F16565C17FBD198A952172814A9FDD24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF7A89188FA0CFF8D1C7E29F4D5BE93D /* AFNetworking */,
+				0B8E2FDDB074D6D56718C6B499E49C15 /* iCloudDocumentSync */,
+				3163D70B028C87959279080A3B09F215 /* JSONJoy-Swift */,
+				8C3E373AEF781D4EBC8EFB1B363DA342 /* KeychainAccess */,
+				05F2341C0841E78F093B6793ED0A2649 /* OpenSSL-Universal */,
+				BA0A61D9E8BFD71C7BFE275F7A819D02 /* RNCryptor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F693D5FA50DF32F5EDA7970E7FF4F0BB /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				D10E3EF5AEE644597125D46C4C2EC0E5 /* AFNetworkReachabilityManager.h */,
+				3E378B237F68E4618D2556C170AB873B /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 		FBE2CE3B81E4A1287EFFD440F4CCD3AE /* iOS */ = {
@@ -749,9 +787,41 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		FF7A89188FA0CFF8D1C7E29F4D5BE93D /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2790F6DA44659124FD97EE16C8F3E5F9 /* AFNetworking.h */,
+				06A22249489BFF18729C298D3E108BA5 /* NSURLSession */,
+				F693D5FA50DF32F5EDA7970E7FF4F0BB /* Reachability */,
+				E46C5B2960C526DE406544DB71B6D173 /* Security */,
+				974ABA5B2FB2FB6422005BDD95AA64EB /* Serialization */,
+				55F8BFFC8C10BCE19D1B3332A8CADEB6 /* Support Files */,
+				3E95FCAF47778F51F047D12D2573ADC0 /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		091EB780FB8FCFFC2A059BBD974C374E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5691FCE7CDC6A2B06C2292C4F8716B /* RNCryptor-umbrella.h in Headers */,
+				96D1B30E86CC1E9F85BE20A1FB31F4F7 /* RNCryptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CFB01F5468812EFD920D3296DED4050 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAC55AE7C1F4B1EA2A4F3DB6A7F89D8 /* Pods-CryptoWallet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E7031D37591868299A34245F20E36F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -767,23 +837,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC165DFD8CBBF275F286CA52C533CFA3 /* Pods-CryptoWalletUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64A33DF165D53D205CB9037AD3331BFC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8691822052AFC4417D6F7F79F957703 /* RNCryptor-umbrella.h in Headers */,
-				5C56F48A77B316D3D836F864181D4B50 /* RNCryptor.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8055D5A7D82209F78905829C28AD5A00 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A465B71EB80787BB37EFADEE7B7F1DD /* Pods-CryptoWallet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,6 +882,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFC1DBB4D4C12B21C5962C730F7F0A7D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6CEFF8E2775DB824C3120ED1CE61A17 /* JSONJoy-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -846,7 +907,7 @@
 			);
 			name = "Pods-CryptoWalletTests";
 			productName = "Pods-CryptoWalletTests";
-			productReference = 5CC25180714833833AB110457A78C291 /* Pods_CryptoWalletTests.framework */;
+			productReference = 1D148B62F10DB7DE2958D31D6B134A48 /* Pods_CryptoWalletTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		362AFD26749412319BDCE19AE4733D5C /* Pods-CryptoWalletUITests */ = {
@@ -863,7 +924,7 @@
 			);
 			name = "Pods-CryptoWalletUITests";
 			productName = "Pods-CryptoWalletUITests";
-			productReference = EDCE996181EEFE3117995FAC56F6EF17 /* Pods_CryptoWalletUITests.framework */;
+			productReference = 5934AA4537D700CF16AFF1AF0FAFE773 /* Pods_CryptoWalletUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */ = {
@@ -880,7 +941,7 @@
 			);
 			name = KeychainAccess;
 			productName = KeychainAccess;
-			productReference = 583FFB5FD45D8F426F5BBC322C06BC56 /* KeychainAccess.framework */;
+			productReference = 2B5ACF9D59E6D9785FE3EEFF12E5CFFF /* KeychainAccess.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A964E4CD66B21F65CF2DC76BDC9A4531 /* iCloudDocumentSync */ = {
@@ -897,16 +958,16 @@
 			);
 			name = iCloudDocumentSync;
 			productName = iCloudDocumentSync;
-			productReference = C7B9CAC2A23966566A700DF49E338640 /* iCloudDocumentSync.framework */;
+			productReference = 211389E0D0C5D1467ADD6F4C53994822 /* iCloudDocumentSync.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AE3C05997E236CD2A81677FCCD3560EC /* RNCryptor */ = {
+		B8B8331D450F786AB53A6060154CA7B9 /* RNCryptor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13C081B915E45CAF5678F1B27904A482 /* Build configuration list for PBXNativeTarget "RNCryptor" */;
+			buildConfigurationList = 2A9A36076AAF674DA1C426F70AE672C1 /* Build configuration list for PBXNativeTarget "RNCryptor" */;
 			buildPhases = (
-				2019E2ECA7613DF63A7FE353C63570E3 /* Sources */,
-				7F1B227A6DF1101F2FA9C4608E92269A /* Frameworks */,
-				64A33DF165D53D205CB9037AD3331BFC /* Headers */,
+				03A50393E8C7D7CAF8B402C9145F975D /* Sources */,
+				A7B9059E1573A92267214ED67B578146 /* Frameworks */,
+				091EB780FB8FCFFC2A059BBD974C374E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -914,7 +975,7 @@
 			);
 			name = RNCryptor;
 			productName = RNCryptor;
-			productReference = 3D8B8021507BFD2006BEC6BF2ED02A68 /* RNCryptor.framework */;
+			productReference = 64E332BCF44828BAC5FECD1DB371CEAD /* RNCryptor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */ = {
@@ -931,28 +992,46 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = BA9F5E2D437FD434B1A6D7B653134A51 /* AFNetworking.framework */;
+			productReference = 2433E15241CBD7EAA47781494F75517F /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FF55B1858B4D3B6CC9902B2392DA6545 /* Pods-CryptoWallet */ = {
+		E84F3C7B1C709F105623A28979748971 /* Pods-CryptoWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52B1E766BBFE8860BC75776AE003A922 /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */;
+			buildConfigurationList = E622DDCC63049EAABB518B3B496597AC /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */;
 			buildPhases = (
-				C2DD43D21BBBF4FE040C91A13E2647C3 /* Sources */,
-				E24E9D1F2AA5E5EC213B80DB11641E62 /* Frameworks */,
-				8055D5A7D82209F78905829C28AD5A00 /* Headers */,
+				C01CBEA1CE5884C071599B61DC321776 /* Sources */,
+				F38AFD19E883E80E64B7BD63755E6440 /* Frameworks */,
+				2CFB01F5468812EFD920D3296DED4050 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				819F9C58864536E73BEAE6B4849AAC37 /* PBXTargetDependency */,
-				C7ECC4D52164C75DA68C69727915894F /* PBXTargetDependency */,
-				A6BD554AEA95296D4D8A4FD02E7F8FA7 /* PBXTargetDependency */,
-				ADC37992BD65CAE7640D6BA8FD980405 /* PBXTargetDependency */,
+				DEDE8408ABAE9E9C7CEDB942A0F8FD2B /* PBXTargetDependency */,
+				70D0AEF80A9534A53B5B18CED5818165 /* PBXTargetDependency */,
+				6E218D1C66FADBA65F7B0CBBB62A8458 /* PBXTargetDependency */,
+				2E2EFE77FAA035ABD5AF52456DB4B7E3 /* PBXTargetDependency */,
+				93D7E9D1E569F9AB13FC4801C6EE4B19 /* PBXTargetDependency */,
 			);
 			name = "Pods-CryptoWallet";
 			productName = "Pods-CryptoWallet";
-			productReference = 6F2734161870843AEF14AB8E4C2FC4DE /* Pods_CryptoWallet.framework */;
+			productReference = E8841BBE10E2589790C6A8C878C3E5E9 /* Pods_CryptoWallet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9E710F048A759A9EA647A7C0BDAA1F6 /* JSONJoy-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D3CB1E541E4C730E3AA447896BF9953 /* Build configuration list for PBXNativeTarget "JSONJoy-Swift" */;
+			buildPhases = (
+				35D376B6C83D580000510AFFA7CE915B /* Sources */,
+				0198377132F44A52078A5EBE16F2B92B /* Frameworks */,
+				DFC1DBB4D4C12B21C5962C730F7F0A7D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSONJoy-Swift";
+			productName = "JSONJoy-Swift";
+			productReference = 55B19A75A2134A6716523DFE1B77547F /* JSONJoy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -972,28 +1051,38 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 393578B284782CA081822BE8AECF4389 /* Products */;
+			productRefGroup = 66ACBAC05315AAC1E22932C26C345C18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */,
 				A964E4CD66B21F65CF2DC76BDC9A4531 /* iCloudDocumentSync */,
+				E9E710F048A759A9EA647A7C0BDAA1F6 /* JSONJoy-Swift */,
 				8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */,
-				FF55B1858B4D3B6CC9902B2392DA6545 /* Pods-CryptoWallet */,
+				E84F3C7B1C709F105623A28979748971 /* Pods-CryptoWallet */,
 				22A9AD7EFB6F8A10C51155DEF6BF41E7 /* Pods-CryptoWalletTests */,
 				362AFD26749412319BDCE19AE4733D5C /* Pods-CryptoWalletUITests */,
-				AE3C05997E236CD2A81677FCCD3560EC /* RNCryptor */,
+				B8B8331D450F786AB53A6060154CA7B9 /* RNCryptor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2019E2ECA7613DF63A7FE353C63570E3 /* Sources */ = {
+		03A50393E8C7D7CAF8B402C9145F975D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59E1D0D0061B00B6CCDA7AD9E4AA1034 /* RNCryptor-dummy.m in Sources */,
-				FFDBD729332EA85217DDEBFC612E8790 /* RNCryptor.swift in Sources */,
+				50D45A3C04F058FD59226F0C830BE1E9 /* RNCryptor-dummy.m in Sources */,
+				E30EC1D4BFB15399C2B00DA642415A31 /* RNCryptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D376B6C83D580000510AFFA7CE915B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EB8BC7A125CF792C747E8F7D1836E0 /* JSONJoy-Swift-dummy.m in Sources */,
+				3395BC5D4408538563192B97CA2EB6D4 /* JSONJoy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1047,11 +1136,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2DD43D21BBBF4FE040C91A13E2647C3 /* Sources */ = {
+		C01CBEA1CE5884C071599B61DC321776 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582F1DA7CA9FCCEACC2B89BD81235727 /* Pods-CryptoWallet-dummy.m in Sources */,
+				24943996A3DB222E0BA13094626A87D2 /* Pods-CryptoWallet-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1067,36 +1156,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		819F9C58864536E73BEAE6B4849AAC37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
-			targetProxy = FB804378636329D7B63CA88F01319FE5 /* PBXContainerItemProxy */;
-		};
-		A6BD554AEA95296D4D8A4FD02E7F8FA7 /* PBXTargetDependency */ = {
+		2E2EFE77FAA035ABD5AF52456DB4B7E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RNCryptor;
-			target = AE3C05997E236CD2A81677FCCD3560EC /* RNCryptor */;
-			targetProxy = E7959A182B71F7305DA1CEE82261BABD /* PBXContainerItemProxy */;
+			target = B8B8331D450F786AB53A6060154CA7B9 /* RNCryptor */;
+			targetProxy = 97899FD8CB42335BA662D979D060D3D0 /* PBXContainerItemProxy */;
 		};
-		ADC37992BD65CAE7640D6BA8FD980405 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = iCloudDocumentSync;
-			target = A964E4CD66B21F65CF2DC76BDC9A4531 /* iCloudDocumentSync */;
-			targetProxy = F13F2092D0FE643A817793F53E8E2926 /* PBXContainerItemProxy */;
-		};
-		C7ECC4D52164C75DA68C69727915894F /* PBXTargetDependency */ = {
+		6E218D1C66FADBA65F7B0CBBB62A8458 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeychainAccess;
 			target = 8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */;
-			targetProxy = B44FD5019E3B59B4E55F97BF709A2C50 /* PBXContainerItemProxy */;
+			targetProxy = 72C6E057FD212E2ABE72D4B4077AD043 /* PBXContainerItemProxy */;
+		};
+		70D0AEF80A9534A53B5B18CED5818165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JSONJoy-Swift";
+			target = E9E710F048A759A9EA647A7C0BDAA1F6 /* JSONJoy-Swift */;
+			targetProxy = 7C991FDBD766FD463B4A67274F74B327 /* PBXContainerItemProxy */;
+		};
+		93D7E9D1E569F9AB13FC4801C6EE4B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iCloudDocumentSync;
+			target = A964E4CD66B21F65CF2DC76BDC9A4531 /* iCloudDocumentSync */;
+			targetProxy = 0B533C57D79BC1999E4E1BF3F684CD6F /* PBXContainerItemProxy */;
+		};
+		DEDE8408ABAE9E9C7CEDB942A0F8FD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
+			targetProxy = 9BE3014AC0C1BD06AE9C9DE1B25AA3C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		01FAC924794BB5D596D2687E3681F3C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0629BE523471A322EC037CE5E73A8409 /* KeychainAccess.xcconfig */;
+			baseConfigurationReference = 4D444436D4A7E1A73F29FA2DE9F768F7 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1128,79 +1223,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		0850896894F73BC4C499F314C8A92384 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8243D708A7893A906732E29AE7B6AE54 /* RNCryptor.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RNCryptor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		151602920E55C015BA9C5B91CE340491 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CryptoWallet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		4396A1DA505AB1F75691135CE589FB12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1237,6 +1259,80 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		4FDCCBC4F6D1C1AC1F829F59244FF4E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CryptoWallet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		509CDE1ED3BC40BB7871B6B743C5B5C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17FC17B6718FFC20CD4FB60C8CC0393 /* RNCryptor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RNCryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		59D1B2F11F219D3CECEB125E3DEA8370 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1312,7 +1408,7 @@
 		};
 		6713094131429EDC13B865816F6D054A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A64406F9BF64A9107AB6184B95B0C159 /* iCloudDocumentSync.xcconfig */;
+			baseConfigurationReference = 0F3F8E3A780E745EF3258952A52BE1B8 /* iCloudDocumentSync.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1390,7 +1486,7 @@
 		};
 		787614D3F7A7310FCF69F8F508F82D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1961B22037A0A17EB6B5FEFE0CEE6F03 /* AFNetworking.xcconfig */;
+			baseConfigurationReference = ACE8349955548AD7EA1578DBCA418791 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1422,9 +1518,9 @@
 			};
 			name = Debug;
 		};
-		7A563D227871C739D1C6C4DDB0A7ADA0 /* Debug */ = {
+		8B2BE6CC60390F56AB5AF286F487D666 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AD7C43D4FF8FFE6D70001AE661D4B21 /* Pods-CryptoWallet.debug.xcconfig */;
+			baseConfigurationReference = 7BBC29E96D5C6D2ABD841A41B4B975E9 /* JSONJoy-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1438,32 +1534,63 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JSONJoy-Swift/JSONJoy-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONJoy-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MODULEMAP_FILE = "Target Support Files/JSONJoy-Swift/JSONJoy-Swift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CryptoWallet;
+				PRODUCT_NAME = JSONJoy;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		97C97EEDA034A3B97E94101CEA624DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBC29E96D5C6D2ABD841A41B4B975E9 /* JSONJoy-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONJoy-Swift/JSONJoy-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONJoy-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONJoy-Swift/JSONJoy-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JSONJoy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9A5815D04A118FC40D09D95231F384D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1961B22037A0A17EB6B5FEFE0CEE6F03 /* AFNetworking.xcconfig */;
+			baseConfigurationReference = ACE8349955548AD7EA1578DBCA418791 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1531,9 +1658,9 @@
 			};
 			name = Release;
 		};
-		BBEDC3E2E4F898A40EEDCF6976E6174E /* Debug */ = {
+		B90B0872B998925B753BA4C842E50666 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8243D708A7893A906732E29AE7B6AE54 /* RNCryptor.xcconfig */;
+			baseConfigurationReference = F17FC17B6718FFC20CD4FB60C8CC0393 /* RNCryptor.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1568,7 +1695,7 @@
 		};
 		CD3CD8905EDF3FDB062D233D85AB1508 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0629BE523471A322EC037CE5E73A8409 /* KeychainAccess.xcconfig */;
+			baseConfigurationReference = 4D444436D4A7E1A73F29FA2DE9F768F7 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1595,6 +1722,44 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB33F451013BFACAAB1F336389E88FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10E91B1CC397ABA12BD9C154288170A /* Pods-CryptoWallet.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoWallet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CryptoWallet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1652,7 +1817,7 @@
 		};
 		EFA5CFA4F708E07CD6DACD8056B7D133 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A64406F9BF64A9107AB6184B95B0C159 /* iCloudDocumentSync.xcconfig */;
+			baseConfigurationReference = 0F3F8E3A780E745EF3258952A52BE1B8 /* iCloudDocumentSync.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1687,11 +1852,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13C081B915E45CAF5678F1B27904A482 /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
+		2A9A36076AAF674DA1C426F70AE672C1 /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBEDC3E2E4F898A40EEDCF6976E6174E /* Debug */,
-				0850896894F73BC4C499F314C8A92384 /* Release */,
+				B90B0872B998925B753BA4C842E50666 /* Debug */,
+				509CDE1ED3BC40BB7871B6B743C5B5C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1723,11 +1888,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52B1E766BBFE8860BC75776AE003A922 /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */ = {
+		5D3CB1E541E4C730E3AA447896BF9953 /* Build configuration list for PBXNativeTarget "JSONJoy-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A563D227871C739D1C6C4DDB0A7ADA0 /* Debug */,
-				151602920E55C015BA9C5B91CE340491 /* Release */,
+				8B2BE6CC60390F56AB5AF286F487D666 /* Debug */,
+				97C97EEDA034A3B97E94101CEA624DD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1755,6 +1920,15 @@
 			buildConfigurations = (
 				4396A1DA505AB1F75691135CE589FB12 /* Debug */,
 				65E5167D8B9513D9561C92606E37DAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E622DDCC63049EAABB518B3B496597AC /* Build configuration list for PBXNativeTarget "Pods-CryptoWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDCCBC4F6D1C1AC1F829F59244FF4E2 /* Debug */,
+				DB33F451013BFACAAB1F336389E88FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - iCloudDocumentSync (7.4.1)
+  - JSONJoy-Swift (3.0.3)
   - KeychainAccess (3.0.2)
   - OpenSSL-Universal (1.0.2.10)
   - RNCryptor (5.0.1)
@@ -22,6 +23,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - iCloudDocumentSync
+  - JSONJoy-Swift (~> 3.0.2)
   - KeychainAccess
   - OpenSSL-Universal
   - RNCryptor
@@ -29,10 +31,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   iCloudDocumentSync: 961aac30ca09c221de4c236e94dae69912f2c589
+  JSONJoy-Swift: 01a29108143d3c994f7f64d7c9a393699478c49b
   KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
   OpenSSL-Universal: 6dc366764e8bf6ca93c60bd767d9103146a3b3b6
   RNCryptor: 2e352a488779d1a9184ab629be22a7c5bc84acb5
 
-PODFILE CHECKSUM: 609ef594b06d36e11e621e9665f07a3059d56ec0
+PODFILE CHECKSUM: 462770a23e163e00de5cc8a01b64f5ece673127f
 
 COCOAPODS: 1.3.1

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JSONJoy
 
 class MyWalletTableViewController: UITableViewController {
     
@@ -16,6 +17,7 @@ class MyWalletTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.updateBalance()
+        self.updateAddressTransactions()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +33,28 @@ class MyWalletTableViewController: UITableViewController {
         
         self.balanceLabel.text = "\(amountString) / \(fiatAmount) USD"
         print("\(amountString) / \(fiatAmount) USD")
+    }
+    
+    func updateAddressTransactions() {
+        var addresses = [String]()
+        addresses.append(AppDelegate.instance().address!)
+        let jsonData = TLBlockExplorerAPI.instance().getAddressesInfoSynchronous(addresses)
+        if (jsonData.object(forKey: TLNetworking.STATIC_MEMBERS.HTTP_ERROR_CODE) != nil) {
+            DLog("getAccountDataSynchronous error \(jsonData.description)")
+            NSException(name: NSExceptionName(rawValue: "Network Error"), reason: "HTTP Error", userInfo: nil).raise()
+        }
+        if let transactionsArray = jsonData.object(forKey: "txs") as! NSArray? {
+            for transaction in transactionsArray {
+                do {
+                    let transactionItem = try Transaction(JSONLoader(transaction))
+                    print("block_height is: \(transactionItem.block_height)")
+                } catch {
+                    print("unable to parse the JSON")
+                }
+            }
+            
+//            print("Transaction history - \(transactionsArray)")
+        }
     }
 
     // MARK: - Table view data source

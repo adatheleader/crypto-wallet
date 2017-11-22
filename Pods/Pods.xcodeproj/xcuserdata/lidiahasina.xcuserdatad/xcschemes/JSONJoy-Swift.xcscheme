@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E84F3C7B1C709F105623A28979748971"
-               BuildableName = "Pods_CryptoWallet.framework"
-               BlueprintName = "Pods-CryptoWallet"
+               BlueprintIdentifier = "E9E710F048A759A9EA647A7C0BDAA1F6"
+               BuildableName = "JSONJoy.framework"
+               BlueprintName = "JSONJoy-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E84F3C7B1C709F105623A28979748971"
-            BuildableName = "Pods_CryptoWallet.framework"
-            BlueprintName = "Pods-CryptoWallet"
+            BlueprintIdentifier = "E9E710F048A759A9EA647A7C0BDAA1F6"
+            BuildableName = "JSONJoy.framework"
+            BlueprintName = "JSONJoy-Swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

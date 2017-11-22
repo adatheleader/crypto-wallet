@@ -103,12 +103,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONJoy-Swift/JSONJoy.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/iCloudDocumentSync/iCloudDocumentSync.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONJoy-Swift/JSONJoy.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/iCloudDocumentSync/iCloudDocumentSync.framework"

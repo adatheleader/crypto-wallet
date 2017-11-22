@@ -11,6 +11,7 @@ target 'CryptoWallet' do
   pod 'AFNetworking'
   pod 'KeychainAccess'
   pod 'iCloudDocumentSync'
+  pod 'JSONJoy-Swift', '~> 3.0.2'
 
   target 'CryptoWalletTests' do
     inherit! :search_paths

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		35016AAD1FC460AA00C88D28 /* MyWalletTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35016AAC1FC460AA00C88D28 /* MyWalletTableViewController.swift */; };
 		35016AAF1FC4645800C88D28 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35016AAE1FC4645800C88D28 /* SettingsTableViewController.swift */; };
+		35016AB11FC5C09D00C88D28 /* TransactionParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35016AB01FC5C09D00C88D28 /* TransactionParse.swift */; };
 		3510175C1F262994002B23F8 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510175B1F262994002B23F8 /* SignUpTableViewController.swift */; };
 		3510175E1F263AB7002B23F8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3510175D1F263AB7002B23F8 /* Wallet.storyboard */; };
 		3541A3111FA8A13E004AC130 /* TLQRImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3541A3101FA8A13E004AC130 /* TLQRImageModal.swift */; };
@@ -213,6 +214,7 @@
 		2E873847F9A586A0F79C75EF /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		35016AAC1FC460AA00C88D28 /* MyWalletTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletTableViewController.swift; sourceTree = "<group>"; };
 		35016AAE1FC4645800C88D28 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		35016AB01FC5C09D00C88D28 /* TransactionParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionParse.swift; sourceTree = "<group>"; };
 		3510175B1F262994002B23F8 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		3510175D1F263AB7002B23F8 /* Wallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		35343AFA1F82735200ECA9F7 /* CryptoWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoWallet-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -758,6 +760,7 @@
 				3575BD8E1F866ADB00D0B4F8 /* TLWalletJSONKeys.swift */,
 				3575BD7B1F866AD900D0B4F8 /* TLWalletPassphrase.swift */,
 				3575BD8F1F866ADB00D0B4F8 /* TLWalletUtils.swift */,
+				35016AB01FC5C09D00C88D28 /* TransactionParse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1154,6 +1157,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONJoy-Swift/JSONJoy.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
 				"${BUILT_PRODUCTS_DIR}/iCloudDocumentSync/iCloudDocumentSync.framework",
@@ -1161,6 +1165,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONJoy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCloudDocumentSync.framework",
@@ -1313,6 +1318,7 @@
 				35549FEE1F8286A500205340 /* BTCAssetID.m in Sources */,
 				3547D28D1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift in Sources */,
 				3575BD971F866ADB00D0B4F8 /* TLCrypto.swift in Sources */,
+				35016AB11FC5C09D00C88D28 /* TransactionParse.swift in Sources */,
 				3575BD2C1F866A3B00D0B4F8 /* TLStealthWebSocket.swift in Sources */,
 				3575BDA61F866ADB00D0B4F8 /* TLWallet+Stealth.swift in Sources */,
 				3580322C1F8CDDDA001ACBE8 /* SocketClientManager.swift in Sources */,
