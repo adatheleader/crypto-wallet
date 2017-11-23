@@ -13,6 +13,13 @@ class MyWalletTableViewController: UITableViewController {
     
     @IBOutlet weak var balanceLabel: UILabel!
     
+    var transaction = [String: Any]()
+    var transactions = [[String: Any]]()
+    
+    var addrOut: String?
+    var addr: String?
+    var value: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,14 +50,26 @@ class MyWalletTableViewController: UITableViewController {
             DLog("getAccountDataSynchronous error \(jsonData.description)")
             NSException(name: NSExceptionName(rawValue: "Network Error"), reason: "HTTP Error", userInfo: nil).raise()
         }
-        if let transactionsArray = jsonData.object(forKey: "txs") as! NSArray? {
+        if let transactionsArray = jsonData.object(forKey: "txs") as! [NSDictionary]? {
             for transaction in transactionsArray {
-                do {
-                    let transactionItem = try Transaction(JSONLoader(transaction))
-                    print("block_height is: \(transactionItem.block_height)")
-                } catch {
-                    print("unable to parse the JSON")
+                if let inputs = transaction["inputs"] as! [NSDictionary]? {
+                    if let input = inputs[0] as NSDictionary? {
+                        if let prevOut = input["prev_out"] as! NSDictionary?{
+                            self.addrOut = prevOut["addr"] as! String?
+                        }
+                    }
+                    if let out = transaction["out"] as! [NSDictionary]? {
+                        if let outItem = out[0] as NSDictionary? {
+                            self.addr = outItem["addr"] as! String?
+                            self.value = outItem["value"] as! Int?
+                        }
+                    }
+                    self.transaction = ["who" : self.addrOut!, "toWho" : self.addr!, "value" : self.value!]
+                    self.transactions.append(self.transaction)
+                    print(self.transactions)
                 }
+                
+                
             }
             
 //            print("Transaction history - \(transactionsArray)")
