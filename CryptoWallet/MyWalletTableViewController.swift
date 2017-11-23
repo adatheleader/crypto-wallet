@@ -72,9 +72,10 @@ class MyWalletTableViewController: UITableViewController {
                 
             }
             
-//            print("Transaction history - \(transactionsArray)")
+            //            print("Transaction history - \(transactionsArray)")
         }
     }
+    
 
     // MARK: - Table view data source
 
@@ -85,15 +86,29 @@ class MyWalletTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.transactions.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath as IndexPath)
         
         // Configure the cell...
-        cell.textLabel?.text = "Transaction address"
-        cell.detailTextLabel?.text = "-0 BTC"
+        let transactionItem = self.transactions[indexPath.row]
+        if let who = transactionItem["who"] as! String? {
+            if who == AppDelegate.instance().address {
+                if let toWho = transactionItem["toWho"] as! String? {
+                    cell.textLabel?.text = toWho
+                }
+                if let value = transactionItem["value"] as! Int? {
+                    cell.detailTextLabel?.text = "- \(value)"
+                }
+            } else {
+                cell.textLabel?.text = who
+                if let value = transactionItem["value"] as! Int? {
+                    cell.detailTextLabel?.text = "+ \(value)"
+                }
+            }
+        }
         
         
         return cell
