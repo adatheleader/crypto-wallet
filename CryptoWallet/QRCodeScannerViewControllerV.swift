@@ -123,11 +123,9 @@ import AVFoundation
         }
     }
     
-    func captureOutput(_ captureOutput: AVCaptureOutput!,
-                       didOutputMetadataObjects metadataObjects: [Any]!,
-                       from connection: AVCaptureConnection!) -> () {
-        if (metadataObjects != nil && metadataObjects!.count > 0) {
-            let metadataObj: AnyObject = metadataObjects![0] as AnyObject
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) -> () {
+        if (metadataObjects != nil && metadataObjects.count > 0) {
+            let metadataObj: AnyObject = metadataObjects[0] as AnyObject
             if (metadataObj.type == AVMetadataObject.ObjectType.qr) {
                 // do something useful with results
                 DispatchQueue.main.sync {
