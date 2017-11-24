@@ -100,17 +100,27 @@ class MyWalletTableViewController: UITableViewController {
                     cell.textLabel?.text = toWho
                 }
                 if let value = transactionItem["value"] as! Int? {
-                    cell.detailTextLabel?.text = "- \(value)"
+                    let valueBTCString = self.convertSatoshiToBTCString(value: value)
+                    cell.detailTextLabel?.text = "- \(valueBTCString)"
                 }
             } else {
                 cell.textLabel?.text = who
                 if let value = transactionItem["value"] as! Int? {
-                    cell.detailTextLabel?.text = "+ \(value)"
+                    let valueBTCString = self.convertSatoshiToBTCString(value: value)
+                    cell.detailTextLabel?.text = "+ \(valueBTCString)"
                 }
             }
         }
         
         
         return cell
+    }
+    
+    func convertSatoshiToBTCString(value: Int) -> String {
+//        let valueString = String(value)
+        let valueBTC = TLCoin(uint64: UInt64(value))
+        let valueBTCString = TLCurrencyFormat.getProperAmount(valueBTC)
+        
+        return valueBTCString as String
     }
 }
