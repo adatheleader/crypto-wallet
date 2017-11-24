@@ -48,7 +48,11 @@ class ReceiveViewController: UIViewController {
             let transform = CGAffineTransform(scaleX: 3, y: 3)
             
             if let output = filter.outputImage?.transformed(by: transform) {
-                return UIImage(ciImage: output)
+                let scaleX = imgQRCode.frame.size.width / output.extent.size.width
+                let scaleY = imgQRCode.frame.size.height / output.extent.size.height
+                
+                let transformedImage = output.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+                return UIImage(ciImage: transformedImage)
             }
         }
         
@@ -56,6 +60,7 @@ class ReceiveViewController: UIViewController {
     }
     
     func displayQRCodeImage() {
+        
         self.imgQRCode.image = self.generateQRCode(from: self.address!)
     }
     
