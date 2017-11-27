@@ -50,7 +50,9 @@
                             <constraint firstItem="Q3H-fv-9af" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="vSG-Di-VQb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Receive" id="Mnk-MZ-jJ0"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-request-money-50" id="Mnk-MZ-jJ0">
+                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-30"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title=" BTC Wallet" id="jEp-U0-lMC"/>
                     <connections>
                         <outlet property="imgQRCode" destination="xhQ-aC-wF1" id="D07-bE-j8B"/>
@@ -120,7 +122,7 @@
             </objects>
             <point key="canvasLocation" x="1718" y="5203"/>
         </scene>
-        <!--Home-->
+        <!--My Wallet Table View Controller-->
         <scene sceneID="aUb-Gz-o5y">
             <objects>
                 <tableViewController id="dRR-U4-rsB" customClass="MyWalletTableViewController" customModule="CryptoWallet" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,7 +178,9 @@
                             <outlet property="delegate" destination="dRR-U4-rsB" id="l9F-91-kb6"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="a2T-7Z-cww"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-wallet-50" id="a2T-7Z-cww">
+                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-20"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="balanceLabel" destination="Fow-LE-ERQ" id="Ylu-rh-pzU"/>
                     </connections>
@@ -564,11 +568,13 @@
             </objects>
             <point key="canvasLocation" x="-1135" y="4241"/>
         </scene>
-        <!--Send-->
+        <!--Navigation Controller-->
         <scene sceneID="exr-PO-mJn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wQK-Nk-uy4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Send" id="LuQ-i3-uUr"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-initiate-money-transfer-50" id="LuQ-i3-uUr">
+                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-15"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zea-bV-MmH">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -628,11 +634,13 @@
             </objects>
             <point key="canvasLocation" x="870" y="5203"/>
         </scene>
-        <!--Settings-->
+        <!--Navigation Controller-->
         <scene sceneID="KhM-vt-O53">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hq6-oa-iEB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="tVV-6a-rb9"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-settings-50" id="tVV-6a-rb9">
+                        <inset key="imageInsets" minX="5" minY="-10" maxX="3" maxY="-22"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vUN-P5-jkc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -648,4 +656,10 @@
             <point key="canvasLocation" x="-39" y="5203"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-initiate-money-transfer-50" width="50" height="50"/>
+        <image name="icons8-request-money-50" width="50" height="50"/>
+        <image name="icons8-settings-50" width="50" height="50"/>
+        <image name="icons8-wallet-50" width="50" height="50"/>
+    </resources>
 </document>
