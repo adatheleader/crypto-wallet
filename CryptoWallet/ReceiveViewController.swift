@@ -12,7 +12,6 @@ import LocalAuthentication
 
 class ReceiveViewController: UIViewController {
     
-    @IBOutlet weak var walletLabel: CopyableLabel!
     @IBOutlet weak var imgQRCode: UIImageView!
     
     var receiveSelectedObject:TLSelectedObject?
@@ -24,11 +23,15 @@ class ReceiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.address = AppDelegate.instance().address
-        self.walletLabel.text = self.address
+        
         self.displayQRCodeImage()
         
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +42,8 @@ class ReceiveViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+    
+    
     
     func generateQRCode(from string: String) -> UIImage? {
         let data = string.data(using: String.Encoding.ascii)

@@ -12,6 +12,12 @@ import JSONJoy
 class MyWalletTableViewController: UITableViewController {
     
     @IBOutlet weak var balanceLabel: UILabel!
+    @IBOutlet weak var fiatBalanceLabel: UILabel!
+    @IBOutlet weak var shareAddressButton: UIButton!
+    
+    @IBOutlet weak var qrCodeButton: UIButton!
+    
+    var qrCodeImage: UIImageView?
     
     var transaction = [String: Any]()
     var transactions = [[String: Any]]()
@@ -25,6 +31,12 @@ class MyWalletTableViewController: UITableViewController {
         
         self.updateBalance()
         self.updateAddressTransactions()
+        
+        self.shareAddressButton.layer.cornerRadius = 4.0
+        self.qrCodeButton.layer.cornerRadius = 4.0
+        
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9814189076, green: 0.6426411271, blue: 0.1245707795, alpha: 1)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,13 +44,57 @@ class MyWalletTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func generateQRCode(from string: String) -> UIImage? {
+        let data = string.data(using: String.Encoding.utf8)
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
+            
+            if let output = filter.outputImage?.transformed(by: transform) {
+//                let scaleX = (qrCodeImage?.frame.size.width)! / output.extent.size.width
+//                let scaleY = (qrCodeImage?.frame.size.height)! / output.extent.size.height
+//
+//                let transformedImage = output.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+                return UIImage(ciImage: output)
+            }
+        }
+        return nil
+    }
+    
+    
+    func showQRCodeAlert() {
+        let alert = UIAlertController(title:"QR Code", message: "Show this QR Code to your friend ", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let saveAction = UIAlertAction(title: "", style: .default, handler: nil)
+        
+        // image set in alret view inside
+        // size to fit in view
+        var image = self.generateQRCode(from: AppDelegate.instance().address!)
+        
+        image = image?.withAlignmentRectInsets(UIEdgeInsets(top: 0, left:  -40, bottom: 0, right: 50))
+        
+        
+        saveAction.setValue(image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal), forKey: "image")
+        alert.addAction(saveAction)
+        
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { alertAction in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
     func updateBalance() {
         let amount = AppDelegate.instance().updateAddressBalance(address: AppDelegate.instance().address!)
         let currency = TLCurrencyFormat.getFiatCurrency()
         let fiatAmount = TLExchangeRate.instance().fiatAmountStringFromBitcoin(currency, bitcoinAmount: amount!)
         let amountString = TLCurrencyFormat.getProperAmount(amount!)
         
-        self.balanceLabel.text = "\(amountString) / \(fiatAmount) USD"
+        self.balanceLabel.text = amountString as String
+        self.fiatBalanceLabel.text = "\(fiatAmount) USD"
         print("\(amountString) / \(fiatAmount) USD")
     }
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pxg-KC-Y6w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pxg-KC-Y6w">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!-- BTC Wallet-->
+        <!--Receive View Controller-->
         <scene sceneID="sFR-Gk-F1b">
             <objects>
                 <viewController storyboardIdentifier="Welcome" id="mcf-9R-zFW" customClass="ReceiveViewController" customModule="CryptoWallet" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,40 +28,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-fv-9af" customClass="CopyableLabel" customModule="CryptoWallet" customModuleProvider="target">
-                                <rect key="frame" x="138" y="68" width="99.5" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhQ-aC-wF1">
-                                <rect key="frame" x="37" y="183.5" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1A-wM-gUV">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="fxH-Gs-QVG"/>
-                                    <constraint firstAttribute="height" constant="300" id="oHJ-nB-FT1"/>
+                                    <constraint firstAttribute="width" constant="343" id="0VX-fb-oDg"/>
+                                    <constraint firstAttribute="height" constant="343" id="AI6-CS-j4N"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xhQ-aC-wF1" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="Ovj-Ge-Ga3"/>
-                            <constraint firstItem="xhQ-aC-wF1" firstAttribute="centerY" secondItem="9ST-hJ-Box" secondAttribute="centerY" id="U8K-03-4yb"/>
-                            <constraint firstItem="Q3H-fv-9af" firstAttribute="top" secondItem="S09-bz-jNW" secondAttribute="bottom" constant="48" id="hbG-l4-zvg"/>
-                            <constraint firstItem="Q3H-fv-9af" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="vSG-Di-VQb"/>
+                            <constraint firstItem="e1A-wM-gUV" firstAttribute="centerX" secondItem="9ST-hJ-Box" secondAttribute="centerX" id="Kgb-XO-RBi"/>
+                            <constraint firstItem="e1A-wM-gUV" firstAttribute="centerY" secondItem="9ST-hJ-Box" secondAttribute="centerY" id="hyh-kS-S1Q"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="icons8-request-money-50" id="Mnk-MZ-jJ0">
-                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-30"/>
-                    </tabBarItem>
-                    <navigationItem key="navigationItem" title=" BTC Wallet" id="jEp-U0-lMC"/>
+                    <navigationItem key="navigationItem" id="jEp-U0-lMC">
+                        <barButtonItem key="rightBarButtonItem" title="Close" id="Eho-be-I8a">
+                            <connections>
+                                <action selector="close:" destination="mcf-9R-zFW" id="hIB-aN-cbE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="imgQRCode" destination="xhQ-aC-wF1" id="D07-bE-j8B"/>
-                        <outlet property="walletLabel" destination="Q3H-fv-9af" id="R6D-Wm-P2o"/>
+                        <outlet property="imgQRCode" destination="e1A-wM-gUV" id="3aa-Ui-iZ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJg-Uc-lvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="3716"/>
+            <point key="canvasLocation" x="1666" y="2212"/>
         </scene>
         <!--Backup Phrase View Controller-->
         <scene sceneID="cTe-aD-HRV">
@@ -120,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTf-u3-w4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="5203"/>
+            <point key="canvasLocation" x="2540" y="3039"/>
         </scene>
         <!--My Wallet Table View Controller-->
         <scene sceneID="aUb-Gz-o5y">
@@ -131,25 +125,83 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="UnH-lg-9l3">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 BTC / 0 USD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-LE-ERQ">
-                                    <rect key="frame" x="121" y="45" width="133" height="24"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                    <nil key="textColor"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 BTC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-LE-ERQ">
+                                    <rect key="frame" x="139.5" y="167" width="97" height="41"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btc" translatesAutoresizingMaskIntoConstraints="NO" id="14n-2N-Ghv">
+                                    <rect key="frame" x="155" y="76" width="64" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="64" id="Rf8-b8-X85"/>
+                                        <constraint firstAttribute="height" constant="64" id="oKo-sr-dKJ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpN-OH-Xnh">
+                                    <rect key="frame" x="168.5" y="216" width="39.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5l-dR-l31">
+                                    <rect key="frame" x="50" y="246" width="275" height="68"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1R-5e-ZYV">
+                                            <rect key="frame" x="8" y="14" width="40" height="40"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="NDC-bR-qEM"/>
+                                                <constraint firstAttribute="width" constant="40" id="yv8-vl-DNG"/>
+                                            </constraints>
+                                            <state key="normal" image="qrcode"/>
+                                            <connections>
+                                                <segue destination="CJq-OS-gea" kind="presentation" id="onl-PA-fRt"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-lR-8FO">
+                                            <rect key="frame" x="67" y="14" width="200" height="40"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.25339576198630137" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="QVg-ye-4IS"/>
+                                                <constraint firstAttribute="width" constant="200" id="Vfw-fT-TiZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <inset key="imageEdgeInsets" minX="-16" minY="-6" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Share or copy address" image="Group 334">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="r1R-5e-ZYV" firstAttribute="centerY" secondItem="c5l-dR-l31" secondAttribute="centerY" id="Kfn-4p-43X"/>
+                                        <constraint firstAttribute="width" constant="275" id="Noc-BJ-Goa"/>
+                                        <constraint firstAttribute="height" constant="68" id="Okf-Ye-pAc"/>
+                                        <constraint firstItem="5Ah-lR-8FO" firstAttribute="centerY" secondItem="c5l-dR-l31" secondAttribute="centerY" id="SYK-Ul-Gro"/>
+                                        <constraint firstItem="r1R-5e-ZYV" firstAttribute="leading" secondItem="c5l-dR-l31" secondAttribute="leading" constant="8" id="pFi-O7-b5U"/>
+                                        <constraint firstAttribute="trailing" secondItem="5Ah-lR-8FO" secondAttribute="trailing" constant="8" id="qid-p2-5Vj"/>
+                                    </constraints>
+                                </view>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.96862745098039216" green="0.57647058823529407" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstItem="14n-2N-Ghv" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="F14-gd-eeP"/>
+                                <constraint firstItem="c5l-dR-l31" firstAttribute="top" secondItem="CpN-OH-Xnh" secondAttribute="bottom" constant="10.5" id="FVv-Bg-WM3"/>
                                 <constraint firstItem="Fow-LE-ERQ" firstAttribute="centerY" secondItem="UnH-lg-9l3" secondAttribute="centerY" id="HQ7-H2-nyf"/>
+                                <constraint firstItem="Fow-LE-ERQ" firstAttribute="top" secondItem="14n-2N-Ghv" secondAttribute="bottom" constant="27" id="P8z-16-OUP"/>
+                                <constraint firstItem="CpN-OH-Xnh" firstAttribute="top" secondItem="Fow-LE-ERQ" secondAttribute="bottom" constant="8" id="XAo-Uh-Hd6"/>
+                                <constraint firstItem="c5l-dR-l31" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="kzZ-Ab-JVO"/>
                                 <constraint firstItem="Fow-LE-ERQ" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="scH-gT-bGu"/>
+                                <constraint firstItem="CpN-OH-Xnh" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="wS2-jK-yGX"/>
                             </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="transactionCell" focusStyle="custom" textLabel="kca-dz-dYd" detailTextLabel="BG6-Ix-zh1" rowHeight="50" style="IBUITableViewCellStyleValue1" id="21v-c1-DC9">
-                                <rect key="frame" x="0.0" y="142" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="403" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="21v-c1-DC9" id="rpL-EO-5TI">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
@@ -178,18 +230,26 @@
                             <outlet property="delegate" destination="dRR-U4-rsB" id="l9F-91-kb6"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="icons8-wallet-50" id="a2T-7Z-cww">
-                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-20"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="zxP-T8-uEH">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="hAc-Xw-r8m">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="d6l-7B-dQT" kind="show" id="ug3-nO-UUp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="balanceLabel" destination="Fow-LE-ERQ" id="Ylu-rh-pzU"/>
+                        <outlet property="fiatBalanceLabel" destination="CpN-OH-Xnh" id="iwQ-Nn-ZZm"/>
+                        <outlet property="qrCodeButton" destination="r1R-5e-ZYV" id="z6G-U3-96p"/>
+                        <outlet property="shareAddressButton" destination="5Ah-lR-8FO" id="gHo-ji-Mis"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbx-0O-wV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="3040"/>
+            <point key="canvasLocation" x="836" y="3038.2308845577213"/>
         </scene>
-        <!--Item-->
+        <!--Send View Controller-->
         <scene sceneID="QeO-2x-uEl">
             <objects>
                 <viewController id="y36-vy-UnG" customClass="SendViewController" customModule="CryptoWallet" customModuleProvider="target" sceneMemberID="viewController">
@@ -315,7 +375,7 @@
                             <constraint firstItem="LMu-85-8GT" firstAttribute="leading" secondItem="bSL-Tg-Hun" secondAttribute="leading" constant="16" id="zep-Te-T0m"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="E4u-0q-Cj1"/>
+                    <tabBarItem key="tabBarItem" title="" id="E4u-0q-Cj1"/>
                     <navigationItem key="navigationItem" id="cQ3-m1-QFQ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="6vd-Ph-tJ9"/>
                     </navigationItem>
@@ -558,10 +618,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="dRR-U4-rsB" kind="relationship" relationship="viewControllers" id="mdO-DM-C2y"/>
+                        <segue destination="lFL-37-KPS" kind="relationship" relationship="viewControllers" id="mdO-DM-C2y"/>
                         <segue destination="wQK-Nk-uy4" kind="relationship" relationship="viewControllers" id="Jhc-vQ-6bm"/>
-                        <segue destination="mcf-9R-zFW" kind="relationship" relationship="viewControllers" id="luo-Ef-psS"/>
-                        <segue destination="hq6-oa-iEB" kind="relationship" relationship="viewControllers" id="EZa-zw-p0a"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqp-Tz-wIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -572,7 +630,7 @@
         <scene sceneID="exr-PO-mJn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wQK-Nk-uy4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icons8-initiate-money-transfer-50" id="LuQ-i3-uUr">
+                    <tabBarItem key="tabBarItem" title="" image="transaction" id="LuQ-i3-uUr">
                         <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-15"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -632,34 +690,57 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnG-t3-7OI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="5203"/>
+            <point key="canvasLocation" x="1692" y="3039"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="KhM-vt-O53">
+        <scene sceneID="2cp-TM-Pzr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hq6-oa-iEB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icons8-settings-50" id="tVV-6a-rb9">
-                        <inset key="imageInsets" minX="5" minY="-10" maxX="3" maxY="-22"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFL-37-KPS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="wallet" id="a2T-7Z-cww">
+                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-20"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vUN-P5-jkc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3NG-Q0-dKx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="d6l-7B-dQT" kind="relationship" relationship="rootViewController" id="pnA-Sk-PCY"/>
+                        <segue destination="dRR-U4-rsB" kind="relationship" relationship="rootViewController" id="DbR-5o-eEs"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwn-6f-q6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkQ-pb-NAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="5203"/>
+            <point key="canvasLocation" x="-38.399999999999999" y="3039.5802098950526"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eCk-uQ-Fx9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CJq-OS-gea" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-request-money-50" id="Mnk-MZ-jJ0">
+                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-30"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fO7-S2-Tsd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mcf-9R-zFW" kind="relationship" relationship="rootViewController" id="cmk-si-tIH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uiq-VM-eTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868.79999999999995" y="2211.9940029985009"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-initiate-money-transfer-50" width="50" height="50"/>
+        <image name="Group 334" width="16" height="22"/>
+        <image name="btc" width="64" height="64"/>
         <image name="icons8-request-money-50" width="50" height="50"/>
-        <image name="icons8-settings-50" width="50" height="50"/>
-        <image name="icons8-wallet-50" width="50" height="50"/>
+        <image name="qrcode" width="24" height="24"/>
+        <image name="transaction" width="50" height="50"/>
+        <image name="wallet" width="50" height="50"/>
     </resources>
 </document>
