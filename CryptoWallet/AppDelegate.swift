@@ -103,6 +103,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func initWallet(passphrase: String) {
+        TLPreferences.resetBlockExplorerAPIURL()
+        TLPreferences.setBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
+        TLPreferences.setInAppSettingsKitBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
+        print("initWallet")
         let masterHex = TLCoreBitcoinWrapper.getMasterHex(passphrase)
         let extendedPrivateKey = TLCoreBitcoinWrapper.getExtendPrivKey(masterHex)
         self.privateKey = TLCoreBitcoinWrapper.getPrivateKey(extendedPrivateKey as NSString, sequence: [0,1], isTestnet: false)
@@ -110,12 +114,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.addressBalanceCoin = self.updateAddressBalance(address: self.address!)!
         self.addressBalanceString = TLCurrencyFormat.getProperAmount(self.addressBalanceCoin) as String
         self.godSend = TLSpaghettiGodSend(address: self.address!)
-        
+        print("godSend")
         self.godSend?.setOnlyFromAddress(self.address!)
         print("PASSPHRASE STARTS:\n\n\n\n\(passphrase)\n\n\n\nEXTENDED PRIVATE KET STARTS:\n\n\n\n\(extendedPrivateKey)\n\n\n\nPRIVATE KET STARTS:\n\n\n\n\(String(describing: self.privateKey))\n\n\n\nBTC Address STARTS:\n\n\n\n\(String(describing: self.address))\n\n\n\nBTC Address Balance STARTS:\n\n\n\n\(String(describing: self.addressBalanceString))")
-        TLPreferences.resetBlockExplorerAPIURL()
-        TLPreferences.setBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
-        TLPreferences.setInAppSettingsKitBlockExplorerAPI(String(format:"%ld", DEFAULT_BLOCKEXPLORER_API.rawValue))
+        
         self.userInfo.set(self.passphrase, forKey: "passphrase")
         self.userInfo.set(self.address, forKey: "address")
         self.userInfo.set(self.privateKey, forKey: "privatekey")
