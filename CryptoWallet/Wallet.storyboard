@@ -186,6 +186,12 @@
                                         <constraint firstAttribute="trailing" secondItem="5Ah-lR-8FO" secondAttribute="trailing" constant="8" id="qid-p2-5Vj"/>
                                     </constraints>
                                 </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfR-d2-Sfi">
+                                    <rect key="frame" x="171" y="311" width="33" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="0.96862745098039216" green="0.57647058823529407" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -193,8 +199,10 @@
                                 <constraint firstItem="c5l-dR-l31" firstAttribute="top" secondItem="CpN-OH-Xnh" secondAttribute="bottom" constant="10.5" id="FVv-Bg-WM3"/>
                                 <constraint firstItem="Fow-LE-ERQ" firstAttribute="centerY" secondItem="UnH-lg-9l3" secondAttribute="centerY" id="HQ7-H2-nyf"/>
                                 <constraint firstItem="Fow-LE-ERQ" firstAttribute="top" secondItem="14n-2N-Ghv" secondAttribute="bottom" constant="27" id="P8z-16-OUP"/>
+                                <constraint firstItem="jfR-d2-Sfi" firstAttribute="top" secondItem="5Ah-lR-8FO" secondAttribute="bottom" constant="11" id="VdT-oZ-HEc"/>
                                 <constraint firstItem="CpN-OH-Xnh" firstAttribute="top" secondItem="Fow-LE-ERQ" secondAttribute="bottom" constant="8" id="XAo-Uh-Hd6"/>
                                 <constraint firstItem="c5l-dR-l31" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="kzZ-Ab-JVO"/>
+                                <constraint firstItem="jfR-d2-Sfi" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="rvF-sJ-bKJ"/>
                                 <constraint firstItem="Fow-LE-ERQ" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="scH-gT-bGu"/>
                                 <constraint firstItem="CpN-OH-Xnh" firstAttribute="centerX" secondItem="UnH-lg-9l3" secondAttribute="centerX" id="wS2-jK-yGX"/>
                             </constraints>
@@ -239,6 +247,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addressLabel" destination="jfR-d2-Sfi" id="3n7-XV-lDL"/>
                         <outlet property="balanceLabel" destination="Fow-LE-ERQ" id="Ylu-rh-pzU"/>
                         <outlet property="fiatBalanceLabel" destination="CpN-OH-Xnh" id="iwQ-Nn-ZZm"/>
                         <outlet property="qrCodeButton" destination="r1R-5e-ZYV" id="z6G-U3-96p"/>

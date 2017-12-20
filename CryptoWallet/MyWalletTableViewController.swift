@@ -16,15 +16,26 @@ class MyWalletTableViewController: UITableViewController {
     @IBOutlet weak var shareAddressButton: UIButton!
     
     @IBOutlet weak var qrCodeButton: UIButton!
+    @IBOutlet weak var addressLabel: UILabel!
     
     var qrCodeImage: UIImageView?
     
     var transaction = [String: Any]()
     var transactions = [[String: Any]]()
+    var sortedTransactions = [String:[[String:Any]]]()
     
     var addrOut: String?
     var addr: String?
     var value: Int?
+    var transactionTime: String?
+    
+    struct Objects {
+        
+        var sectionName : String!
+        var sectionObjects : [[String : Any]]!
+    }
+    
+    var objectArray = [Objects]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +106,7 @@ class MyWalletTableViewController: UITableViewController {
         
         self.balanceLabel.text = amountString as String
         self.fiatBalanceLabel.text = "\(fiatAmount) USD"
+        self.addressLabel.text = AppDelegate.instance().address!
         print("\(amountString) / \(fiatAmount) USD")
     }
     
@@ -106,6 +118,7 @@ class MyWalletTableViewController: UITableViewController {
             DLog("getAccountDataSynchronous error \(jsonData.description)")
             NSException(name: NSExceptionName(rawValue: "Network Error"), reason: "HTTP Error", userInfo: nil).raise()
         }
+       
         if let transactionsArray = jsonData.object(forKey: "txs") as! [NSDictionary]? {
             for transaction in transactionsArray {
                 if let inputs = transaction["inputs"] as! [NSDictionary]? {
@@ -120,13 +133,38 @@ class MyWalletTableViewController: UITableViewController {
                             self.value = outItem["value"] as! Int?
                         }
                     }
-                    self.transaction = ["who" : self.addrOut!, "toWho" : self.addr!, "value" : self.value!]
+                    if let time = transaction["time"] as! Int? {
+                        let date = NSDate(timeIntervalSince1970: TimeInterval(time))
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.timeStyle = DateFormatter.Style.none //Set time style
+                        dateFormatter.dateStyle = DateFormatter.Style.long //Set date style
+                        dateFormatter.timeZone = TimeZone.current
+                        let localDate = dateFormatter.string(from: date as Date)
+                        self.transactionTime = localDate
+                    }
+                    self.transaction = ["who" : self.addrOut!, "toWho" : self.addr!, "value" : self.value!, "when" : self.transactionTime!]
                     self.transactions.append(self.transaction)
                     print(self.transactions)
                 }
                 
                 
             }
+            
+            let datesArray = self.transactions.flatMap { $0["when"] as? String } // return array of date
+            // Your required result
+            datesArray.forEach {
+                let dateKey = $0
+                let filterArray = self.transactions.filter { $0["when"] as? String == dateKey }
+                self.sortedTransactions[$0] = filterArray
+            }
+            
+            print(self.sortedTransactions)
+            
+            for (key, value) in self.sortedTransactions {
+                print("\(key) -> \(value)")
+                self.objectArray.append(Objects(sectionName: key, sectionObjects: value))
+            }
+            self.objectArray = self.objectArray.sorted{ ($0.sectionName)! > ($1.sectionName)! }
             
             //            print("Transaction history - \(transactionsArray)")
         }
@@ -137,33 +175,42 @@ class MyWalletTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return self.objectArray.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return objectArray[section].sectionName
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.transactions.count
+        
+        return objectArray[section].sectionObjects.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath as IndexPath)
         
         // Configure the cell...
-        let transactionItem = self.transactions[indexPath.row]
-        if let who = transactionItem["who"] as! String? {
-            if who == AppDelegate.instance().address {
-                if let toWho = transactionItem["toWho"] as! String? {
-                    cell.textLabel?.text = toWho
-                }
-                if let value = transactionItem["value"] as! Int? {
-                    let valueBTCString = self.convertSatoshiToBTCString(value: value)
-                    cell.detailTextLabel?.text = "- \(valueBTCString)"
-                }
-            } else {
-                cell.textLabel?.text = who
-                if let value = transactionItem["value"] as! Int? {
-                    let valueBTCString = self.convertSatoshiToBTCString(value: value)
-                    cell.detailTextLabel?.text = "+ \(valueBTCString)"
+        
+        if let secObj = objectArray[indexPath.section].sectionObjects {
+            if let secObjItem = secObj[indexPath.row] as [String: Any]?{
+                if let who = secObjItem["who"] as! String? {
+                    if who == AppDelegate.instance().address {
+                        if let toWho = secObjItem["toWho"] as! String? {
+                            cell.textLabel?.text = toWho
+                        }
+                        if let value = secObjItem["value"] as! Int? {
+                            let valueBTCString = self.convertSatoshiToBTCString(value: value)
+                            cell.detailTextLabel?.text = "- \(valueBTCString)"
+                        }
+                    } else {
+                        cell.textLabel?.text = who
+                        if let value = secObjItem["value"] as! Int? {
+                            let valueBTCString = self.convertSatoshiToBTCString(value: value)
+                            cell.detailTextLabel?.text = "+ \(valueBTCString)"
+                        }
+                    }
                 }
             }
         }
