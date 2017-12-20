@@ -47,7 +47,7 @@ class MyWalletTableViewController: UITableViewController {
         self.qrCodeButton.layer.cornerRadius = 4.0
         
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9814189076, green: 0.6426411271, blue: 0.1245707795, alpha: 1)
-        
+        self.view.backgroundColor = #colorLiteral(red: 0.9814189076, green: 0.6426411271, blue: 0.1245707795, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -188,8 +188,13 @@ class MyWalletTableViewController: UITableViewController {
         return objectArray[section].sectionObjects.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 50.0;//Choose your custom row height
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath as IndexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath as IndexPath) as! TransactionTableViewCell
         
         // Configure the cell...
         
@@ -198,17 +203,27 @@ class MyWalletTableViewController: UITableViewController {
                 if let who = secObjItem["who"] as! String? {
                     if who == AppDelegate.instance().address {
                         if let toWho = secObjItem["toWho"] as! String? {
-                            cell.textLabel?.text = toWho
+//                            cell.toWhoLabel?.text = toWho
                         }
                         if let value = secObjItem["value"] as! Int? {
                             let valueBTCString = self.convertSatoshiToBTCString(value: value)
-                            cell.detailTextLabel?.text = "- \(valueBTCString)"
+                            cell.valueLabel?.text = valueBTCString
+                            cell.inOrOutImage.image = UIImage(named: "arrow-outgoing-btc@1x.png")
+                            let currency = TLCurrencyFormat.getFiatCurrency()
+                            let valueBTC = TLCoin(uint64: UInt64(value))
+                            let fiatAmount = TLExchangeRate.instance().fiatAmountStringFromBitcoin(currency, bitcoinAmount: valueBTC)
+                            cell.fiatLabel.text = "\(fiatAmount) USD"
                         }
                     } else {
-                        cell.textLabel?.text = who
+//                        cell.toWhoLabel?.text = who
                         if let value = secObjItem["value"] as! Int? {
                             let valueBTCString = self.convertSatoshiToBTCString(value: value)
-                            cell.detailTextLabel?.text = "+ \(valueBTCString)"
+                            cell.valueLabel?.text = valueBTCString
+                            cell.inOrOutImage.image = UIImage(named: "arrow-ingoing-btc@1x.png")
+                            let currency = TLCurrencyFormat.getFiatCurrency()
+                            let valueBTC = TLCoin(uint64: UInt64(value))
+                            let fiatAmount = TLExchangeRate.instance().fiatAmountStringFromBitcoin(currency, bitcoinAmount: valueBTC)
+                            cell.fiatLabel.text = "\(fiatAmount) USD"
                         }
                     }
                 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pxg-KC-Y6w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lFL-37-KPS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -120,10 +120,14 @@
         <scene sceneID="aUb-Gz-o5y">
             <objects>
                 <tableViewController id="dRR-U4-rsB" customClass="MyWalletTableViewController" customModule="CryptoWallet" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m5l-J9-A6v">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m5l-J9-A6v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.96862745100000003" green="0.57647058819999997" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="UnH-lg-9l3">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -208,29 +212,47 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="transactionCell" focusStyle="custom" textLabel="kca-dz-dYd" detailTextLabel="BG6-Ix-zh1" rowHeight="50" style="IBUITableViewCellStyleValue1" id="21v-c1-DC9">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="transactionCell" focusStyle="custom" rowHeight="50" id="21v-c1-DC9" customClass="TransactionTableViewCell" customModule="CryptoWallet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="403" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="21v-c1-DC9" id="rpL-EO-5TI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="kca-dz-dYd">
-                                            <rect key="frame" x="16" y="21" width="21.5" height="12"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inTransaction" translatesAutoresizingMaskIntoConstraints="NO" id="FWG-JF-cNU">
+                                            <rect key="frame" x="9" y="5" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="kzQ-Bx-HPF"/>
+                                                <constraint firstAttribute="width" constant="40" id="ngS-cX-aPe"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,0000000 BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtd-Y8-Zut">
+                                            <rect key="frame" x="256" y="4" width="110" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="BG6-Ix-zh1">
-                                            <rect key="frame" x="321.5" y="17" width="37.5" height="17"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,0000000 BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVb-IX-GWD">
+                                            <rect key="frame" x="256" y="27" width="110" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="UVb-IX-GWD" secondAttribute="trailing" constant="9" id="68E-Hu-F2b"/>
+                                        <constraint firstItem="jtd-Y8-Zut" firstAttribute="top" secondItem="rpL-EO-5TI" secondAttribute="top" constant="4" id="Yb3-zE-D04"/>
+                                        <constraint firstItem="UVb-IX-GWD" firstAttribute="bottom" secondItem="FWG-JF-cNU" secondAttribute="bottom" id="fCT-e7-vQ3"/>
+                                        <constraint firstItem="FWG-JF-cNU" firstAttribute="leading" secondItem="rpL-EO-5TI" secondAttribute="leading" constant="9" id="hlz-Ou-4uO"/>
+                                        <constraint firstAttribute="trailing" secondItem="jtd-Y8-Zut" secondAttribute="trailing" constant="9" id="t4H-0h-F0d"/>
+                                        <constraint firstItem="FWG-JF-cNU" firstAttribute="centerY" secondItem="rpL-EO-5TI" secondAttribute="centerY" id="vQz-Wk-hGY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fiatLabel" destination="UVb-IX-GWD" id="a2y-Be-w80"/>
+                                    <outlet property="inOrOutImage" destination="FWG-JF-cNU" id="lIx-Rc-BoQ"/>
+                                    <outlet property="valueLabel" destination="jtd-Y8-Zut" id="uCl-wI-tcG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -238,6 +260,17 @@
                             <outlet property="delegate" destination="dRR-U4-rsB" id="l9F-91-kb6"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5Ct-qB-seA"/>
+                        <barButtonItem image="newTransaction" landscapeImage="newTransaction" largeContentSizeImage="newTransaction" width="40" style="plain" id="CXP-lw-AiU">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="wQK-Nk-uy4" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="Fu8-Vp-NT3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="y4X-4P-gha"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="zxP-T8-uEH">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="hAc-Xw-r8m">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -246,6 +279,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressLabel" destination="jfR-d2-Sfi" id="3n7-XV-lDL"/>
                         <outlet property="balanceLabel" destination="Fow-LE-ERQ" id="Ylu-rh-pzU"/>
@@ -522,7 +556,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLW-e1-CSe">
-                                <rect key="frame" x="8" y="546" width="359" height="64"/>
+                                <rect key="frame" x="8" y="595" width="359" height="64"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="7W9-57-QXu"/>
@@ -615,26 +649,6 @@
             </objects>
             <point key="canvasLocation" x="1719" y="4448"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Lvx-l6-srv">
-            <objects>
-                <tabBarController storyboardIdentifier="WalletTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pxg-KC-Y6w" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="XRK-xM-jok"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SGn-kA-eCy">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="lFL-37-KPS" kind="relationship" relationship="viewControllers" id="mdO-DM-C2y"/>
-                        <segue destination="wQK-Nk-uy4" kind="relationship" relationship="viewControllers" id="Jhc-vQ-6bm"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nqp-Tz-wIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1135" y="4241"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="exr-PO-mJn">
             <objects>
@@ -704,7 +718,7 @@
         <!--Navigation Controller-->
         <scene sceneID="2cp-TM-Pzr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFL-37-KPS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="WalletTabBarController" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="lFL-37-KPS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="wallet" id="a2T-7Z-cww">
                         <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-20"/>
                     </tabBarItem>
@@ -714,6 +728,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AnM-aZ-i8v">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="dRR-U4-rsB" kind="relationship" relationship="rootViewController" id="DbR-5o-eEs"/>
                     </connections>
@@ -748,6 +766,8 @@
         <image name="Group 334" width="16" height="22"/>
         <image name="btc" width="64" height="64"/>
         <image name="icons8-request-money-50" width="50" height="50"/>
+        <image name="inTransaction" width="40" height="40"/>
+        <image name="newTransaction" width="28" height="28"/>
         <image name="qrcode" width="24" height="24"/>
         <image name="transaction" width="50" height="50"/>
         <image name="wallet" width="50" height="50"/>

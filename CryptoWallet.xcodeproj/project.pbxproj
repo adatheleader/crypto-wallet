@@ -21,6 +21,7 @@
 		3547D28B1FA49611000E1924 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28A1FA49611000E1924 /* SendViewController.swift */; };
 		3547D28D1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28C1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift */; };
 		3547D28F1FA4AD9B000E1924 /* ReviewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D28E1FA4AD9B000E1924 /* ReviewPaymentViewController.swift */; };
+		3550F6991FEAACF200805658 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3550F6981FEAACF200805658 /* TransactionTableViewCell.swift */; };
 		35549FE41F8286A500205340 /* BTCBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 35549F591F82865F00205340 /* BTCBlockHeader.m */; };
 		35549FE51F8286A500205340 /* BTC256+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35549F5A1F82865F00205340 /* BTC256+Tests.m */; };
 		35549FE61F8286A500205340 /* BTCBlockchainInfo+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35549F5B1F82866000205340 /* BTCBlockchainInfo+Tests.m */; };
@@ -234,6 +235,7 @@
 		3547D28A1FA49611000E1924 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		3547D28C1FA49B02000E1924 /* QRCodeScannerViewControllerV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewControllerV.swift; sourceTree = "<group>"; };
 		3547D28E1FA4AD9B000E1924 /* ReviewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPaymentViewController.swift; sourceTree = "<group>"; };
+		3550F6981FEAACF200805658 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		35549F541F82865E00205340 /* BTCPriceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPriceSource.h; sourceTree = "<group>"; };
 		35549F551F82865E00205340 /* BTCSecretSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCSecretSharing.h; sourceTree = "<group>"; };
 		35549F561F82865E00205340 /* BTCAssetType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAssetType.h; sourceTree = "<group>"; };
@@ -925,6 +927,7 @@
 				3547D28E1FA4AD9B000E1924 /* ReviewPaymentViewController.swift */,
 				35016AAC1FC460AA00C88D28 /* MyWalletTableViewController.swift */,
 				35016AAE1FC4645800C88D28 /* SettingsTableViewController.swift */,
+				3550F6981FEAACF200805658 /* TransactionTableViewCell.swift */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -1402,6 +1405,7 @@
 				3554A00D1F8286A500205340 /* BTCEncryptedBackup+Tests.m in Sources */,
 				3575BDA71F866ADB00D0B4F8 /* TLAccounts.swift in Sources */,
 				35549FFF1F8286A500205340 /* BTCKeychain+Tests.m in Sources */,
+				3550F6991FEAACF200805658 /* TransactionTableViewCell.swift in Sources */,
 				3554A0211F8286A500205340 /* BTCKey.m in Sources */,
 				358031F91F8BBF02001ACBE8 /* BRKey+BIP38.m in Sources */,
 				3554A0281F8286A500205340 /* BTCMnemonic+Tests.m in Sources */,
