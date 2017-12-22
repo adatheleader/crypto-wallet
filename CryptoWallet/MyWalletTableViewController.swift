@@ -73,6 +73,11 @@ class MyWalletTableViewController: UITableViewController {
     }
     
     
+    @IBAction func shareAddress(_ sender: Any) {
+        let activityViewController = UIActivityViewController(activityItems: [AppDelegate.instance().address!], applicationActivities: nil)
+        self.present(activityViewController, animated: true, completion: {})
+    }
+    
     func showQRCodeAlert() {
         let alert = UIAlertController(title:"QR Code", message: "Show this QR Code to your friend ", preferredStyle: UIAlertControllerStyle.alert)
         

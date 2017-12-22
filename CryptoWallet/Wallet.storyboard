@@ -178,6 +178,9 @@
                                             <state key="normal" title="Share or copy address" image="Group 334">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="shareAddress:" destination="dRR-U4-rsB" eventType="touchUpInside" id="GtU-1H-ZaP"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
