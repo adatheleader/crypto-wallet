@@ -43,7 +43,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jEp-U0-lMC">
-                        <barButtonItem key="rightBarButtonItem" title="Close" id="Eho-be-I8a">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="Eho-be-I8a">
                             <connections>
                                 <action selector="close:" destination="mcf-9R-zFW" id="hIB-aN-cbE"/>
                             </connections>
@@ -377,16 +377,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtE-xf-nWw">
-                                <rect key="frame" x="16" y="429" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Preview payment">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="reviewPayment:" destination="y36-vy-UnG" eventType="touchUpInside" id="ERf-9l-k2c"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -394,7 +384,6 @@
                             <constraint firstItem="NLH-nb-VZr" firstAttribute="leading" secondItem="bSL-Tg-Hun" secondAttribute="leading" constant="16" id="3zc-38-OBq"/>
                             <constraint firstItem="zyh-Cb-aZs" firstAttribute="leading" secondItem="FEs-E3-1Ad" secondAttribute="trailing" constant="11" id="6T7-w1-lTW"/>
                             <constraint firstAttribute="trailing" secondItem="zyh-Cb-aZs" secondAttribute="trailing" constant="16" id="AYJ-7J-way"/>
-                            <constraint firstItem="mtE-xf-nWw" firstAttribute="top" secondItem="LMu-85-8GT" secondAttribute="bottom" constant="25" id="BF4-OA-CML"/>
                             <constraint firstItem="uwM-9b-lhu" firstAttribute="top" secondItem="5oI-39-BhS" secondAttribute="bottom" constant="8" id="Bif-gT-OU0"/>
                             <constraint firstItem="s3M-Iu-011" firstAttribute="top" secondItem="NLH-nb-VZr" secondAttribute="bottom" constant="47" id="DP7-Ay-3Qi"/>
                             <constraint firstItem="1u7-e1-ZAD" firstAttribute="leading" secondItem="bSL-Tg-Hun" secondAttribute="leading" constant="16" id="IXT-Fb-9HM"/>
@@ -410,11 +399,9 @@
                             <constraint firstItem="Vuo-po-7l2" firstAttribute="leading" secondItem="bSL-Tg-Hun" secondAttribute="leading" constant="16" id="Zbf-bT-XMr"/>
                             <constraint firstItem="uwM-9b-lhu" firstAttribute="leading" secondItem="bSL-Tg-Hun" secondAttribute="leading" constant="16" id="epQ-HS-C9h"/>
                             <constraint firstItem="FEs-E3-1Ad" firstAttribute="leading" secondItem="bSL-Tg-Hun" secondAttribute="leading" constant="16" id="fWq-aX-Fi4"/>
-                            <constraint firstAttribute="trailing" secondItem="mtE-xf-nWw" secondAttribute="trailing" constant="16" id="gLJ-Tf-24n"/>
                             <constraint firstItem="NLH-nb-VZr" firstAttribute="centerX" secondItem="bSL-Tg-Hun" secondAttribute="centerX" id="gV1-yZ-nab"/>
                             <constraint firstAttribute="trailing" secondItem="RNN-OU-vAy" secondAttribute="trailing" constant="16" id="oPj-Vz-hTp"/>
                             <constraint firstItem="5oI-39-BhS" firstAttribute="top" secondItem="FMN-q1-A4E" secondAttribute="bottom" constant="20" id="okM-xH-SFu"/>
-                            <constraint firstItem="mtE-xf-nWw" firstAttribute="leading" secondItem="bSL-Tg-Hun" secondAttribute="leading" constant="16" id="pxA-m4-OmN"/>
                             <constraint firstItem="zyh-Cb-aZs" firstAttribute="top" secondItem="s3M-Iu-011" secondAttribute="bottom" constant="13" id="qpR-7H-bSv"/>
                             <constraint firstItem="RNN-OU-vAy" firstAttribute="top" secondItem="FEs-E3-1Ad" secondAttribute="bottom" constant="24" id="x74-RY-Gns"/>
                             <constraint firstAttribute="trailing" secondItem="1u7-e1-ZAD" secondAttribute="trailing" constant="16" id="xhp-x5-7fC"/>
@@ -424,6 +411,16 @@
                     <tabBarItem key="tabBarItem" title="" id="E4u-0q-Cj1"/>
                     <navigationItem key="navigationItem" id="cQ3-m1-QFQ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="6vd-Ph-tJ9"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="2ip-ld-cJk">
+                            <connections>
+                                <action selector="dismissView:" destination="y36-vy-UnG" id="0xz-jG-qqg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="jdJ-9D-XS4">
+                            <connections>
+                                <action selector="reviewPayment:" destination="y36-vy-UnG" id="mJv-LV-hDO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="amountTextField" destination="FEs-E3-1Ad" id="jgb-Tw-Xrp"/>

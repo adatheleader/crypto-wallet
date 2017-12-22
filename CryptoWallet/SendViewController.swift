@@ -28,6 +28,7 @@ class SendViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
         self.mainBTCAddress.text = AppDelegate.instance().address
+        self.title = "New Transaction"
     }
 
     override func didReceiveMemoryWarning() {
@@ -140,6 +141,10 @@ class SendViewController: UIViewController, UITextFieldDelegate {
             self.amountTextField!.text = nil
             TLSendFormData.instance().toAmount = nil
         }
+    }
+    
+    @IBAction func dismissView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func reviewPayment(_ sender: Any) {
